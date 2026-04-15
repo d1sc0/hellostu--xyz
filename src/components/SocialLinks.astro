@@ -1,0 +1,23 @@
+---
+// SocialLinks.astro
+// Props: links (array of { url, icon, aria })
+import { Icon } from 'astro-icon/components';
+import '../styles/social-links.css';
+import socialLinks from '../content/social-links.json';
+---
+
+<div class="social-links">
+  {
+    Array.isArray(socialLinks.links) &&
+      socialLinks.links.map(link => (
+        <a
+          href={link.url}
+          class="social-links__icon"
+          rel="me"
+          aria-label={link.aria}
+        >
+          <Icon name={link.icon} />
+        </a>
+      ))
+  }
+</div>

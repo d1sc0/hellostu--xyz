@@ -1,7 +1,7 @@
 ---
 import MarkdownPageLayout from '../layouts/MarkdownPageLayout.astro';
 import { getEntry, render } from 'astro:content';
-
+import '../styles/contact.css';
 const contact = await getEntry('pages', 'contact');
 const { Content } = contact ? await render(contact) : { Content: null };
 const pageMeta = {

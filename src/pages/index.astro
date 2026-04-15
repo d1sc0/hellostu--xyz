@@ -1,23 +1,16 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import MarkdownPageLayout from '../layouts/MarkdownPageLayout.astro';
 import '../styles/home.css';
-import LatestPost from '../components/LatestPost.astro';
 import { getEntry, render } from 'astro:content';
-const homeIntro = await getEntry('pages', 'home-intro');
-const { Content } = homeIntro ? await render(homeIntro) : { Content: null };
+const home = await getEntry('pages', 'home');
+const { Content } = home ? await render(home) : { Content: null };
 const pageMeta = {
   title: 'Your Site | Home',
-  description:
-    homeIntro?.data.description ||
-    'The upstairs downstairs podcast follows the trials and tribulations of father (Stuart) and daughter (Robyn) as they battle lifes challenges and the frequent first world problems they encounter whilst living and working together from home.',
+  description: home?.data.description,
   imageUrl: '/default-social.png',
 };
 ---
 
-<BaseLayout pageMeta={pageMeta}>
-  <div class="content-padding">
-    {Content && <Content />}
-    <h2 class="homepage__latest-title">Latest Post</h2>
-    <LatestPost />
-  </div>
-</BaseLayout>
+<MarkdownPageLayout frontmatter={home.data} pageMeta={pageMeta}>
+  {Content && <Content />}
+</MarkdownPageLayout>

@@ -1,24 +1,15 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import MarkdownPageLayout from '../layouts/MarkdownPageLayout.astro';
+import { getEntry, render } from 'astro:content';
+const notFound = await getEntry('pages', 'notFound');
+const { Content } = notFound ? await render(notFound) : { Content: null };
 const pageMeta = {
-  title: 'Your Site | 404',
-  description: 'Sorry!',
+  title: notFound?.data.title,
+  description: notFound?.data.description,
   imageUrl: '/default-social.png',
 };
-import { Image } from 'astro:assets';
-import NotFound from '/src/assets/page_images/not-the-droids.jpg';
 ---
 
-<BaseLayout pageMeta={pageMeta}>
-  <section class="about content-padding">
-    <h2>404 | Sorry that page doesn't exist!</h2>
-    <p>
-      <Image
-        src={NotFound}
-        alt="these are not the droids you are looking for meme"
-        class="imageFull"
-      />
-      Uh-oh. Something has gone wrong. Return to the homepage and take another look.
-    </p>
-  </section>
-</BaseLayout>
+<MarkdownPageLayout frontmatter={notFound?.data} pageMeta={pageMeta}>
+  {Content && <Content />}
+</MarkdownPageLayout>

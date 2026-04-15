@@ -86,10 +86,10 @@ collections:
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
-  - name: 'navigation'
+  - name: 'navigation_main'
     label: 'Main Site Menu'
     files:
-      - file: 'src/content/navigation.json'
+      - file: 'src/content/main-nav.json'
         label: 'Main Site Menu'
         name: 'main_menu'
         fields:
@@ -100,12 +100,26 @@ collections:
               - { label: 'Label', name: 'label', widget: 'string' }
               - { label: 'URL', name: 'url', widget: 'string' }
 
-  - name: 'footer_socials'
-    label: 'Footer Socials'
+- name: 'navigation_footer'
+    label: 'Main Site Menu'
     files:
-      - file: 'src/content/footer-links.json'
-        label: 'Footer Social Links'
-        name: 'footer_links'
+      - file: 'src/content/footer-nav.json'
+        label: 'Footer Menu'
+        name: 'footer_menu'
+        fields:
+          - label: 'Links'
+            name: 'links'
+            widget: 'list'
+            fields:
+              - { label: 'Label', name: 'label', widget: 'string' }
+              - { label: 'URL', name: 'url', widget: 'string' }
+
+  - name: 'social-links'
+    label: 'Social Links'
+    files:
+      - file: 'src/content/social-links.json'
+        label: 'Social Links'
+        name: 'social_links'
         fields:
           - label: 'Links'
             name: 'links'

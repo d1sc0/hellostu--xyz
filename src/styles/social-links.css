@@ -1,0 +1,18 @@
+/* SocialLinks component styles */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.social-links__icon {
+  font-size: 1.5rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  color: var(--color-primary);
+  transition: color 0.2s;
+}
+.social-links__icon:hover {
+  color: var(--color-link-hover);
+}

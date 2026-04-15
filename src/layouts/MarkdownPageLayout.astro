@@ -6,9 +6,6 @@ const { frontmatter, pageMeta } = Astro.props;
 
 <BaseLayout pageMeta={pageMeta}>
   <section class="page-layout content-padding">
-    <h2 class="page-layout__title">{frontmatter?.title}</h2>
-    <div class="page-layout__body">
-      <slot />
-    </div>
+    <slot />
   </section>
 </BaseLayout>

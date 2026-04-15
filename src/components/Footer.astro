@@ -1,7 +1,6 @@
 ---
 import '../styles/footer.css';
-import { Icon } from 'astro-icon/components';
-import footerLinks from '../content/footer-links.json';
+import footerLinks from '../content/footer-nav.json';
 ---
 
 <footer id="footer">
@@ -12,20 +11,18 @@ import footerLinks from '../content/footer-links.json';
         >Creative Commons License CC-BY-CN-SA</a
       > by Stuart Mackenzie
     </p>
-    <div class="footer__social">
+    <ul>
       {
         Array.isArray(footerLinks.links) &&
-          footerLinks.links.map(link => (
-            <a
-              href={link.url}
-              class="footer__social-icon"
-              rel="me"
-              aria-label={link.aria}
-            >
-              <Icon name={link.icon} />
-            </a>
-          ))
+          footerLinks.links.map(
+            link =>
+              !link.label?.startsWith('#') && (
+                <li>
+                  <a href={link.url}>{link.label}</a>
+                </li>
+              ),
+          )
       }
-    </div>
+    </ul>
   </section>
 </footer>

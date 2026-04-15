@@ -7,17 +7,6 @@
   color: var(--color-text-light);
 }
 
-.footer__social-icon {
-  font-size: 1.5rem;
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;
-  color: var(--color-primary);
-  transition: color 0.2s;
-}
-.footer__social-icon:hover {
-  color: var(--color-link-hover);
-}
-
 .footer a {
   text-decoration: none;
   color: var(--color-primary);
@@ -31,4 +20,14 @@
   margin-bottom: 0.5rem;
   font-size: 1rem;
   color: var(--color-text-light);
+}
+
+.footer ul {
+  text-align: center;
+}
+
+.footer ul li {
+  display: inline;
+  border: none;
+  padding-right: 15px;
 }
