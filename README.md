@@ -158,3 +158,26 @@ By default, the deployment workflow runs the prebuild script with the `--clean` 
   ```
 
 **Note:** If build times become excessive, you can remove the `--clean` flag from your deployment workflow to skip this step and retain previously generated images. This may speed up builds, especially for large sites.
+
+## Color Palette Enforcement
+
+This project now uses a strict 5-variable color palette for all CSS:
+
+- --color-page
+- --color-text
+- --color-link
+- --color-line
+- --color-accent
+
+All legacy color variables and hardcoded colors have been removed from all CSS files. Only these variables are allowed in :root and throughout the codebase.
+
+## Current Status (April 2026)
+
+- All CSS files audited and updated to use only the strict palette.
+- No non-conforming variables remain.
+- Migration, content structure, SocialLinks, and MDX support are complete and validated.
+- Next: Continue with any new features, content, or style refinements as needed.
+
+---
+
+For migration, automation, and style system details, see plan.md and docs/.
