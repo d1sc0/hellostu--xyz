@@ -1,6 +1,7 @@
 ---
 title: A New Start
 slug: a-new-start
+category: Work
 draft: false
 pubDate: 2026-04-14T20:09:00
 description: Exploring a fresh start with CMS integration, this post shares insights on testing new workflows and deploying images efficiently for content management.

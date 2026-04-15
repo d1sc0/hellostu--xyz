@@ -1,6 +1,7 @@
 ---
 title: Testing Time
 slug: testing-time
+category: Work
 draft: false
 pubDate: 2026-04-14T19:49:00
 description: A hands-on test of new CMS deployment scripts, ensuring images and posts are published smoothly without manual intervention in the development process.

@@ -1,7 +1,8 @@
 ---
 title: 'Tiny Detour'
-draft: false
 slug: tiny-detour
+category: Play
+draft: false
 pubDate: 2025-08-10
 description: Tiny Detour recounts an unexpected journey, highlighting how small changes in direction can lead to new discoveries, fresh perspectives, and memorable experiences along the way.
 tags: ['detour', 'unexpected', 'journey']

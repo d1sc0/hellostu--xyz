@@ -1,6 +1,7 @@
 ---
 title: Small Wins
 slug: small-wins
+category: Work
 draft: false
 pubDate: 2025-08-05
 description: Small Wins highlights the significance of celebrating minor achievements, showing how recognizing progress, no matter how small, can build momentum and foster a positive mindset.

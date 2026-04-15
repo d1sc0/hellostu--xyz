@@ -1,6 +1,7 @@
 ---
 title: Quick Reset
 slug: quick-reset
+category: Work
 draft: false
 pubDate: 2025-08-04
 description: Quick Reset discusses the importance of taking breaks and resetting your mindset, sharing strategies for regaining focus, boosting productivity, and maintaining a healthy work-life balance.

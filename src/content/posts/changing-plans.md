@@ -1,6 +1,7 @@
 ---
 title: Changing Plans
 slug: changing-plans
+category: Work
 draft: false
 pubDate: 2025-08-03
 description: Changing Plans reflects on adapting to new circumstances, embracing flexibility, and finding motivation when life’s original path shifts, offering insights on personal growth and resilience.

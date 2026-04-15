@@ -1,6 +1,7 @@
 ---
 title: Late Start
 slug: late-start
+category: Rest
 draft: false
 pubDate: 2025-08-07
 description: Late Start examines the challenges and opportunities of beginning the day later than planned, emphasizing the importance of adaptability, self-compassion, and making the most of each moment.

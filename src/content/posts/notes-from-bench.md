@@ -1,6 +1,7 @@
 ---
 title: Bench Notes
 slug: notes-from-bench
+category: Rest
 draft: false
 pubDate: 2025-08-11
 description: Bench Notes offers thoughtful reflections inspired by quiet moments on a bench, considering the value of stillness, observation, and the insights gained from everyday surroundings.

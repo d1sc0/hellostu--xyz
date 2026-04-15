@@ -11,6 +11,7 @@ const posts = defineCollection({
     description: z.string(),
     draft: z.boolean().optional(),
     tags: z.array(z.string()).optional(),
+    category: z.enum(['Work', 'Rest', 'Play']),
   }),
 });
 
@@ -19,6 +20,7 @@ const pages = defineCollection({
   schema: z.object({
     title: z.string(),
     slug: z.string(),
+    pubDate: z.date().optional(),
     description: z.string().optional(),
     body: z.string().optional(),
   }),

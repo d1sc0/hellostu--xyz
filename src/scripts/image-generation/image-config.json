@@ -3,15 +3,15 @@
     "templatePath": "src/scripts/image-generation/preview-image-template.html",
     "fallbackBgPath": "src/scripts/image-generation/preview-background.png",
     "outputDir": "public/generated_preview_images",
-    "siteTitle": "BLOG POST",
+    "siteTitle": "HelloStu",
     "bgStyle": "filter: opacity(0.6);"
   },
   "og": {
     "templatePath": "src/scripts/image-generation/social-image-template.html",
     "fallbackBgPath": "src/scripts/image-generation/og-background.png",
     "outputDir": "public/generated_social_images",
-    "siteTitle": "BLOG POST",
+    "siteTitle": "HelloStu",
     "bgStyle": "filter: opacity(0.6);"
   },
-  "siteUrl": "https://www.yoursite.com"
+  "siteUrl": "https://hellostu.xyz"
 }

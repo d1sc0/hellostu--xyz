@@ -1,6 +1,6 @@
-# Upstairs Downstairs Podcast
+# Hello Stu v2.0
 
-A modern, white-labeled Astro v6 site for blog posts or podcasts, with modular styles and a neutral, customizable palette.
+A new build of my personal website, blog and digital garden.
 
 ## Features
 

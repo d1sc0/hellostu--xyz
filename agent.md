@@ -1,4 +1,9 @@
-# Agent Notes for disco-astro-starter
+# Agent Notes for hellostu--xyz
+
+## Markdown Frontmatter Convention
+
+- Always preserve both opening and closing --- lines in markdown frontmatter. Never remove or alter them when editing content files.
+- When adding fields to frontmatter, insert them in the correct YAML position (e.g., after slug) and maintain indentation and structure.
 
 ## Project Overview
 

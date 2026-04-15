@@ -1,6 +1,7 @@
 ---
 title: Saving Ryan
 slug: saving-ryan
+category: Play
 draft: false
 pubDate: 2026-04-12T02:31:00
 description: Saving Ryan tells a story of teamwork and overcoming challenges, illustrating how collaboration, determination, and support can lead to success in difficult situations.
