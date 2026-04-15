@@ -1,0 +1,33 @@
+/* General home page styles styles including grid */
+
+.homepage__latest {
+  margin-bottom: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'player'
+    'subscribe';
+  grid-gap: 2rem;
+  padding: 2.5rem 2rem;
+  background: var(--color-surface);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px 0 var(--color-muted);
+  border: 1px solid var(--color-border);
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  section.home {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: 'player subscribe';
+    grid-gap: 2rem;
+  }
+  section.latest-episode-player {
+    grid-area: player;
+  }
+  section.subscribe-links {
+    grid-area: subscribe;
+  }
+}

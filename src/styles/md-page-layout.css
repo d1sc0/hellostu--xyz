@@ -1,0 +1,14 @@
+/* styles for markdown pages (not posts) */
+.page-layout {
+  margin-bottom: 4rem;
+  margin-top: 0rem;
+}
+
+.page-layout__title {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.page-layout__body {
+}

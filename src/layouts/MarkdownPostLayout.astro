@@ -1,0 +1,55 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import '../styles/md-post-layout.css';
+const { frontmatter, prevpost, nextpost, slug } = Astro.props;
+const dateOptions = {
+  year: 'numeric' as const,
+  month: 'long' as const,
+  day: 'numeric' as const,
+};
+const formattedPublishDate = new Date(frontmatter.pubDate).toLocaleDateString(
+  'en-UK',
+  dateOptions,
+);
+---
+
+<BaseLayout frontmatter={frontmatter} prevpost={prevpost} nextpost={nextpost}>
+  <section class="post-layout content-padding">
+    <h2 class="post-layout__title">{frontmatter.title}</h2>
+    <p class="post-layout__date">Published: {formattedPublishDate}</p>
+    {
+      Array.isArray(frontmatter.tags) && frontmatter.tags.length > 0 ? (
+        <div
+          class="post-layout__tags"
+          style="margin-bottom: 1em; display: flex; flex-wrap: wrap; gap: 0.5em;"
+        >
+          {frontmatter.tags.map(tag => (
+            <a
+              href={`/tags/${encodeURIComponent(tag.toLowerCase())}/`}
+              class="post-layout__tag-chip"
+              style="
+              display: inline-block;
+              background: #f0f0f0;
+              color: #333;
+              border-radius: 999px;
+              padding: 0.2em 0.9em 0.2em 0.7em;
+              font-size: 0.95em;
+              text-decoration: none;
+              border: 1px solid #e0e0e0;
+              transition: background 0.2s, color 0.2s;
+              margin: 0;
+            "
+              on:mouseover="this.style.background='#e0e0e0';this.style.color='#000'"
+              on:mouseout="this.style.background='#f0f0f0';this.style.color='#333'"
+            >
+              #{tag}
+            </a>
+          ))}
+        </div>
+      ) : null
+    }
+    <div class="post-layout__content">
+      <slot />
+    </div>
+  </section>
+</BaseLayout>

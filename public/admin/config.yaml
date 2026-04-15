@@ -1,0 +1,68 @@
+backend:
+  name: github
+  branch: main
+  repo: d1sc0/disco-astro-starter
+
+media_folder: 'src/assets/uploaded_images'
+
+collections:
+  - name: 'posts'
+    label: 'Posts'
+    folder: 'src/content/posts'
+    create: true
+    slug: '{{slug}}'
+    extension: 'md'
+    format: 'yaml-frontmatter'
+    media_folder_relative: true
+    sortable_fields: ['title', 'pubDate']
+    default_sort:
+      - { field: pubDate, direction: descending }
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Draft', name: 'draft', widget: 'boolean' }
+      - { label: 'Date', name: 'pubDate', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Meta Preview', name: 'description', widget: 'text' }
+      - { label: 'Tags', name: 'tags', widget: 'list' }
+
+  - name: 'pages'
+    label: 'Pages'
+    folder: 'src/content/pages'
+    create: false
+    slug: '{{slug}}'
+    extension: 'md'
+    format: 'yaml-frontmatter'
+    media_folder_relative: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'navigation'
+    label: 'Main Site Menu'
+    files:
+      - file: 'src/content/navigation.json'
+        label: 'Main Site Menu'
+        name: 'main_menu'
+        fields:
+          - label: 'Links'
+            name: 'links'
+            widget: 'list'
+            fields:
+              - { label: 'Label', name: 'label', widget: 'string' }
+              - { label: 'URL', name: 'url', widget: 'string' }
+  - name: 'footer_socials'
+    label: 'Footer Socials'
+    files:
+      - file: 'src/content/footer-links.json'
+        label: 'Footer Social Links'
+        name: 'footer_links'
+        fields:
+          - label: 'Links'
+            name: 'links'
+            widget: 'list'
+            fields:
+              - { label: 'Label', name: 'label', widget: 'string' }
+              - { label: 'URL', name: 'url', widget: 'string' }
+              - { label: 'Icon', name: 'icon', widget: 'string' }
+              - { label: 'Aria Label', name: 'aria', widget: 'string' }

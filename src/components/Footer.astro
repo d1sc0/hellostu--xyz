@@ -1,0 +1,31 @@
+---
+import '../styles/footer.css';
+import { Icon } from 'astro-icon/components';
+import footerLinks from '../content/footer-links.json';
+---
+
+<footer id="footer">
+  <section class="footer content-padding">
+    <p class="footer__copyright">
+      All content shared under <a
+        href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+        >Creative Commons License CC-BY-CN-SA</a
+      > by Stuart Mackenzie
+    </p>
+    <div class="footer__social">
+      {
+        Array.isArray(footerLinks.links) &&
+          footerLinks.links.map(link => (
+            <a
+              href={link.url}
+              class="footer__social-icon"
+              rel="me"
+              aria-label={link.aria}
+            >
+              <Icon name={link.icon} />
+            </a>
+          ))
+      }
+    </div>
+  </section>
+</footer>

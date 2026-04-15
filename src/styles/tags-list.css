@@ -1,0 +1,59 @@
+.tagged-posts-list {
+  column-gap: 2em;
+  margin: 1.5em 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.all-tags-list {
+  columns: 2;
+  column-gap: 2em;
+}
+
+.post-layout__tag-chip {
+  display: inline-block;
+  background: #f0f0f0;
+  color: #333;
+  border-radius: 999px;
+  padding: 0.2em 0.9em 0.2em 0.7em;
+  font-size: 0.95em;
+  text-decoration: none;
+  border: 1px solid #e0e0e0;
+  transition:
+    background 0.2s,
+    color 0.2s;
+  margin: 0;
+  margin-bottom:0.5em;
+}
+
+.post-layout__tag-chip:hover {
+  background: #e0e0e0;
+  color: #000;
+}
+
+.tag-filter-input {
+  display: block;
+  width: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  padding: 0.5em 1em;
+  font-size: 1.1em;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.tag-page {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .tag-filter-input {
+    width: 40%;
+    display: block;
+  }
+
+  .all-tags-list {
+    columns: 3;
+  }
+}

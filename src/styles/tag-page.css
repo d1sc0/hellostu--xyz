@@ -1,0 +1,36 @@
+.tag-page {
+  margin: 0 auto;
+}
+
+.tag-title {
+  color: #0077cc;
+  font-weight: 600;
+}
+
+.tagged-posts-list {
+  column-gap: 2em;
+  margin: 1.5em 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tagged-posts-list li {
+  margin-bottom: 1.1em;
+  font-size: 1.1em;
+}
+
+.tagged-posts-list a {
+  color: #222;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.tagged-posts-list a:hover {
+  color: #0077cc;
+}
+
+.tagged-posts-list span {
+  color: #888;
+  font-size: 0.95em;
+}

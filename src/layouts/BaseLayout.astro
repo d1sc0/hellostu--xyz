@@ -1,0 +1,44 @@
+---
+import Head from '../components/Head.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+const { frontmatter, pageMeta, prevpost, nextpost } = Astro.props;
+---
+
+<html lang="en">
+  <Head frontmatter={frontmatter} pageMeta={pageMeta} />
+  <body>
+    <div class="container">
+      <Navigation />
+      <main>
+        <slot />
+        <p class="toplink content-padding">
+          <a href="#top">[Back to top]</a>
+        </p>
+      </main>
+      <section class="postNav">
+        {
+          prevpost && (
+            <a class="nav-btn prevNav" href={`/posts/${prevpost.id}/`}>
+              &lt;&lt; {prevpost.data.title}
+            </a>
+          )
+        }
+        {!nextpost && prevpost && <span class="nav-btn nextNav">(｡◕‿‿◕｡)</span>}
+        {!prevpost && nextpost && <span class="nav-btn prevNav">(｡◕‿‿◕｡)</span>}
+        {
+          nextpost && (
+            <a class="nav-btn nextNav" href={`/posts/${nextpost.id}/`}>
+              {nextpost.data.title} &gt;&gt;
+            </a>
+          )
+        }
+      </section>
+      <Footer />
+      <script>
+        import '../scripts/menu.js';
+      </script>
+    </div>
+  </body>
+</html>

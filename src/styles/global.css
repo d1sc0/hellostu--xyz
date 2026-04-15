@@ -1,0 +1,134 @@
+/*  global styles to reset default values */
+
+html {
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Neutral, web-friendly palette */
+  --color-bg: #f7f7f8;
+  --color-surface: #ffffff;
+  --color-border: #e0e0e0;
+  --color-text: #232323;
+  --color-text-light: #666666;
+  --color-primary: #232323;
+  --color-primary-light: #eaf1f8;
+  --color-accent: #b3c0ce;
+  --color-link: #2563eb;
+  --color-link-hover: #174ea6;
+  --color-success: #4caf50;
+  --color-warning: #ffb300;
+  --color-danger: #e53935;
+  --color-muted: #f0f0f0;
+}
+
+body {
+  position: relative;
+  background-color: var(--cream);
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--graphite);
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+p,
+li {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1.1rem;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  padding: 0.5rem;
+}
+
+.content-padding {
+  padding-top: 1rem;
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+}
+
+p.toplink {
+  text-align: center;
+}
+
+img[src*='FULL'],
+.imageFull {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0rem;
+  border-radius: 0.3rem;
+}
+
+img[src*='RIGHT'] {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+}
+
+img[src*='LEFT'] {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  img[src*='RIGHT'] {
+    width: 50%;
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  img[src*='LEFT'] {
+    width: 50%;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  .content-padding {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

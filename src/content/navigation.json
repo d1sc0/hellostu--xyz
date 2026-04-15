@@ -1,0 +1,9 @@
+{
+  "links": [
+    { "label": "About", "url": "/about" },
+    { "label": "Posts", "url": "/posts" },
+    { "label": "Tags", "url": "/tags/" },
+    { "label": "Contact", "url": "/contact" },
+    { "label": "RSS", "url": "/rss.xml" }
+  ]
+}

@@ -1,0 +1,61 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import '../../styles/tag-page.css';
+
+const { tag } = Astro.params as { tag: string };
+const posts = (await getCollection('posts')) as CollectionEntry<'posts'>[];
+const tagLower = tag.toLowerCase();
+const filteredPosts = posts
+  .filter(
+    (post: CollectionEntry<'posts'>) =>
+      Array.isArray(post.data.tags) &&
+      post.data.tags.some((t: string) => t.toLowerCase() === tagLower),
+  )
+  .sort((a: CollectionEntry<'posts'>, b: CollectionEntry<'posts'>) => {
+    const dateA = new Date(a.data.pubDate).getTime();
+    const dateB = new Date(b.data.pubDate).getTime();
+    return dateB - dateA;
+  });
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  const tagSet = new Set();
+  posts.forEach((post: CollectionEntry<'posts'>) => {
+    if (Array.isArray(post.data.tags)) {
+      post.data.tags.forEach((tag: string) => tagSet.add(tag));
+    }
+  });
+  return Array.from(tagSet).map(tag => ({ params: { tag } }));
+}
+---
+
+<BaseLayout frontmatter={{ title: `Posts tagged #${tag}` }}>
+  <section class="tag-page content-padding">
+    <h2>Posts tagged <span class="tag-title">#{tag}</span></h2>
+    {
+      filteredPosts.length === 0 ? (
+        <p>No posts found for this tag.</p>
+      ) : (
+        <ul class="tagged-posts-list">
+          {filteredPosts.map(post => (
+            <li>
+              <a href={post.id ? `/posts/${post.id}/` : '#'}>
+                {post.data.title}
+              </a>
+              <span>
+                (
+                {new Date(post.data.pubDate).toLocaleDateString('en-UK', {
+                  year: 'numeric',
+                  month: 'short',
+                  day: 'numeric',
+                })}
+                )
+              </span>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </section>
+</BaseLayout>

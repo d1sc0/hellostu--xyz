@@ -1,0 +1,16 @@
+---
+import MarkdownPageLayout from '../layouts/MarkdownPageLayout.astro';
+import { getEntry, render } from 'astro:content';
+
+const about = await getEntry('pages', 'about');
+const { Content } = about ? await render(about) : { Content: null };
+const pageMeta = {
+  title: about?.data.title,
+  description: about?.data.description,
+  imageUrl: '/default-social.png',
+};
+---
+
+<MarkdownPageLayout frontmatter={about?.data} pageMeta={pageMeta}>
+  {Content && <Content />}
+</MarkdownPageLayout>

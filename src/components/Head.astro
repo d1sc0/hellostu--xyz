@@ -1,0 +1,76 @@
+---
+import { SEO } from 'astro-seo';
+const { frontmatter, pageMeta } = Astro.props;
+import { AstroFont } from 'astro-font';
+const siteURL = Astro.site?.toString() || '';
+
+// Determine the slug/id for the OG image (prefer id, fallback to slug, fallback to url path)
+const urlPath = Astro.url?.pathname?.replace(/\/$/, '') || '';
+const urlId =
+  frontmatter?.id || frontmatter?.slug || urlPath.split('/').pop() || 'index';
+const ogImage = `${siteURL}/generated_social_images/${urlId}.png`;
+
+const title =
+  pageMeta?.title ||
+  (frontmatter?.title ? `Your Site | ${frontmatter.title}` : 'Your Site');
+const description = frontmatter?.description || pageMeta?.description || '';
+---
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content={Astro.generator} />
+  <AstroFont
+    config={[
+      {
+        src: [],
+        name: 'Manrope',
+        // Google Fonts URL
+        googleFontsURL:
+          'https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap',
+        preload: true,
+        display: 'swap',
+        selector: 'body',
+        fallback: 'sans-serif',
+      },
+    ]}
+  />
+  <AstroFont
+    config={[
+      {
+        src: [],
+        name: 'Inter',
+        // Google Fonts URL
+        googleFontsURL:
+          'https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap',
+        preload: true,
+        display: 'swap',
+        selector: 'body',
+        fallback: 'sans-serif',
+      },
+    ]}
+  />
+  <SEO
+    title={title}
+    description={description}
+    openGraph={{
+      basic: {
+        title: title,
+        type: frontmatter !== undefined ? 'article' : 'website',
+        image: ogImage,
+      },
+      optional: {
+        description: description,
+      },
+      article: { authors: ['Stuart Mackenzie'] },
+    }}
+    twitter={{
+      creator: '@_disco',
+      card: 'summary_large_image',
+      title: title,
+      image: ogImage,
+      description: description,
+    }}
+  />
+</head>
