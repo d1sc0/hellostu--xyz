@@ -7,12 +7,12 @@
 }
 
 .social-links__icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-left: 0.8rem;
   padding-right: 0.8rem;
-  color: var(--color-primary);
+  color: var(--color-link);
   transition: color 0.2s;
 }
 .social-links__icon:hover {
-  color: var(--color-link-hover);
+  color: var(--color-accent);
 }

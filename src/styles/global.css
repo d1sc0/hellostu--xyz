@@ -11,33 +11,25 @@ html {
 }
 
 :root {
-  /* Neutral, web-friendly palette */
-  --color-bg: #f7f7f8;
-  --color-surface: #ffffff;
-  --color-border: #e0e0e0;
-  --color-text: #232323;
-  --color-text-light: #666666;
-  --color-primary: #232323;
-  --color-primary-light: #eaf1f8;
-  --color-accent: #b3c0ce;
-  --color-link: #2563eb;
-  --color-link-hover: #174ea6;
-  --color-success: #4caf50;
-  --color-warning: #ffb300;
-  --color-danger: #e53935;
-  --color-muted: #f0f0f0;
+  /* Strict custom palette */
+  /* Strict custom palette */
+  --color-page: #cbeef3;
+  --color-text: #32021f;
+  --color-link: #4488db;
+  --color-line: #f7f3e3;
+  --color-accent: #dd2d4a;
 }
 
 body {
   position: relative;
-  background-color: var(--cream);
+  background-color: var(--color-page);
   font-family: 'Lexend', sans-serif;
   font-optical-sizing: auto;
   font-weight: 350;
   font-style: normal;
   font-size: 1rem;
   line-height: 1.6;
-  color: var(--graphite);
+  color: var(--color-text);
   margin: 0 auto;
   max-width: 1024px;
 }
@@ -67,6 +59,14 @@ h5,
 h6 {
   font-size: 1.1rem;
   font-weight: 700;
+}
+
+a {
+  color: var(--color-link);
+  text-underline-offset: 2px;
+}
+a:hover {
+  color: var(--color-accent);
 }
 
 .container {

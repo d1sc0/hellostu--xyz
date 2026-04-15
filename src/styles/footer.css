@@ -2,24 +2,21 @@
 .footer {
   text-align: center;
   margin-bottom: 3rem;
-  background: var(--color-surface);
-  border-top: 1px solid var(--color-border);
-  color: var(--color-text-light);
+  border-top: none;
+  color: var(--color-text);
 }
 
 .footer a {
   text-decoration: none;
-  color: var(--color-primary);
+  color: var(--color-link);
   transition: color 0.2s;
 }
 .footer a:hover {
-  color: var(--color-link-hover);
+  color: var(--color-accent);
 }
 
 .footer__copyright {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  color: var(--color-text-light);
+  color: var(--color-text);
 }
 
 .footer ul {

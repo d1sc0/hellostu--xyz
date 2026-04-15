@@ -3,7 +3,7 @@
 }
 
 .tag-title {
-  color: #0077cc;
+  color: var(--color-link);
   font-weight: 600;
 }
 
@@ -16,21 +16,18 @@
 
 .tagged-posts-list li {
   margin-bottom: 1.1em;
-  font-size: 1.1em;
 }
 
 .tagged-posts-list a {
-  color: #222;
+  color: var(--color-text);
   text-decoration: underline;
-  font-weight: 500;
   transition: color 0.2s;
 }
 
 .tagged-posts-list a:hover {
-  color: #0077cc;
+  color: var(--color-accent);
 }
 
 .tagged-posts-list span {
-  color: #888;
-  font-size: 0.95em;
+  color: var(--color-accent);
 }
