@@ -100,8 +100,8 @@ collections:
               - { label: 'Label', name: 'label', widget: 'string' }
               - { label: 'URL', name: 'url', widget: 'string' }
 
-- name: 'navigation_footer'
-    label: 'Main Site Menu'
+  - name: 'navigation_footer'
+    label: 'Footer Menu'
     files:
       - file: 'src/content/footer-nav.json'
         label: 'Footer Menu'

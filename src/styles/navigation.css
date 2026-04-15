@@ -16,9 +16,8 @@ nav.main-nav {
 
 nav.main-nav .brand a {
   color: var(--color-primary);
+  font-family: 'gochi hand', cursive;
   text-decoration: none;
-  font-size: 2.5rem;
-  font-family: 'Inter', sans-serif;
 }
 
 nav.main-nav .brand {

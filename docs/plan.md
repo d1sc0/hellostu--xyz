@@ -26,10 +26,10 @@
 
 ## Category Pages
 
-- [ ] Description (mdx)
+- [x] Structure completed so leading content can be written (mdx)
 - [ ] Paginated post list component (reusable)
 - [ ] Show tags, published date (MMM YY), title (no excerpt)
-- [ ] Tag page in footer nav
+- [x] Tag page in footer nav
 
 ## Features
 

@@ -1,44 +1,49 @@
 # Hello Stu v2.0
 
-A new build of my personal website, blog and digital garden.
-
-## Features
-
-- Astro v6 with Content Layer API for posts and some pages
-- Sveltia CMS (Netlify CMS compatible) for easy editing
-- Automated Open Graph (OG) and preview image generation (Node + Puppeteer)
+- Astro v6 with Content Layer API for posts and pages (supports .md and .mdx)
+- Sveltia CMS (Netlify CMS compatible) for easy editing of posts, pages, navigation, and social links
+- Automated Open Graph (OG) image generation (Node + Puppeteer)
 - Modular CSS with PostCSS (postcss-preset-env, autoprefixer)
-- BEM-style class naming for clarity and maintainability
 - Inter font used everywhere for a clean, modern look
 - Robust static asset/image handling for reliable deployment
-
----
-
-## Quick Start
+- Fixes image paths in Markdown/MDX files (uploaded via Sveltia CMS)
+- Ensures image filenames in Markdown/MDX end with \_RIGHT, \_LEFT, or \_FULL (adds \_FULL if missing) and renames the actual image file to match. These are used for CSS styling of images in markdown.
+- Renames Markdown/MDX files to match their `slug` frontmatter (if present)
+- Generates OG images for all posts (Puppeteer)
+- Preview image generation is available but not run by default
 
 1. **Install dependencies:**
-   ```
    npm install
+
    ```
+
+   ```
+
 2. **Start the dev server:**
-
-   ```
+   Use `/admin/` (Sveltia CMS) to add/edit posts, pages (including MDX), navigation, and social/footer links.
+   All Markdown/MDX and image path corrections are automated (see below).
    npm run dev
-   ```
-
    - This runs all prebuild automation, then starts Astro.
 
+- **No manual Markdown/MDX or asset path edits needed after CMS use**
+
 3. **Edit content:**
-   - Use `/admin/` (Sveltia CMS) to add/edit posts, pages, navigation, and footer links.
    - All Markdown and image path corrections are automated (see below).
 4. **Build for production:**
 
-   ```
-   npm run build
-   ```
+- Full MDX support for posts and pages (including component imports)
+- Social links, navigation, and footer links managed via CMS and JSON
+- Modular, mobile-first CSS with a single desktop breakpoint
+- Automated migration scripts for content and images
+- Improved content structure: Work, Rest, Play categories
+- All content and config files are CMS-editable where possible
 
-   - Runs Astro production build.
-   - If you want to regenerate OG/preview images first, run `npm run prebuild` (or `npm run prebuild:clean`) before `npm run build`.
+  ```
+  npm run build
+  ```
+
+  - Runs Astro production build.
+  - If you want to regenerate OG/preview images first, run `npm run prebuild` (or `npm run prebuild:clean`) before `npm run build`.
 
 ---
 

@@ -1,7 +1,7 @@
 /*  global styles to reset default values */
 
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 *,
@@ -31,49 +31,42 @@ html {
 body {
   position: relative;
   background-color: var(--cream);
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-family: 'Lexend', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
   font-size: 1rem;
   line-height: 1.6;
   color: var(--graphite);
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1024px;
 }
 
 p,
 li {
-  font-size: 1rem;
   line-height: 1.6;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
 h1 {
-  font-size: 2.5rem;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 1rem;
 }
 
 h2 {
   font-size: 2rem;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-weight: 700;
-  margin-bottom: 0.75rem;
 }
 
 h3 {
-  font-size: 1.4rem;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
 }
 
 h4,
 h5,
 h6 {
   font-size: 1.1rem;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-weight: 700;
-  margin-bottom: 0.5rem;
 }
 
 .container {
