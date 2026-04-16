@@ -12,5 +12,7 @@ const pageMeta = {
 ---
 
 <MarkdownPageLayout frontmatter={play?.data} pageMeta={pageMeta}>
-  {Content && <Content />}
+  <div class="play-page-content">
+    {Content && <Content />}
+  </div>
 </MarkdownPageLayout>

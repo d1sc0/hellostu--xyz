@@ -44,11 +44,11 @@
 
 ## Styles
 
-- [ ] 3-4 color palette (soft pastel backgrounds, good contrast)
-- [ ] Gochi Hand for site title, Lexend for body
+- [x] 3-4 color palette (soft pastel backgrounds, good contrast)
+- [x] Gochi Hand for site title, Lexend for body
 - [ ] Rounded corners on images
-- [ ] Simple, less framed look
-- [ ] Main width ~960px desktop
+- [x] Simple, less framed look
+- [x] Main width ~960px desktop
 - [ ] Dates in MMM YY format for lists
 
 ---

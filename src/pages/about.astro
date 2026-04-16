@@ -12,5 +12,7 @@ const pageMeta = {
 ---
 
 <MarkdownPageLayout frontmatter={about?.data} pageMeta={pageMeta}>
-  {Content && <Content />}
+  <div class="about-page-content">
+    {Content && <Content />}
+  </div>
 </MarkdownPageLayout>

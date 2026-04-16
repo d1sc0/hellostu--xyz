@@ -11,5 +11,7 @@ const pageMeta = {
 ---
 
 <MarkdownPageLayout frontmatter={notFound?.data} pageMeta={pageMeta}>
-  {Content && <Content />}
+  <div class="notFound-page-content">
+    {Content && <Content />}
+  </div>
 </MarkdownPageLayout>

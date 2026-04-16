@@ -12,5 +12,7 @@ const pageMeta = {
 ---
 
 <MarkdownPageLayout frontmatter={contact?.data} pageMeta={pageMeta}>
-  {Content && <Content />}
+  <div class="contact-page-content">
+    {Content && <Content />}
+  </div>
 </MarkdownPageLayout>
