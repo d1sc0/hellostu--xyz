@@ -13,8 +13,9 @@ This project uses Sveltia CMS (Netlify CMS compatible) for content editing.
 - Main content folder: `src/content/posts`
 - Additional editable content:
     - `src/content/pages`
-    - `src/content/navigation.json`
-    - `src/content/footer-links.json`
+    - `src/content/main-nav.json`
+    - `src/content/footer-nav.json`
+    - `src/content/social-links.json`
 - Post fields: title, slug, draft, pubDate, body, description, tags
 - Sortable by: title, pubDate
 - Default sort: pubDate descending

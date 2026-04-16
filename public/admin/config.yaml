@@ -1,7 +1,7 @@
 backend:
   name: github
   branch: main
-  repo: d1sc0/disco-astro-starter
+  repo: d1sc0/hellostu--xyz
 
 media_folder: 'src/assets/uploaded_images'
 

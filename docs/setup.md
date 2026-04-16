@@ -31,10 +31,16 @@ npm run build
 
 This runs the Astro production build.
 
-To regenerate Open Graph (OG) and preview images before building, run:
+To regenerate Open Graph (OG) images before building, run:
 
 ```
 npm run prebuild
+```
+
+Preview image generation is currently manual:
+
+```bash
+npm run generate:preview
 ```
 
 For a clean regeneration that deletes existing generated images first, run:

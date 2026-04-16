@@ -43,7 +43,8 @@
   ```
 
   - Runs Astro production build.
-  - If you want to regenerate OG/preview images first, run `npm run prebuild` (or `npm run prebuild:clean`) before `npm run build`.
+  - If you want to regenerate OG images first, run `npm run prebuild` (or `npm run prebuild:clean`) before `npm run build`.
+  - Preview image generation is available manually via `npm run generate:preview`.
 
 ---
 
@@ -55,11 +56,11 @@
 
 ## Automation & Workflow
 
-- **Prebuild script** (`npm run prebuild`) runs before `npm run dev` and automates all content and image normalization:
+- **Prebuild script** (`npm run prebuild`) runs before `npm run dev` and automates content normalization plus OG image generation:
   - Fixes image paths in Markdown files (uploaded via Sveltia CMS)
   - Ensures image filenames in Markdown end with \_RIGHT, \_LEFT, or \_FULL (adds \_FULL if missing) and renames the actual image file to match. These are used for CSS stlying of images in markdown.
   - Renames Markdown files to match their `slug` frontmatter (if present)
-  - Generates OG and preview images for all posts (Puppeteer)
+  - Generates OG images for posts (Puppeteer)
 - **No manual Markdown or asset path edits needed after CMS use**
 - **Image templates** use the Inter font (Google Fonts) for consistent, modern rendering
 - **Astro build** (`npm run build`) copies all public assets to dist/ for deployment
@@ -74,7 +75,7 @@ See [docs/styling-naming-conventions.md](docs/styling-naming-conventions.md) for
 
 - `npm run dev` — runs prebuild, then Astro dev server
 - `npm run build` — runs Astro build only
-- `npm run prebuild` — run all pre-deployment/preview automation
+- `npm run prebuild` — run content normalization + OG image generation
 - `npm run prebuild:clean` — clear generated image directories, then run prebuild automation
 - `npm run generate:og` / `npm run generate:preview` — manual image generation
 
@@ -146,7 +147,9 @@ See [agent.md](agent.md) for co-pilot/agent onboarding, automation gotchas, and 
 
 ## Cleaning Generated Images
 
-By default, the deployment workflow runs the prebuild script with the `--clean` flag, which deletes all images in `/public/generated_preview_images` and `/public/generated_social_images` before generating new ones. This ensures that only up-to-date images are present after each build.
+By default, the deployment workflow runs the prebuild script with the `--clean` flag, which deletes all images in `/public/generated_preview_images` and `/public/generated_social_images` before regeneration.
+
+In the current workflow, prebuild regenerates OG social images only. Preview images are cleaned by `--clean` but are only regenerated if you run `npm run generate:preview` manually.
 
 - To manually trigger this cleanup, use:
   ```
