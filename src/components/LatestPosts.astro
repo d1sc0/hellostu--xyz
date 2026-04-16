@@ -1,0 +1,61 @@
+---
+// Usage example:
+// import LatestPosts from '../../components/LatestPosts.astro';
+// <LatestPosts count={4} />
+import { type CollectionEntry, getCollection } from 'astro:content';
+import '../styles/latest-posts.css';
+
+interface Props {
+  count?: number;
+}
+
+const { count = 3 } = Astro.props as Props;
+
+const posts = (await getCollection('posts', ({ data }) => {
+  return import.meta.env.PROD ? data.draft !== true : true;
+})) as CollectionEntry<'posts'>[];
+
+const latestPosts = posts
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, Math.max(0, count));
+---
+
+<section class="latest-posts" aria-labelledby="latest-posts-heading">
+  <h2 id="latest-posts-heading" class="latest-posts__heading">Latest posts</h2>
+
+  {
+    latestPosts.length === 0 ? (
+      <p class="latest-posts__empty">No posts available yet.</p>
+    ) : (
+      <div class="latest-posts__table-wrap">
+        <table class="latest-posts__table">
+          <colgroup>
+            <col class="latest-posts__col--date" />
+            <col class="latest-posts__col--title" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Title</th>
+            </tr>
+          </thead>
+          <tbody>
+            {latestPosts.map(post => (
+              <tr>
+                <td>
+                  {post.data.pubDate.toLocaleDateString('en-GB', {
+                    month: 'short',
+                    year: '2-digit',
+                  })}
+                </td>
+                <td>
+                  <a href={`/posts/${post.id}/`}>{post.data.title}</a>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    )
+  }
+</section>

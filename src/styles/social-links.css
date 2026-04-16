@@ -1,18 +1,45 @@
-/* SocialLinks component styles */
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem 0;
-}
+/*
+  CSS variables are passed inline by src/components/SocialLinks.astro:
+  --social-links-size, --social-links-gap, --social-links-edge-space
+*/
 
 .social-links__icon {
-  font-size: 2rem;
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;
-  color: var(--color-link);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--social-links-size, 1.1rem);
+  height: var(--social-links-size, 1.1rem);
+  color: var(--color-text);
   transition: color 0.2s;
+  vertical-align: text-top;
 }
+
+.social-links__icon + .social-links__icon {
+  margin-left: var(--social-links-gap, 0.5rem);
+}
+
+.social-links__icon--first[data-edge-spacing='before'],
+.social-links__icon--first[data-edge-spacing='both'] {
+  margin-left: var(--social-links-edge-space, 0);
+}
+
+.social-links__icon--last[data-edge-spacing='after'],
+.social-links__icon--last[data-edge-spacing='both'] {
+  margin-right: var(--social-links-edge-space, 0);
+}
+
+.social-links__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
 .social-links__icon:hover {
   color: var(--color-accent);
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .social-links__icon {
+    width: var(--social-links-size, 1.1rem);
+    height: var(--social-links-size, 1.1rem);
+  }
 }

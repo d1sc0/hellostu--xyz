@@ -1,23 +1,53 @@
 ---
-// SocialLinks.astro
-// Props: links (array of { url, icon, aria })
+// Usage example:
+// import SocialLinks from '../../components/SocialLinks.astro';
+// <SocialLinks iconSize="1.25rem" spacing="0.75rem" edgeSpacing="before" edgeSpacingAmount="1rem" icons={["github", "linkedin"]} />
 import { Icon } from 'astro-icon/components';
 import '../styles/social-links.css';
 import socialLinks from '../content/social-links.json';
+
+interface SocialLinkItem {
+  label?: string;
+  url: string;
+  icon: string;
+  aria?: string;
+}
+
+interface Props {
+  iconSize?: string;
+  spacing?: string;
+  edgeSpacing?: 'none' | 'before' | 'after' | 'both';
+  edgeSpacingAmount?: string;
+  icons?: string[];
+}
+
+const {
+  iconSize = '1.1rem',
+  spacing = '0.5rem',
+  edgeSpacing = 'none',
+  edgeSpacingAmount = spacing,
+  icons = [],
+} = Astro.props as Props;
+
+const links: SocialLinkItem[] = Array.isArray(socialLinks.links)
+  ? (socialLinks.links as SocialLinkItem[])
+  : [];
+
+const filteredLinks =
+  icons.length > 0 ? links.filter(link => icons.includes(link.icon)) : links;
 ---
 
-<div class="social-links">
-  {
-    Array.isArray(socialLinks.links) &&
-      socialLinks.links.map(link => (
-        <a
-          href={link.url}
-          class="social-links__icon"
-          rel="me"
-          aria-label={link.aria}
-        >
-          <Icon name={link.icon} />
-        </a>
-      ))
-  }
-</div>
+{
+  filteredLinks.map((link, index) => (
+    <a
+      href={link.url}
+      class={`social-links__icon ${index === 0 ? 'social-links__icon--first' : ''} ${index === filteredLinks.length - 1 ? 'social-links__icon--last' : ''}`}
+      rel="me"
+      aria-label={link.aria ?? `link to ${link.label ?? link.icon}`}
+      data-edge-spacing={edgeSpacing}
+      style={`--social-links-size:${iconSize};--social-links-gap:${spacing};--social-links-edge-space:${edgeSpacingAmount};`}
+    >
+      <Icon name={link.icon} />
+    </a>
+  ))
+}

@@ -1,0 +1,60 @@
+---
+// Usage example:
+// import CategoryCards from '../../components/CategoryCards.astro';
+// <CategoryCards />
+import { getEntry } from 'astro:content';
+import '../styles/category-cards.css';
+
+const work = await getEntry('pages', 'work');
+const rest = await getEntry('pages', 'rest');
+const play = await getEntry('pages', 'play');
+
+const categories = [
+  {
+    label: 'Work',
+    slug: 'work',
+    description: work?.data.description,
+    href: '/work/',
+  },
+  {
+    label: 'Rest',
+    slug: 'rest',
+    description: rest?.data.description,
+    href: '/rest/',
+  },
+  {
+    label: 'Play',
+    slug: 'play',
+    description: play?.data.description,
+    href: '/play/',
+  },
+];
+---
+
+<section class="category-cards" aria-labelledby="category-cards-heading">
+  <h2 id="category-cards-heading" class="category-cards__heading">
+    Categories
+  </h2>
+
+  <div class="category-cards__grid">
+    {
+      categories.map(category => (
+        <article class="category-cards__card">
+          <div class="category-cards__card-media" aria-hidden="true">
+            <span class="category-cards__media-label">Media area</span>
+          </div>
+
+          <div class="category-cards__card-body">
+            <h4 class="category-cards__card-title">{category.label}</h4>
+            <p class="category-cards__card-description">
+              {category.description}
+            </p>
+            <a class="category-cards__card-link" href={category.href}>
+              Read more
+            </a>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</section>

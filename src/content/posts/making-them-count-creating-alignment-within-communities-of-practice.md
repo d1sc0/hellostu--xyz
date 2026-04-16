@@ -1,5 +1,5 @@
 ---
-title: Making them Count - Creating alignment within Communities of Practice
+title: Creating alignment within Communities of Practice
 draft: false
 slug: making-them-count-creating-alignment-within-communities-of-practice
 category: Work
