@@ -10,6 +10,7 @@
 
 - Monitor for any regressions or new color variables in future changes.
 - Continue with content, automation, or feature work as planned.
+- Create a /posts/ route page for listing all posts (for breadcrumbs and navigation).
 
 ## Recent Work
 

@@ -2,31 +2,51 @@
 // Usage example:
 // import CategoryCards from '../../components/CategoryCards.astro';
 // <CategoryCards />
-import { getEntry } from 'astro:content';
+import { getEntry, getCollection } from 'astro:content';
 import '../styles/category-cards.css';
 
 const work = await getEntry('pages', 'work');
 const rest = await getEntry('pages', 'rest');
 const play = await getEntry('pages', 'play');
 
+// Count posts per category
+const posts = await getCollection('posts');
+const categoryCounts = { Work: 0, Rest: 0, Play: 0 };
+for (const post of posts) {
+  if (post.data.category && categoryCounts[post.data.category] !== undefined) {
+    categoryCounts[post.data.category]++;
+  }
+}
+const totalPosts = Object.values(categoryCounts).reduce((a, b) => a + b, 0);
+
+// Remove any usage of PieChart and SVG injection in the card rendering.
 const categories = [
   {
     label: 'Work',
     slug: 'work',
     description: work?.data.description,
     href: '/work/',
+    count: categoryCounts.Work,
+    color: 'var(--color-accent)',
+    restColor: 'var(--color-line)',
   },
   {
     label: 'Rest',
     slug: 'rest',
     description: rest?.data.description,
     href: '/rest/',
+    count: categoryCounts.Rest,
+    color: 'var(--color-link)',
+    restColor: 'var(--color-line)',
   },
   {
     label: 'Play',
     slug: 'play',
     description: play?.data.description,
     href: '/play/',
+    count: categoryCounts.Play,
+    color: 'var(--color-text)',
+    restColor: 'var(--color-line)',
   },
 ];
 ---
@@ -38,10 +58,30 @@ const categories = [
 
   <div class="category-cards__grid">
     {
-      categories.map(category => (
+      categories.map((category, idx) => (
         <article class="category-cards__card">
           <div class="category-cards__card-media" aria-hidden="true">
-            <span class="category-cards__media-label">Media area</span>
+            {idx === 0 && (
+              <img
+                src="/src/assets/page_images/houseplant1.png"
+                alt="Work category image"
+                class="category-cards__plant-img"
+              />
+            )}
+            {idx === 1 && (
+              <img
+                src="/src/assets/page_images/houseplant2.png"
+                alt=""
+                class="category-cards__plant-img"
+              />
+            )}
+            {idx === 2 && (
+              <img
+                src="/src/assets/page_images/houseplant3.png"
+                alt="Play category image"
+                class="category-cards__plant-img"
+              />
+            )}
           </div>
 
           <div class="category-cards__card-body">

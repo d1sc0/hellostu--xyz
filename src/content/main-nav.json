@@ -2,7 +2,6 @@
   "links": [
     { "label": "Work", "url": "/work" },
     { "label": "Rest", "url": "/rest" },
-    { "label": "Play", "url": "/play" },
-    { "label": "RSS", "url": "/rss.xml" }
+    { "label": "Play", "url": "/play" }
   ]
 }
