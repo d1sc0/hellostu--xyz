@@ -54,6 +54,24 @@
 
 ---
 
+## Known Install Issue (sharp)
+
+On some macOS arm64 setups with a global `libvips` install, `npm install` may fail while building `sharp` from source (for example with `node-gyp`/`NewOrCopy` errors).
+
+Use this workaround to force `sharp` to ignore global `libvips` and use the prebuilt binary:
+
+```bash
+SHARP_IGNORE_GLOBAL_LIBVIPS=1 npm install
+```
+
+If you want this applied for all future shells on your machine, add this to your shell profile:
+
+```bash
+export SHARP_IGNORE_GLOBAL_LIBVIPS=1
+```
+
+---
+
 ## Automation & Workflow
 
 - **Prebuild script** (`npm run prebuild`) runs before `npm run dev` and automates content normalization plus OG image generation:
