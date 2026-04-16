@@ -1,6 +1,7 @@
 ---
 import Head from '../components/Head.astro';
 import Navigation from '../components/Navigation.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 const { frontmatter, pageMeta, prevpost, nextpost } = Astro.props;
@@ -12,6 +13,7 @@ const { frontmatter, pageMeta, prevpost, nextpost } = Astro.props;
     <div class="container">
       <Navigation />
       <main>
+        <Breadcrumbs frontmatter={frontmatter} />
         <slot />
         <p class="toplink content-padding">
           <a href="#top" aria-label="Back to top">

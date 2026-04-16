@@ -1,0 +1,88 @@
+---
+// Usage example:
+// import Breadcrumbs from '../components/Breadcrumbs.astro';
+// <Breadcrumbs frontmatter={frontmatter} />
+import '../styles/breadcrumbs.css';
+
+interface Props {
+  frontmatter?: {
+    title?: string;
+  };
+}
+
+type Crumb = {
+  label: string;
+  href?: string;
+};
+
+const { frontmatter } = Astro.props as Props;
+
+const pathname = Astro.url.pathname;
+const normalizedPath = pathname.replace(/\/+$/, '') || '/';
+const segments = normalizedPath.split('/').filter(Boolean);
+
+const formatSegment = (value: string) =>
+  decodeURIComponent(value)
+    .replace(/[-_]+/g, ' ')
+    .replace(/\b\w/g, char => char.toUpperCase());
+
+const crumbs: Crumb[] = [{ label: 'Home', href: '/' }];
+
+if (segments.length > 0) {
+  let builtPath = '';
+
+  segments.forEach((segment: string, index: number) => {
+    builtPath += `/${segment}`;
+    const isLast = index === segments.length - 1;
+    const first = segments[0];
+
+    let label = formatSegment(segment);
+
+    if (segment === 'tags') {
+      label = 'Tags';
+    }
+
+    if (segment === 'posts') {
+      label = 'Posts';
+    }
+
+    if (isLast && frontmatter?.title && first !== 'tags') {
+      label = frontmatter.title;
+    }
+
+    crumbs.push({
+      label,
+      href: isLast ? undefined : `${builtPath}/`,
+    });
+  });
+}
+
+const showBreadcrumbs = segments.length > 0;
+---
+
+{
+  showBreadcrumbs && (
+    <nav class="breadcrumbs content-padding" aria-label="Breadcrumb">
+      <ol class="breadcrumbs__list">
+        {crumbs.map((crumb, index) => {
+          const isLast = index === crumbs.length - 1;
+
+          return (
+            <li class="breadcrumbs__item">
+              {crumb.href && !isLast ? (
+                <a class="breadcrumbs__link" href={crumb.href}>
+                  {crumb.label}
+                </a>
+              ) : (
+                <span class="breadcrumbs__current" aria-current="page">
+                  {crumb.label}
+                </span>
+              )}
+              {!isLast && <span class="breadcrumbs__sep">&gt;</span>}
+            </li>
+          );
+        })}
+      </ol>
+    </nav>
+  )
+}
