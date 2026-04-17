@@ -39,20 +39,45 @@ import navLinks from '../content/main-nav.json';
       aria-expanded="false"
       aria-label="main menu"
     >
-      <ul>
-        {
-          Array.isArray(navLinks.links) &&
-            navLinks.links.map(
-              link =>
-                !link.label?.startsWith('#') && (
-                  <li>
-                    <a href={link.url}>{link.label}</a>
-                  </li>
-                ),
-            )
-        }
-      </ul>
+      <div class="nav-lists-row">
+        <ul class="main-links">
+          {
+            Array.isArray(navLinks.links) &&
+              navLinks.links
+                .filter(link => !link.icon)
+                .map(
+                  link =>
+                    !link.label?.startsWith('#') && (
+                      <li>
+                        <a href={link.url}>{link.label}</a>
+                      </li>
+                    ),
+                )
+          }
+        </ul>
+        <ul class="icon-links">
+          {
+            Array.isArray(navLinks.links) &&
+              navLinks.links
+                .filter(link => link.icon)
+                .map(
+                  link =>
+                    !link.label?.startsWith('#') && (
+                      <li>
+                        <a href={link.url} aria-label={link.label}>
+                          <img
+                            src={`/src/assets/icons/${link.icon}`}
+                            alt={link.label}
+                            class="nav-icon"
+                          />
+                        </a>
+                      </li>
+                    ),
+                )
+          }
+        </ul>
+      </div>
+      <!-- end nav -->
     </div>
-    <!-- end nav -->
   </nav>
 </header>

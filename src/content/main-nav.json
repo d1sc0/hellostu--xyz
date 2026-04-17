@@ -2,6 +2,9 @@
   "links": [
     { "label": "Work", "url": "/work" },
     { "label": "Rest", "url": "/rest" },
-    { "label": "Play", "url": "/play" }
+    { "label": "Play", "url": "/play" },
+    { "label": "RSS", "url": "/rss.xml", "icon": "rss.svg" },
+    { "label": "Contact", "url": "/contact", "icon": "envelope.svg" },
+    { "label": "Dark Mode", "url": "#", "icon": "moon.svg" }
   ]
 }

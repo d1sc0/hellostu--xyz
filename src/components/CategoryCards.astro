@@ -60,29 +60,12 @@ const categories = [
     {
       categories.map((category, idx) => (
         <article class="category-cards__card">
-          <div class="category-cards__card-media" aria-hidden="true">
-            {idx === 0 && (
-              <img
-                src="/src/assets/page_images/houseplant1.png"
-                alt="Work category image"
-                class="category-cards__plant-img"
-              />
-            )}
-            {idx === 1 && (
-              <img
-                src="/src/assets/page_images/houseplant2.png"
-                alt=""
-                class="category-cards__plant-img"
-              />
-            )}
-            {idx === 2 && (
-              <img
-                src="/src/assets/page_images/houseplant3.png"
-                alt="Play category image"
-                class="category-cards__plant-img"
-              />
-            )}
-          </div>
+          <a
+            class={`category-cards__card-media category-cards__plant-link plant--${category.slug}`}
+            href={category.href}
+            aria-label={`Go to ${category.label} category`}
+            tabIndex="0"
+          />
 
           <div class="category-cards__card-body">
             <h4 class="category-cards__card-title">{category.label}</h4>
