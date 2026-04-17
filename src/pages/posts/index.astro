@@ -1,0 +1,18 @@
+---
+import MarkdownPageLayout from '../../layouts/MarkdownPageLayout.astro';
+import { getEntry, render } from 'astro:content';
+import '../../styles/posts.css';
+const all_posts = await getEntry('pages', 'posts');
+const { Content } = all_posts ? await render(all_posts) : { Content: null };
+const pageMeta = {
+  title: all_posts?.data.title,
+  description: all_posts?.data.description,
+  imageUrl: '/default-social.png',
+};
+---
+
+<MarkdownPageLayout frontmatter={all_posts?.data} pageMeta={pageMeta}>
+  <div class="posts-page-content">
+    {Content && <Content />}
+  </div>
+</MarkdownPageLayout>

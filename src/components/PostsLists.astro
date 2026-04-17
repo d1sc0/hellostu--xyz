@@ -1,19 +1,18 @@
 ---
-// Usage: <CategoryPosts category="Work" />
+// Usage: <PostsLists category="Work" />
 import { type CollectionEntry, getCollection } from 'astro:content';
-import '../styles/category-pages.css';
+import '../styles/posts-lists.css';
 
 interface Props {
-  category: string;
+  category?: string;
 }
 
 const { category } = Astro.props as Props;
 
 const posts = (await getCollection('posts', ({ data }) => {
-  return (
-    data.category === category &&
-    (import.meta.env.PROD ? data.draft !== true : true)
-  );
+  const isDraft = import.meta.env.PROD ? data.draft !== true : true;
+  if (!category) return isDraft;
+  return data.category === category && isDraft;
 })) as CollectionEntry<'posts'>[];
 
 // Group posts by year
@@ -32,41 +31,41 @@ const sortedYears = Object.keys(postsByYear)
   .sort((a, b) => b - a); // Most recent year first
 ---
 
-<section class="category-posts" aria-labelledby="category-posts-heading">
-  <h2 id="category-posts-heading" class="category-posts__heading">
+<section class="posts" aria-labelledby="posts-heading">
+  <h2 id="posts-heading" class="posts__heading">
     {category} Posts
   </h2>
 
   {
     posts.length === 0 ? (
-      <p class="category-posts__empty">No posts in this category yet.</p>
+      <p class="posts__empty">No posts in this category yet.</p>
     ) : (
       sortedYears.map((year, idx) => {
         const isLast = idx === sortedYears.length - 1;
         return (
-          <div class="category-posts__table-wrap" key={year}>
-            <h4 class="category-posts__year">{year}</h4>
-            <div class="category-posts__list">
+          <div class="posts__table-wrap" key={year}>
+            <h4 class="posts__year">{year}</h4>
+            <div class="posts__list">
               {postsByYear[year]
                 .sort(
                   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
                 )
                 .map(post => (
-                  <div class="category-posts__row" key={post.id}>
-                    <div class="category-posts__col category-posts__col--date">
+                  <div class="posts__row" key={post.id}>
+                    <div class="posts__col posts__col--date">
                       {post.data.pubDate.toLocaleDateString('en-GB', {
                         day: '2-digit',
                         month: 'short',
                       })}
                     </div>
-                    <div class="category-posts__col category-posts__col--title">
+                    <div class="posts__col posts__col--title">
                       <a href={`/posts/${post.id}/`}>{post.data.title}</a>
                       {Array.isArray(post.data.tags) &&
                       post.data.tags.length > 0 ? (
-                        <p class="category-posts__tags-row">
+                        <p class="posts__tags-row">
                           {post.data.tags.map(tag => (
                             <a
-                              class="category-posts__tag"
+                              class="posts__tag"
                               key={tag}
                               href={`/tags/${encodeURIComponent(tag.toLowerCase())}/`}
                             >
