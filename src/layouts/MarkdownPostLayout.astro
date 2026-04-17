@@ -16,7 +16,7 @@ const formattedPublishDate = new Date(frontmatter.pubDate).toLocaleDateString(
 <BaseLayout frontmatter={frontmatter} prevpost={prevpost} nextpost={nextpost}>
   <section class="post-layout content-padding">
     <h2 class="post-layout__title">{frontmatter.title}</h2>
-    <p class="post-layout__date">Published: {formattedPublishDate}</p>
+    <div class="post-layout__date">Published: {formattedPublishDate}</div>
     {
       Array.isArray(frontmatter.tags) && frontmatter.tags.length > 0 ? (
         <div class="post-layout__tags">

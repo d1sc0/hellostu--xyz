@@ -1,5 +1,11 @@
 /* CategoryPosts component styles */
-
+.category-image {
+  width: 8rem;
+  height: auto;
+    float: right;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
 .category-posts {
   margin-top: 2rem;
 }
@@ -49,9 +55,9 @@
 .category-posts__tags-row {
   margin: 0.4em 0 0.6em 0;
   font-size: 0.85em;
-  opacity: 0.8;
   line-height: 1.3rem;
 }
+  
 
 .category-posts__tag {
   display: inline;
