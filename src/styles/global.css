@@ -20,6 +20,34 @@ html {
   --color-accent: #dd2d4a;
 }
 
+body.dark-mode {
+  --color-page: #181a1b;
+  --color-text: #f5f5f5;
+  --color-line: #333;
+  --color-link: #8ecae6;
+  --color-accent: #ffb703;
+  background: var(--color-page);
+  color: var(--color-text);
+}
+
+body.dark-mode .nav-icon {
+  filter: invert(1) brightness(1.2);
+}
+
+body.dark-mode .home-page-content img[src*='RIGHT'] {
+  filter: hue-rotate(180deg) invert(1) brightness(0.9);
+}
+
+body.dark-mode .plant--work {
+  filter: invert(1) brightness(1);
+}
+body.dark-mode .plant--rest {
+  filter: invert(1) brightness(1);
+}
+body.dark-mode .plant--play {
+  filter: invert(1) brightness(1);
+}
+
 body {
   position: relative;
   background-color: var(--color-page);

@@ -64,7 +64,16 @@ import navLinks from '../content/main-nav.json';
                   link =>
                     !link.label?.startsWith('#') && (
                       <li>
-                        <a href={link.url} aria-label={link.label}>
+                        <a
+                          href={link.url}
+                          aria-label={link.label}
+                          class="icon-link"
+                          id={
+                            link.icon === 'moon.svg'
+                              ? 'darkmode-toggle'
+                              : undefined
+                          }
+                        >
                           <img
                             src={`/src/assets/icons/${link.icon}`}
                             alt={link.label}
