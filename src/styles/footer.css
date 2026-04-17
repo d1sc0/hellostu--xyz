@@ -16,6 +16,7 @@
 }
 
 .footer__copyright {
+  font-size: 0.8rem;
   color: var(--color-text);
 }
 
@@ -27,4 +28,10 @@
   display: inline;
   border: none;
   padding-right: 15px;
+}
+
+.footer ul li a {
+  text-decoration: dashed underline;
+  text-decoration-skip-ink: auto;
+  text-underline-offset: 7px;
 }
