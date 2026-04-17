@@ -9,6 +9,9 @@ const work = await getEntry('pages', 'work');
 const rest = await getEntry('pages', 'rest');
 const play = await getEntry('pages', 'play');
 
+import plant1 from '../assets/page_images/houseplant1.png';
+import plant2 from '../assets/page_images/houseplant2.png';
+import plant3 from '../assets/page_images/houseplant3.png';
 // Count posts per category
 const posts = await getCollection('posts');
 const categoryCounts = { Work: 0, Rest: 0, Play: 0 };
@@ -17,7 +20,6 @@ for (const post of posts) {
     categoryCounts[post.data.category]++;
   }
 }
-const totalPosts = Object.values(categoryCounts).reduce((a, b) => a + b, 0);
 
 // Remove any usage of PieChart and SVG injection in the card rendering.
 const categories = [
@@ -61,11 +63,17 @@ const categories = [
       categories.map((category, idx) => (
         <article class="category-cards__card">
           <a
-            class={`category-cards__card-media category-cards__plant-link plant--${category.slug}`}
+            class="category-cards__card-media category-cards__plant-link"
             href={category.href}
             aria-label={`Go to ${category.label} category`}
             tabIndex="0"
-          />
+          >
+            <img
+              src={idx === 0 ? plant1.src : idx === 1 ? plant2.src : plant3.src}
+              alt={`${category.label} category image`}
+              class="category-cards__plant-img"
+            />
+          </a>
 
           <div class="category-cards__card-body">
             <h4 class="category-cards__card-title">{category.label}</h4>

@@ -38,13 +38,7 @@ body.dark-mode .home-page-content img[src*='RIGHT'] {
   filter: hue-rotate(180deg) invert(1) brightness(0.9);
 }
 
-body.dark-mode .plant--work {
-  filter: invert(1) brightness(1);
-}
-body.dark-mode .plant--rest {
-  filter: invert(1) brightness(1);
-}
-body.dark-mode .plant--play {
+body.dark-mode .category-cards__plant-img {
   filter: invert(1) brightness(1);
 }
 

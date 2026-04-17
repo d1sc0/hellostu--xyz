@@ -21,8 +21,8 @@
 
 - [ ] Short about excerpt + link to full about page (markdown)
 - [ ] Author/logo SVG component (reusable)
-- [ ] Latest 3 posts (baked into index.astro)
-- [ ] 3 category excerpts linking to category pages (baked into index.astro)
+- [x] Latest 3 posts (baked into index.astro)
+- [x] 3 category excerpts linking to category pages (baked into index.astro)
 
 ## Category Pages
 
@@ -36,10 +36,11 @@
 - [ ] Replace next and previous posts with a related post component
 - [ ] Add a small like (heart) button
 - [ ] Implement comments again maybe
+- [x] Implement Darkmode
 
 ## Navigation
 
-- [ ] MainNav: Work, Rest, Play, Photos (external), RSS (icon), Dark mode (icon)
+- [x] MainNav: Work, Rest, Play, Photos (external), RSS (icon), Dark mode (icon)
 - [ ] FooterNav: About Me (md), Tags, Get in touch (md), Creative Commons
 
 ## Styles

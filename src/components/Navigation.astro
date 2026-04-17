@@ -1,6 +1,7 @@
 ---
 import '../styles/navigation.css';
 import navLinks from '../content/main-nav.json';
+import { Icon } from 'astro-icon/components';
 ---
 
 <header id="top">
@@ -69,16 +70,10 @@ import navLinks from '../content/main-nav.json';
                           aria-label={link.label}
                           class="icon-link"
                           id={
-                            link.icon === 'moon.svg'
-                              ? 'darkmode-toggle'
-                              : undefined
+                            link.icon === 'moon' ? 'darkmode-toggle' : undefined
                           }
                         >
-                          <img
-                            src={`/src/assets/icons/${link.icon}`}
-                            alt={link.label}
-                            class="nav-icon"
-                          />
+                          <Icon name={link.icon} class="nav-icon" />
                         </a>
                       </li>
                     ),

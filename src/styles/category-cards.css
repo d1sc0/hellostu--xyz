@@ -14,21 +14,21 @@
   outline: none;
 }
 
-.plant--work {
-  background-image: url('src/assets/page_images/houseplant1.png');
-}
-.plant--rest {
-  background-image: url('src/assets/page_images/houseplant2.png');
-}
-.plant--play {
-  background-image: url('src/assets/page_images/houseplant3.png');
-}
-
 .category-cards__plant-link:hover,
 .category-cards__plant-link:focus-visible {
   filter: brightness(1.1) saturate(1.2) drop-shadow(0 0 4px var(--color-line));
   box-shadow: 0 0 0 2px var(--color-line);
 }
+
+.category-cards__plant-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 0.5rem;
+  pointer-events: none; /* ensures the link is clickable everywhere */
+}
+
 .category-cards {
   margin-top: 2rem;
 }
@@ -55,13 +55,13 @@
 }
 
 .category-cards__card-media {
-  width: 6rem;
-  height: 6rem;
+  width: 100%;
   min-width: 6rem;
-  min-height: 6rem;
-  border-radius: 0.5rem;
+  height: auto;
+  aspect-ratio: 1 / 1;
   margin-right: 1rem;
-  padding-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.75rem;
   display: block;
 }
 
@@ -87,17 +87,6 @@
 
 .category-cards__card-description {
   margin: 0;
-}
-
-.category-cards__card-media {
-  width: 100%;
-  min-width: 6rem;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 0.75rem;
-  display: block;
 }
 
 .category-cards__card-link {
@@ -130,6 +119,8 @@
     margin-bottom: 1rem;
     border-radius: 0.75rem;
     display: block;
+    outline: none;
+    transition: filter 0.2s;
   }
 
   .category-cards__card-body {

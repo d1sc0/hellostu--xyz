@@ -3,8 +3,8 @@
     { "label": "Work", "url": "/work" },
     { "label": "Rest", "url": "/rest" },
     { "label": "Play", "url": "/play" },
-    { "label": "RSS", "url": "/rss.xml", "icon": "rss.svg" },
-    { "label": "Contact", "url": "/contact", "icon": "envelope.svg" },
-    { "label": "Dark Mode", "url": "#", "icon": "moon.svg" }
+    { "label": "RSS", "url": "/rss.xml", "icon": "rss" },
+    { "label": "Contact", "url": "/contact", "icon": "envelope" },
+    { "label": "Dark Mode", "url": "#", "icon": "moon" }
   ]
 }
