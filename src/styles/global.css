@@ -34,10 +34,6 @@ body.dark-mode .nav-icon {
   color: var(--color-text);
 }
 
-body.dark-mode .home-page-content img[src*='RIGHT'] {
-  filter: hue-rotate(180deg) invert(1) brightness(0.9);
-}
-
 body.dark-mode .category-cards__plant-img,
 body.dark-mode .category-image {
   filter: hue-rotate(196deg) saturate(1.2) brightness(1.4) contrast(1.1);

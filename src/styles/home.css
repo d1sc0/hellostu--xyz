@@ -1,16 +1,25 @@
 /* General home page styles styles including grid */
+:has(> .stuart-logo-light) {
+}
 
-.home-page-content img[src*='RIGHT'] {
+.stuart-logo-light {
   width: 190px;
+  height: auto;
   float: right;
-  margin: 0;
-  padding-left: 1rem;
+  margin-left: 1rem;
+  border-bottom: 2px solid var(--color-line);
+  /*     border-bottom-right-radius: 6rem;
+    border-bottom-left-radius: 6rem; */
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
-  .home-page-content img[src*='RIGHT'] {
+  .stuart-logo-light {
     width: 210px;
-    margin:0
-    padding-left: 1rem;
+    height: auto;
+    float: right;
+    margin-left: 1rem;
+    border-bottom: 2px solid var(--color-line);
+    /*     border-bottom-right-radius: 6rem;
+    border-bottom-left-radius: 6rem; */
   }
 }

@@ -8,8 +8,28 @@ slug: home
 import LatestPosts from '../../components/LatestPosts.astro';
 import CategoryCards from '../../components/CategoryCards.astro';
 import SocialLinks from '../../components/SocialLinks.astro';
+import { Image } from 'astro:assets';
+import light from '../../assets/page_images/stuart-logo-light.png';
 
-![Portrait of Stuart Mackenzie](../../assets/page_images/stuart-simple-logoRIGHT.png)Hello, I'm [Stuart Mackenzie](/about). I spend most of my days working hard to improve and transform public services as a Senior Partner at [TPXimpact](https://tpximpact.com/). Outside of work I'm known for being a [photography nerd](/tags/photography), [occassional podcaster](/tags/podcasts), [amateur web developer](/tags/tech), [keen runner](/tags/running), [regular parkrun volunteer](/tags/parkrun), father to houseplants, [drummer](/tags/drums) and exotic disco dancer! <SocialLinks iconSize="1.15rem" spacing="0.6rem" edgeSpacing="before" edgeSpacingAmount="0.5rem" icons={["linkedin", "instagram", "github"]} />
+<Image
+  src={light}
+  alt="illustration of Stuart Mackenzie"
+  class="stuart-logo-light"
+/>
+Hello, I'm [Stuart Mackenzie](/about). I spend most of my days working hard to
+improve and transform public services as a Senior Partner
+at [TPXimpact](https://tpximpact.com/). Outside of work I'm known for being
+a [photography nerd](/tags/photography), [occassional
+podcaster](/tags/podcasts), [amateur web developer](/tags/tech), [keen
+runner](/tags/running), [regular parkrun volunteer](/tags/parkrun), father to
+houseplants, [drummer](/tags/drums) and exotic disco dancer!
+<SocialLinks
+  iconSize="1.15rem"
+  spacing="0.6rem"
+  edgeSpacing="before"
+  edgeSpacingAmount="0.5rem"
+  icons={['linkedin', 'instagram', 'github']}
+/>
 
 <LatestPosts count={4} />
 
