@@ -31,7 +31,7 @@ body.dark-mode {
 }
 
 body.dark-mode .nav-icon {
-  filter: invert(1) brightness(1.2);
+  color: var(--color-text);
 }
 
 body.dark-mode .home-page-content img[src*='RIGHT'] {
