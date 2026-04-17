@@ -41,11 +41,11 @@
 }
 
 .latest-posts__col--date {
- width: 20%;
+  width: 20%;
 }
 
 .latest-posts__col--title {
- width: 80%;
+  width: 80%;
 }
 
 .latest-posts__table td:first-child,
@@ -77,15 +77,14 @@
   .latest-posts__table {
     min-width: 100%;
   }
-.latest-posts__col--date {
- width: 10%;
-}
+  .latest-posts__col--date {
+    width: 10%;
+  }
 
-.latest-posts__col--title {
- width:90%;
-}
+  .latest-posts__col--title {
+    width: 90%;
+  }
   .latest-posts__table th,
   .latest-posts__table td {
-    padding: 0.75rem 0.9rem;
   }
 }
