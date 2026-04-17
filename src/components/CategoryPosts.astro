@@ -64,17 +64,14 @@ const sortedYears = Object.keys(postsByYear)
                       {Array.isArray(post.data.tags) &&
                       post.data.tags.length > 0 ? (
                         <p class="category-posts__tags-row">
-                          {post.data.tags.map((tag, idx) => (
-                            <>
-                              <a
-                                class="category-posts__tag"
-                                key={tag}
-                                href={`/tags/${encodeURIComponent(tag.toLowerCase())}/`}
-                              >
-                                #{tag}
-                              </a>
-                              {idx < post.data.tags.length - 1 ? ', ' : ''}
-                            </>
+                          {post.data.tags.map(tag => (
+                            <a
+                              class="category-posts__tag"
+                              key={tag}
+                              href={`/tags/${encodeURIComponent(tag.toLowerCase())}/`}
+                            >
+                              #{tag}
+                            </a>
                           ))}
                         </p>
                       ) : null}
