@@ -41,67 +41,72 @@ const sortedYears = Object.keys(postsByYear)
     posts.length === 0 ? (
       <p class="category-posts__empty">No posts in this category yet.</p>
     ) : (
-      sortedYears.map(year => (
-        <div class="category-posts__table-wrap" key={year}>
-          <h4 class="category-posts__year">{year}</h4>
-          <div class="category-posts__list">
-            {postsByYear[year]
-              .sort(
-                (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-              )
-              .map(post => (
-                <div class="category-posts__row" key={post.id}>
-                  <div class="category-posts__col category-posts__col--date">
-                    {post.data.pubDate.toLocaleDateString('en-GB', {
-                      day: '2-digit',
-                      month: 'short',
-                    })}
+      sortedYears.map((year, idx) => {
+        const isLast = idx === sortedYears.length - 1;
+        return (
+          <div class="category-posts__table-wrap" key={year}>
+            <h4 class="category-posts__year">{year}</h4>
+            <div class="category-posts__list">
+              {postsByYear[year]
+                .sort(
+                  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+                )
+                .map(post => (
+                  <div class="category-posts__row" key={post.id}>
+                    <div class="category-posts__col category-posts__col--date">
+                      {post.data.pubDate.toLocaleDateString('en-GB', {
+                        day: '2-digit',
+                        month: 'short',
+                      })}
+                    </div>
+                    <div class="category-posts__col category-posts__col--title">
+                      <a href={`/posts/${post.id}/`}>{post.data.title}</a>
+                      {Array.isArray(post.data.tags) &&
+                      post.data.tags.length > 0 ? (
+                        <p class="category-posts__tags-row">
+                          {post.data.tags.map((tag, idx) => (
+                            <>
+                              <a
+                                class="category-posts__tag"
+                                key={tag}
+                                href={`/tags/${encodeURIComponent(tag.toLowerCase())}/`}
+                              >
+                                #{tag}
+                              </a>
+                              {idx < post.data.tags.length - 1 ? ', ' : ''}
+                            </>
+                          ))}
+                        </p>
+                      ) : null}
+                    </div>
                   </div>
-                  <div class="category-posts__col category-posts__col--title">
-                    <a href={`/posts/${post.id}/`}>{post.data.title}</a>
-                    {Array.isArray(post.data.tags) &&
-                    post.data.tags.length > 0 ? (
-                      <p class="category-posts__tags-row">
-                        {post.data.tags.map((tag, idx) => (
-                          <>
-                            <a
-                              class="category-posts__tag"
-                              key={tag}
-                              href={`/tags/${encodeURIComponent(tag.toLowerCase())}/`}
-                            >
-                              #{tag}
-                            </a>
-                            {idx < post.data.tags.length - 1 ? ', ' : ''}
-                          </>
-                        ))}
-                      </p>
-                    ) : null}
-                  </div>
-                </div>
-              ))}
+                ))}
+            </div>
+            {!isLast && (
+              <p class="toplink content-padding">
+                <a href="#top" aria-label="Back to top">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M12 19V7" />
+                    <path d="M6 12l6-6 6 6" />
+                    <path d="M5 4h14" />
+                  </svg>
+                </a>
+              </p>
+            )}
           </div>
-          <p class="toplink content-padding">
-            <a href="#top" aria-label="Back to top">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-                focusable="false"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M12 19V7" />
-                <path d="M6 12l6-6 6 6" />
-                <path d="M5 4h14" />
-              </svg>
-            </a>
-          </p>
-        </div>
-      ))
+        );
+      })
     )
   }
 </section>
