@@ -41,7 +41,7 @@
 ## Navigation
 
 - [x] MainNav: Work, Rest, Play, Photos (external), RSS (icon), Dark mode (icon)
-- [ ] FooterNav: About Me (md), Tags, Get in touch (md), Creative Commons
+- [x] FooterNav: About Me (md), Tags, Get in touch (md), Creative Commons
 
 ## Styles
 
@@ -50,7 +50,7 @@
 - [ ] Rounded corners on images
 - [x] Simple, less framed look
 - [x] Main width ~960px desktop
-- [ ] Dates in MMM YY format for lists
+- [x] Dates in MMM YY format for lists
 
 ---
 
