@@ -1,0 +1,70 @@
+---
+import 'leaflet/dist/leaflet.css';
+const { id = 'TGFmap', mapAlign = '', mapConfig } = Astro.props;
+---
+
+<div class={mapAlign}>
+  <div id={id} class="tgf-visitors-map" data-config={JSON.stringify(mapConfig)}>
+  </div>
+  <p class="tgfMapTitle">Map of TGF parkrun visitors home locations</p>
+  <button id="UK">UK</button>
+  <button id="Ireland">Ireland</button>
+  <button id="France">France</button>
+  <button id="Germany">Germany</button>
+  <button id="Finland">Finland</button>
+  <button id="USA">USA</button>
+  <button id="Australia">Australia</button>
+  <button id="NewZealand">New Zealand</button>
+  <button id="SouthAfrica">South Africa</button>
+  <button id="SouthEastAsia">South East Asia</button>
+  <p class="tgfMapLegend">
+    <small
+      >Use these buttons to help pan the map to different parkrun territories</small
+    >
+  </p>
+</div>
+<script
+  type="module"
+  src="/src/components/for_posts/VisitorMap/visitor-map-loader.js"></script>
+<style>
+  :global(.tgf-visitors-map) {
+    min-height: 575px;
+    width: 100%;
+    border: 1px solid #222;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  :global(.tgfMapTitle) {
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  :global(.tgfMapLegend) {
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  :global(.circle) {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    border-style: solid;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+  }
+  :global(.circle.circle1) {
+    background: rgba(255, 176, 18, 0.621);
+    border-color: #f5970b;
+    color: white;
+  }
+  :global(.circle.circle2) {
+    background: #1279ff9e;
+    font-size: 10px;
+    border-color: hsl(201, 92%, 50%);
+    color: white;
+  }
+</style>

@@ -1,0 +1,22 @@
+---
+const { id = 'apexchart', chartAlign = '', chartConfig } = Astro.props;
+---
+
+<div class={chartAlign}>
+  <div
+    id={id}
+    class="apexchart-container"
+    data-config={JSON.stringify(chartConfig)}
+  >
+  </div>
+</div>
+<script
+  type="module"
+  src="/src/components/for_posts/ApexCharts/apexchart-loader.js"></script>
+<style>
+  :global(.apexchart-container) {
+    width: 100%;
+    min-height: 350px;
+    margin-bottom: 1rem;
+  }
+</style>

@@ -1,10 +1,8 @@
 import L from 'leaflet';
 
 function reviveFunctions(obj) {
-  // Recursively revive stringified functions in config
   for (const key in obj) {
     if (typeof obj[key] === 'string' && obj[key].startsWith('function')) {
-      // eslint-disable-next-line no-new-func
       obj[key] = eval('(' + obj[key] + ')');
     } else if (typeof obj[key] === 'object' && obj[key] !== null) {
       reviveFunctions(obj[key]);
@@ -130,7 +128,6 @@ function renderChoroplethMap(container) {
   }
 }
 
-// Find all map containers and render
 for (const el of document.querySelectorAll('[data-config]')) {
   renderChoroplethMap(el);
 }

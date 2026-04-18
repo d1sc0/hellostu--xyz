@@ -6,14 +6,14 @@ category: Rest
 pubDate: 2024-06-15T19:25:00
 description: 'Some quick and dirty analysis of where visitors to the Great Field parkrun call home...including an interactive map!'
 tags: ['dataviz', 'maps', 'parkrun', 'data', 'making']
-
 ---
 
-import VisitorsMap from '/src/components/for_posts/TGF-VisitorsMap.astro';
+import { tgfVisitorsMapConfig } from '../../data/tgf-visitors-map-config.js';
+import VisitorMap from '../../components/for_posts/VisitorMap/VisitorMap.astro'; // No change needed
 
 I said I was going to play with some data, and I didn’t want to disappoint, so yesterday I made a little map that charts where our visitors to [The Great Field parkrun](https://www.parkrun.org.uk/thegreatfield/) come from.
 
-<VisitorsMap mapAlign="mapFull" />
+<VisitorMap mapAlign="mapFull" mapConfig={tgfVisitorsMapConfig} />
 
 The Great Field parkrun is now over two years old. This map has been drawn using data from our first 135 events—it doesn’t include data from our Junior parkrun. Over these 135 events, we’ve been joined by approximately **6391 unique runners and volunteers**. It’s only an approximate number because each week, we’ll have a small handful of participants who have either not registered or not remembered their parkrun barcode. In each athlete or volunteer’s online profile is an option to set a ‘home parkrun’.
 

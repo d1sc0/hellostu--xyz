@@ -3,32 +3,13 @@ import 'leaflet/dist/leaflet.css';
 const { id = 'map', mapAlign = '', mapConfig } = Astro.props;
 ---
 
-<!--
-  Generic ChoroplethMap component for Leaflet choropleth maps.
-  Props:
-    - id: DOM id for the map container (default 'map')
-    - mapAlign: CSS class for layout
-    - mapConfig: object containing:
-        - geojsonData: GeoJSON FeatureCollection
-        - center: [lat, lng]
-        - zoom: number
-        - tileUrl: string
-        - tileAttribution: string
-        - styleProp: string (property to color by)
-        - getColorStops: array of stops for legend/colors
-        - getColor: function as string (serialized)
-        - legendTitle: string
-        - infoTitle: string
-        - infoValue: function as string (serialized)
-        - legendPosition: string (default 'topleft')
-        - attribution: string (HTML)
--->
 <div class={mapAlign}>
   <div id={id} class="choropleth-map" data-config={JSON.stringify(mapConfig)}>
   </div>
 </div>
-<script type="module" src="/src/components/for_posts/choropleth-map-loader.js"
-></script>
+<script
+  type="module"
+  src="/src/components/for_posts/Choropleth/choropleth-map-loader.js"></script>
 <style>
   .leaflet-container {
     max-width: 100%;
