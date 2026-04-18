@@ -28,7 +28,7 @@
 
 - [x] Structure completed so leading content can be written (mdx)
 - [x] Paginated post list component (reusable)
-- [x ] Show tags, published date (MMM YY), title (no excerpt)
+- [x] Show tags, published date (MMM YY), title (no excerpt)
 - [x] Tag page in footer nav
 
 ## Features
@@ -54,7 +54,7 @@
 - [ ] Add some images to the about page and and re-write content, make it a bit more personal and current (maybe more like a now style page)
 - [ ] Go through posts and tidy up tags
 - [ ] Re-style tags page
-- [ ] Add category into post page / markdown template
+- [x] Add category into post page / markdown template
 - [ ] Re-style next and previous post links
 - [ ] Create a recommended posts component for post pages
 - [ ] Update and improve meta decriptions on pages and default OG images

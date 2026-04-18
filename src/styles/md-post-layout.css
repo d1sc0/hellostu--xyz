@@ -53,7 +53,7 @@
 .post-layout__title {
 }
 
-.post-layout__date {
+.post-layout__meta {
   display: block;
 }
 
@@ -65,12 +65,6 @@
   border-radius: 8px;
   margin-bottom: 2rem;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
-}
-
-.post-layout__meta {
-  display: flex;
-  gap: 1.5rem;
-  color: var(--color-accent);
 }
 
 .post-layout__tags {
