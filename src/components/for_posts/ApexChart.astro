@@ -1,0 +1,34 @@
+---
+/**
+ * Generic ApexChart Astro component for rendering any ApexCharts chart.
+ *
+ * Props:
+ *   - id: unique DOM id for the chart container (string)
+ *   - type: chart type (e.g., 'area', 'line', 'donut', 'bar')
+ *   - options: ApexCharts options object (object, must be JSON-serializable)
+ *   - series: ApexCharts series data (array, must be JSON-serializable)
+ *   - chartClass: optional CSS class for the chart wrapper (string)
+ *
+ * How it works:
+ *   - Chart config and data are passed as a JSON string in a data-config attribute on the chart container.
+ *   - The loader script (apexchart-loader.js) reads this attribute, parses the config, and renders the chart with ApexCharts in the browser.
+ *   - This avoids issues with inline script serialization and works reliably with Astro/MDX.
+ *
+ * Usage:
+ *   <ApexChart id="tgf-attendance" type="area" options={options} series={series} />
+ *
+ * Chart config/data should be imported from a central file (e.g., src/data/apex-chart-data.js) for maintainability and re-use.
+ */
+
+const { id, type, options, series, chartClass = '' } = Astro.props;
+---
+
+<!-- Chart container with config as data attribute -->
+<div class={chartClass}>
+  <div id={id} data-config={JSON.stringify({ id, type, options, series })}>
+  </div>
+</div>
+
+<!-- Load ApexCharts and chart loader script -->
+<script type="module" src="/src/components/for_posts/apexchart-loader.js"
+></script>
