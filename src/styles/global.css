@@ -80,6 +80,17 @@ h6 {
   font-weight: 700;
 }
 
+blockquote {
+  background: var(--color-line);
+  padding: 0.5em;
+  margin-left: 0px;
+  border-left: solid 8px var(--color-accent);
+  margin-right: 0px;
+}
+blockquote p {
+  margin: 1rem;
+}
+
 a {
   color: var(--color-link);
   text-underline-offset: 2px;
