@@ -59,7 +59,7 @@
 - [ ] Create a recommended posts component for post pages
 - [ ] Update and improve meta decriptions on pages and default OG images
 - [ ] Redesign OG image template and re-generate images
-- [ ] Migrate remainder of posts (Mdx) and post components
+- [x] Migrate remainder of posts (Mdx) and post components
 - [ ] Add a small like (heart) button to posts
 - [ ] Implement comments again maybe
 - [ ] Revisit webmentions and see if that's useful
