@@ -53,7 +53,7 @@
 
 - [ ] Add some images to the about page and and re-write content, make it a bit more personal and current (maybe more like a now style page)
 - [ ] Go through posts and tidy up tags
-- [ ] Re-style tags page
+- [x] Re-style tags page
 - [x] Add category into post page / markdown template
 - [ ] Re-style next and previous post links
 - [ ] Create a recommended posts component for post pages

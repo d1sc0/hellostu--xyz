@@ -4,7 +4,7 @@
 
 .tag-title {
   color: var(--color-link);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .tagged-posts-list {
@@ -15,13 +15,14 @@
 }
 
 .tagged-posts-list li {
-  margin-bottom: 1.1em;
+  margin-bottom: 0.5em;
 }
 
 .tagged-posts-list a {
-  color: var(--color-text);
-  text-decoration: underline;
-  transition: color 0.2s;
+  color: var(--color-link);
+  text-decoration: dashed underline;
+  text-decoration-skip-ink: auto;
+  text-underline-offset: 4px;
 }
 
 .tagged-posts-list a:hover {
@@ -29,5 +30,4 @@
 }
 
 .tagged-posts-list span {
-  color: var(--color-accent);
 }
