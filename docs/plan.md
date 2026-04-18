@@ -63,6 +63,8 @@
 - [ ] Add a small like (heart) button to posts
 - [ ] Implement comments again maybe
 - [ ] Revisit webmentions and see if that's useful
+- [ ] Fix some post styles (quote)
+- [ ] code styles for markdown
 
 ---
 

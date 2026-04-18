@@ -121,6 +121,6 @@ var options = {
 
 var chart = new ApexCharts(
   document.querySelector('#tgf-finish-times'),
-  options
+  options,
 );
 chart.render();
