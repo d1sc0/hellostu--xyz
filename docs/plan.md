@@ -2,9 +2,10 @@
 
 ## Migration & Content
 
+### All posts migrated (MDX)
+
 - [x] Migrate existing markdown (.md) content from old site
 - [x] Replace placeholder content with migrated content
-- [ ] Defer MDX/component migration until end
 
 ## Content Structure
 
@@ -19,23 +20,19 @@
 
 ## Home Page
 
-- [ ] Short about excerpt + link to full about page (markdown)
-- [ ] Author/logo SVG component (reusable)
+- [x] Short about excerpt + link to full about page (markdown)
 - [x] Latest 3 posts (baked into index.astro)
 - [x] 3 category excerpts linking to category pages (baked into index.astro)
 
 ## Category Pages
 
 - [x] Structure completed so leading content can be written (mdx)
-- [ ] Paginated post list component (reusable)
-- [ ] Show tags, published date (MMM YY), title (no excerpt)
+- [x] Paginated post list component (reusable)
+- [x ] Show tags, published date (MMM YY), title (no excerpt)
 - [x] Tag page in footer nav
 
 ## Features
 
-- [ ] Replace next and previous posts with a related post component
-- [ ] Add a small like (heart) button
-- [ ] Implement comments again maybe
 - [x] Implement Darkmode
 
 ## Navigation
@@ -47,10 +44,25 @@
 
 - [x] 3-4 color palette (soft pastel backgrounds, good contrast)
 - [x] Gochi Hand for site title, Lexend for body
-- [ ] Rounded corners on images
+- [x] Rounded corners on images
 - [x] Simple, less framed look
 - [x] Main width ~960px desktop
 - [x] Dates in MMM YY format for lists
+
+## Things left to do
+
+- [ ] Add some images to the about page and and re-write content, make it a bit more personal and current (maybe more like a now style page)
+- [ ] Go through posts and tidy up tags
+- [ ] Re-style tags page
+- [ ] Add category into post page / markdown template
+- [ ] Re-style next and previous post links
+- [ ] Create a recommended posts component for post pages
+- [ ] Update and improve meta decriptions on pages and default OG images
+- [ ] Redesign OG image template and re-generate images
+- [ ] Migrate remainder of posts (Mdx) and post components
+- [ ] Add a small like (heart) button to posts
+- [ ] Implement comments again maybe
+- [ ] Revisit webmentions and see if that's useful
 
 ---
 
