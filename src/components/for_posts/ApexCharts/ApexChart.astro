@@ -10,9 +10,8 @@ const { id = 'apexchart', chartAlign = '', chartConfig } = Astro.props;
   >
   </div>
 </div>
-<script
-  type="module"
-  src="/src/components/for_posts/ApexCharts/apexchart-loader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="/scripts/apexchart-loader.js" is:inline></script>
 <style>
   :global(.apexchart-container) {
     width: 100%;

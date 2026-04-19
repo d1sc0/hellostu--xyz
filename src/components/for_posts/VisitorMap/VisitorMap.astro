@@ -1,8 +1,8 @@
 ---
-import 'leaflet/dist/leaflet.css';
 const { id = 'TGFmap', mapAlign = '', mapConfig } = Astro.props;
 ---
 
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 <div class={mapAlign}>
   <div id={id} class="tgf-visitors-map" data-config={JSON.stringify(mapConfig)}>
   </div>
@@ -23,9 +23,8 @@ const { id = 'TGFmap', mapAlign = '', mapConfig } = Astro.props;
     >
   </p>
 </div>
-<script
-  type="module"
-  src="/src/components/for_posts/VisitorMap/visitor-map-loader.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script type="module" src="/scripts/visitor-map-loader.js"></script>
 <style>
   :global(.tgf-visitors-map) {
     min-height: 575px;

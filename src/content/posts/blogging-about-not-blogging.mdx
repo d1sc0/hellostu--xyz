@@ -26,10 +26,8 @@ I thought it'd be fun to spend a few minutes reflecting on my writing process an
 
 <ApexChart
   id="blogging-chart"
-  type="pie"
-  options={bloggingChartOptions}
-  series={bloggingChartSeries}
-  chartClass="pieFull"
+  chartConfig={{ ...bloggingChartOptions, series: bloggingChartSeries }}
+  chartAlign="pieFull"
 />
 
 A pie chart wasn't really needed was it? no...but I did enjoy making it!

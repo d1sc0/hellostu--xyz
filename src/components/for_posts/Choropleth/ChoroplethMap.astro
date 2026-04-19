@@ -1,15 +1,14 @@
 ---
-import 'leaflet/dist/leaflet.css';
 const { id = 'map', mapAlign = '', mapConfig } = Astro.props;
 ---
 
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 <div class={mapAlign}>
   <div id={id} class="choropleth-map" data-config={JSON.stringify(mapConfig)}>
   </div>
 </div>
-<script
-  type="module"
-  src="/src/components/for_posts/Choropleth/choropleth-map-loader.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="/scripts/choropleth-map-loader.js" is:inline defer></script>
 <style>
   .leaflet-container {
     max-width: 100%;
@@ -38,9 +37,10 @@ const { id = 'map', mapAlign = '', mapConfig } = Astro.props;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
   }
-  .info h4 {
-    margin: 0 0 5px;
-    color: #777;
+  :global(.info h4) {
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+    color: black;
   }
   .legend {
     text-align: left;

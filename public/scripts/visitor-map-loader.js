@@ -1,4 +1,4 @@
-import L from 'leaflet';
+
 
 function reviveFunctions(obj) {
   for (const key in obj) {
