@@ -49,7 +49,7 @@
 
 ## Pre-Cutover Tasks
 
-- [ ] Add images to the about page and re-write content to be more personal and current (consider a "now" style page)
+- [x] Add images to the about page and re-write content to be more personal and current (consider a "now" style page)
 - [x] Redesign OG image template and re-generate images
 - [x] Test code and additional styles for markdown
 
