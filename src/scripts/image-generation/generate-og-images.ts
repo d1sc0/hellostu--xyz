@@ -77,7 +77,8 @@ async function generateOGImages() {
     ],
   });
   for (const post of posts) {
-    const outFile = `${post.id}.png`;
+    // Always use lowercased slug for filename
+    const outFile = `${post.id.toLowerCase()}.png`;
     const outPath = path.join(OUTPUT_DIR, outFile);
     if (fs.existsSync(outPath)) {
       continue;

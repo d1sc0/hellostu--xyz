@@ -2,9 +2,7 @@
 
 ## Migration & Content
 
-### All posts migrated (MDX)
-
-- [x] Migrate existing markdown (.md) content from old site
+- [x] Migrate all markdown (.md) content from old site
 - [x] Replace placeholder content with migrated content
 
 ## Content Structure
@@ -33,7 +31,7 @@
 
 ## Features
 
-- [x] Implement Darkmode
+- [x] Implement dark mode
 
 ## Navigation
 
@@ -49,21 +47,21 @@
 - [x] Main width ~960px desktop
 - [x] Dates in MMM YY format for lists
 
-## Things left to do before cutover
+## Pre-Cutover Tasks
 
-- [ ] Add some images to the about page and and re-write content, make it a bit more personal and current (maybe more like a now style page)
+- [ ] Add images to the about page and re-write content to be more personal and current (consider a "now" style page)
 - [ ] Redesign OG image template and re-generate images
-- [ ] Create a recommended posts component for post pages
-- [ ] test code and additional styles for markdown
+- [ ] Test code and additional styles for markdown
 
-## things to do post cutover
+## Post-Cutover Tasks
 
-- [ ] Add a small like (heart) button to posts alongside social share component (need to see if thats still maintained?)
-- [ ] Implement comments again.
-- [ ] optional: Consider an image navigation component - create a component that scans posts for images and then has a sliding carosel that allows navigation by image?
-- [ ] optional: Revisit webmentions and see if that's useful
-- [ ] optional: refactor latest posts to use same styling method as posts page (remove table)
+- [ ] Add a small like (heart) button to posts alongside social share component (check if social share is still maintained)
+- [ ] Implement comments again
+- [ ] (Optional) Consider an image navigation component—scan posts for images and provide a sliding carousel for navigation
+- [ ] (Optional) Create a recommended posts component for post pages
+- [ ] (Optional) Revisit webmentions and see if they're useful
+- [ ] (Optional) Refactor latest posts to use same styling method as posts page (remove table)
 
 ---
 
-Add new tasks as needed. Check off items as we go!
+Add new tasks as needed. Check off items as you go!
