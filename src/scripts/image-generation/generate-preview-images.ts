@@ -10,6 +10,17 @@ const config = JSON.parse(
   ),
 );
 const previewConfig = config.preview;
+const ogLogoPath =
+  config.og && config.og.logoPath
+    ? path.join(process.cwd(), config.og.logoPath)
+    : null;
+let ogLogoBase64 = null;
+if (ogLogoPath && fs.existsSync(ogLogoPath)) {
+  const ext = path.extname(ogLogoPath).toLowerCase().replace('.', '');
+  const mimeType =
+    ext === 'svg' ? 'image/svg+xml' : `image/${ext === 'jpg' ? 'jpeg' : ext}`;
+  ogLogoBase64 = `data:${mimeType};base64,${fs.readFileSync(ogLogoPath).toString('base64')}`;
+}
 const siteUrl = config.siteUrl;
 const POSTS_DIR = path.join(process.cwd(), 'src/content/posts');
 const PAGES_DIR = path.join(process.cwd(), 'src/content/pages');
@@ -119,7 +130,10 @@ async function generatePreviewImages() {
       .replace("background: url('%%PREVIEW_BG%%') no-repeat center center;", '')
       .replace(
         '<div class="container">',
-        `<div class="container"><img src="${bgBase64}" class="preview-bg" style="position:absolute;width:100%;height:100%;object-fit:cover;z-index:0;${BG_STYLE}" />`,
+        `<div class="container"><img src="${bgBase64}" class="preview-bg" style="position:absolute;width:100%;height:100%;object-fit:cover;z-index:0;${BG_STYLE}" />` +
+          (ogLogoBase64
+            ? `<img src="${ogLogoBase64}" class="preview-logo" style="position:absolute;top:32px;left:32px;width:120px;height:auto;z-index:2;" />`
+            : ''),
       );
     html = fillTemplate(html, {
       siteTitle: SITE_TITLE,

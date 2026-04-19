@@ -11,7 +11,8 @@
     "fallbackBgPath": "src/scripts/image-generation/og-background.png",
     "outputDir": "public/generated_social_images",
     "siteTitle": "HelloStu",
-    "bgStyle": "filter: opacity(0.6);"
+    "bgStyle": "filter: opacity(0.8);",
+    "logoPath": "src/scripts/image-generation/og-logo.png"
   },
   "siteUrl": "https://hellostu.xyz"
 }

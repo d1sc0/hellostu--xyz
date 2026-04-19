@@ -15,6 +15,24 @@ const BG_PATH = path.join(
 );
 const OUTPUT_DIR = path.join(process.cwd(), 'public/generated_social_images');
 
+// Read OG logo path from image-config.json
+const configPath = path.join(
+  process.cwd(),
+  'src/scripts/image-generation/image-config.json',
+);
+const config = JSON.parse(fs.readFileSync(configPath, 'utf-8'));
+const ogLogoPath =
+  config.og && config.og.logoPath
+    ? path.join(process.cwd(), config.og.logoPath)
+    : null;
+let ogLogoBase64 = null;
+if (ogLogoPath && fs.existsSync(ogLogoPath)) {
+  const ext = path.extname(ogLogoPath).toLowerCase().replace('.', '');
+  const mimeType =
+    ext === 'svg' ? 'image/svg+xml' : `image/${ext === 'jpg' ? 'jpeg' : ext}`;
+  ogLogoBase64 = `data:${mimeType};base64,${fs.readFileSync(ogLogoPath).toString('base64')}`;
+}
+
 async function getPosts() {
   const postFiles = fs
     .readdirSync(POSTS_DIR)
@@ -131,6 +149,13 @@ async function generateOGImages() {
         '<div class="container">',
         `<div class="container"><img src="${bgBase64}" class="og-bg" style="position:absolute;width:100%;height:100%;object-fit:cover;z-index:0;filter: opacity(0.5);" />`,
       );
+    // Replace the template's %%LOGO_PATH%% with the base64 logo if available
+    if (ogLogoBase64) {
+      html = html.replace('src="%%LOGO_PATH%%"', `src="${ogLogoBase64}"`);
+    } else {
+      // Remove the logo img if not available
+      html = html.replace(/<img[^>]*id=["']site-logo["'][^>]*>/, '');
+    }
     // Read site URL from astro.config.mjs
     const astroConfig = fs.readFileSync(
       path.join(process.cwd(), 'astro.config.mjs'),

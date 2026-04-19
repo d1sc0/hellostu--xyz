@@ -4,11 +4,12 @@
 <head>
  <meta charset="UTF-8">
  <title>OG Image</title>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand" rel="stylesheet">
  <style>
   body {
    margin: 0;
-   font-family: 'Inter', sans-serif;
+   font-family: 'Lexend', sans-serif;
    position: relative;
    overflow: hidden;
   }
@@ -23,7 +24,7 @@
   }
 
   .og-bg {
-   filter: opacity(0.5);
+   filter: opacity(0.8);
    position: absolute;
    width: 100%;
    height: 100%;
@@ -32,26 +33,32 @@
   }
 
   .site-title {
+   display: none;
+   z-index: 1;
    position: absolute;
-   width: 1200px;
-   text-align: center;
-   top: 107px;
-   font-family: 'Inter', sans-serif;
-   font-size: 3.2rem;
-   background-color: white;
-   color: #2b2b2b;
-   text-transform: uppercase;
+   width: 800px;
+   padding: 20px;
+   padding-top: 25px;
+   left: 70px;
+   top: 190px;
+   font-family: 'Gochi Hand', cursive;
+   font-size: 6rem;
    font-weight: 700;
-   letter-spacing: 1px;
+   border: 3px dashed #f7f3e3;
+   color: #f7f3e3;
+   background-color: #181a1b;
+   line-height: 1.1;
+   word-break: break-word;
   }
 
   .site-url {
+   display: none;
    position: absolute;
    width: 1200px;
    bottom: 102px;
-   font-family: 'Helvetica Neue', sans-serif;
+   font-family: 'Lexend', sans-serif;
    font-size: 1.6rem;
-   background-color: white;
+   background-color: #4488db;
    color: #2b2b2b;
    font-weight: 400;
    text-transform: uppercase;
@@ -63,27 +70,43 @@
 
   .title {
    position: absolute;
-   width: 1200px;
-   text-align: center;
+   width: 800px;
+   padding: 20px;
+   left: 70px;
    text-transform: uppercase;
-   top: 250px;
-   font-family: 'Inter', sans-serif;
-   font-size: 5rem;
-   font-weight: 800;
-   background-color: white;
-   color: #2b2b2b;
+   top: 190px;
+   font-family: 'Lexend', sans-serif;
+   font-size: 4.2rem;
+   font-weight: 700;
+   border: 3px dashed #f7f3e3;
+   color: #f7f3e3;
+   background-color: #181a1b;
    line-height: 1.1;
    word-break: break-word;
+  }
+
+  .site-logo {
+   position: absolute;
+   width: 300px;
+   height: auto;
+   text-align: center;
+   right: 30px;
+   bottom: 30px;
+   border-radius: 50%;
+   color: #181a1b;
+   border: 3px dashed #f7f3e3;
+   font-weight: 700;
   }
  </style>
 </head>
 
 <body>
  <div class="container">
-  <div class="site-title" id="site-title">%%SITE_TITLE%%</div>
+  <div class="site-title" id="site-title">HelloStu</div>
   <!-- episode number removed -->
   <div class="title" id="title">%%TITLE%%</div>
   <div class="site-url" id="site-url">%%SITE_URL%%</div>
+  <img src="%%LOGO_PATH%%" alt="Site Logo" class="site-logo" id="site-logo">
  </div>
 </body>
 
