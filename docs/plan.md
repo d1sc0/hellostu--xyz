@@ -52,7 +52,7 @@
 ## Things left to do
 
 - [ ] Add some images to the about page and and re-write content, make it a bit more personal and current (maybe more like a now style page)
-- [ ] Go through posts and tidy up tags
+- [x] Go through posts and tidy up tags
 - [x] Re-style tags page
 - [x] Add category into post page / markdown template
 - [ ] Re-style next and previous post links
@@ -62,9 +62,9 @@
 - [x] Migrate remainder of posts (Mdx) and post components
 - [ ] Add a small like (heart) button to posts
 - [ ] Implement comments again maybe
+- [ ] Consider an image navigation component - create a component that scans posts for images and then has a sliding carosel that allows navigation by image?
 - [ ] Revisit webmentions and see if that's useful
-- [ ] Fix some post styles (quote)
-- [ ] code styles for markdown
+- [ ] test code and additional styles for markdown
 
 ---
 

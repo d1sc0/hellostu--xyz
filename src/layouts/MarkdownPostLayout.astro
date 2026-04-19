@@ -52,4 +52,24 @@ const formattedPublishDate = new Date(frontmatter.pubDate).toLocaleDateString(
       <slot />
     </div>
   </section>
+  <nav class="post-navigation content-padding">
+    <div class="post-navigation__item post-navigation__prev">
+      {prevpost ? (
+        <a class="post-navigation__link" href={`/posts/${prevpost.id}/`} aria-label="Previous post">
+          &lt;&lt; {prevpost.data.title}
+        </a>
+      ) : (
+        <span class="post-navigation__placeholder" aria-hidden="true">&nbsp;</span>
+      )}
+    </div>
+    <div class="post-navigation__item post-navigation__next">
+      {nextpost ? (
+        <a class="post-navigation__link" href={`/posts/${nextpost.id}/`} aria-label="Next post">
+          {nextpost.data.title} &gt;&gt;
+        </a>
+      ) : (
+        <span class="post-navigation__placeholder" aria-hidden="true">&nbsp;</span>
+      )}
+    </div>
+  </nav>
 </BaseLayout>

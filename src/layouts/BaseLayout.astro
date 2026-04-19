@@ -36,24 +36,6 @@ const { frontmatter, pageMeta, prevpost, nextpost } = Astro.props;
           </a>
         </p>
       </main>
-      <section class="postNav">
-        {
-          prevpost && (
-            <a class="nav-btn prevNav" href={`/posts/${prevpost.id}/`}>
-              &lt;&lt; {prevpost.data.title}
-            </a>
-          )
-        }
-        {!nextpost && prevpost && <span class="nav-btn nextNav">(｡◕‿‿◕｡)</span>}
-        {!prevpost && nextpost && <span class="nav-btn prevNav">(｡◕‿‿◕｡)</span>}
-        {
-          nextpost && (
-            <a class="nav-btn nextNav" href={`/posts/${nextpost.id}/`}>
-              {nextpost.data.title} &gt;&gt;
-            </a>
-          )
-        }
-      </section>
       <Footer />
       <script>
         import '../scripts/menu.js';
