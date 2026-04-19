@@ -58,6 +58,10 @@ li {
   line-height: 1.6;
 }
 
+p,
+ul {
+  margin-top: 0.5rem;
+}
 h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -78,6 +82,7 @@ h5,
 h6 {
   font-size: 1.1rem;
   font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 blockquote {
@@ -159,7 +164,7 @@ img[src*='FULL'],
   width: 100%;
   height: auto;
   margin-bottom: 0rem;
-  border-radius: 0.3rem;
+  border-radius: 1rem;
 }
 
 img[src*='RIGHT'] {
@@ -167,7 +172,7 @@ img[src*='RIGHT'] {
   height: auto;
   margin: 0;
   margin-bottom: 1rem;
-  border-radius: 0.3rem;
+  border-radius: 1rem;
 }
 
 img[src*='LEFT'] {
@@ -175,7 +180,7 @@ img[src*='LEFT'] {
   height: auto;
   margin: 0;
   margin-bottom: 1rem;
-  border-radius: 0.3rem;
+  border-radius: 1rem;
 }
 
 @media (min-width: 768px) and (orientation: landscape) {

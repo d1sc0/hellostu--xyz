@@ -21,11 +21,37 @@ const title =
   (pageMeta?.title && `HelloStu | ${pageMeta.title}`) ||
   'HelloStu';
 const description = frontmatter?.description || pageMeta?.description || '';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': frontmatter?.title ? 'Article' : 'WebPage',
+  headline: title,
+  description: description,
+  image: ogImage,
+  author: {
+    '@type': 'Person',
+    name: 'Stuart Mackenzie',
+  },
+  ...(frontmatter?.pubDate && { datePublished: frontmatter.pubDate }),
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': siteURL.replace(/\/$/, '') + (Astro.url?.pathname || '/'),
+  },
+};
 ---
 
 <head>
   <meta charset="utf-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link
+    rel="canonical"
+    href={siteURL.replace(/\/$/, '') + (Astro.url?.pathname || '/')}
+  />
+  <script
+    type="application/ld+json"
+    is:inline
+    set:html={JSON.stringify(jsonLd)}
+  />
   <meta name="viewport" content="width=device-width" />
   <meta name="generator" content={Astro.generator} />
   <AstroFont

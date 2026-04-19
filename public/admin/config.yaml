@@ -58,22 +58,8 @@ collections:
       - { label: 'Meta Preview', name: 'description', widget: 'text' }
       - { label: 'Tags', name: 'tags', widget: 'list' }
 
-  - name: 'pages'
-    label: 'Pages'
-    folder: 'src/content/pages'
-    create: false
-    slug: '{{slug}}'
-    extension: 'md'
-    format: 'yaml-frontmatter'
-    media_folder_relative: true
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Date', name: 'pubDate', widget: 'datetime', required: false }
-      - { label: 'Description', name: 'description', widget: 'text' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-
   - name: 'mdx_pages'
-    label: 'MDX Pages'
+    label: 'Pages'
     folder: 'src/content/pages'
     create: true
     slug: '{{slug}}'
