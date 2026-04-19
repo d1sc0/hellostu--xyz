@@ -2,21 +2,10 @@
 title: 14 | Head above water
 draft: false
 slug: 14-head-above-water
-category: Work
+category: Play
 pubDate: 2023-05-24
 description: 'A self-portrait and journal entry revealing a new side project, discussing work-life balance and personal challenges.'
-tags:
-  [
-    '52weeks',
-    'photography',
-    'iphone',
-    'self',
-    'swimming',
-    'podcast',
-    'sickbed',
-    'work',
-  ]
-
+tags: ['52weeks', 'photography', 'swimming', 'self', 'podcast', 'health']
 ---
 
 ![The water/sea fills two thirds of the frame, my head appears over a wave in the top left of the frame, backed by blue sky](../../assets/uploaded_images/52_2023_14_FULL.jpg)

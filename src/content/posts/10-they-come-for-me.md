@@ -2,11 +2,19 @@
 title: 10 | They come for me
 draft: false
 slug: 10-they-come-for-me
-category: Work
+category: Play
 pubDate: 2023-03-26
 description: 'Sci-fi themed self-portrait, exploring creativity and storytelling through photography.'
-tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'sci-fi']
-
+tags:
+  [
+    '52weeks',
+    'photography',
+    'creativity',
+    'self',
+    'strobist',
+    'sci-fi',
+    'reflection',
+  ]
 ---
 
 ![A bright red glowing light beam is focussed across my face. I use my hand to block the glare](../../assets/uploaded_images/52_2023_10_FULL.jpg)

@@ -5,14 +5,7 @@ slug: weeknote-update-and-grow
 category: Work
 pubDate: 2024-08-16T10:20:00
 description: a note containing some excuses, a plan, some updates and some reminders of things I should celebrate. This note covers the last couple of week until today 16th August 24.
-tags:
-  - weeknote
-  - work
-  - life
-  - self
-  - sick
-  - car
-
+tags: ['weeknote', 'work', 'life', 'growth', 'health', 'car', 'reflection']
 ---
 
 ![a black and white slef portrait, a wall of art hangs behind me and my face hides behind my outstretched hands](../../assets/uploaded_images/45-update-and-growFULL.jpg)

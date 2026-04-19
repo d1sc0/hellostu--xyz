@@ -5,12 +5,7 @@ slug: weeknote-tired-bunny
 category: Work
 pubDate: 2024-07-05T17:40:00
 description: A brief look at the good, the bad and the ugly through tired eyes. Covers the period 28th June to 5th July.
-tags:
-  - weeknote
-  - work
-  - life
-  - car
-  - election
+tags: ['weeknote', 'work', 'life', 'election', 'tired', 'reflection']
 
 ---
 

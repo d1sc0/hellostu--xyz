@@ -5,12 +5,7 @@ slug: wk1-be-more-like-robbie
 category: Work
 pubDate: 2019-03-15
 description: 'I share highlights from the week: valuable family time, engaging community practice sessions, and progress in my data visualization studies.'
-tags:
-  - weeknote
-  - reflection
-  - growth
-  - balance
-
+tags: ['weeknote', 'work', 'reflection', 'growth', 'balance', 'learning']
 ---
 
 ![kermit types fast](../../assets/uploaded_images/kermitLEFT.gif)

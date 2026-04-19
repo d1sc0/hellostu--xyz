@@ -5,7 +5,7 @@ slug: localgovcamp-2017
 category: Work
 pubDate: 2017-09-26
 description: 'My thoughts after taking a trip to LocalGovCamp in Bristol'
-tags: ['work', 'localgovcamp']
+tags: ['work', 'localgovcamp', 'event', 'conference', 'gov']
 ---
 
 > This was originally posted [here on Medium and cross posted to FutureGov's blog page](https://blog.wearefuturegov.com/my-localgovcamp-experience-15412b7ad314) - As I'm no longer using medium I have copied below for the historic feels!!

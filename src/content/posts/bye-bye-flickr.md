@@ -2,10 +2,10 @@
 title: Bye-bye flickr
 draft: false
 slug: bye-bye-flickr
-category: Work
+category: Play
 pubDate: 2022-05-15
 description: 'Deleting my Flickr account, reflecting on photo-sharing, personal memories, and new creative platforms.'
-tags: ['photography', 'flickr', 'tech', 'reflections', 'photos']
+tags: ['photography', 'tech', 'social-media', 'creative-platforms', 'memories', 'reflections']
 
 ---
 

@@ -5,8 +5,7 @@ slug: weeknote-london-calling
 category: Work
 pubDate: 2024-06-07
 description: 'A weeknote covering the period 1st-7th June. Reflecting on a week of returning to London, work, fitness progress, web projects, and balancing family time.'
-tags: ['weeknote', 'london', 'website', 'fitness', 'work']
-
+tags: ['weeknote', 'work', 'london', 'website', 'fitness', 'travel']
 ---
 
 It’s been an odd week. I’ve continued to wrestle with some depressing and complicated personal life stuff that I won’t share. I write this as a reminder that despite the thoughts and feelings surrounding this ‘stuff’, I have continued to put one foot in front of the other and move forward. I’m pretty happy with what I’ve achieved this week at work and in terms of self-care.

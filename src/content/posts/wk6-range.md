@@ -5,7 +5,7 @@ slug: wk6-range
 category: Work
 pubDate: 2020-02-21
 description: 'Reflecting on a busy, challenging week and thoughts on being a multi-hyphenate, balancing various roles and interests.'
-tags: ['weeknote', 'rarenote']
+tags: ['weeknote', 'work', 'reflection', 'multi-hyphenate', 'team', 'balance']
 ---
 
 I took the role of 'master of ceremonies' at a recent full FG team meeting and started by sharing some key messages from the management team. One of these went along the lines of 'Hey February is shaping up to be pretty dang BUSY! let's have each others backs, look after yourselves, think ahead/anticipate, communicate...' etc etc. This week I'm finishing with my own words echoing around in my brain. Just like buses - tasks, challenges and opportunities can arrive all at once and sometimes without much warning. It's been great to see the whole team rise to the challenge.

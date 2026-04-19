@@ -7,13 +7,7 @@ pubDate: 2024-06-28T12:50:00.000Z
 description: >-
   This weeks notes about work, life and random encounters with strangers in an
   uber adventure. Covers the period 21th-28th June
-tags:
-  - weeknote
-  - work
-  - life
-  - car
-  - people
-  - team
+tags: ['weeknote', 'work', 'life', 'car', 'people', 'team']
 
 ---
 

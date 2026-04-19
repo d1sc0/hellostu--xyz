@@ -5,7 +5,7 @@ slug: what-makes-a-great-retrospective
 category: Work
 pubDate: 2017-12-04
 description: 'I give advice on what makes a great retrospective: dedicating time, celebrating successes, fostering team building, encouraging honesty, and focusing on actionable outcomes.'
-tags: ['agile', 'delivery', 'teams', 'change']
+tags: ['agile', 'delivery', 'teams', 'change', 'retrospective', 'process']
 
 ---
 

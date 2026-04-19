@@ -2,10 +2,10 @@
 title: Building Things
 draft: false
 slug: building-things
-category: Work
+category: Play
 pubDate: 2024-05-30T16:00:00
 description: 'Reflecting on the experience and insights gained from rebuilding the website, focusing on design, technology, and development challenges.'
-tags: ['astro', 'gatsby', 'build', 'design', 'code', 'tech']
+tags: ['astro', 'gatsby', 'webdev', 'design', 'code', 'tech', 'build']
 
 ---
 

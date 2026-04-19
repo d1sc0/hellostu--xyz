@@ -2,10 +2,10 @@
 title: 6 | Hurghada
 draft: false
 slug: 6-hurghada
-category: Work
+category: Play
 pubDate: 2023-02-26
 description: 'Capturing a self-portrait on a beach in Egypt, reflecting on travel and personal moments.'
-tags: ['52weeks', 'photography', 'creativity', 'self', 'travel', 'egypt']
+tags: ['52weeks', 'photography', 'creativity', 'self', 'travel', 'egypt', 'beach']
 
 ---
 

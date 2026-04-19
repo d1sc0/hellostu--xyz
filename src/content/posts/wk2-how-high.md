@@ -5,7 +5,7 @@ slug: wk2-how-high
 category: Work
 pubDate: 2019-03-29
 description: 'I tackle a high ropes course, pushing my limits and reflecting on the experience. I share insights on teamwork, challenge, and progress, plus weekly highlights in study, projects, and social events.'
-tags: ['weeknote']
+tags: ['weeknote', 'work', 'challenge', 'teamwork', 'adventure', 'reflection']
 
 ---
 

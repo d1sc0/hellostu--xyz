@@ -4,12 +4,8 @@ draft: false
 slug: wk5-late-notes
 category: Work
 pubDate: 2019-05-01T00:00:00.000Z
-description: >-
-  I share late notes from a busy week. Highlights include a productive work
-  return, attending an AWS event, and discussing feedback methods.
-tags:
-  - weeknote
-
+description: I share late notes from a busy week. Highlights include a productive work return, attending an AWS event, and discussing feedback methods.
+tags: ['weeknote', 'work', 'event', 'feedback', 'learning', 'reflection', 'notes']
 ---
 
 I was hoping to post these last Friday but I got side-tracked with all of the other things! Main point to note was that I returned back from a much needed Easter Break feeling massively refreshed.

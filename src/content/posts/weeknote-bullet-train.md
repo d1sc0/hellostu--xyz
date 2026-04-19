@@ -5,11 +5,7 @@ slug: weeknote-bullet-train
 category: Work
 pubDate: 2024-08-02T20:20:00
 description: The weekly notes—This week, I bring you not one, not two, but THREE bullet-pointed lists of stuff that covers the period 26 July to 2 August.
-tags:
-  - weeknote
-  - work
-  - life
-  - bullets
+tags: ['weeknote', 'work', 'life', 'update', 'productivity', 'reflection']
 
 ---
 

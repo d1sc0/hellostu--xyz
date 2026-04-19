@@ -5,17 +5,7 @@ slug: 16-fever-dream
 category: Work
 pubDate: 2023-07-14
 description: 'A self-portrait and journal entry exploring organizational structure and working methods, created during a flu bout.'
-tags:
-  [
-    '52weeks',
-    'photography',
-    'olympus',
-    'self',
-    'snot',
-    'flu',
-    'strobist',
-    'bogroll',
-  ]
+tags: ['52weeks', 'photography', 'olympus', 'self', 'snot', 'flu', 'strobist', 'bogroll']
 
 ---
 

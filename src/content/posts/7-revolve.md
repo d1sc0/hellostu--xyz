@@ -2,10 +2,10 @@
 title: 7 | Revolve
 draft: false
 slug: 7-revolve
-category: Work
+category: Play
 pubDate: 2023-03-05
 description: 'Debating falling or flying in self-portrait series with dynamic backgrounds, exploring movement and change.'
-tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'dorset']
+tags: ['52weeks', 'photography', 'creativity', 'self', 'movement', 'dorset']
 
 ---
 

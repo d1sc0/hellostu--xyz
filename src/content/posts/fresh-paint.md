@@ -6,7 +6,6 @@ category: Work
 pubDate: 2020-01-28
 description: 'a post explaining my foray into re-building my blog and my desire to both reduce my hosting costs, save the planet and play with the JAM stack'
 tags: ['data', 'tech', 'experiments', 'climate']
----
 
 ![some coloutful spray cans](../../assets/uploaded_images/spraycansFULL.jpg)
 

@@ -5,12 +5,7 @@ slug: weeknote-some-assembly-required
 category: Work
 pubDate: 2024-07-20T10:20:00
 description: Some quick reflections on life at work and at home from the week 12th to the 19th of July.
-tags:
-  - weeknote
-  - work
-  - life
-  - office
-
+tags: ['weeknote', 'work', 'life', 'office', 'change', 'home']
 ---
 
 I'll keep this one brief. Changes on the domestic front continue to move at pace and have consumed most of my energy outside of working days. Writing this is a struggle through the fog of jobs to be done and things to process.

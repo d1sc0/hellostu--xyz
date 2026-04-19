@@ -5,7 +5,7 @@ slug: wk4-333-slides
 category: Work
 pubDate: 2019-04-12
 description: 'I summarize the week just gone, including completing an ODI course and learning about GDPR.'
-tags: ['weeknote']
+tags: ['weeknote', 'work', 'learning', 'privacy', 'gdpr', 'training']
 
 ---
 

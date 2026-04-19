@@ -2,7 +2,7 @@
 title: 13 | Healing wounds
 draft: false
 slug: 13-healing-wounds
-category: Work
+category: Play
 pubDate: 2023-05-15
 description: 'A self-portrait showing new tattoos beginning to heal, reflecting on creativity and the healing process.'
 tags:
@@ -11,11 +11,11 @@ tags:
     'photography',
     'creativity',
     'self',
-    'space',
     'tattoos',
-    'natural light',
+    'space',
+    'healing',
+    'reflection',
   ]
-
 ---
 
 ![A tightly cropped photo of my arms, showing my tattoos, illuminated by window light](../../assets/uploaded_images/52_2023_13_FULL.jpg)

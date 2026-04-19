@@ -2,10 +2,10 @@
 title: 8 | Sasquatch
 draft: false
 slug: 8-sasquatch
-category: Work
+category: Play
 pubDate: 2023-03-13
 description: 'Experimenting with lighting in self-portraits, feeling artistically unsatisfied and pushing creative boundaries.'
-tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'half_naked']
+tags: ['52weeks', 'photography', 'creativity', 'self', 'experiment', 'lighting']
 
 ---
 

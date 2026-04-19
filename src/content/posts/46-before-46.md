@@ -5,12 +5,7 @@ slug: 46-before-46
 category: Rest
 pubDate: 2025-06-08
 description: Plans are forming for a little birthday challenge. Something to keep me fit and an excuse to spend time outdoors in the company of brilliant people
-tags:
-  - life
-  - birthday
-  - walking
-  - challenge
-  - invite
+tags: ['birthday', 'walking', 'challenge', 'invite', 'friends', 'outdoors']
 
 ---
 

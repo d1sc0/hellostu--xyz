@@ -5,16 +5,7 @@ slug: rambling-man
 category: Play
 pubDate: 2023-10-01
 description: 'Introducing audio notes and reflections from a walk along the Jurassic Coast, touching on life and personal insights.'
-tags:
-  [
-    'podcast',
-    'audio',
-    'voice',
-    'note',
-    'reflections',
-    'ultra-challenge',
-    'audio-note',
-  ]
+tags: ['podcast', 'audio', 'reflections', 'challenge', 'walk', 'personal']
 
 ---
 

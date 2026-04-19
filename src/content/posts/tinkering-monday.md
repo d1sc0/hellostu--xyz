@@ -2,10 +2,10 @@
 title: Tinkering Monday
 draft: false
 slug: tinkering-monday
-category: Work
+category: Play
 pubDate: 2019-03-25
 description: 'A post about my some website experiments - from ghost blogging throught to static site generators and all the things in between'
-tags: ['tech', 'experiment', 'website']
+tags: ['tech', 'webdev', 'cms', 'experiment', 'blogging', 'platforms']
 
 ---
 

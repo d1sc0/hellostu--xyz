@@ -5,7 +5,7 @@ slug: 1-seeking-inspiration-and-comfort
 category: Play
 pubDate: 2023-01-19
 description: 'Starting a self-portrait series, setting the tone for personal exploration and artistic expression.'
-tags: ['52weeks', 'photography', 'creativity', 'self']
+tags: ['52weeks', 'photography', 'creativity', 'self', 'project', 'reflection']
 
 ---
 

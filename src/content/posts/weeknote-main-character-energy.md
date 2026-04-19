@@ -5,13 +5,7 @@ slug: weeknote-main-character-energy
 category: Work
 pubDate: 2024-07-12T15:00:00
 description: A day-by-day breakdown of the week that was. This note covers the period 5th July to 12th July.
-tags:
-  - weeknote
-  - work
-  - life
-  - running
-  - website
-
+tags: ['weeknote', 'work', 'life', 'running', 'website', 'reflection']
 ---
 
 ## The Weekend

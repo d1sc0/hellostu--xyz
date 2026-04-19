@@ -2,10 +2,10 @@
 title: 4 | Stepping into the light
 draft: false
 slug: 4-stepping-into-the-light
-category: Work
+category: Play
 pubDate: 2023-02-12
 description: 'Self-portrait on stairs, exploring light, shadow, and personal journeys.'
-tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist']
+tags: ['52weeks', 'photography', 'creativity', 'self', 'light', 'stairs']
 
 ---
 

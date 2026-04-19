@@ -5,8 +5,7 @@ slug: weeknote-chimp
 category: Work
 pubDate: 2024-06-21T19:13:00
 description: 'A weeknote with some reflections on what became a very short week due to sickness. Covers the period 14th-21st June'
-tags: ['weeknote', 'sick', 'solstice', 'monkeys', 'work']
-
+tags: ['weeknote', 'work', 'sick', 'reflection', 'solstice', 'monkeys']
 ---
 
 ### Work

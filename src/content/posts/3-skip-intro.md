@@ -2,10 +2,10 @@
 title: 3 | Skip intro
 draft: false
 slug: 3-skip-intro
-category: Work
+category: Play
 pubDate: 2023-02-05
 description: 'Reflections in self-portrait series, exploring identity, perception, and the impact of self-view.'
-tags: ['52weeks', 'photography', 'creativity', 'self', 'closeup']
+tags: ['52weeks', 'photography', 'creativity', 'self', 'portrait', 'reflection']
 
 ---
 

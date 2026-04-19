@@ -2,10 +2,10 @@
 title: Homesick
 draft: false
 slug: homesick
-category: Work
+category: Rest
 pubDate: 2018-11-25
 description: 'I reflect on homesickness after two years of splitting my life between Dorset and London, discussing the persistent feelings of anxiety and displacement.'
-tags: ['life', 'homesick', 'reflection']
+tags: ['life', 'homesick', 'reflection', 'travel', 'adjustment', 'work']
 
 ---
 

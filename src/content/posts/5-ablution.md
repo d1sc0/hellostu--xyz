@@ -2,10 +2,10 @@
 title: 5 | Ablution
 draft: false
 slug: 5-ablution
-category: Work
+category: Play
 pubDate: 2023-02-18
 description: 'Shower-themed self-portrait, contemplating routine, creativity, and personal rituals.'
-tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist']
+tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'routine']
 
 ---
 

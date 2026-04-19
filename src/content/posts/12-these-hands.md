@@ -2,11 +2,19 @@
 title: 12 | These hands
 draft: false
 slug: 12-these-hands
-category: Work
+category: Play
 pubDate: 2023-04-10
 description: 'Exploring new backdrops and monochrome vibes in self-portrait series, reflecting on the artistic process and personal growth.'
-tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'mono']
-
+tags:
+  [
+    '52weeks',
+    'photography',
+    'creativity',
+    'self',
+    'strobist',
+    'mono',
+    'process',
+  ]
 ---
 
 ![I stare into the camera lens with my hands up in front of my face](../../assets/uploaded_images/52_2023_12_FULL.jpg)

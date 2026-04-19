@@ -5,8 +5,7 @@ slug: wk3-dear-diary
 category: Work
 pubDate: 2019-04-06
 description: 'I share late notes from a busy week, feeling refreshed after Easter break. Highlights include a productive work return, attending an AWS event, and discussing feedback methods.'
-tags: ['weeknote']
-
+tags: ['weeknote', 'work', 'reflection', 'life', 'learning']
 ---
 
 _3 weeks of weeknotes and 3 weeks without smoking! 🎉_

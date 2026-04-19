@@ -5,7 +5,7 @@ slug: weeknote-buffet
 category: Work
 pubDate: 2024-06-14T10:25:00
 description: 'A weeknote covering the period 7th-14th June. This week was an assorted buffet including sales work, leadership training, reconnecting socially and making things '
-tags: ['weeknote', 'website', 'social', 'work', 'training']
+tags: ['weeknote', 'work', 'social', 'training', 'website', 'reflection']
 
 ---
 

@@ -5,13 +5,7 @@ category: Rest
 draft: false
 pubDate: 2025-08-03
 description: Posting about updated plans for my Birthday at the end of the month. A boy just wants to have fun, and this is how I intend to celebrate this year.
-tags:
-  - life
-  - birthday
-  - walking
-  - plans
-  - challenge
-  - invite
+tags: ['birthday', 'walking', 'plans', 'challenge', 'invite', 'friends']
 
 ---
 

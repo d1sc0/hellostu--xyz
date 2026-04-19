@@ -2,16 +2,10 @@
 title: Weeknote - Swipe right
 draft: false
 slug: weeknote-swipe-right
-category: Work
+category: Rest
 pubDate: 2024-08-30T10:20:00
 description: more excuses, some work stuff, cornwall and exploring the world of dating in a digital age. This note covers the last couple of week until today 30th August 24.
-tags:
-  - weeknote
-  - work
-  - life
-  - car
-  - cornwall
-  - dating
+tags: ['weeknote', 'life', 'travel', 'car', 'dating', 'reflection']
 
 ---
 

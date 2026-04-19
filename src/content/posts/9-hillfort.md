@@ -5,7 +5,7 @@ slug: 9-hillfort
 category: Play
 pubDate: 2023-03-25
 description: 'Late self-portrait taken while running at an Iron Age hillfort, blending history and personal fitness.'
-tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'running']
+tags: ['52weeks', 'photography', 'running', 'creativity', 'self', 'outdoors']
 
 ---
 

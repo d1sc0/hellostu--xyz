@@ -2,10 +2,10 @@
 title: 11 | Panda
 draft: false
 slug: 11-panda
-category: Rest
+category: Play
 pubDate: 2023-04-03
 description: 'Wearing a panda mask in a self-portrait series, reflecting on distractions and maintaining focus.'
-tags: ['52weeks', 'photography', 'creativity', 'self', 'mask']
+tags: ['52weeks', 'photography', 'creativity', 'self', 'mask', 'portrait']
 
 ---
 

@@ -2,21 +2,10 @@
 title: Zen Friday
 draft: false
 slug: zen-friday
-category: Work
+category: Rest
 pubDate: 2023-10-20
 description: 'An audio note covering work, fitness, friendships, and achieving 100 parkruns, recorded during a hike around Maiden Castle.'
-tags:
-  [
-    'podcast',
-    'audio',
-    'update',
-    'life',
-    'work',
-    'friends',
-    'fitness',
-    'audio-note',
-  ]
-
+tags: ['podcast', 'update', 'life', 'friends', 'fitness', 'audio', 'reflection']
 ---
 
 <iframe src="https://embed.acast.com/660872d53207c3001751e852/zen-friday?accentColor=F0F2F5&bgColor=e40404&secondaryColor=F0F2F5" frameBorder="0" width="100%" height="110px" class="audioplayer"></iframe>
