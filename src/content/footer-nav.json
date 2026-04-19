@@ -1,5 +1,6 @@
 {
   "links": [
+    { "label": "Now", "url": "/now" },
     { "label": "About", "url": "/about" },
     { "label": "Posts", "url": "/posts" },
     { "label": "Tags", "url": "/tags/" },

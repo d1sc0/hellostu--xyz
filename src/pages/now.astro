@@ -1,0 +1,17 @@
+---
+import MarkdownPageLayout from '../layouts/MarkdownPageLayout.astro';
+import { getEntry, render } from 'astro:content';
+import '../styles/posts-lists.css';
+const now = await getEntry('pages', 'now');
+const { Content } = now ? await render(now) : { Content: null };
+const pageMeta = {
+  title: now?.data.title,
+  description: now?.data.description,
+};
+---
+
+<MarkdownPageLayout frontmatter={now?.data} pageMeta={pageMeta}>
+  <div class="now-page-content">
+    {Content && <Content />}
+  </div>
+</MarkdownPageLayout>
