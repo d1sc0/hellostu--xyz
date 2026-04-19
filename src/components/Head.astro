@@ -17,8 +17,9 @@ if (!fs.existsSync(ogImagePath)) {
 }
 
 const title =
-  (frontmatter?.title ? `HelloStu | ${frontmatter.title}` : 'HelloStu') ||
-  pageMeta?.title;
+  (frontmatter?.title && `HelloStu | ${frontmatter.title}`) ||
+  (pageMeta?.title && `HelloStu | ${pageMeta.title}`) ||
+  'HelloStu';
 const description = frontmatter?.description || pageMeta?.description || '';
 ---
 
