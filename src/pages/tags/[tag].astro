@@ -28,9 +28,14 @@ export async function getStaticPaths() {
   });
   return Array.from(tagSet).map(tag => ({ params: { tag } }));
 }
+const pageMeta = {
+  title: `Posts tagged "${tag}"`,
+  description: `All posts tagged with "${tag}" on the site.`,
+  imageUrl: '/default-social.png',
+};
 ---
 
-<BaseLayout frontmatter={{ title: `Posts tagged #${tag}` }}>
+<BaseLayout pageMeta={pageMeta}>
   <section class="tag-page content-padding">
     <h2>Posts tagged <span class="tag-title">#{tag}</span></h2>
     {
