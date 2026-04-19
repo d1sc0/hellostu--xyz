@@ -58,3 +58,14 @@
 - Only use @media (min-width: 768px) and (orientation: landscape) for desktop/landscape overrides.
 - Place all media queries at the end of the CSS file.
 - Do not use other media queries.
+
+---
+
+## Documentation Quick Links
+
+- [Astro Markdown Guide](docs/astro-markdown-guide.md)
+- [CSS Naming Conventions](docs/css-naming-conventions.md)
+- [Sveltia CMS Guide](docs/sveltia-cms.md)
+- [OG Image Generation Guide](docs/og-image-generation-guide.md)
+- [Preview Image Generation Guide](docs/preview-image-generation-guide.md)
+- [Project Plan](docs/project-plan.md)
