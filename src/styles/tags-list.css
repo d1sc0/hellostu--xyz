@@ -15,7 +15,7 @@
 .all-tags-list li {
   margin-bottom: 0.5em;
 }
-}
+
 .all-tags-link {
   color: var(--color-link);
   text-decoration: dashed underline;
