@@ -57,7 +57,7 @@
 - [x] Add category into post page / markdown template
 - [ ] Re-style next and previous post links
 - [ ] Create a recommended posts component for post pages
-- [ ] Update and improve meta decriptions on pages and default OG images
+- [x] Update and improve meta decriptions on pages and default OG images
 - [ ] Redesign OG image template and re-generate images
 - [x] Migrate remainder of posts (Mdx) and post components
 - [ ] Add a small like (heart) button to posts
