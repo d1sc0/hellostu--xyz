@@ -1,0 +1,71 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import '../styles/tags-list.css';
+
+type TagCount = { tag: string; count: number; latestDate: number };
+const posts = (await getCollection('posts')) as CollectionEntry<'posts'>[];
+posts.sort((a: CollectionEntry<'posts'>, b: CollectionEntry<'posts'>) => {
+  const dateA = new Date(a.data.pubDate).getTime();
+  const dateB = new Date(b.data.pubDate).getTime();
+  return dateB - dateA;
+});
+const tagCounts: Record<string, TagCount> = {};
+posts.forEach((post: CollectionEntry<'posts'>) => {
+  if (Array.isArray(post.data.tags)) {
+    (post.data.tags as string[]).forEach((tag: string) => {
+      const tagLower = tag.toLowerCase();
+      if (!tagCounts[tagLower]) {
+        tagCounts[tagLower] = { tag, count: 0, latestDate: new Date(post.data.pubDate).getTime() };
+      }
+      tagCounts[tagLower].count++;
+      if (new Date(post.data.pubDate).getTime() > tagCounts[tagLower].latestDate) {
+        tagCounts[tagLower].latestDate = new Date(post.data.pubDate).getTime();
+      }
+    });
+  }
+});
+const allTags = Object.values(tagCounts) as TagCount[];
+allTags.sort((a, b) => a.tag.localeCompare(b.tag));
+---
+
+<section class="tag-page">
+  <h2>All Tags</h2>
+  {
+    allTags.length === 0 ? (
+      <p>No tags found.</p>
+    ) : (
+      <>
+        <input
+          id="tag-filter-input"
+          type="text"
+          placeholder="Filter tags..."
+          class="tag-filter-input"
+        />
+        <script is:inline>
+          const filterInput = document.getElementById('tag-filter');
+          if (filterInput) {
+            filterInput.addEventListener('input', function(e) {
+              const target = e.target;
+              if (!(target instanceof HTMLInputElement)) return;
+              const val = target.value.toLowerCase();
+              document.querySelectorAll('.tagged-posts-list li').forEach(el => {
+                if (el.textContent.toLowerCase().includes(val)) {
+                  el.style.display = '';
+                } else {
+                  el.style.display = 'none';
+                }
+              });
+            });
+          }
+        </script>
+        <ul class="tagged-posts-list all-tags-list">
+          {allTags.map((tag) => (
+            <li>
+              <a href={`/tags/${tag.tag.toLowerCase()}/`} class="all-tags-link">{tag.tag} ({tag.count})</a>
+            </li>
+          ))}
+        </ul>
+      </>
+    )
+  }
+</section>

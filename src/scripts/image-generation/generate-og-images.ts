@@ -4,6 +4,7 @@ import puppeteer from 'puppeteer';
 import matter from 'gray-matter';
 
 const POSTS_DIR = path.join(process.cwd(), 'src/content/posts');
+const PAGES_DIR = path.join(process.cwd(), 'src/content/pages');
 const TEMPLATE_PATH = path.join(
   process.cwd(),
   'src/scripts/image-generation/social-image-template.html',
@@ -15,11 +16,20 @@ const BG_PATH = path.join(
 const OUTPUT_DIR = path.join(process.cwd(), 'public/generated_social_images');
 
 async function getPosts() {
-  const files = fs
+  const postFiles = fs
     .readdirSync(POSTS_DIR)
     .filter(f => f.endsWith('.md') || f.endsWith('.mdx'));
-  return files.map(file => {
-    const content = fs.readFileSync(path.join(POSTS_DIR, file), 'utf-8');
+  const pageFiles = fs.existsSync(PAGES_DIR)
+    ? fs
+        .readdirSync(PAGES_DIR)
+        .filter(f => f.endsWith('.md') || f.endsWith('.mdx'))
+    : [];
+  const allFiles = [
+    ...postFiles.map(file => ({ file, dir: POSTS_DIR })),
+    ...pageFiles.map(file => ({ file, dir: PAGES_DIR })),
+  ];
+  return allFiles.map(({ file, dir }) => {
+    const content = fs.readFileSync(path.join(dir, file), 'utf-8');
     const { data, content: body } = matter(content);
     const title = data.title
       ? String(data.title)

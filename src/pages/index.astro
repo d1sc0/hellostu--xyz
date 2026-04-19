@@ -2,16 +2,16 @@
 import MarkdownPageLayout from '../layouts/MarkdownPageLayout.astro';
 import '../styles/home.css';
 import { getEntry, render } from 'astro:content';
-const home = await getEntry('pages', 'home');
+const home = await getEntry('pages', 'index');
 const { Content } = home ? await render(home) : { Content: null };
 const pageMeta = {
-  title: 'Your Site | Home',
+  title: home?.data.title,
   description: home?.data.description,
   imageUrl: '/default-social.png',
 };
 ---
 
-<MarkdownPageLayout frontmatter={home.data} pageMeta={pageMeta}>
+<MarkdownPageLayout frontmatter={home?.data} pageMeta={pageMeta}>
   <div class="home-page-content">
     {Content && <Content />}
   </div>

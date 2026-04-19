@@ -11,8 +11,8 @@ const urlId =
 const ogImage = `${siteURL}generated_social_images/${urlId}.png`;
 
 const title =
-  pageMeta?.title ||
-  (frontmatter?.title ? `HelloStu | ${frontmatter.title}` : 'HelloStu');
+  (frontmatter?.title ? `HelloStu | ${frontmatter.title}` : 'HelloStu') ||
+  pageMeta?.title;
 const description = frontmatter?.description || pageMeta?.description || '';
 ---
 
