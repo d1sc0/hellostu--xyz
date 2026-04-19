@@ -55,7 +55,7 @@
 - [x] Go through posts and tidy up tags
 - [x] Re-style tags page
 - [x] Add category into post page / markdown template
-- [ ] Re-style next and previous post links
+- [x] Re-style next and previous post links
 - [ ] Create a recommended posts component for post pages
 - [x] Update and improve meta decriptions on pages and default OG images
 - [ ] Redesign OG image template and re-generate images
@@ -65,6 +65,7 @@
 - [ ] Consider an image navigation component - create a component that scans posts for images and then has a sliding carosel that allows navigation by image?
 - [ ] Revisit webmentions and see if that's useful
 - [ ] test code and additional styles for markdown
+- [ ] refactor latest posts to use same styling method as posts page (remove table)
 
 ---
 
