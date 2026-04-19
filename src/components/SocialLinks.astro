@@ -1,7 +1,7 @@
 ---
 // Usage example:
 // import SocialLinks from '../../components/SocialLinks.astro';
-// <SocialLinks iconSize="1.25rem" spacing="0.75rem" edgeSpacing="before" edgeSpacingAmount="1rem" icons={["github", "linkedin"]} />
+// <SocialLinks iconSize="1.25rem" spacing="0.75rem" edgeSpacing="before" edgeSpacingAmount="1rem" icons={["github", "linkedin"]} wrapped={true} />
 import { Icon } from 'astro-icon/components';
 import '../styles/social-links.css';
 import socialLinks from '../content/social-links.json';
@@ -19,6 +19,7 @@ interface Props {
   edgeSpacing?: 'none' | 'before' | 'after' | 'both';
   edgeSpacingAmount?: string;
   icons?: string[];
+  wrapped?: boolean;
 }
 
 const {
@@ -27,6 +28,7 @@ const {
   edgeSpacing = 'none',
   edgeSpacingAmount = spacing,
   icons = [],
+  wrapped = false,
 } = Astro.props as Props;
 
 const links: SocialLinkItem[] = Array.isArray(socialLinks.links)
@@ -38,16 +40,33 @@ const filteredLinks =
 ---
 
 {
-  filteredLinks.map((link, index) => (
-    <a
-      href={link.url}
-      class={`social-links__icon ${index === 0 ? 'social-links__icon--first' : ''} ${index === filteredLinks.length - 1 ? 'social-links__icon--last' : ''}`}
-      rel="me"
-      aria-label={link.aria ?? `link to ${link.label ?? link.icon}`}
-      data-edge-spacing={edgeSpacing}
-      style={`--social-links-size:${iconSize};--social-links-gap:${spacing};--social-links-edge-space:${edgeSpacingAmount};`}
-    >
-      <Icon name={link.icon} />
-    </a>
-  ))
+  wrapped ? (
+    <div class="social-links">
+      {filteredLinks.map((link, index) => (
+        <a
+          href={link.url}
+          class={`social-links__icon ${index === 0 ? 'social-links__icon--first' : ''} ${index === filteredLinks.length - 1 ? 'social-links__icon--last' : ''}`}
+          rel="me"
+          aria-label={link.aria ?? `link to ${link.label ?? link.icon}`}
+          data-edge-spacing={edgeSpacing}
+          style={`--social-links-size:${iconSize};--social-links-gap:${spacing};--social-links-edge-space:${edgeSpacingAmount};`}
+        >
+          <Icon name={link.icon} />
+        </a>
+      ))}
+    </div>
+  ) : (
+    filteredLinks.map((link, index) => (
+      <a
+        href={link.url}
+        class={`social-links__icon ${index === 0 ? 'social-links__icon--first' : ''} ${index === filteredLinks.length - 1 ? 'social-links__icon--last' : ''}`}
+        rel="me"
+        aria-label={link.aria ?? `link to ${link.label ?? link.icon}`}
+        data-edge-spacing={edgeSpacing}
+        style={`--social-links-size:${iconSize};--social-links-gap:${spacing};--social-links-edge-space:${edgeSpacingAmount};`}
+      >
+        <Icon name={link.icon} />
+      </a>
+    ))
+  )
 }
