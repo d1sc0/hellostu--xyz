@@ -3,7 +3,7 @@
 
 All OG and preview image generation settings (template path, fallback background, output directory, site title, style, and site URL) are managed in:
 
-	src/scripts/image-generation/image-config.json
+    src/scripts/image-generation/image-config.json
 
 This makes it easy to update image generation parameters in one place for both scripts.
 
@@ -22,7 +22,7 @@ This script generates square preview images for all posts using Puppeteer and a 
 1. Reads all Markdown files in `src/content/posts/`.
 2. Extracts post metadata (title, slug) and finds the first image in the post body (if present).
 3. Loads the HTML template and injects post data and a base64-encoded background image.
-	- If a post image is found, it is used as the background (with grayscale and opacity applied). Otherwise, the fallback background is used.
+    - If a post image is found, it is used as the background (with grayscale and opacity applied). Otherwise, the fallback background is used.
 4. Uses Puppeteer to render the HTML and capture a PNG screenshot.
 5. Saves the image as `[post-id].png` in the output folder.
 
@@ -38,13 +38,6 @@ npx ts-node src/scripts/image-generation/generate-preview-images.ts
 
 Or add it back to your build scripts if needed in the future.
 
-Or manually:
-
-```
-npx ts-node src/scripts/image-generation/generate-preview-images.ts
-```
-
-
 ## Notes
 
 - Skips images that already exist.
@@ -58,8 +51,8 @@ npx ts-node src/scripts/image-generation/generate-preview-images.ts
 
 ---
 
-For styling and naming conventions used in image templates and across the project, see [styling-naming-conventions.md](styling-naming-conventions.md).
+For styling and naming conventions used in image templates and across the project, see [css-naming-conventions.md](css-naming-conventions.md).
 
 ---
 
-For OG image generation, see `docs/og-image-generation.md`.
+For OG image generation, see `docs/og-image-generation-guide.md`.

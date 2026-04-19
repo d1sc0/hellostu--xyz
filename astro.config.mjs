@@ -13,6 +13,11 @@ export default defineConfig({
       devSourcemap: true,
     },
   },
+  markdown: {
+    shikiConfig: {
+      theme: 'houston',
+    },
+  },
   integrations: [
     mdx(),
     astroImageTools,

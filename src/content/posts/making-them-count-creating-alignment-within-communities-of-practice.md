@@ -5,8 +5,8 @@ slug: making-them-count-creating-alignment-within-communities-of-practice
 category: Work
 pubDate: 2026-03-10
 description: Some thoughts on how to use learning design theory to align goals and activities in a Community of Practice. Move from "humaning together" and great vibes to practicing with purpose.
-tags: ['learning', 'communities', 'digital', 'transformation', 'practice', 'study']
-
+tags:
+  ['learning', 'communities', 'digital', 'transformation', 'practice', 'study']
 ---
 
 So recently I started **doing a _thing_**! That _thing_ being studying for a Master’s degree in Creative Teaching and Learning Design. At some point I should probably write some more words about why I've embarked on this journey given I'm not known for being a teacher- or a designer and my single A-level definitely suggests academia isn't my jam...but that feels like a messy and personal story I'm not in the mood to write today.

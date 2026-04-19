@@ -3,10 +3,9 @@
 
 All OG and preview image generation settings (template path, fallback background, output directory, site title, style, and site URL) are managed in:
 
-	src/scripts/image-generation/image-config.json
+    src/scripts/image-generation/image-config.json
 
 This makes it easy to update image generation parameters in one place for both scripts.
-
 
 # OG Image Generation Script
 
@@ -23,8 +22,8 @@ This script generates Open Graph (OG) images for all posts using Puppeteer and a
 1. Reads all Markdown files in `src/content/posts/`.
 2. Extracts post metadata (title, slug) and finds the first image in the post body (if present).
 3. Loads the HTML template and injects post data and a base64-encoded background image.
-	- If a post or page image is found, it is used as the background (with grayscale and opacity applied).
-	- If no image is found, the fallback background is `src/scripts/image-generation/og-background.png`.
+    - If a post or page image is found, it is used as the background (with grayscale and opacity applied).
+    - If no image is found, the fallback background is `src/scripts/image-generation/og-background.png`.
 
 ## OG Image Fallback Logic
 
@@ -57,8 +56,6 @@ Or manually:
 npx ts-node src/scripts/image-generation/generate-og-images.ts
 ```
 
-
-
 ## Default OG Image
 
 - The default OG image is located at `/public/default_social.png`.
@@ -75,8 +72,4 @@ npx ts-node src/scripts/image-generation/generate-og-images.ts
 
 ---
 
-For styling and naming conventions used in image templates and across the project, see [styling-naming-conventions.md](styling-naming-conventions.md).
-
----
-
-For preview image generation, see `docs/preview-image-generation.md`.
+For styling and naming conventions used in image templates and across the project, see [css-naming-conventions.md](css-naming-conventions.md).

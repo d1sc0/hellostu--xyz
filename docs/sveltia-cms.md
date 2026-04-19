@@ -2,7 +2,7 @@
 
 ## Styling & Naming Conventions
 
-For details on how styles and class names are structured in this project, see [styling-naming-conventions.md](styling-naming-conventions.md).
+For details on how styles and class names are structured in this project, see [css-naming-conventions.md](css-naming-conventions.md).
 
 # CMS & Content Editing
 
@@ -21,7 +21,6 @@ This project uses Sveltia CMS (Netlify CMS compatible) for content editing.
 - Default sort: pubDate descending
 
 To access the CMS, open `/admin/` in your deployed site.
-
 
 ## Prebuild Automation for Sveltia CMS
 

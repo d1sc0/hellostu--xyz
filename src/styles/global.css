@@ -91,6 +91,47 @@ blockquote p {
   margin: 1rem;
 }
 
+pre {
+  background: var(--color-text);
+  color: var(--color-line);
+  padding: 1.5em;
+  overflow-x: visible;
+  white-space: pre-wrap;
+  border-radius: 0.5rem;
+  margin: 1.5em 0;
+  font-size: 0.8em;
+}
+
+/* Markdown Task List Styles */
+li.task-list-item {
+  list-style: none;
+  position: relative;
+  padding-left: 2em;
+  margin-bottom: 0.5em;
+}
+li.task-list-item input[type='checkbox'] {
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  width: 1.5em;
+  height: 1.5em;
+  accent-color: var(--color-accent);
+  border-radius: 0.3em;
+  border: 2px solid var(--color-line);
+  background: var(--color-page);
+  cursor: pointer;
+}
+li.task-list-item input[type='checkbox']:checked {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+li.task-list-item input[type='checkbox']:focus {
+  outline: 2px solid var(--color-link);
+}
+li.task-list-item label {
+  cursor: pointer;
+}
+
 a {
   color: var(--color-link);
   text-underline-offset: 2px;
