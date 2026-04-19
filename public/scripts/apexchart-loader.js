@@ -12,6 +12,14 @@ function reviveFunctions(obj) {
 function renderApexChart(container) {
   try {
     const config = reviveFunctions(JSON.parse(container.dataset.config));
+    // Inject mm:ss formatter for finishing times chart
+    if (container.id === 'tgf-finish-times' && config.yaxis && config.yaxis.labels) {
+      config.yaxis.labels.formatter = function (value) {
+        const minutes = Math.floor(value / 60);
+        const seconds = Math.round(value % 60).toString().padStart(2, '0');
+        return `${minutes}:${seconds}`;
+      };
+    }
     if (typeof window.ApexCharts === 'undefined') {
       return;
     }
