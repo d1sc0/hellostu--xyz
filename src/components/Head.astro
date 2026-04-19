@@ -1,5 +1,6 @@
 ---
 import { SEO } from 'astro-seo';
+import fs from 'node:fs';
 const { frontmatter, pageMeta } = Astro.props;
 import { AstroFont } from 'astro-font';
 const siteURL = Astro.site?.toString() || '';
@@ -8,7 +9,12 @@ const siteURL = Astro.site?.toString() || '';
 const urlPath = Astro.url?.pathname?.replace(/\/$/, '') || '';
 const urlId =
   frontmatter?.id || frontmatter?.slug || urlPath.split('/').pop() || 'index';
-const ogImage = `${siteURL}generated_social_images/${urlId}.png`;
+
+let ogImage = `${siteURL}generated_social_images/${urlId}.png`;
+const ogImagePath = `public/generated_social_images/${urlId}.png`;
+if (!fs.existsSync(ogImagePath)) {
+  ogImage = `${siteURL}default_social.png`;
+}
 
 const title =
   (frontmatter?.title ? `HelloStu | ${frontmatter.title}` : 'HelloStu') ||
