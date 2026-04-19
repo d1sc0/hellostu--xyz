@@ -10,26 +10,22 @@ function reviveFunctions(obj) {
 }
 
 function renderApexChart(container) {
-  console.log('[ApexCharts] Found container:', container);
   try {
     const config = reviveFunctions(JSON.parse(container.dataset.config));
-    console.log('[ApexCharts] Parsed config:', config);
     if (typeof window.ApexCharts === 'undefined') {
-      console.error('[ApexCharts] window.ApexCharts is undefined!');
       return;
     }
     const chart = new window.ApexCharts(container, config);
     chart.render();
-    console.log('[ApexCharts] Chart rendered.');
   } catch (e) {
-    console.error('[ApexCharts] Error rendering chart:', e);
+    // Optionally log errors in development only
   }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  const els = document.querySelectorAll('.apexchart-container[data-config]');
-  console.log(`[ApexCharts] Found ${els.length} chart container(s).`);
-  for (const el of els) {
+  for (const el of document.querySelectorAll(
+    '.apexchart-container[data-config]',
+  )) {
     renderApexChart(el);
   }
 });
