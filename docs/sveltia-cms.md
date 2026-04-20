@@ -17,7 +17,7 @@ This project uses Sveltia CMS (Netlify CMS compatible) for content editing.
     - `src/content/footer-nav.json`
     - `src/content/social-links.json`
     - `src/content/galleries.yaml`
-- Post fields: title, slug, draft, pubDate, body, description, tags
+- Post fields: title, slug, draft, pubDate, category, featureImage, body, description, tags
 - Sortable by: title, pubDate
 - Default sort: pubDate descending
 
@@ -36,6 +36,32 @@ This script:
 - Renames Markdown files to match their `slug` frontmatter (if present)
 
 No manual changes are needed after uploading images or creating new posts in the CMS.
+
+## Optional Feature Image Frontmatter
+
+An optional `featureImage` field is available in:
+
+- Posts (`.md`)
+- MDX Posts (`.mdx`)
+- Pages (`.mdx`)
+
+Use it when you want an explicit image override instead of relying on the first markdown image in the body.
+
+Recommended value format:
+
+- `/src/assets/uploaded_images/your-image.jpg`
+
+This field is used by:
+
+- Home page image stream (`PostImageScroller`)
+- OG social image generator
+- Preview image generator
+
+Selection precedence:
+
+1. `featureImage`
+2. first markdown image in body
+3. configured fallback background
 
 ## Gallery Manifest
 

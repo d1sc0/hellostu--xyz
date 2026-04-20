@@ -34,6 +34,26 @@ When image galleries are edited in Sveltia CMS, image paths are stored as `/src/
 
 The component resolves those paths at build time, so the YAML file can stay CMS-friendly while the final site still uses Astro image optimisation.
 
+## Gallery-only post workflow
+
+If a post uses `MdxImageGallery` and does not include a regular markdown image in the body, set optional `featureImage` in post frontmatter.
+
+This ensures the post still contributes an image to:
+
+- the home page image stream
+- OG social image generation
+- preview image generation
+
+Example:
+
+```yaml
+---
+title: Gallery post
+slug: gallery-post
+featureImage: /src/assets/uploaded_images/example.jpg
+---
+```
+
 Example gallery entry:
 
 ```yaml

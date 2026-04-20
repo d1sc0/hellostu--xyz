@@ -41,6 +41,35 @@ See the [docs/](docs/) folder for full guides and details:
 - See [OG image generation guide](docs/og-image-generation-guide.md) and [Preview image generation guide](docs/preview-image-generation-guide.md) for automation details.
 - See [Sveltia CMS guide](docs/sveltia-cms.md) for content workflow and prebuild automation.
 
+## Optional `featureImage` Frontmatter
+
+Posts and pages can now define an optional `featureImage` field in frontmatter.
+
+- Supported on: markdown posts, MDX posts, and MDX pages.
+- Recommended path format: `/src/assets/uploaded_images/your-image.jpg`
+- Used by:
+   - home page image stream component (`PostImageScroller`)
+   - social OG image generation script
+   - preview image generation script
+
+Selection precedence is:
+
+1. `featureImage` (if present and resolvable)
+2. first markdown image in the body
+3. script fallback background image
+
+Example frontmatter:
+
+```yaml
+---
+title: Example post
+slug: example-post
+pubDate: 2026-04-20T10:00:00
+description: Example
+featureImage: /src/assets/uploaded_images/example-FULL.jpg
+---
+```
+
 ## Agent & Onboarding Notes
 
 See [agent.md](agent.md) for co-pilot/agent onboarding, automation gotchas, and troubleshooting tips.
