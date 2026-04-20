@@ -53,7 +53,6 @@ type ResolvedGalleryImage = {
   caption?: string;
 };
 
-
 const {
   gallery,
   heading,
@@ -294,11 +293,20 @@ const showMissingState =
 
       {linkMode === 'lightbox' ? (
         <div class="mdx-image-gallery__lightbox" tabindex="-1" hidden>
-          <div class="mdx-image-gallery__lightbox-overlay" data-lightbox-close></div>
+          <div
+            class="mdx-image-gallery__lightbox-overlay"
+            data-lightbox-close
+          />
           <figure class="mdx-image-gallery__lightbox-figure">
             <img class="mdx-image-gallery__lightbox-img" alt="" />
-            <figcaption class="mdx-image-gallery__lightbox-caption"></figcaption>
-            <button type="button" class="mdx-image-gallery__lightbox-close" aria-label="Close image">&times;</button>
+            <figcaption class="mdx-image-gallery__lightbox-caption" />
+            <button
+              type="button"
+              class="mdx-image-gallery__lightbox-close"
+              aria-label="Close image"
+            >
+              &times;
+            </button>
           </figure>
         </div>
       ) : null}
@@ -344,12 +352,22 @@ const showMissingState =
     // Lightbox logic
     const lightbox = root.querySelector('.mdx-image-gallery__lightbox');
     if (lightbox) {
-      const images = Array.from(root.querySelectorAll('.mdx-image-gallery__image-lightbox-btn'));
+      const images = Array.from(
+        root.querySelectorAll('.mdx-image-gallery__image-lightbox-btn'),
+      );
       const imgEl = lightbox.querySelector('.mdx-image-gallery__lightbox-img');
-      const captionEl = lightbox.querySelector('.mdx-image-gallery__lightbox-caption');
-      const closeBtn = lightbox.querySelector('.mdx-image-gallery__lightbox-close');
-      const overlay = lightbox.querySelector('.mdx-image-gallery__lightbox-overlay');
-      const figures = Array.from(root.querySelectorAll('.mdx-image-gallery__figure'));
+      const captionEl = lightbox.querySelector(
+        '.mdx-image-gallery__lightbox-caption',
+      );
+      const closeBtn = lightbox.querySelector(
+        '.mdx-image-gallery__lightbox-close',
+      );
+      const overlay = lightbox.querySelector(
+        '.mdx-image-gallery__lightbox-overlay',
+      );
+      const figures = Array.from(
+        root.querySelectorAll('.mdx-image-gallery__figure'),
+      );
 
       let currentIdx = null;
 

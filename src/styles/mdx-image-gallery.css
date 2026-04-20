@@ -123,7 +123,6 @@
   border: none !important;
 }
 
-
 .mdx-image-gallery img.mdx-image-gallery__image {
   display: block;
   width: auto;
@@ -136,11 +135,9 @@
   border-radius: 0.8rem;
 }
 
-
 .mdx-image-gallery__image-link:hover img.mdx-image-gallery__image {
   /* No border color change for scroller images */
 }
-
 
 .mdx-image-gallery__caption {
   margin-top: 0.45rem;
@@ -148,13 +145,12 @@
   color: var(--color-text);
 }
 
-
 /* Lightbox styles - strictly scoped */
 .mdx-image-gallery__lightbox {
   position: fixed;
   z-index: 10000;
   inset: 0;
-  background: rgba(0,0,0,0.82);
+  background: rgba(0, 0, 0, 0.82);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,7 +181,7 @@
   max-width: 96vw;
   max-height: 80vh;
   border-radius: 1.1rem;
-  box-shadow: 0 2px 24px 0 rgba(0,0,0,0.25);
+  box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.25);
   border: 3px solid var(--color-line);
   margin-bottom: 0.7rem;
   background: none !important;
@@ -212,8 +208,10 @@
   cursor: pointer;
   z-index: 2;
   line-height: 1;
-  box-shadow: 0 1px 8px 0 rgba(0,0,0,0.12);
-  transition: border-color 0.15s, color 0.15s;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  transition:
+    border-color 0.15s,
+    color 0.15s;
 }
 .mdx-image-gallery__lightbox .mdx-image-gallery__lightbox-close:hover {
   color: var(--color-accent);
