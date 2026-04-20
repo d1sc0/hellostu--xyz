@@ -1,0 +1,21 @@
+.about-page-content blockquote {
+  border: 2px dashed var(--color-link);
+  border-radius: 1rem;
+  margin-top: 2.5rem;
+}
+
+.about-page-content img[src*='RIGHT'] {
+  width: 40%;
+  float: right;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .about-page-content img[src*='RIGHT'] {
+    width: 30%;
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,7 +1,7 @@
 ---
 import MarkdownPageLayout from '../layouts/MarkdownPageLayout.astro';
 import { getEntry, render } from 'astro:content';
-import '../styles/posts-lists.css';
+import '../styles/now.css';
 const now = await getEntry('pages', 'now');
 const { Content } = now ? await render(now) : { Content: null };
 const pageMeta = {

@@ -1,0 +1,5 @@
+.now-page-content blockquote {
+  border: 2px dashed var(--color-link);
+  border-radius: 1rem;
+  margin-top: 2.5rem;
+}
