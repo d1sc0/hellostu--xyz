@@ -55,6 +55,7 @@
 
 ## Post-Cutover Tasks
 
+- [x] Add a way to browse by post image on the home page
 - [ ] Add a small like (heart) button to posts alongside social share component (check if social share is still maintained)
 - [ ] Implement comments again
 - [ ] (Optional) Consider an image navigation component—scan posts for images and provide a sliding carousel for navigation
