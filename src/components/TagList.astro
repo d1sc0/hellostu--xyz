@@ -35,48 +35,37 @@ allTags.sort((a, b) => a.tag.localeCompare(b.tag));
       <p>No tags found.</p>
     ) : (
       <>
-        <input
-          id="tag-filter-input"
-          type="text"
-          placeholder="Filter tags..."
-          class="tag-filter-input"
-        />
-        <script is:inline>
-          const filterInput = document.getElementById('tag-filter-input');
-
-          if (filterInput) {
-            filterInput.addEventListener('input', function(e) {
-              const target = e.target;
-              if (!(target instanceof HTMLInputElement)) return;
-              const val = target.value.toLowerCase();
-              const emptyState = document.getElementById('tag-filter-empty');
-              const tagItems = Array.from(
-                document.querySelectorAll('.tagged-posts-list li'),
-              );
-              let visibleCount = 0;
-
-              tagItems.forEach(el => {
-                const text = (el.textContent || '').toLowerCase();
-                const isVisible = text.includes(val);
-
-                if (isVisible) {
-                  el.style.display = '';
-                  visibleCount += 1;
-                  return;
-                }
-
-                el.style.display = 'none';
-              });
-
-              if (emptyState) {
-                emptyState.hidden = visibleCount !== 0;
-              }
-            });
-          }
-        </script>
+        <div class="tag-controls">
+          <input
+            id="tag-filter-input"
+            type="text"
+            placeholder="Filter tags..."
+            class="tag-filter-input"
+          />
+          <div class="tag-sort-controls" role="group" aria-label="Sort tags">
+            <button
+              type="button"
+              class="tag-sort-btn"
+              data-tag-sort="tag"
+              data-label="A-Z"
+              aria-label="Sort tags alphabetically"
+            >
+              A-Z
+            </button>
+            <button
+              type="button"
+              class="tag-sort-btn"
+              data-tag-sort="count"
+              data-label="Count"
+              aria-label="Sort tags by count"
+            >
+              Count
+            </button>
+          </div>
+        </div>
         <ul class="tagged-posts-list all-tags-list">
           {allTags.map((tag) => (
-            <li>
+            <li data-tag={tag.tag.toLowerCase()} data-count={String(tag.count)}>
               <a href={`/tags/${tag.tag.toLowerCase()}/`} class="all-tags-link">{tag.tag} ({tag.count})</a>
             </li>
           ))}
@@ -84,6 +73,96 @@ allTags.sort((a, b) => a.tag.localeCompare(b.tag));
         <p id="tag-filter-empty" class="tag-filter-empty" hidden>
           No tags match that filter.
         </p>
+        <script is:inline>
+          const filterInput = document.getElementById('tag-filter-input');
+          const tagList = document.querySelector('.tagged-posts-list');
+          const emptyState = document.getElementById('tag-filter-empty');
+          const sortButtons = Array.from(
+            document.querySelectorAll('[data-tag-sort]'),
+          );
+
+          if (
+            filterInput instanceof HTMLInputElement &&
+            tagList instanceof HTMLUListElement
+          ) {
+            const collator = new Intl.Collator(undefined, {
+              sensitivity: 'base',
+              numeric: true,
+            });
+
+            let sortBy = 'tag';
+            let sortDir = 'asc';
+
+            const updateSortButtons = () => {
+              sortButtons.forEach(button => {
+                if (!(button instanceof HTMLButtonElement)) return;
+                const label = button.dataset.label || button.textContent || '';
+                const isActive = button.dataset.tagSort === sortBy;
+
+                button.classList.toggle('tag-sort-btn--active', isActive);
+                button.textContent = isActive
+                  ? `${label} ${sortDir === 'asc' ? '↑' : '↓'}`
+                  : label;
+              });
+            };
+
+            const applyListState = () => {
+              const query = filterInput.value.toLowerCase().trim();
+              const items = Array.from(tagList.querySelectorAll('li'));
+
+              items.sort((a, b) => {
+                if (sortBy === 'count') {
+                  const countA = Number(a.dataset.count || '0');
+                  const countB = Number(b.dataset.count || '0');
+                  return sortDir === 'asc' ? countA - countB : countB - countA;
+                }
+
+                const tagA = a.dataset.tag || '';
+                const tagB = b.dataset.tag || '';
+                return sortDir === 'asc'
+                  ? collator.compare(tagA, tagB)
+                  : collator.compare(tagB, tagA);
+              });
+
+              items.forEach(item => tagList.appendChild(item));
+
+              let visibleCount = 0;
+              items.forEach(item => {
+                const text = (item.textContent || '').toLowerCase();
+                const isVisible = text.includes(query);
+
+                item.style.display = isVisible ? '' : 'none';
+                if (isVisible) visibleCount += 1;
+              });
+
+              if (emptyState) {
+                emptyState.hidden = visibleCount !== 0;
+              }
+
+              updateSortButtons();
+            };
+
+            filterInput.addEventListener('input', applyListState);
+
+            sortButtons.forEach(button => {
+              if (!(button instanceof HTMLButtonElement)) return;
+              button.addEventListener('click', () => {
+                const nextSort = button.dataset.tagSort || 'tag';
+
+                if (nextSort === sortBy) {
+                  sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+                } else {
+                  sortBy = nextSort;
+                  sortDir = 'asc';
+                }
+
+                applyListState();
+              });
+            });
+
+            applyListState();
+          }
+        </script>
       </>
     )
   }
