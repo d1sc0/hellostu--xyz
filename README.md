@@ -48,9 +48,9 @@ Posts and pages can now define an optional `featureImage` field in frontmatter.
 - Supported on: markdown posts, MDX posts, and MDX pages.
 - Recommended path format: `/src/assets/uploaded_images/your-image.jpg`
 - Used by:
-   - home page image stream component (`PostImageScroller`)
-   - social OG image generation script
-   - preview image generation script
+  - home page image stream component (`PostImageScroller`)
+  - social OG image generation script
+  - preview image generation script
 
 Selection precedence is:
 
