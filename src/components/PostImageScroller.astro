@@ -119,9 +119,23 @@ const matchedImages: MatchedImage[] = [];
 
 for (const post of posts) {
   const body = post.body || '';
-  const imageRefs = parseImageRefs(body);
+  const imageRefs: ParsedImageRef[] = [];
+
+  if (post.data.featureImage) {
+    imageRefs.push({
+      src: post.data.featureImage,
+      alt: `Featured image from ${post.data.title}`,
+    });
+  }
+
+  imageRefs.push(...parseImageRefs(body));
+  const seenRefs = new Set<string>();
 
   for (const imageRef of imageRefs) {
+    const refKey = imageRef.src.trim();
+    if (!refKey || seenRefs.has(refKey)) continue;
+    seenRefs.add(refKey);
+
     const resolved = resolveImageMetadata(imageRef.src);
     if (!resolved) continue;
 

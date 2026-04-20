@@ -6,7 +6,6 @@ draft: false
 pubDate: 2025-08-03
 description: Posting about updated plans for my Birthday at the end of the month. A boy just wants to have fun, and this is how I intend to celebrate this year.
 tags: ['birthday', 'walking', 'plans', 'challenge', 'invite', 'friends']
-
 ---
 
 Okay, so I [previously posted](https://hellostu.xyz/posts/46-before-46/) about challenging myself to a 46km walk at the end of August for my Birthday, and a few lovely folks showed an interest in tagging along. Thank you! I now need to let you all know that I've changed my mind and decided against it. Sorry!

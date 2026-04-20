@@ -33,6 +33,36 @@ if (ogLogoPath && fs.existsSync(ogLogoPath)) {
   ogLogoBase64 = `data:${mimeType};base64,${fs.readFileSync(ogLogoPath).toString('base64')}`;
 }
 
+function stripQueryAndHash(inputPath: string): string {
+  return decodeURIComponent(inputPath.split('?')[0].split('#')[0]).trim();
+}
+
+function resolveContentImagePath(
+  rawPath: string,
+  contentDir: string,
+): string | null {
+  const sanitized = stripQueryAndHash(rawPath).replace(/\\/g, '/');
+  if (!sanitized) return null;
+
+  if (sanitized.startsWith('../../assets/')) {
+    return path.join(
+      process.cwd(),
+      'src/assets',
+      sanitized.replace(/^\.\.\/\.\.\/assets\//, ''),
+    );
+  }
+
+  if (sanitized.startsWith('/src/assets/')) {
+    return path.join(process.cwd(), sanitized.slice(1));
+  }
+
+  if (sanitized.startsWith('/')) {
+    return path.join(process.cwd(), sanitized.slice(1));
+  }
+
+  return path.join(contentDir, sanitized);
+}
+
 async function getPosts() {
   const postFiles = fs
     .readdirSync(POSTS_DIR)
@@ -54,10 +84,14 @@ async function getPosts() {
       : file.replace(/\.(md|mdx)$/, '');
     // Use slug frontmatter if present, else fallback to filename
     const id = data.slug ? String(data.slug) : file.replace(/\.(md|mdx)$/, '');
+    const featureImagePath = data.featureImage
+      ? String(data.featureImage)
+      : null;
     // Find first image in markdown body
     const imageMatch = body.match(/!\[[^\]]*\]\(([^)]+)\)/);
-    const imagePath = imageMatch ? imageMatch[1] : null;
-    return { id, title, imagePath };
+    const firstBodyImagePath = imageMatch ? imageMatch[1] : null;
+    const imagePath = featureImagePath || firstBodyImagePath;
+    return { id, title, imagePath, dir };
   });
 }
 
@@ -106,24 +140,8 @@ async function generateOGImages() {
     // Determine which image to use as background
     let bgBase64 = null;
     if (post.imagePath) {
-      // Try to resolve the image path relative to the post file
-      let resolvedPath = post.imagePath;
-      if (resolvedPath.startsWith('../../assets/')) {
-        // Convert ../../assets/foo.jpg (relative to post) to src/assets/foo.jpg (project root)
-        resolvedPath = path.join(
-          process.cwd(),
-          'src/assets',
-          resolvedPath.replace(/^\.\.\/\.\.\/assets\//, ''),
-        );
-      } else if (resolvedPath.startsWith('/src/assets/')) {
-        resolvedPath = path.join(process.cwd(), resolvedPath.slice(1));
-      } else if (resolvedPath.startsWith('/')) {
-        resolvedPath = path.join(process.cwd(), resolvedPath.slice(1));
-      } else {
-        // fallback: relative to post file
-        resolvedPath = path.join(POSTS_DIR, resolvedPath);
-      }
-      if (fs.existsSync(resolvedPath)) {
+      const resolvedPath = resolveContentImagePath(post.imagePath, post.dir);
+      if (resolvedPath && fs.existsSync(resolvedPath)) {
         const ext = path.extname(resolvedPath).toLowerCase().replace('.', '');
         const mimeType =
           ext === 'svg'

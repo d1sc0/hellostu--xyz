@@ -28,6 +28,13 @@ collections:
           widget: 'select',
           options: ['Work', 'Rest', 'Play'],
         }
+      - {
+          label: 'Feature Image',
+          name: 'featureImage',
+          widget: 'image',
+          required: false,
+          hint: 'Optional override image for home stream and social image generation',
+        }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Meta Preview', name: 'description', widget: 'text' }
       - { label: 'Tags', name: 'tags', widget: 'list' }
@@ -54,6 +61,13 @@ collections:
           widget: 'select',
           options: ['Work', 'Rest', 'Play'],
         }
+      - {
+          label: 'Feature Image',
+          name: 'featureImage',
+          widget: 'image',
+          required: false,
+          hint: 'Optional override image for home stream and social image generation',
+        }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Meta Preview', name: 'description', widget: 'text' }
       - { label: 'Tags', name: 'tags', widget: 'list' }
@@ -70,6 +84,13 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Date', name: 'pubDate', widget: 'datetime', required: false }
       - { label: 'Description', name: 'description', widget: 'text' }
+      - {
+          label: 'Feature Image',
+          name: 'featureImage',
+          widget: 'image',
+          required: false,
+          hint: 'Optional override image for social image generation',
+        }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - name: 'navigation_main'
