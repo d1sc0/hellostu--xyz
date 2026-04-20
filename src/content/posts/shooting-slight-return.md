@@ -1,0 +1,19 @@
+---
+title: Shooting Slight Return
+slug: shooting-slight-return
+draft: true
+pubDate: 2026-04-20T21:42:00
+category: Play
+featureImage: ''
+description: Sharing a couple of portraits from a little shoot I completed at the weekend for a couple of my musical friends.
+tags:
+  - photography
+  - portraits
+  - band
+---
+
+import MdxImageGallery from '../../components/MdxImageGallery.astro'
+
+So I was asked to take some pictures at the weekend for two friends Darren and Tommy who make up the acoustic britpop cover duo 'Slight Return'. 
+
+<MdxImageGallery gallery="clean-and-rebuild" imageHeightMobile="8rem" imageHeightDesktop="12rem" showHeading={false}/>
