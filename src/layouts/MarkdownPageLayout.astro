@@ -4,7 +4,7 @@ import '../styles/md-page-layout.css';
 const { frontmatter, pageMeta } = Astro.props;
 ---
 
-<BaseLayout pageMeta={pageMeta}>
+<BaseLayout frontmatter={frontmatter} pageMeta={pageMeta}>
   <section class="page-layout content-padding">
     <slot />
   </section>

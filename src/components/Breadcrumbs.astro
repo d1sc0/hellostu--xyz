@@ -8,6 +8,9 @@ interface Props {
   frontmatter?: {
     title?: string;
   };
+  pageMeta?: {
+    title?: string;
+  };
 }
 
 type Crumb = {
@@ -15,7 +18,7 @@ type Crumb = {
   href?: string;
 };
 
-const { frontmatter } = Astro.props as Props;
+const { frontmatter, pageMeta } = Astro.props as Props;
 
 const pathname = Astro.url.pathname;
 const normalizedPath = pathname.replace(/\/+$/, '') || '/';
@@ -46,8 +49,8 @@ if (segments.length > 0) {
       label = 'Posts';
     }
 
-    if (isLast && frontmatter?.title && first !== 'tags') {
-      label = frontmatter.title;
+    if (isLast && first !== 'tags') {
+      label = frontmatter?.title || pageMeta?.title || label;
     }
 
     crumbs.push({

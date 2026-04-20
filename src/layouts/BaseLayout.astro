@@ -13,7 +13,7 @@ const { frontmatter, pageMeta, prevpost, nextpost } = Astro.props;
     <div class="container">
       <Navigation />
       <main>
-        <Breadcrumbs frontmatter={frontmatter} />
+        <Breadcrumbs frontmatter={frontmatter} pageMeta={pageMeta} />
         <slot />
         <p class="toplink content-padding">
           <a href="#top" aria-label="Back to top">

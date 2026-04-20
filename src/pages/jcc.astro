@@ -1,0 +1,17 @@
+---
+import MarkdownPageLayout from '../layouts/MarkdownPageLayout.astro';
+import { getEntry, render } from 'astro:content';
+import '../styles/jcc.css';
+const jcc = await getEntry('pages', 'jcc');
+const { Content } = jcc ? await render(jcc) : { Content: null };
+const pageMeta = {
+  title: jcc?.data.title,
+  description: jcc?.data.description,
+};
+---
+
+<MarkdownPageLayout frontmatter={jcc?.data} pageMeta={pageMeta}>
+  <div class="jcc-page-content">
+    {Content && <Content />}
+  </div>
+</MarkdownPageLayout>
