@@ -178,6 +178,8 @@ for (const post of posts) {
                     src={item.image}
                     alt={item.alt}
                     loading="lazy"
+                    widths={[240, 320, 480, 640, 768, 960]}
+                    sizes="(min-width: 768px) and (orientation: landscape) 18rem, 72vw"
                     class="post-image-scroller__image"
                   />
                   <span class="post-image-scroller__caption">
