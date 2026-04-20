@@ -10,7 +10,7 @@ tags: ['weeknote', 'work', 'life', 'growth', 'health', 'car', 'reflection']
 
 ![a black and white slef portrait, a wall of art hangs behind me and my face hides behind my outstretched hands](../../assets/uploaded_images/45-update-and-growFULL.jpg)
 
-## Excuses
+### Excuses
 
 I didn't manage a weeknote last week and this week also feels like a struggle. The biggest blocker I'm facing is that I don't have much to say about work right now. Work isn't bad or boring - it's just...work! Currently the life changes that I'm wrestling with mean that when I sit down to reflect on the week and what I'm learning, these are the things that consume me. I'm confident this will all pass and become more manageable, and then it might be easier to pick out, reflect, and share meaningful progress at work and connect some dots professionally.
 
@@ -21,7 +21,7 @@ Until then, I intend to...
 - Share my posts in fewer places (because they'll be more personal and less relevant to others)
 - Try to feel less guilt and anxiety about all of the above.
 
-## Update
+### Update
 
 The last couple of weeks have been a grind. It's been about a month (maybe longer) since my wife moved out. In the first few weeks, I intentionally kept myself busy doing jobs and making the house feel like my place. The busy-busy-ness has subsided in the last couple of weeks, and I've had some days as my new day-to-day reality kicks in where I feel pretty miserable. Increasingly, I grapple with the future I was working towards becoming unwritten.
 
@@ -31,7 +31,7 @@ This week, I tried really hard to make it a better week. I knew I was back to wo
 
 On a parallel track, I awoke on Monday with a sore throat and what felt like an ear infection. Tuesday - my ear, nose and throat all felt blocked up, and I was popping lots of pain meds. Things were much the same on Wednesday, but worryingly, the bug was moving south to my lungs (I have asthma and chest infections always hit me hard). Thursday, I woke up and struggled to breathe when climbing the stairs. I admitted defeat and called in sick. By some miracle, I got an appointment at the GP surgery at lunchtime. The doctor gave me a good check-over, laughed hysterically at my pitiful peak-flow test results and sent me home with a cocktail of antibiotics and steroids and suggested rest. I'm hoping the drugs kick in quickly - I really would like to enjoy the new car more than a trip to the pharmacy :(
 
-## Grow
+### Grow
 
 So, despite all the moaning, depression and sickness above, here are some things I could be celebrating.
 

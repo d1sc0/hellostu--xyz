@@ -6,7 +6,6 @@ category: Play
 pubDate: 2023-01-19
 description: 'Starting a self-portrait series, setting the tone for personal exploration and artistic expression.'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'project', 'reflection']
-
 ---
 
 ![man sits alone in a chair with his phone, he's in his home office surrounded by desk, laptop & guitars](../../assets/uploaded_images/52_2023_1_FULL.jpg)
@@ -15,7 +14,7 @@ I’m committing to capture and publish a self-portrait with a short accompanyin
 
 I’d like to get a collection of images that spans 52 weeks before I consider this personal challenge complete. It’d be nice if these are all consecutive weeks but I’m prepared to cut myself some slack if I end up with a few gaps. To make accounting simpler and consistent weeks will run Mon-Sun.
 
-## Why?
+### Why?
 
 - Making things and being creative is something I enjoy. I don’t profess to be a master of photography but I completed a similar project about 10 years ago and it really helped me improve. My skills have started to become rusty and I’d like to refresh them. I also quite enjoy the process of trying to come up with fresh ideas of how to capture what is actually a pretty dull subject (me!)
 - The last half of 2022 was pretty brutal for me personally and it’s taken its toll on my mental health. I hope holding myself to account for documenting the year that’s starting to unfold will help me regularly reflect and make sure I’m keeping my mental health in check, actively seeking out time for happiness and sticking to some of the self-care rituals I’ve put in place.

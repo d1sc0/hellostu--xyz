@@ -6,12 +6,11 @@ category: Work
 pubDate: 2024-08-02T20:20:00
 description: The weekly notes—This week, I bring you not one, not two, but THREE bullet-pointed lists of stuff that covers the period 26 July to 2 August.
 tags: ['weeknote', 'work', 'life', 'update', 'productivity', 'reflection']
-
 ---
 
 ![a sketch image of a fast moving bullet train - lines have been added to create the sense of motion](../../assets/uploaded_images/44-bullet-trainRIGHT.jpg)
 
-## The long weekend in bullets
+### The long weekend in bullets
 
 - Had a nice catchup chat with [Mathew](https://documenteering.com/) on Friday. He was in France - Ooh la laa!
 - As one person moves out of the home, one moves back in. Robyn is staying for August and has successfully secured some remote work for herself. Interestingly, she is helping out a digital product company.
@@ -21,7 +20,7 @@ tags: ['weeknote', 'work', 'life', 'update', 'productivity', 'reflection']
 - Sunday involved more work sorting things around the house and a big food shop.
 - Monday was a day of leave - I went to the pool for a swim and cycled to Weymouth to see the sea. I cheated and got the train home.
 
-## The short working week in bullets
+### The short working week in bullets
 
 - I helped create some needed space to ensure wider strategy and roadmap conversations are happening outside our regular sprint rituals for one of our cyber projects and with a slightly smaller group. This was needed to avoid these topics constantly cropping up and distracting the team, who need (and want) to focus on more immediate problems.
 - I really enjoyed contributing to some ideation and 'could-be' journey mapping sessions. Working on this with Leo and Liberty in person towards the end of the week was even better. As expected, these emerging outputs are helping with some of my earlier alignment concerns.

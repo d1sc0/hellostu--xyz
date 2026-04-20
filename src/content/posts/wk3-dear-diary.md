@@ -12,11 +12,11 @@ _3 weeks of weeknotes and 3 weeks without smoking! 🎉_
 
 I thought I'd try a different format this week and give a daily digest of my week. I'm not sure it's something I'm likely to repeat often. I've left out hefty amounts of what actually happens with clients and projects as that feels a little odd to share without permission. It's still a very long read (but then it's felt like a very long week 😃). I've drawn out my key reflections in bold if the detail doesn't float your boat...
 
-## Monday
+### Monday
 
 My day off. **Sunshine and a 6 mile stroll with the dog. Glorious! **
 
-## Tuesday
+### Tuesday
 
 Early train from Dorset - No wifi and spotty tethering . . . just about managed to catch up on slack, emails and started writing up some notes from the previous week and model some project costs (exciting huh!).
 
@@ -30,7 +30,7 @@ I then spent some time testing a little experiment I'd kicked off last week. As 
 
 I'd shared my thinking on this with [Jaye](https://twitter.com/dinosaurenby) and Dom F the previous week and Jaye had taken my sketchy (but neatly prioritised) user requirements and busted out a robust, user-friendly and workable solution in insanely quick time 💪😍. After testing I worked through some simple ways we could structure the content on paper before bed. **I might have tried to listen to an audiobook? Not remembering means I nodded off! Room for improvement.**
 
-## Wednesday
+### Wednesday
 
 A mixed day split over a couple of _exotic_ [London](https://en.wikipedia.org/wiki/Windsor_House,_London) [locations](https://www.google.co.uk/maps/place/FutureGov/@51.5047802,-0.0883868,15z/data=!4m5!3m4!1s0x0:0xcf4b29ffe0dfab16!8m2!3d51.5047802!4d-0.0883868). The morning was mostly catching up with some projects in flight, giving advice, and input where I could. I think most notably was a really productive session with [Julian](https://twitter.com/Julesequity) and Richard to plan a workshop for a new project.
 
@@ -44,7 +44,7 @@ Collecting feedback and analytics sooner, rather than later, to help evaluate wh
 
 So . . . I got back to my Peckham pad at 8pm opened up the laptop and beavered away until the early hours. **There was a small lull in activity to have a rather hilarious conversation with my wife about pretty much nothing! I take joy in these moments. **
 
-## Thursday
+### Thursday
 
 I headed out early for a Delivery Manager breakfast. I'm no longer in the role but really value the community that's formed around the practice. Only [Will](https://twitter.com/WReddin) and [Rich C](https://twitter.com/RichJanCassidy) could attend this week but as usual they had loads of interesting things to share. They are both very positive people and with me being a little tired the time with them helped set me up well for the day ahead (as did the bacon buttie!).
 
@@ -54,7 +54,7 @@ Our monthly all-hands team meeting was great. **There is lots to celebrate at Fu
 
 Alex and Kris had organised a social event for the team. After racking up a fair few hours over the previous 2 days I was pleased to have an excuse to down tools and enjoy a beer (or err 6?) in great company. There was a quiz - my team didn't win. Shamefully I got a Star Wars question wrong. This made me sad!
 
-## Friday
+### Friday
 
 Another reasonably early start to pack up by bag and head to the office to grab supplies for a project kick-off. My Macbook Air decided to attempt an update, failed miserably and went into an annoying boot loop. After demonstrating all of the normal behaviours of swearing and gently beating my fists on the keyboard like a tired and confused ape, the internet came to the rescue with '[how to boot a mac into safe mode](https://www.google.com/search?q=how+to+boot+a+mac+into+safe+mode&rlz=1C5CHFA_enGB814GB814&oq=how+to+boot+a+mac+into+safe+mode&aqs=chrome..69i57j0l5.6606j0j4&sourceid=chrome&ie=UTF-8)'. I was then able to sort out the rogue update and get on with my day. Still a frustrating waste of an hour.
 
@@ -68,7 +68,7 @@ I managed to miss the train I had hoped to be on by about 15 seconds which altho
 
 A good week, lot's of variety. Next week sadly won't be anywhere near as diverse. I'll be locked in a training room for 4 days understanding data privacy law 😬🤓.
 
-## Elsewhere
+### Elsewhere
 
 **Tune of the week:** [Jon Bellion - The Internet](https://www.youtube.com/watch?v=W936TWjKZBQ) (obvs)  
 **Gram of my week:** That weekend sun!! A shot taken at [Portland Bill](https://www.instagram.com/p/Bvo5ybDA7ZV/) 😍

@@ -6,7 +6,6 @@ category: Work
 pubDate: 2019-03-29
 description: 'I tackle a high ropes course, pushing my limits and reflecting on the experience. I share insights on teamwork, challenge, and progress, plus weekly highlights in study, projects, and social events.'
 tags: ['weeknote', 'work', 'challenge', 'teamwork', 'adventure', 'reflection']
-
 ---
 
 _I'm back for a second week. Yay! but no longer on Medium. It potentially limits my audience but I'm not writing for fame and fortune so that's ok._
@@ -36,7 +35,7 @@ Here's what I noted...
 
 I like to think there is plenty above I already bring into my work practice but there is always room for improvement. I'll be chewing over this list now i've got it out of my head to see what I might try tweaking or changing. I'm Interested to hear if any of this resonates with you?I'm rambling...onto the highlights - I'll keep them brief.
 
-## Highlights of the week
+### Highlights of the week
 
 **Study...** I Continue to learn lots on [my course](https://theodi.org/event/better-data-better-decisions-2019-edition/). I got a great result for [last weeks assignment](https://d1sc0.github.io/odi_assignment3/) submission and this week has me exploring more new tools and methods. I'm starting to form a few little pet project ideas in my mind to keep me applying what I've learnt and experimenting with tools once the course comes to an end in a week or so. I'm hooked on data!
 
@@ -46,7 +45,7 @@ I like to think there is plenty above I already bring into my work practice but 
 
 **Being social...** The week also included a nice breakfast catch-up with an old FG friend, a pint or 3 with [Jan](https://twitter.com/Jottblum) on Wednesday night and some team food and drinks to mark an important milestone on a critical project on Thursday. Probably a more boozy week than it should be? Yes. #notsorry
 
-## A few of my favourite things
+### A few of my favourite things
 
 **Clicks:**  
 [Why have difficult conversations when you can talk about tools instead?](https://twitter.com/ewebber/status/1111192864313262080) 😍  

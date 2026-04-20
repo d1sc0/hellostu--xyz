@@ -6,7 +6,6 @@ category: Play
 pubDate: 2023-03-05
 description: 'Debating falling or flying in self-portrait series with dynamic backgrounds, exploring movement and change.'
 tags: ['52weeks', 'photography', 'creativity', 'self', 'movement', 'dorset']
-
 ---
 
 ![Stu appears to be falling center frame into some kind of spirally revolving portal!](../../assets/uploaded_images/52_2023_7_FULL.jpg)
@@ -15,6 +14,6 @@ This week I’m back in the more familiar surroundings of Dorset. Not that you c
 
 When editing shots the jump looked fun, the landscape in the background just felt flat and grey (mostly due to the weather). The overall composition just felt off. So I’ve decided to just embrace the fun element and added some silly photoshop manipulation of the landscape to make it a bit more interesting. You can decide if I’m falling through a portal of time & space or powering myself across the Dorset countryside using some kind of sonic flatulence.
 
-## Elsewhere
+### Elsewhere
 
 Although back from Egypt I’m still on leave until tomorrow so most of my time has been spent chilling. On Thursday we took a trip to Marwell Zoo to break up the drive home from Gatwick. Friday was a bit more pedestrian with household chores, a haircut and a therapy appointment. The weekend has been all about walking, running and catching up with family. I feel quite well-rested and ready for work. How long this lasts…..we’ll see!

@@ -18,13 +18,13 @@ One of the things that I've been thinking about a lot this week has been organis
 
 I'm thinking about problems that happen when scaling (programmes, services, organisations, etc). Things will work fine initially, but the cracks soon appear if you need to start to process a greater diversity of 'thing' aswell as increase the volume/throughput. It can become far from optimal to blindly apply the same workflow/rules to everything (due to the increased diversity - one size doesn't fit all), but equally processing everything in a unique/bespoke way isn't viable at the increased scale. Solutions often involve filtering, grouping/categorisation, and then right-sizing different versions of the original process to handle these new categories. I'm mulling over whether I can develop different strategies that could more consistently be used to avoid or better anticipate (and intervene) when I spot similar issues. Abstract but if you have thoughts let me know.
 
-## Product for the people
+### Product for the people
 
 On Thursday, I attended my first [Product for the people](https://productforthepeople.xyz/) event. The cold early morning start and slow trains to and from Bristol did nothing to take the edge off a really good day. Things kicked off with fantastic talks from [Beth Brown](https://www.linkedin.com/in/beth-brown-098423102/) and [Andy Dudfield](https://www.linkedin.com/in/andrewdudfield/). The rest of the day was unconference-style, which worked well, and I took something away from all the sessions I attended.
 
 I often feel very anxious and uneasy at events like this, but the vibes at this were good and chilled. It also helped that there were 4 or 5 people I'd met before and a few others I follow virtually. My super smart colleague [Harriet](<[https://www.linkedin.com/in/harrietpugh/]()>) also attended, and I got a nice hug from [the man, the myth, the legend (Jukesie)](https://digitalbydefault.com/) upon arrival. Thanks to him, Debbie, Steve and Ben for their hard work in making it happen.
 
-## Life
+### Life
 
 I'm doing ok.
 

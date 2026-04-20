@@ -8,7 +8,7 @@ description: A day-by-day breakdown of the week that was. This note covers the p
 tags: ['weeknote', 'work', 'life', 'running', 'website', 'reflection']
 ---
 
-## The Weekend
+### The Weekend
 
 The post-election sleepiness followed me into the weekend. I remember volunteering at parkrun, but everything else is a blur. I did spend a fair bit of time tinkering with this website. I had an idea [prompted by this post](https://rachsmith.com/static-blog-comments/) to roll my own static commenting system for the blog.
 
@@ -22,13 +22,13 @@ I also played with the site's RSS output and got distracted by [webmentions](htt
 
 This mindless geekery might feel pointless, but I learnt some new tricks, and it was a great distraction from the life stuff I wanted to ignore.
 
-## Monday
+### Monday
 
 I woke up feeling lousy, so I logged into the virtual work world, spent some time planning things for the week ahead, and then booked the afternoon off as leave to prioritise some self-care. I went to the pool for a swim and went into town to hang out and have coffee at [my favourite spot](https://seventhseal.uk).
 
 The weather was pretty miserable, but in the evening, I plucked up the courage to join my [local running club](https://dorchester.runriot.uk/) for their easy, inclusive Monday run. I'm not usually a social runner, but pending life changes<sup>[1]</sup> have me thinking about new ways of increasing my social circle closer to home. Neither the running nor the social interaction came easily to me, but I'm proud of myself for giving it a go. Only five of their number had braved the weather, and they were all fitter than me. Although very awkward at first, things felt better as the session progressed, and I was grateful for the efforts these strangers put into making me feel welcome.
 
-## Tuesday
+### Tuesday
 
 On my morning walk, I listened to [stompcast](https://podcasts.apple.com/gb/podcast/stompcast/id1634072674), a regular feature in my Podcast feed. I enjoyed the recent few episodes, which included an interview with [Fats Timbo](https://www.instagram.com/fatstimbo/?hl=en). She has a book coming out called [Main Character Energy](https://www.waterstones.com/book/main-character-energy/fats-timbo/9781788708494). Something about this phrase struck a chord in me, and I've been mulling over how I might channel some more Main Character Energy in my own life.
 
@@ -38,7 +38,7 @@ In the evening, we went to keep our Daughter company, who is staying nearby, dog
 
 ![An AI-generated image of a graffiti wall showing a strong male hero character centre frame](../../assets/uploaded_images/42-main-character-energyFULL.jpg)
 
-## Wednesday
+### Wednesday
 
 I managed [another run](https://www.strava.com/activities/11852027015) early doors. It was an interval-style session that got my blood pumping and endorphins flowing.
 
@@ -48,13 +48,13 @@ The pending life changes<sup>[1]</sup> became very real very quickly late on Wed
 
 Before I slept, I watched [Living on Neflix](https://www.netflix.com/gb/title/81582076). I found it to be a beautiful film. Bill Nighy and Aimee Lou Wood are fabulous, and it's just a lovely story about life, death, people and public service.
 
-## Thursday
+### Thursday
 
 I got up early to catch a train to London. A few of us had the pleasure of spending a whole day collaborating with the sharp minds at Local Digital. It was great to spend a day in person with people I've built virtual relationships with over the past few months. I also met new people, learned new things, and enjoyed our very own [Jukesie](https://digitalbydefault.com/) talk about working in the open. I went to the pub before getting the train home. Both the cider and company were good and needed.
 
 The train ride home was busy, and the internet connection was sketchy AF. This has meant I've had to push a couple of tasks that I couldn't finish into next week, but that's ok.
 
-## Friday (today)
+### Friday (today)
 
 This morning, I took over Robyn's dog-sitting duties as she needed to attend a hospital appointment. I've taken three crazy hounds for a walk and have been drafting this post with them curled snugly around my feet.
 
@@ -62,7 +62,7 @@ We waved goodbye to our family car this afternoon and returned it to the dealers
 
 Daughter [Robyn](https://robynmackenzie.com/about.html) received a nice high mark (equivalent to a 1st) for her most recent university work. A research proposal titled 'Siloed Services - Is service design the most effective solution for fragmented data in our healthcare systems?'. She's one very smart and lovely human. It is a proud parent moment, and it is nice that her passions continue to follow both sides of the family business 😂. Although she's tried hard to line up design work for her summer break, she has had little luck. If, by chance, anybody reading this has any leads for paid design or transformation experience over the summer, let me know. She's amazing (Yes, I'm biased!)
 
-## <sup>[1]</sup> Pending Life Changes
+### <sup>[1]</sup> Pending Life Changes
 
 It's been on the cards for a couple of months, but after 24 years together, 20 of them married, my wife Chloe and I are separating. We're parting on good terms and as good friends, but it's a massive change to process and full of complex emotions. Chloe will likely move out of the house in the next few weeks.
 
@@ -70,7 +70,7 @@ Over the next few months, I need to establish new routines and start thinking ab
 
 Calling back to my earlier musing, I've got to figure out how I shape myself as the main character in my story rather than focus on being an excellent supporting cast member of somebody else's. I may just be kidding myself, but for now... one day at a time.
 
-## Noteworthy posts
+### Noteworthy posts
 
 This [month note](https://weeknot.es/monthnote-june-2024-03b84abc9e5b?source=rss-3da1ca860999------2) from James Higgott is a good read and this is an excellent example of how to publish a [public service roadmap](https://digital.nhs.uk/services/nhs-app/roadmap)
 

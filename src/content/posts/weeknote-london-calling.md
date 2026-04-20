@@ -10,11 +10,11 @@ tags: ['weeknote', 'work', 'london', 'website', 'fitness', 'travel']
 
 It’s been an odd week. I’ve continued to wrestle with some depressing and complicated personal life stuff that I won’t share. I write this as a reminder that despite the thoughts and feelings surrounding this ‘stuff’, I have continued to put one foot in front of the other and move forward. I’m pretty happy with what I’ve achieved this week at work and in terms of self-care.
 
-## Last weekend
+### Last weekend
 
 ![a picture taken of a parkrun finisher crossing the line at the great field parkrun](../../assets/uploaded_images/36-parkrun-finishRIGHT.jpg) Last weekend was a relatively chilled mix of family and domestic activities. I vaguely recall a trip to Portland Bill to watch the waves break on the rocks, mowing the lawn, and a trip to the recycling centre. I was also the Run Director at the Great Field parkrun. Everything went well; the sun came out, there were no incidents, there was a great gang of volunteers, and we had a massive turnout of 300 people starting and finishing.
 
-## The work week (sorry it’s long!)
+### The work week (sorry it’s long!)
 
 On Monday, I needed to finish writing and refining some final project outputs, but I struggled for a few hours to find the focus I needed. A pep talk from my Daughter, a hug, and a walk to grab a coffee helped me reset at lunchtime, and I made much better progress in the afternoon. I’ve been a bit rubbish about regular walking breaks recently, but this was a good reminder that I need them when working from home.
 

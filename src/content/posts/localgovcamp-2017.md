@@ -16,7 +16,7 @@ Having worked in local government before joining FutureGov, I’d heard of the e
 
 ![LocalGovCamp promo pic](../../assets/uploaded_images/localgovcampRIGHT.jpg)
 
-## Friday Fringe
+### Friday Fringe
 
 I’m unsure of the exact numbers, but there must have been around 100 people at the event. So before too long, I’d spotted plenty of familiar faces — including a few of our local government clients.
 
@@ -36,7 +36,7 @@ After the late morning break, Matt and I were grabbed for an impromptu video int
   className="imageRight"
 ></iframe>
 
-## Digital Maturity
+### Digital Maturity
 
 Our sessions on digital maturity and our Digital Maturity Assessment were received well. In the first half, we clarified what we actually meant by “digital maturity” and this seemed to resonate with most participants. Many agreed that true digital transformation means going further than just improving front-end transactional experiences.
 
@@ -50,7 +50,7 @@ In the second half of the session, we were joined by Adam who tested our digital
 
 Discussions continued late into the evening — accompanied by a beer or two. And buoyed by the success of the day, a few of us ended up salsa dancing until the small hours. I can confirm that LocalGovCamp people are good souls! (And reasonable dancers).
 
-## Saturday Unconference
+### Saturday Unconference
 
 Saturday is ultimately the main event of LocalGovCamp — the unconference. Despite feeling a little sluggish first thing (can’t think why), we arrived back at the venue just in time to hear people pitch their sessions that morning. Choosing which to attend was tricky, as they all sounded interesting, but the law of two feet helped us out. I went along to the following:
 

@@ -19,6 +19,6 @@ I scheduled a training plan that would help me be ready for a local [trail half-
 
 This time around I'm already really pleased with the progress I've made. I'm back out running several times a week and have been back in the habit long enough I can really feel my fitness improving and things becoming easier and more enjoyable. When I was previously in good running condition (probably 7-8 years ago) I found running was as beneficial to my mental health as it was my phyisical health with long runs often feeling like a form of meditation - I'm excited about starting to feel the benefit of these things again.
 
-## Elsewhere
+### Elsewhere
 
 It's been a busy week at work juggling lots of projects with one in particular that I've felt the need to lean into a little more and help the team out by dusting off my data analysis and cleaning skills. This was enjoyable but tiring and I'm sure a few other important tasks I should have been closer too have suffered as a result. I spent a couple of days in London which I'd also describe as enjoyable but tiring. My first trip to the city this year and it lovely to spend my evenings catching up with good friends but I left the city concious I have several more I still haven't seen in a long while. Hopefully i'll have plenty of reasons for another visit soon.

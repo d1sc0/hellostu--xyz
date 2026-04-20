@@ -5,12 +5,13 @@ slug: wk5-late-notes
 category: Work
 pubDate: 2019-05-01T00:00:00.000Z
 description: I share late notes from a busy week. Highlights include a productive work return, attending an AWS event, and discussing feedback methods.
-tags: ['weeknote', 'work', 'event', 'feedback', 'learning', 'reflection', 'notes']
+tags:
+  ['weeknote', 'work', 'event', 'feedback', 'learning', 'reflection', 'notes']
 ---
 
 I was hoping to post these last Friday but I got side-tracked with all of the other things! Main point to note was that I returned back from a much needed Easter Break feeling massively refreshed.
 
-## 3 Highlights
+### 3 Highlights
 
 **1. General Vibes -** As hinted at above it was actually just really nice to be back at work having a renewed sense of energy & perspective following my Easter break with family and friends. This energy was used to re-prioritise a bunch of tasks, put some effort into sales activity and also input into a couple of projects. I found that things that had been stressing me out were now barely blipping on my radar. In addition to just having a break I think returning to work without any course assignments or exam deadlines hanging over my head also made finding balance a little easier. Towards the end of the week I was also involved in some productive conversations with colleagues from another company. It's good that opportunities seem to arise more often where we can collaborate with like-minded orgs, and combine our strengths to solve problems in the sector rather than just be competing. Always good to be reminded you are not working for EvilCorp.
 
@@ -24,7 +25,7 @@ I finished the evening having a really good chat with Rashmi & Selwyn from the H
 
 **3. Feedback Fallacy -** A slightly random conversation via twitter DM with [Dom](https://twitter.com/dominiccampbell) one evening about giving and receiving feedback also peaked my interest and makes the highlight list. The conversation had no real conclusions and I'm sure we'll pick it up another day in more depth but Dom [shared this post with me](https://hbr.org/2019/03/the-feedback-fallacy) which I found super interesting. Well worth a read. I'm interested in pursuing how we can test some of what's unpacked here in more practical ways as we improve practice and support people to develop.
 
-## Elsewhere
+### Elsewhere
 
 **Parenting project phase 589 - ** Mostly it now seems like our role is to offer advice and guidance during this long transition to live! We're often asked to take a human centered approach to help solve problems such as... How do I work out if I want to go to University? What career options suit me best? How will I cope without my parents? or living with other people? **We have sharpies and post-its and a trello board. What could possibly go wrong? ** 😂
 
@@ -34,7 +35,7 @@ I finished the evening having a really good chat with Rashmi & Selwyn from the H
 
 **Maps and data -** I continue to play with maps and data.
 
-## Miscellany
+### Miscellany
 
 **Tunes:** Bastille released Doom Days which although fairly sobering has me itching for the new album  
 **From the gram:** My realisation that [window cleaning in central London](https://www.instagram.com/p/Bwoar6Yg_m7/) is a very different gig to that in the 'shire.

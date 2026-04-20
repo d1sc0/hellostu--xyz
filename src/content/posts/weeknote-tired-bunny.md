@@ -6,20 +6,19 @@ category: Work
 pubDate: 2024-07-05T17:40:00
 description: A brief look at the good, the bad and the ugly through tired eyes. Covers the period 28th June to 5th July.
 tags: ['weeknote', 'work', 'life', 'election', 'tired', 'reflection']
-
 ---
 
 ![an anime bunny sat on the grass looking sad and tired](../../assets/uploaded_images/41-tired-bunnyFULL.jpg)
 
 Writing is a struggle today (yes, more than usual!). I am very, very, very tired. I stayed up and watched election coverage until about 3:30am and then woke up at 6:30am for more of the same. Three hours of sleep is not enough. I'm not thinking clearly, and my fatigue is presenting as grumpiness. I will keep this short.
 
-## The bad and the ugly
+### The bad and the ugly
 
 - I attended a new internal meeting that baffled and frankly annoyed me. That's fine; feedback will help us refine it, but it landed at a time in my week when my patience was already low.
 - I failed to manage my diary sensibly on at least two days this week. There was too much context-switching and no time for breaks or lunch. I'm smarter than this.
 - Meh, other life stuff. For a future post.
 
-## The good
+### The good
 
 - I made good progress on getting everything in place so we can start one of our new client projects well next week. The time spent onboarding the team was good. They grasped things quickly, asked great questions, and brought good vibes. I love good vibes!
 - I made a little more progress on a small internal project and a future project opportunity. Honestly, both have frustrated me for different reasons this week, but progress is progress. I need to recognise and celebrate that.
@@ -28,7 +27,7 @@ Writing is a struggle today (yes, more than usual!). I am very, very, very tired
 - I finished and enjoyed the new season of The Bear. I also enjoyed the super cheesy and nostalgic [new Beverly Hills Cop film](https://www.netflix.com/gb/title/81076856) on Netflix.
 - Despite distrusting 80% of our politicians, I'm happy with the election results. Specifically, it'll be the first time the constituency I live in (and the neighbouring ones where I grew up) won't be represented by a conservative MP in approximately a million years. This pleases me.
 
-## Noteworthy posts
+### Noteworthy posts
 
 [For the love of libraries](https://digitalbydefault.com/2024/06/30/for-the-love-of-libraries/) by Jukesie
 

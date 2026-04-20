@@ -6,14 +6,13 @@ category: Rest
 pubDate: 2024-08-30T10:20:00
 description: more excuses, some work stuff, cornwall and exploring the world of dating in a digital age. This note covers the last couple of week until today 30th August 24.
 tags: ['weeknote', 'life', 'travel', 'car', 'dating', 'reflection']
-
 ---
 
-## More excuses
+### More excuses
 
 Yeah, so my weeknotes now land once a fortnight 🤷‍♂️. I'm sorry and not sorry. I've found writing much easier on my non-working Fridays. It just happened that last week, I was away in Cornwall on Friday, which meant choosing to get outside and explore or sit inside and write. I think I made the right choice 😀.
 
-## Work
+### Work
 
 Things have felt busy. There is a lot of activity across my two client projects, and one team has had a few team members on leave. This was planned, and we'd set realistic sprint goals based on our capacity. Despite this, I've found myself leaning into both DM activities and Service Design so that we can keep up the momentum (and maybe I'm just impatient 😬).
 
@@ -21,7 +20,7 @@ One project has completed some excellent user testing sessions in the last coupl
 
 Outside of projects, I still have a few future work opportunities I'm trying to shape or land. One is new and exciting. It came to us/me because we had done some excellent work for the client in the past and had built a good ongoing relationship. I'm keeping my fingers crossed we might be able to do more outstanding work with them soon 😀.
 
-## Cornwall
+### Cornwall
 
 As alluded to in my opening excuses, I spent a couple of days in St Ives over the bank holiday weekend. It was a needed change of scene for my daughter and me and an excellent opportunity to take the new EV for a longer drive. In the end, we stayed for three days, and those were spent walking, eating, swimming, mooching, and resting. Lovely stuff.
 
@@ -31,7 +30,7 @@ It was a good trip, though. The highlights were the views and one evening spent 
 
 ![a landscape photograph of the coast of cornwall, taken on the coast path near to Zennor, looking towards St Ives](../../assets/uploaded_images/46-swipe-rightFULL.jpg)
 
-## Dating - peaking into the abyss
+### Dating - peaking into the abyss
 
 Fuelled by both curiosity and my ongoing fear of loneliness, I signed up to 2 online dating apps/services this week. I vaguely knew what to expect as I have friends who've shared horror stories with me before and explained some of the basics. Knowing and experiencing first hand though are different beasts.
 
@@ -42,7 +41,7 @@ The main things that have crossed my mind so far;
 - After what feels like hours of swiping and scrolling, only four women out of hundreds registered within a 50-mile radius of me DON'T PADDLEBOARD. WTAF. I knew it was popular, but SRSLY?
 - I currently have next to zero confidence that I'll ever make a match with someone, let alone progress to a date IRL. I'll continue the experiment for a while longer (I paid a 3-month subscription). Mostly I'm doing this as a source of funny anecdotes to share with friends about how much of a hopeless case I am. FML 🤦‍♂️
 
-## Other things in my head
+### Other things in my head
 
 - Robyn goes back to Bournemouth at the weekend. I'll finally be proper solo and home alone from Monday. It's going to be odd 😐
 - It's my Birthday tomorrow. 45 years old. Meh 🎂

@@ -14,7 +14,7 @@ I’ve tried to write [weeknotes](https://weeknot.es/) on multiple occasions and
 
 I’m more actively and purposefully trying to improve and grow at the moment so this is one area where I’m going to have to pull on my [big boy pants](https://www.youtube.com/watch?v=5Vtlovqijjo), get over myself and take a leap of faith. I’m going to take inspiration from folks like [Robbie Bates](https://twitter.com/robbie_bates), rather than just use the great work of others as another opportunity to make silly comparisons that hold me back. I’m going to be more like Robbie (just less handsome..and more grumpy)! I’ll need to play with some different formats / styles and find a routine that works…but I will publish this.
 
-## Top 3 highlights
+### Top 3 highlights
 
 **Time at home…** This is super precious in my week as I spend much of it in London away from family and friends and recently the time I’ve had at home has also been impacted by trying to fit in study. I prioritised time with them last weekend and balanced this out by taking some leave to work on the latest assignment. We used the time wisely, got out and did a few fun things. I needed that more than I had realised.
 
@@ -28,7 +28,7 @@ As [FutureGov grows to increase our impact](https://www.wearefuturegov.com/impac
 
 This weeks assignment had me visualising data to tell a story around some Fire Service data we’d analysed in the previous week. Both my analysis, story and data viz skills will obviously need more practice but you can [check out my efforts here](https://d1sc0.github.io/odi_assignment3/) if you’re interested. I’ve definitely learnt heaps in the last 4 weeks and looking forward to the last few. The assignment also gave me a nice excuse to put together ‘a thing’ and was the first time I’d fired up Cloud9 and made any GitHub commits in months. I found [Tableau Public](https://public.tableau.com/en-us/s/) a little frustrating to get to grips with but following a few colourful words I wrestled it to a point where it was doing much of what I wanted. I’m adding exploration of some other tools into my backlog.
 
-## Things I’m learning
+### Things I’m learning
 
 ![multi-tasking](../../assets/uploaded_images/dataRIGHT.gif)
 
@@ -38,7 +38,7 @@ This weeks assignment had me visualising data to tell a story around some Fire S
 
 **Strategy…** Is not my enemy. Past negative experiences of poorly communicated and executed strategy have made it a dirty word in my head. I need to flip my mental model. Now more than ever I have the privilege to use my experience of delivery and what I’ve learnt from the mistakes I’ve witnessed to help shape strategy. It’s often necessary to align people, money and skills to deliver change in big, complex environments.
 
-## A few of my favourite things
+### A few of my favourite things
 
 **Link:** [Article 50 Petition](https://twitter.com/emilytulloh) (admirably hanging in there) and subsequently [this](https://odileeds.org/projects/petitions/?241584)  
 **Track:** [All the single ladies](https://www.youtube.com/watch?v=4m1EFMoRFvY) — I blame [Lil!](https://twitter.com/liliasadair?) 💍  
