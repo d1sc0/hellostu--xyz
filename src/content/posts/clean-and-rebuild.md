@@ -15,6 +15,6 @@ tags:
   - astro
 ---
 
-![](/src/assets/uploaded_images/pexels-valentin-ivantsov-36035073.jpg)
+![](/src/assets/uploaded_images/decorating-FULL.jpg)
 
 Image credit: [Valentin Ivantsov on Pexels](https://www.pexels.com/photo/modern-interior-kitchen-under-renovation-36035073/)
