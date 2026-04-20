@@ -32,6 +32,7 @@ See the [docs/](docs/) folder for full guides and details:
 - [Astro Markdown guide](docs/astro-markdown-guide.md)
 - [Astro v6 migration notes](docs/astro-v6-migration.md)
 - [CSS naming conventions](docs/css-naming-conventions.md)
+- [Component overview](docs/component-overview.md)
 - [To-do & project plan](docs/_to-do.md)
 
 ## Automation & Workflow
