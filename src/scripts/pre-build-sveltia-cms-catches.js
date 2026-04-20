@@ -7,6 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const POSTS_DIR = path.join(__dirname, '../content/posts');
+const PAGES_DIR = path.join(__dirname, '../content/pages');
 
 function fixImagePathsInFile(filePath) {
   let content = fs.readFileSync(filePath, 'utf8');
@@ -71,15 +72,23 @@ function renameFileToSlug(filePath) {
   return filePath;
 }
 
-function walkDir(dir) {
+function walkDir(dir, { renameToSlug = false } = {}) {
   fs.readdirSync(dir, { withFileTypes: true }).forEach(entry => {
     const fullPath = path.join(dir, entry.name);
     if (entry.isDirectory()) {
-      walkDir(fullPath);
-    } else if (entry.isFile() && fullPath.endsWith('.md')) {
+      walkDir(fullPath, { renameToSlug });
+    } else if (
+      entry.isFile() &&
+      (fullPath.endsWith('.md') || fullPath.endsWith('.mdx'))
+    ) {
       fixImagePathsInFile(fullPath);
-      // If renamed, update path for further processing
-      renameFileToSlug(fullPath);
+      // Keep slug-based renaming limited to posts content.
+      if (
+        renameToSlug &&
+        (fullPath.endsWith('.md') || fullPath.endsWith('.mdx'))
+      ) {
+        renameFileToSlug(fullPath);
+      }
     }
   });
 }
@@ -107,4 +116,5 @@ if (process.argv.includes('--clean')) {
   cleanDir(previewDir);
   cleanDir(socialDir);
 }
-walkDir(POSTS_DIR);
+walkDir(POSTS_DIR, { renameToSlug: true });
+walkDir(PAGES_DIR, { renameToSlug: false });

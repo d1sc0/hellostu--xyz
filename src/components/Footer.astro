@@ -5,12 +5,6 @@ import footerLinks from '../content/footer-nav.json';
 
 <footer id="footer">
   <section class="footer content-padding">
-    <p class="footer__copyright">
-      All content shared under <a
-        href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-        >Creative Commons License CC-BY-CN-SA</a
-      > by Stuart Mackenzie
-    </p>
     <ul>
       {
         Array.isArray(footerLinks.links) &&
@@ -24,5 +18,11 @@ import footerLinks from '../content/footer-nav.json';
           )
       }
     </ul>
+    <p class="footer__copyright">
+      All content shared under <a
+        href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+        >Creative Commons License CC-BY-CN-SA</a
+      > by Stuart Mackenzie
+    </p>
   </section>
 </footer>
