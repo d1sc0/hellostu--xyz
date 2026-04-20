@@ -4,7 +4,11 @@
     { "label": "Rest", "url": "/rest" },
     { "label": "Play", "url": "/play" },
     { "label": "RSS", "url": "/rss.xml", "icon": "rss" },
-    { "label": "Contact", "url": "/contact", "icon": "envelope" },
+    {
+      "label": "Photos",
+      "url": "https://photos.hellostu.xyz",
+      "icon": "polaroid"
+    },
     { "label": "Dark Mode", "url": "#", "icon": "moon" }
   ]
 }
