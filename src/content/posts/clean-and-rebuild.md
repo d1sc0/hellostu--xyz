@@ -19,7 +19,7 @@ tags:
 
 So spring is finally here and I decided it was time to give this website another fresh coat of paint. What started out as an ambition to just paint the walls turned into knocking a few down and doing some slightly more involved renovations.
 
-### Motivations for change
+### Motivation for change
 
 University studies, plus spending more time on small personal projects lately, pulled me back toward wanting a space where I could write about, share, and showcase what I'm working on and learning. That's still mostly for my own benefit rather than for an audience; it's just useful to catalogue things and make connections over time. There wasn't anything fundamentally wrong with the site as it was. I was getting a bit tired of the punk-eque-neo-brutalist aesthetic I'd built and wanted something calmer (am I getting old?). I've been interested in the idea of a [digital garden](https://joelhooks.com/digital-garden/) for a while, and wanted something that felt more like that: easier to browse and rummage around in, and less card/image/magazine-like in layout and feel than what I had before.
 
@@ -44,7 +44,7 @@ Along the way, I've also had the chance to simplify parts of the codebase, add s
 ### Things I'm considering next
 
 - For the moment I've removed commenting and social sharing. I probably should add these back in but it's not a priority and not sure I want/need the extra page clutter.
-- I may try to repurpose the approach used for the home page Image Stream to create an in-post gallery component to make sharing photodumps a little easier.
+- I may try to repurpose the approach used for the home page Image Stream to create an in-post gallery component to make sharing photodumps a little easier (now implemented ✅).
 - Considering a recommended or related posts component.
 
 _Image credit:_ [_Valentin Ivantsov on Pexels_](https://www.pexels.com/photo/modern-interior-kitchen-under-renovation-36035073/)
