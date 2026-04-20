@@ -15,7 +15,7 @@ tags:
   - astro
 ---
 
-![a room being decorated](../../assets/uploaded_images/decorating-FULL.jpg)
+![a room being decorated](../../assets/uploaded_images/decorating-FULL.png)
 
 So spring is finally here and I decided it was time to give this website another fresh coat of paint. What started out as an ambition to just paint the walls turned into knocking a few down and doing some slightly more involved renovations.
 
