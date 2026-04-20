@@ -1,0 +1,19 @@
+galleries:
+  - id: clean-and-rebuild
+    title: Clean and rebuild gallery
+    images:
+      - src: /src/assets/uploaded_images/36-parkrun-finishRIGHT.jpg
+        alt: A room being decorated
+        caption: Fresh paint and bigger renovations underway.
+      - src: /src/assets/uploaded_images/36-whitechapelLEFT.jpg
+        alt: A room being decorated
+        caption: Fresh paint and bigger renovations underway.
+      - src: /src/assets/uploaded_images/44-bullet-trainRIGHT.jpg
+        alt: A room being decorated
+        caption: Fresh paint and bigger renovations underway.
+      - src: /src/assets/uploaded_images/42-main-character-energyFULL.jpg
+        alt: A room being decorated
+        caption: Fresh paint and bigger renovations underway.
+      - src: /src/assets/uploaded_images/tshirt-suntanFULL.jpg
+        alt: A room being decorated
+        caption: Fresh paint and bigger renovations underway.

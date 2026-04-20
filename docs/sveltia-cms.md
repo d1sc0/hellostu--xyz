@@ -16,6 +16,7 @@ This project uses Sveltia CMS (Netlify CMS compatible) for content editing.
     - `src/content/main-nav.json`
     - `src/content/footer-nav.json`
     - `src/content/social-links.json`
+    - `src/content/galleries.yaml`
 - Post fields: title, slug, draft, pubDate, body, description, tags
 - Sortable by: title, pubDate
 - Default sort: pubDate descending
@@ -35,6 +36,27 @@ This script:
 - Renames Markdown files to match their `slug` frontmatter (if present)
 
 No manual changes are needed after uploading images or creating new posts in the CMS.
+
+## Gallery Manifest
+
+The gallery component reads image data from `src/content/galleries.yaml`.
+
+- Each gallery entry uses an `id` that matches the `gallery` prop passed to `MdxImageGallery`.
+- The CMS stores each image path as `/src/assets/uploaded_images/...`.
+- The component resolves those CMS paths at build time, so editors do not need to rewrite them manually.
+- Captions and alt text are optional, but alt text is recommended for accessibility.
+
+Example structure:
+
+```yaml
+galleries:
+    - id: clean-and-rebuild
+        title: Clean and rebuild gallery
+        images:
+            - src: /src/assets/uploaded_images/example.jpg
+                alt: Example image
+                caption: Optional caption text
+```
 
 ---
 

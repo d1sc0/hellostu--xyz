@@ -115,3 +115,46 @@ collections:
               - { label: 'URL', name: 'url', widget: 'string' }
               - { label: 'Icon', name: 'icon', widget: 'string' }
               - { label: 'Aria Label', name: 'aria', widget: 'string' }
+
+  - name: 'galleries'
+    label: 'Galleries'
+    media_folder_relative: true
+    files:
+      - file: 'src/content/galleries.yaml'
+        label: 'Image Galleries'
+        name: 'image_galleries'
+        fields:
+          - label: 'Galleries'
+            name: 'galleries'
+            widget: 'list'
+            summary: '{{fields.id}}'
+            fields:
+              - {
+                  label: 'Gallery ID',
+                  name: 'id',
+                  widget: 'string',
+                  hint: 'Used in MDX component prop: <MdxImageGallery gallery="your-id" />',
+                }
+              - {
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
+                  required: false,
+                }
+              - label: 'Images'
+                name: 'images'
+                widget: 'list'
+                fields:
+                  - { label: 'Image', name: 'src', widget: 'image' }
+                  - {
+                      label: 'Alt Text',
+                      name: 'alt',
+                      widget: 'string',
+                      required: false,
+                    }
+                  - {
+                      label: 'Caption',
+                      name: 'caption',
+                      widget: 'string',
+                      required: false,
+                    }
