@@ -42,19 +42,35 @@ allTags.sort((a, b) => a.tag.localeCompare(b.tag));
           class="tag-filter-input"
         />
         <script is:inline>
-          const filterInput = document.getElementById('tag-filter');
+          const filterInput = document.getElementById('tag-filter-input');
+
           if (filterInput) {
             filterInput.addEventListener('input', function(e) {
               const target = e.target;
               if (!(target instanceof HTMLInputElement)) return;
               const val = target.value.toLowerCase();
-              document.querySelectorAll('.tagged-posts-list li').forEach(el => {
-                if (el.textContent.toLowerCase().includes(val)) {
+              const emptyState = document.getElementById('tag-filter-empty');
+              const tagItems = Array.from(
+                document.querySelectorAll('.tagged-posts-list li'),
+              );
+              let visibleCount = 0;
+
+              tagItems.forEach(el => {
+                const text = (el.textContent || '').toLowerCase();
+                const isVisible = text.includes(val);
+
+                if (isVisible) {
                   el.style.display = '';
-                } else {
-                  el.style.display = 'none';
+                  visibleCount += 1;
+                  return;
                 }
+
+                el.style.display = 'none';
               });
+
+              if (emptyState) {
+                emptyState.hidden = visibleCount !== 0;
+              }
             });
           }
         </script>
@@ -65,6 +81,9 @@ allTags.sort((a, b) => a.tag.localeCompare(b.tag));
             </li>
           ))}
         </ul>
+        <p id="tag-filter-empty" class="tag-filter-empty" hidden>
+          No tags match that filter.
+        </p>
       </>
     )
   }

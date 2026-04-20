@@ -44,6 +44,11 @@
   margin: 0 auto;
 }
 
+.tag-filter-empty {
+  margin-top: 1rem;
+  color: var(--color-text);
+}
+
 @media (min-width: 768px) and (orientation: landscape) {
   .tag-filter-input {
     width: 40%;

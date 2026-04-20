@@ -4,7 +4,7 @@ slug: clean-and-rebuild
 draft: true
 pubDate: 2026-04-20T13:31:00
 category: Play
-description: tbc
+description: A spring rebuild of my site into a calmer digital garden, with Sveltia CMS, cleaner components, and pre-build automation to make publishing easier and get me back to concentrating on the writing.
 tags:
   - website
   - project
@@ -17,7 +17,7 @@ tags:
 
 ![a room being decorated](../../assets/uploaded_images/decorating-FULL.jpg)
 
-So spring is finally here and I decided it was time to give this website another fresh coat of paint. What started out as an ambition to just paint the walls turned into knocking a few down and doing some slightly more involved renovations. 
+So spring is finally here and I decided it was time to give this website another fresh coat of paint. What started out as an ambition to just paint the walls turned into knocking a few down and doing some slightly more involved renovations.
 
 ### Motivations for change
 
