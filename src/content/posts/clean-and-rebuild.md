@@ -27,11 +27,11 @@ I also wanted to remove some of the friction that had been getting in the way of
 
 Along the way, I've also had the chance to simplify parts of the codebase, add some documentation, and clear away technical debt from earlier experiments. All very satisfying for a nerd like me 🤓. AI has been used and has been useful. We've also had some arguments along the way 🤖😡😂.
 
-![screenshot of the previous iteration of the website](/src/assets/uploaded_images/old-hello-stu-LEFT.png "the before picture")
+![screenshot of the previous iteration of the website](/src/assets/uploaded_images/old-hello-stu-LEFT.png 'the before picture')
 
 ### Summary of the changes completed
 
-    - New layouts, styles and navigation
+- New layouts, styles and navigation
 - Introduced 3 categories to organise my writing - [work](/work), [rest](/rest) and [play](/play)
 - Migrated all old posts and pages, tidying up [tags](/tags) a little along the way
 - Moved much of the page context out of [Astro](https://astro.build/) files and into [Mdx](https://mdxjs.com/) files so the content can be updated alongside posts in the CMS (Content Management System)
