@@ -2,7 +2,7 @@
 
 ## Styling & Naming Conventions
 
-See [styling-naming-conventions.md](styling-naming-conventions.md) for details on the CSS methodology, BEM naming, and design choices used throughout the project.
+See [css-naming-conventions.md](css-naming-conventions.md) for details on the CSS methodology, BEM naming, and design choices used throughout the project.
 
 # Project Setup
 
@@ -51,8 +51,8 @@ npm run prebuild:clean
 
 You can also run the image generators manually. See:
 
-- [OG image generation details](og-image-generation.md)
-- [Preview image generation details](preview-image-generation.md)
+- [OG image generation details](og-image-generation-guide.md)
+- [Preview image generation details](preview-image-generation-guide.md)
 
 ### Image Generation Configuration
 

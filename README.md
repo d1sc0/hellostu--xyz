@@ -25,7 +25,7 @@ A modern Astro v6 static site with Sveltia CMS, automated image generation, and 
 
 See the [docs/](docs/) folder for full guides and details:
 
-- [Project setup](docs/setup.md)
+- [Project setup](docs/project-setup-guide.md)
 - [Sveltia CMS guide](docs/sveltia-cms.md)
 - [OG image generation](docs/og-image-generation-guide.md)
 - [Preview image generation](docs/preview-image-generation-guide.md)

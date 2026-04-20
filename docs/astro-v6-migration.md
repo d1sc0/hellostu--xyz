@@ -11,4 +11,4 @@
 
 ## Styling & Naming Conventions
 
-For details on the CSS methodology and class naming conventions used after migration, see [styling-naming-conventions.md](styling-naming-conventions.md).
+For details on the CSS methodology and class naming conventions used after migration, see [css-naming-conventions.md](css-naming-conventions.md).

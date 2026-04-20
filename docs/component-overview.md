@@ -331,8 +331,10 @@ Renders a full list of tags with usage counts.
 - Reads posts collection.
 - Builds a case-insensitive tag map with counts.
 - Tracks latest post date per tag.
-- Sorts tags alphabetically for display.
+- Supports client-side filter input.
+- Supports client-side sorting by A-Z or count, with ascending/descending toggles.
 - Renders links to each tag route.
+- Shows an inline no-results message when a filter matches zero tags.
 
 ### Props
 
