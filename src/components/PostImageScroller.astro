@@ -1,0 +1,223 @@
+---
+import path from 'node:path';
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import '../styles/post-image-scroller.css';
+
+interface Props {
+  heading?: string;
+  category?: 'Work' | 'Rest' | 'Play';
+  categories?: Array<'Work' | 'Rest' | 'Play'>;
+}
+
+type MatchedImage = {
+  image: ImageMetadata;
+  postId: string;
+  postTitle: string;
+  alt: string;
+};
+
+type ParsedImageRef = {
+  src: string;
+  alt?: string;
+};
+
+const {
+  heading = 'Post Images',
+  category,
+  categories = [],
+} = Astro.props as Props;
+const selectedCategories =
+  categories.length > 0 ? categories : category ? [category] : [];
+
+const imageModules = import.meta.glob(
+  '/src/assets/uploaded_images/**/*.{avif,gif,jpeg,jpg,png,webp}',
+  {
+    eager: true,
+    import: 'default',
+  },
+) as Record<string, ImageMetadata>;
+
+const imageByRelativePath = new Map<string, ImageMetadata>();
+const imageByBaseName = new Map<string, ImageMetadata>();
+
+for (const [assetPath, metadata] of Object.entries(imageModules)) {
+  const relativePath = assetPath.replace('/src/assets/uploaded_images/', '');
+  imageByRelativePath.set(relativePath, metadata);
+
+  const baseName = path.basename(relativePath);
+  if (!imageByBaseName.has(baseName)) {
+    imageByBaseName.set(baseName, metadata);
+  }
+}
+
+function parseImageRefs(rawBody: string): ParsedImageRef[] {
+  const refs: ParsedImageRef[] = [];
+  const markdownImageRegex = /!\[([^\]]*)\]\(([^)\s]+)(?:\s+"[^"]*")?\)/g;
+  const htmlImageRegex = /<img[^>]*src=["']([^"']+)["'][^>]*>/g;
+
+  let markdownMatch: RegExpExecArray | null;
+  while ((markdownMatch = markdownImageRegex.exec(rawBody)) !== null) {
+    refs.push({ src: markdownMatch[2], alt: markdownMatch[1] });
+  }
+
+  let htmlMatch: RegExpExecArray | null;
+  while ((htmlMatch = htmlImageRegex.exec(rawBody)) !== null) {
+    const imgTag = htmlMatch[0];
+    const altMatch = imgTag.match(/alt=["']([^"']*)["']/);
+    refs.push({ src: htmlMatch[1], alt: altMatch?.[1] });
+  }
+
+  return refs;
+}
+
+function normalizeImageRef(src: string): {
+  relativePath: string;
+  baseName: string;
+} {
+  const withoutQueryOrHash = src.split('?')[0].split('#')[0];
+  const normalized = decodeURIComponent(withoutQueryOrHash).replace(/\\/g, '/');
+  const marker = 'assets/uploaded_images/';
+  const markerIndex = normalized.indexOf(marker);
+
+  const relativePath =
+    markerIndex >= 0
+      ? normalized.slice(markerIndex + marker.length)
+      : normalized.replace(/^\.?\/?/, '');
+
+  return {
+    relativePath,
+    baseName: path.basename(relativePath),
+  };
+}
+
+function resolveImageMetadata(src: string): ImageMetadata | undefined {
+  const { relativePath, baseName } = normalizeImageRef(src);
+  return imageByRelativePath.get(relativePath) || imageByBaseName.get(baseName);
+}
+
+const posts = (await getCollection(
+  'posts',
+  ({ data }: { data: CollectionEntry<'posts'>['data'] }) =>
+    (import.meta.env.PROD ? data.draft !== true : true) &&
+    (selectedCategories.length === 0 ||
+      selectedCategories.includes(data.category)),
+)) as CollectionEntry<'posts'>[];
+
+posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const matchedImages: MatchedImage[] = [];
+
+for (const post of posts) {
+  const body = post.body || '';
+  const imageRefs = parseImageRefs(body);
+
+  for (const imageRef of imageRefs) {
+    const resolved = resolveImageMetadata(imageRef.src);
+    if (!resolved) continue;
+
+    matchedImages.push({
+      image: resolved,
+      postId: post.id,
+      postTitle: post.data.title,
+      alt: imageRef.alt?.trim() || `Image from ${post.data.title}`,
+    });
+  }
+}
+---
+
+{
+  matchedImages.length > 0 ? (
+    <section
+      class="post-image-scroller"
+      data-post-image-scroller
+      data-at-start="true"
+      data-at-end="false"
+    >
+      <div class="post-image-scroller__head">
+        <h2 class="post-image-scroller__heading">{heading}</h2>
+        <div class="post-image-scroller__controls" aria-label="Scroll images">
+          <button
+            type="button"
+            class="post-image-scroller__button"
+            data-scroll-direction="left"
+            aria-label="Scroll images left"
+          >
+            <span aria-hidden="true">&#8592;</span>
+          </button>
+          <button
+            type="button"
+            class="post-image-scroller__button"
+            data-scroll-direction="right"
+            aria-label="Scroll images right"
+          >
+            <span aria-hidden="true">&#8594;</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="post-image-scroller__viewport-shell">
+        <div class="post-image-scroller__viewport" tabindex="0">
+          <ul class="post-image-scroller__track">
+            {matchedImages.map(item => (
+              <li class="post-image-scroller__item">
+                <a
+                  href={`/posts/${item.postId}/`}
+                  class="post-image-scroller__link"
+                >
+                  <Image
+                    src={item.image}
+                    alt={item.alt}
+                    loading="lazy"
+                    class="post-image-scroller__image"
+                  />
+                  <span class="post-image-scroller__caption">
+                    {item.postTitle}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  ) : null
+}
+
+<script is:inline>
+  document.querySelectorAll('[data-post-image-scroller]').forEach(root => {
+    const viewport = root.querySelector('.post-image-scroller__viewport');
+    if (!viewport) return;
+
+    const updateEdgeState = () => {
+      const maxScrollLeft = viewport.scrollWidth - viewport.clientWidth;
+      const atStart = viewport.scrollLeft <= 2;
+      const atEnd = maxScrollLeft - viewport.scrollLeft <= 2;
+
+      root.setAttribute('data-at-start', String(atStart));
+      root.setAttribute('data-at-end', String(atEnd));
+    };
+
+    updateEdgeState();
+    viewport.addEventListener('scroll', updateEdgeState, { passive: true });
+    window.addEventListener('resize', updateEdgeState);
+
+    viewport.addEventListener('keydown', event => {
+      if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+      event.preventDefault();
+      const direction = event.key === 'ArrowLeft' ? -1 : 1;
+      const amount = Math.round(viewport.clientWidth * 0.85);
+      viewport.scrollBy({ left: direction * amount, behavior: 'smooth' });
+    });
+
+    root.querySelectorAll('[data-scroll-direction]').forEach(button => {
+      button.addEventListener('click', () => {
+        const direction =
+          button.getAttribute('data-scroll-direction') === 'left' ? -1 : 1;
+        const amount = Math.round(viewport.clientWidth * 0.85);
+        viewport.scrollBy({ left: direction * amount, behavior: 'smooth' });
+      });
+    });
+  });
+</script>

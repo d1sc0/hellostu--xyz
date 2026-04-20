@@ -7,6 +7,7 @@ slug: index
 
 import LatestPosts from '../../components/LatestPosts.astro';
 import CategoryCards from '../../components/CategoryCards.astro';
+import PostImageScroller from '../../components/PostImageScroller.astro';
 import SocialLinks from '../../components/SocialLinks.astro';
 import { Image } from 'astro:assets';
 import light from '../../assets/page_images/stuart-logo-light.png';
@@ -32,5 +33,7 @@ houseplants, [drummer](/tags/drums) and exotic disco dancer!
 />
 
 <LatestPosts count={4} />
+
+<PostImageScroller heading="Photo Stream" />
 
 <CategoryCards />
