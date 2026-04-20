@@ -122,7 +122,7 @@
   display: block;
   width: auto;
   max-width: none;
-  height: 10rem;
+  height: 12rem;
   object-fit: contain;
   float: none;
   margin: 0;
@@ -150,6 +150,6 @@
   }
 
   .post-image-scroller img.post-image-scroller__image {
-    height: 10rem;
+    height: 12rem;
   }
 }
