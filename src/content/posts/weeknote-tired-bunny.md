@@ -1,11 +1,18 @@
 ---
 title: Weeknote - Tired Bunny
-draft: false
 slug: weeknote-tired-bunny
-category: Work
+draft: false
 pubDate: 2024-07-05T17:40:00
+category: Work
+featureImage: /src/assets/uploaded_images/41-tired-bunnyFULL.jpg
 description: A brief look at the good, the bad and the ugly through tired eyes. Covers the period 28th June to 5th July.
-tags: ['weeknote', 'work', 'life', 'election', 'tired', 'reflection']
+tags:
+  - weeknote
+  - work
+  - life
+  - election
+  - tired
+  - reflection
 ---
 
 ![an anime bunny sat on the grass looking sad and tired](../../assets/uploaded_images/41-tired-bunnyFULL.jpg)
