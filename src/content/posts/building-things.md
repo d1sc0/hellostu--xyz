@@ -1,12 +1,19 @@
 ---
 title: Building Things
-draft: false
 slug: building-things
-category: Play
+draft: false
 pubDate: 2024-05-30T16:00:00
-description: 'Reflecting on the experience and insights gained from rebuilding the website, focusing on design, technology, and development challenges.'
-tags: ['astro', 'gatsby', 'webdev', 'design', 'code', 'tech', 'build']
-
+category: Play
+featureImage: /src/assets/uploaded_images/34-old-siteRIGHT.jpg
+description: Reflecting on the experience and insights gained from rebuilding the website, focusing on design, technology, and development challenges.
+tags:
+  - astro
+  - gatsby
+  - webdev
+  - design
+  - code
+  - tech
+  - build
 ---
 
 ![screenshot of old website with a TNT block overlayed](../../assets/uploaded_images/34-old-siteRIGHT.jpg) So over the bank holiday weekend I decided to redesign and rebuild this website. The motivation for this largely just came from a desire to create something - **I wanted to build a thing!**
