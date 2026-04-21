@@ -1,12 +1,18 @@
 ---
 title: Weeknote - Buffet
-draft: false
 slug: weeknote-buffet
-category: Work
+draft: false
 pubDate: 2024-06-14T10:25:00
-description: 'A weeknote covering the period 7th-14th June. This week was an assorted buffet including sales work, leadership training, reconnecting socially and making things '
-tags: ['weeknote', 'work', 'social', 'training', 'website', 'reflection']
-
+category: Work
+featureImage: /src/assets/uploaded_images/pexels-monica-tran-33673617.jpg
+description: A weeknote covering the period 7th-14th June. This week was an assorted buffet including sales work, leadership training, reconnecting socially and making things
+tags:
+  - weeknote
+  - work
+  - social
+  - training
+  - website
+  - reflection
 ---
 
 This week has been a real self-service buffet. I found the variety enjoyable, but the random assortment of cold pizza, carrot sticks, mini samosas, and party rings filling my plate didn’t quite satisfy my need for a more substantial meal!
@@ -35,7 +41,7 @@ I stumbled across and started playing around with [ApexCharts.js](￼). It’s a
 
 - Picked up my Guitar for the first time in months and had a play.
 - Not enough running this week. I’m trying not to waste energy or create bad vibes by judging myself too harshly
-- Audiobooks - finished [Vulture Capitalism \(Grace Blakeley\)](https://www.audible.co.uk/pd/Vulture-Capitalism-Audiobook/B0CWB8H4ZZ?eac_link=v54NPPn11PuN&ref=web_search_eac_asin_1&eac_selected_type=asin&eac_selected=B0CWB8H4ZZ&qid=AvcOkNeTtY&eac_id=258-3522918-8898231_AvcOkNeTtY&sr=1-1) and now moved onto [Growth - a reckoning \(Daniel Susskind\)](https://www.audible.co.uk/pd/Growth-Audiobook/B0CKJ33L4T).
+- Audiobooks - finished [Vulture Capitalism (Grace Blakeley)](https://www.audible.co.uk/pd/Vulture-Capitalism-Audiobook/B0CWB8H4ZZ?eac_link=v54NPPn11PuN&ref=web_search_eac_asin_1&eac_selected_type=asin&eac_selected=B0CWB8H4ZZ&qid=AvcOkNeTtY&eac_id=258-3522918-8898231_AvcOkNeTtY&sr=1-1) and now moved onto [Growth - a reckoning (Daniel Susskind)](https://www.audible.co.uk/pd/Growth-Audiobook/B0CKJ33L4T).
 - I’m slowly progressing through the backlog of [Lost](https://www.imdb.com/title/tt0411008/) episodes - Halfway through the last season. I’m still largely clueless about what is happening, but I’m enjoying the ride more.
 
 ### Noteworthy links
