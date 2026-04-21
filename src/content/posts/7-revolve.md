@@ -1,11 +1,18 @@
 ---
 title: 7 | Revolve
-draft: false
 slug: 7-revolve
-category: Play
+draft: false
 pubDate: 2023-03-05
-description: 'Debating falling or flying in self-portrait series with dynamic backgrounds, exploring movement and change.'
-tags: ['52weeks', 'photography', 'creativity', 'self', 'movement', 'dorset']
+category: Play
+featureImage: /src/assets/uploaded_images/52_2023_7_FULL.jpg
+description: Debating falling or flying in self-portrait series with dynamic backgrounds, exploring movement and change.
+tags:
+  - 52weeks
+  - photography
+  - creativity
+  - self
+  - movement
+  - dorset
 ---
 
 ![Stu appears to be falling center frame into some kind of spirally revolving portal!](../../assets/uploaded_images/52_2023_7_FULL.jpg)
