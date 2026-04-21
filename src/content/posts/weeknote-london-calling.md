@@ -1,11 +1,18 @@
 ---
 title: Weeknote - London calling
-draft: false
 slug: weeknote-london-calling
-category: Work
+draft: false
 pubDate: 2024-06-07
-description: 'A weeknote covering the period 1st-7th June. Reflecting on a week of returning to London, work, fitness progress, web projects, and balancing family time.'
-tags: ['weeknote', 'work', 'london', 'website', 'fitness', 'travel']
+category: Work
+featureImage: /src/assets/uploaded_images/36-whitechapelLEFT.jpg
+description: A weeknote covering the period 1st-7th June. Reflecting on a week of returning to London, work, fitness progress, web projects, and balancing family time.
+tags:
+  - weeknote
+  - work
+  - london
+  - website
+  - fitness
+  - travel
 ---
 
 It’s been an odd week. I’ve continued to wrestle with some depressing and complicated personal life stuff that I won’t share. I write this as a reminder that despite the thoughts and feelings surrounding this ‘stuff’, I have continued to put one foot in front of the other and move forward. I’m pretty happy with what I’ve achieved this week at work and in terms of self-care.
@@ -37,7 +44,7 @@ The outward journey to London took five and a half hours across three trains. Th
 - I refactored my [old fire incident choropleth map](https://hellostu.xyz/posts/choropleth-experiments/), which now works on the newly migrated blog. I’m interested in playing with more data visualisation stuff, so it felt good to fix the old before starting the new.
 - I’ve also noted that the rebuilt blog still has a [pretty low carbon footprint](https://www.websitecarbon.com/website/hellostu-xyz/). This pleases me as I’m still passionate about how this should be an important metric for all internet technology.
 - I made homemade tacos for tea on Monday. They were delicious, and I used a [plant-based minced beef](https://this.co/products/mince/) alternative that wasn’t awful.
-- I am still trying to watch [Lost](https://www.imdb.com/title/tt0411008/) - I have a love-and-hate relationship with it, but I think it’s growing on me. I also watched [Atlas on Netflix](https://www.netflix.com/gb/title/81012048), finished [A Promised Land \(Barak Obama\)](https://www.audible.co.uk/pd/A-Promised-Land-Audiobook/0241991420?ref_pageloadid=not_applicable&ref=a_author_Ba_c9_lProduct_1_1&pf_rd_p=af5062e9-57de-425c-9e02-6d8ad006b9aa&pf_rd_r=0HWJAB4VH2RANSGXDCZV&pageLoadId=4Pd3YBm1XbGpActm&creativeId=83220593-1d50-4883-bad4-b5d505543719) in audiobook format, swerved on [Less \(Patrick Grant\)](https://www.audible.co.uk/pd/Less-Audiobook/B0CVBM1N85?eac_link=47brnwQGKlbs&ref=web_search_eac_asin_3&eac_selected_type=asin&eac_selected=B0CVBM1N85&qid=5IHL5OpAxF&eac_id=258-3522918-8898231_5IHL5OpAxF&sr=1-3) and started [Vulture Capitalism \(Grace Blakeley\)](https://www.audible.co.uk/pd/Vulture-Capitalism-Audiobook/B0CWB8H4ZZ?eac_link=v54NPPn11PuN&ref=web_search_eac_asin_1&eac_selected_type=asin&eac_selected=B0CWB8H4ZZ&qid=AvcOkNeTtY&eac_id=258-3522918-8898231_AvcOkNeTtY&sr=1-1)
+- I am still trying to watch [Lost](https://www.imdb.com/title/tt0411008/) - I have a love-and-hate relationship with it, but I think it’s growing on me. I also watched [Atlas on Netflix](https://www.netflix.com/gb/title/81012048), finished [A Promised Land (Barak Obama)](https://www.audible.co.uk/pd/A-Promised-Land-Audiobook/0241991420?ref_pageloadid=not_applicable&ref=a_author_Ba_c9_lProduct_1_1&pf_rd_p=af5062e9-57de-425c-9e02-6d8ad006b9aa&pf_rd_r=0HWJAB4VH2RANSGXDCZV&pageLoadId=4Pd3YBm1XbGpActm&creativeId=83220593-1d50-4883-bad4-b5d505543719) in audiobook format, swerved on [Less (Patrick Grant)](https://www.audible.co.uk/pd/Less-Audiobook/B0CVBM1N85?eac_link=47brnwQGKlbs&ref=web_search_eac_asin_3&eac_selected_type=asin&eac_selected=B0CVBM1N85&qid=5IHL5OpAxF&eac_id=258-3522918-8898231_5IHL5OpAxF&sr=1-3) and started [Vulture Capitalism (Grace Blakeley)](https://www.audible.co.uk/pd/Vulture-Capitalism-Audiobook/B0CWB8H4ZZ?eac_link=v54NPPn11PuN&ref=web_search_eac_asin_1&eac_selected_type=asin&eac_selected=B0CWB8H4ZZ&qid=AvcOkNeTtY&eac_id=258-3522918-8898231_AvcOkNeTtY&sr=1-1)
 
 ## Noteworthy Links
 
