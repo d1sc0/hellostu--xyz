@@ -1,12 +1,18 @@
 ---
 title: Bye-bye flickr
-draft: false
 slug: bye-bye-flickr
-category: Play
+draft: false
 pubDate: 2022-05-15
-description: 'Deleting my Flickr account, reflecting on photo-sharing, personal memories, and new creative platforms.'
-tags: ['photography', 'tech', 'social-media', 'creative-platforms', 'memories', 'reflections']
-
+category: Play
+featureImage: /src/assets/uploaded_images/double-troubleFULL.jpg
+description: Deleting my Flickr account, reflecting on photo-sharing, personal memories, and new creative platforms.
+tags:
+  - photography
+  - tech
+  - social-media
+  - creative-platforms
+  - memories
+  - reflections
 ---
 
 This weekend I finally found the time to [backup all my flickr images](https://www.mlieser.de/apps/adios-flickr) and delete my account. The reason for doing so was purely practical - It's been a long time since I actively posted images to flickr. I no longer interact with any groups and am no longer part of any art projects on the platform. Given I had nearly 3000 older images stored on Flickr, [recent account changes that have come into effect](https://www.flickr.com/help/forum/en-us/72157720619003104/#:~:text=%22Beginning%20May%201%2C%202022%2C,service%20and%20subject%20to%20removal.%22) would soon have soon left me paying for the service or I'd of risk losing my older images and private photos becoming public. The process of backing up all the images and browsing through the albums did stir more than a few memories.
