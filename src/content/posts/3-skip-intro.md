@@ -1,5 +1,5 @@
 ---
-title: 3 | Skip intro
+title: 3 - Skip intro
 slug: 3-skip-intro
 draft: false
 pubDate: 2023-02-05

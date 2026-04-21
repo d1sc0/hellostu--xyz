@@ -1,5 +1,5 @@
 ---
-title: 12 | These hands
+title: 12 - These hands
 slug: 12-these-hands
 draft: false
 pubDate: 2023-04-10

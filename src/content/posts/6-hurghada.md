@@ -1,5 +1,5 @@
 ---
-title: 6 | Hurghada
+title: 6 - Hurghada
 slug: 6-hurghada
 draft: false
 pubDate: 2023-02-26

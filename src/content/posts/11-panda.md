@@ -1,5 +1,5 @@
 ---
-title: 11 | Panda
+title: 11 - Panda
 slug: 11-panda
 draft: false
 pubDate: 2023-04-03

@@ -1,5 +1,5 @@
 ---
-title: 8 | Sasquatch
+title: 8 - Sasquatch
 slug: 8-sasquatch
 draft: false
 pubDate: 2023-03-13

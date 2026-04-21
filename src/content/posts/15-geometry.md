@@ -1,5 +1,5 @@
 ---
-title: 15 | Geometry
+title: 15 - Geometry
 slug: 15-geometry
 draft: false
 pubDate: 2023-06-07

@@ -1,5 +1,5 @@
 ---
-title: 1 | Seeking inspiration and comfort
+title: 1 - Seeking inspiration and comfort
 slug: 1-seeking-inspiration-and-comfort
 draft: false
 pubDate: 2023-01-19

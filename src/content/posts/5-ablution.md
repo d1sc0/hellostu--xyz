@@ -1,5 +1,5 @@
 ---
-title: 5 | Ablution
+title: 5 - Ablution
 slug: 5-ablution
 draft: false
 pubDate: 2023-02-18

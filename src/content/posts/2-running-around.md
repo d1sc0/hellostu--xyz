@@ -1,5 +1,5 @@
 ---
-title: 2 | Running around
+title: 2 - Running around
 slug: 2-running-around
 pubDate: 2023-01-29
 category: Play

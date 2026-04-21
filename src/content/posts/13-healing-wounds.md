@@ -1,5 +1,5 @@
 ---
-title: 13 | Healing wounds
+title: 13 - Healing wounds
 slug: 13-healing-wounds
 draft: false
 pubDate: 2023-05-15

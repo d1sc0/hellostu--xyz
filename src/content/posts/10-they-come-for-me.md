@@ -1,5 +1,5 @@
 ---
-title: 10 | They come for me
+title: 10 - They come for me
 slug: 10-they-come-for-me
 draft: false
 pubDate: 2023-03-26

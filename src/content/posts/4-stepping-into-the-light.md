@@ -1,5 +1,5 @@
 ---
-title: 4 | Stepping into the light
+title: 4 - Stepping into the light
 slug: 4-stepping-into-the-light
 draft: false
 pubDate: 2023-02-12

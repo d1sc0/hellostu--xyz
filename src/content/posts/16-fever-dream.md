@@ -1,5 +1,5 @@
 ---
-title: 16 | Fever dream
+title: 16 - Fever dream
 slug: 16-fever-dream
 draft: false
 pubDate: 2023-07-14

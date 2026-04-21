@@ -1,5 +1,5 @@
 ---
-title: 9 | Hillfort
+title: 9 - Hillfort
 slug: 9-hillfort
 draft: false
 pubDate: 2023-03-25

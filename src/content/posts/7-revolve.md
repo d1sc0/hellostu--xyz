@@ -1,5 +1,5 @@
 ---
-title: 7 | Revolve
+title: 7 - Revolve
 slug: 7-revolve
 draft: false
 pubDate: 2023-03-05
