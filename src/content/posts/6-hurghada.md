@@ -1,12 +1,19 @@
 ---
 title: 6 | Hurghada
-draft: false
 slug: 6-hurghada
-category: Play
+draft: false
 pubDate: 2023-02-26
-description: 'Capturing a self-portrait on a beach in Egypt, reflecting on travel and personal moments.'
-tags: ['52weeks', 'photography', 'creativity', 'self', 'travel', 'egypt', 'beach']
-
+category: Play
+featureImage: /src/assets/uploaded_images/52_2023_6_FULL.jpg
+description: Capturing a self-portrait on a beach in Egypt, reflecting on travel and personal moments.
+tags:
+  - 52weeks
+  - photography
+  - creativity
+  - self
+  - travel
+  - egypt
+  - beach
 ---
 
 ![A surf board stands upright on the short of a beach, Stu peers out from behind it!](../../assets/uploaded_images/52_2023_6_FULL.jpg)
