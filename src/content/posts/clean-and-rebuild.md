@@ -4,6 +4,7 @@ slug: clean-and-rebuild
 draft: false
 pubDate: 2026-04-20T13:31:00
 category: Play
+featureImage: /src/assets/uploaded_images/decorating-FULL.png
 description: A spring rebuild of my site into a calmer digital garden, with Sveltia CMS, cleaner components, and pre-build automation to make publishing easier and get me back to concentrating on the writing.
 tags:
   - website
