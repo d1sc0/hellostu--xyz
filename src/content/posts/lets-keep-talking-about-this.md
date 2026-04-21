@@ -1,11 +1,17 @@
 ---
 title: Let's keep talking about this
-draft: false
 slug: lets-keep-talking-about-this
-category: Rest
+draft: false
 pubDate: 2019-10-15
-description: 'Discussing Baby Loss Awareness Week, emphasizing the importance of breaking the silence and sharing personal stories.'
-tags: ['babyloss', 'reflection', 'awareness', 'support', 'life']
+category: Rest
+featureImage: /src/assets/uploaded_images/morganbethanyFULL.jpg
+description: Discussing Baby Loss Awareness Week, emphasizing the importance of breaking the silence and sharing personal stories.
+tags:
+  - babyloss
+  - reflection
+  - awareness
+  - support
+  - life
 ---
 
 > This is a repost of the image and text I shared on instagram at the end of baby loss awareness week in 2019. After posting I had two people come and talk to me about recent experiences they had gone through, who seemed genuinely grateful that I shared (I don't often get this reaction to my social posts 😂). I repost with the same sentiment. Baby loss is common and hard on all of those involved. It's important we talk about it and support each other, fighting to help improve bereavement care.
