@@ -4,7 +4,7 @@ slug: making-them-count-creating-alignment-within-communities-of-practice
 draft: false
 pubDate: 2026-03-10
 category: Work
-featureImage: /src/assets/uploaded_images/pexels-pixabay-209728.jpg
+featureImage: /src/assets/uploaded_images/og-background.png
 description: Some thoughts on how to use learning design theory to align goals and activities in a Community of Practice. Move from "humaning together" and great vibes to practicing with purpose.
 tags:
   - learning
