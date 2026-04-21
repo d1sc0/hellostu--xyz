@@ -1,11 +1,16 @@
 ---
 title: Fresh paint
-draft: false
 slug: fresh-paint
-category: Work
+draft: false
 pubDate: 2020-01-28
-description: 'a post explaining my foray into re-building my blog and my desire to both reduce my hosting costs, save the planet and play with the JAM stack'
-tags: ['data', 'tech', 'experiments', 'climate']
+category: Work
+featureImage: /src/assets/uploaded_images/spraycansFULL.jpg
+description: a post explaining my foray into re-building my blog and my desire to both reduce my hosting costs, save the planet and play with the JAM stack
+tags:
+  - data
+  - tech
+  - experiments
+  - climate
 ---
 
 ![some coloutful spray cans](../../assets/uploaded_images/spraycansFULL.jpg)
@@ -28,11 +33,11 @@ I'd been doing a little research at work about product design and technology cho
 
 **I'm happy to report I've accomplished all three of the goals above.** In addition, I think this might be the best user experience of all of the iterations of my blog/website in quite some time and equally I think i've ended up with a solution which actually works better for me as an author/publisher. Winning!
 
-_If you fancy a long ramble about website nerdery read on to find out more about the changes and my thought processes. If this doesn't interest you then maybe bail out now and go and have a poke around the [rest of the site](http://hellostu.xyz) instead._
+_If you fancy a long ramble about website nerdery read on to find out more about the changes and my thought processes. If this doesn't interest you then maybe bail out now and go and have a poke around the_ [_rest of the site_](http://hellostu.xyz) _instead._
 
 ### Summary of changes
 
-**Platform/CMS**  
+**Platform/CMS**
 I changed from using the [Ghost blogging platform](https://ghost.org/) to using the [Gatsby static site generator](https://www.gatsbyjs.org/). I really liked Ghost and still rate it highly. As a far as content management systems go it's a lovely user experience that's less cluttered than wordpress or drupal. If I'd stuck to ghost though it was going to be hard to achieve the first two of my goals. I did toy with running it in a [headless configuration](https://en.wikipedia.org/wiki/Headless_content_management_system) with a static generated frontend, maybe even running ghost locally on demand but this seemed needlessly complex for my needs.
 
 I also considered other headless setups with SaaS services like [Contenful](https://www.contentful.com/). I discounted these as an option firstly as it meant I was using an additonal cloud service (potentially adding to my carbon output) and secondly although a content API is a beautiful thing - for a project of this micro scale where I am unlikely to ever want to present the content anywhere other than in this one place it seems overkill.
@@ -41,14 +46,14 @@ Discounting headless options led me to keep things simple and to use [markdown f
 
 Gatsby was my static site generator of choice purely because I'd played it with before and found it to be both powerful and flexible - compared to some of the alternatives the documentation is also excellent.
 
-**Hosting**  
+**Hosting**
 I knew that moving to a static generated site would effectively remove my hosting costs completely and help me meet my first goal. The site is small so storage is negligble and numbers of page views are low (mostly me..ha!) so bandwidth is also not a concern. There are a range of services out there that will host your static files for free whilst also making it dead easy to deploy from the command line ([surge](https://surge.sh/), [netlify](https://www.netlify.com/), [github pages](https://pages.github.com/), [firebase](https://firebase.google.com/), [zeit](https://zeit.co/) to name a few).
 
 This meant the choice would primarily be made on their green credentials and for this reason I ended up going with Zeit. It had all the features that are important and common across all of the services I mentioned above (simple command line tools, github integration, domain name support, content delivery network) but under the hood it's running on [google cloud computing](https://cloud.google.com/) which from what I could deduce from my research is a more [sustainable choice](https://www.wired.com/story/amazon-google-microsoft-green-clouds-and-hyperscale-data-centers/) than say Netlify which runs on AWS.
 
-_Note: Resources like the [Green Web Foundation](https://www.thegreenwebfoundation.org/) and the [climate action slack](https://climateaction.tech/) community have been useful resources in my research on this subject._
+_Note: Resources like the_ [_Green Web Foundation_](https://www.thegreenwebfoundation.org/) _and the_ [_climate action slack_](https://climateaction.tech/) _community have been useful resources in my research on this subject._
 
-**Carbon optimisation**  
+**Carbon optimisation**
 Largely reducing the carbon footprint of a web page is the same process as optimising for performance. You want pages to be small and fast, Smaller files mean less data has to be sent and recieved over the wire. The nice thing about Gatsby is that it's been designed to be pretty damn efficient out of the box - optimising pages to be super light.
 
 There are lots of things I love about Gatsby, one clear winner though in terms of carbon optimaisation is the [gatsby-image](https://www.gatsbyjs.org/packages/gatsby-image/) plugin. It's so easy to optimise image sizes to be used across device / viewport sizes. It also has some neat lazy-loading and art direction [features](https://using-gatsby-image.gatsbyjs.org/) - transforming images to mono or duotone at build time as examples. A sensible way to handle images was crucial for me. I did want to experiment with optimisation but I didn't want to go too far and feel like I was compromising on features and experience.
@@ -67,6 +72,6 @@ That's about it. A bit of a ramble - you were warned! Considering I pulled toget
 
 Maybe the new paint will even inspire me to publish more posts....maybe 😂
 
----
+***
 
 Photo Credit:- [Joey Huang on Unsplash](https://unsplash.com/photos/XfIuCOl8kI8)
