@@ -165,7 +165,7 @@ async function generateOGImages() {
       .replace("background: url('%%OG_BG%%') no-repeat center center;", '')
       .replace(
         '<div class="container">',
-        `<div class="container"><img src="${bgBase64}" class="og-bg" style="position:absolute;width:100%;height:100%;object-fit:cover;z-index:0;filter: opacity(0.5);" />`,
+        `<div class="container"><img src="${bgBase64}" class="og-bg" style="position:absolute;width:100%;height:100%;object-fit:cover;z-index:0;filter: opacity(1);" />`,
       );
     // Replace the template's %%LOGO_PATH%% with the base64 logo if available
     if (ogLogoBase64) {

@@ -25,7 +25,7 @@ jobs:
         run: npm ci
 
       - name: Run prebuild script
-        run: npm run prebuild:clean
+        run: npm run prebuild
 
       - name: Build Astro site
         run: npm run build

@@ -46,5 +46,3 @@ Along the way, I've also had the chance to simplify parts of the codebase, add s
 - For the moment I've removed commenting and social sharing. I probably should add these back in but it's not a priority and not sure I want/need the extra page clutter.
 - I may try to repurpose the approach used for the home page Image Stream to create an in-post gallery component to make sharing photodumps a little easier (now implemented ✅).
 - Considering a recommended or related posts component.
-
-_Image credit:_ [_Valentin Ivantsov on Pexels_](https://www.pexels.com/photo/modern-interior-kitchen-under-renovation-36035073/)
