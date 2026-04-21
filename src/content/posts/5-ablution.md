@@ -1,12 +1,18 @@
 ---
 title: 5 | Ablution
-draft: false
 slug: 5-ablution
-category: Play
+draft: false
 pubDate: 2023-02-18
-description: 'Shower-themed self-portrait, contemplating routine, creativity, and personal rituals.'
-tags: ['52weeks', 'photography', 'creativity', 'self', 'strobist', 'routine']
-
+category: Play
+featureImage: /src/assets/uploaded_images/52_2023_5_FULL.jpg
+description: Shower-themed self-portrait, contemplating routine, creativity, and personal rituals.
+tags:
+  - 52weeks
+  - photography
+  - creativity
+  - self
+  - strobist
+  - routine
 ---
 
 ![A symetrical image of a man in profile showering, water drips of of his beard](../../assets/uploaded_images/52_2023_5_FULL.jpg)
@@ -18,7 +24,5 @@ The setup was fairly simple in terms of camera and lighting. The only two tricky
 ### Three things on my mind
 
 1. Running - I haven’t run this week at all. I feel like a bit of a failure. I’m trying not to waste energy being annoyed with myself but I do need to rectify this tomorrow by getting out and covering some miles. I must stay on top of this.
-
 2. Therapy - I have a session booked in with a therapist on Tuesday. I’m hopeful it’ll be more useful than my previous experiences but I’m apprehensive. If anybody has any wise words or advice for a first session then please let me know.
-
 3. Travel - I’ll be travelling to Egypt on Friday for a mini-break by myself. I’ve started to pack and get organised but mostly my focus is on the huge amount of work I’m trying to squeeze into the 4 days I have left at work before I head off. Roll on Friday!
