@@ -1,10 +1,17 @@
 ---
 title: 2 | Running around
 slug: 2-running-around
-category: Play
-description: 'Collaborative self-portrait, experimenting with duality, connection, and shared creativity.'
 pubDate: 2023-01-29
-tags: ['52weeks', 'photography', 'running', 'creativity', 'self', 'project']
+category: Play
+featureImage: /src/assets/uploaded_images/52_2023_2_FULL.jpg
+description: Collaborative self-portrait, experimenting with duality, connection, and shared creativity.
+tags:
+  - 52weeks
+  - photography
+  - running
+  - creativity
+  - self
+  - project
 ---
 
 ![Stuart stands in the road in front of some nice white rendered houses in his running attire looking a bit grumpy](../../assets/uploaded_images/52_2023_2_FULL.jpg)
