@@ -1,12 +1,18 @@
 ---
 title: Rambling man
-draft: false
 slug: rambling-man
-category: Play
+draft: false
 pubDate: 2023-10-01
-description: 'Introducing audio notes and reflections from a walk along the Jurassic Coast, touching on life and personal insights.'
-tags: ['podcast', 'audio', 'reflections', 'challenge', 'walk', 'personal']
-
+category: Play
+featureImage: /src/assets/uploaded_images/pexels-dua'a-al-amad-35521248.jpg
+description: Introducing audio notes and reflections from a walk along the Jurassic Coast, touching on life and personal insights.
+tags:
+  - podcast
+  - audio
+  - reflections
+  - challenge
+  - walk
+  - personal
 ---
 
 <iframe src="https://embed.acast.com/$/660872d53207c3001751e852/rambling-man?accentColor=F0F2F5&bgColor=e40404&secondaryColor=F0F2F5" frameBorder="0" width="100%" height="110px" class="audioplayer"></iframe>
