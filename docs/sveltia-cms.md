@@ -21,6 +21,12 @@ This project uses Sveltia CMS (Netlify CMS compatible) for content editing.
 - Sortable by: title, pubDate
 - Default sort: pubDate descending
 
+Notes:
+
+- There is no manual `lastUpdated` frontmatter field for posts.
+- Last-updated timestamps are derived automatically from Git history (with filesystem modified-time fallback).
+- RSS feed output is generated from `src/pages/rss.xml.js` and includes a `Post last updated:` line per item.
+
 To access the CMS, open `/admin/` in your deployed site.
 
 ## Prebuild Automation for Sveltia CMS

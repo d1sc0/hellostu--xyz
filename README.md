@@ -20,6 +20,8 @@ A modern Astro v6 static site with Sveltia CMS, automated image generation, and 
 - Strict 5-variable color palette
 - Robust static asset/image handling
 - Automated migration and normalization scripts
+- RSS feed generation with sanitized post content and metadata links
+- Automatic post last-updated timestamps (Git-based with filesystem fallback)
 
 ## Docs
 
@@ -36,6 +38,19 @@ See the [docs/](docs/) folder for full guides and details:
 - [Component overview](docs/component-overview.md)
 - [MDX image gallery guide](docs/mdx-image-gallery-guide.md)
 - [To-do & project plan](docs/_to-do.md)
+
+## RSS and Last Updated
+
+- RSS endpoint implementation: `src/pages/rss.xml.js`
+- Post page last-updated implementation: `src/pages/posts/[slug].astro`
+- Last-updated display logic: `src/layouts/MarkdownPostLayout.astro`
+
+Summary:
+
+- RSS strips non-feed-friendly elements (interactive MDX components, iframes, images), inserts notices, and links readers to the full post.
+- RSS appends `Post last updated:` for each item.
+- Post pages show `Updated on ...` only when the resolved last-updated timestamp is newer than `pubDate`.
+- Last-updated values are automatic and are not entered in CMS frontmatter.
 
 ## Automation & Workflow
 
