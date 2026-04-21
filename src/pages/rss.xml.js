@@ -187,7 +187,7 @@ export async function GET(context) {
       const mainContent = buildRssContent(post, context);
       const updatedDate =
         getPostLastUpdated(post) || new Date(post.data.pubDate);
-      const updatedLine = `<p><em>Post last update ${updatedDate.toLocaleString(
+      const updatedLine = `<p><em>Post last updated: ${updatedDate.toLocaleString(
         'en-GB',
         {
           year: 'numeric',
