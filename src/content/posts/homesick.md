@@ -1,12 +1,18 @@
 ---
 title: Homesick
-draft: false
 slug: homesick
-category: Rest
+draft: false
 pubDate: 2018-11-25
-description: 'I reflect on homesickness after two years of splitting my life between Dorset and London, discussing the persistent feelings of anxiety and displacement.'
-tags: ['life', 'homesick', 'reflection', 'travel', 'adjustment', 'work']
-
+category: Rest
+featureImage: /src/assets/uploaded_images/one-man-islandFULL.jpg
+description: I reflect on homesickness after two years of splitting my life between Dorset and London, discussing the persistent feelings of anxiety and displacement.
+tags:
+  - life
+  - homesick
+  - reflection
+  - travel
+  - adjustment
+  - work
 ---
 
 ![Stuart sat on a rock out at sea](../../assets/uploaded_images/one-man-islandFULL.jpg)
