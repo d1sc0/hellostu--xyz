@@ -22,9 +22,20 @@ function absolutizeHtmlUrls(html, site) {
     .replace(/(src=")\/(?!\/)/g, `$1${new URL('/', site).toString()}`);
 }
 
-function looksLikeMdx(body) {
-  // If body likely contains JSX/components/expressions, use fallback excerpt.
-  return /<[A-Z][A-Za-z0-9]*/.test(body) || /\{[^}]+\}/.test(body);
+function stripMdxSyntax(body) {
+  return (
+    body
+      // Remove import/export blocks.
+      .replace(/^\s*import[\s\S]*?;[^\n]*$/gm, '')
+      .replace(/^\s*export[\s\S]*?;[^\n]*$/gm, '')
+      // Remove multi-line self-closing component tags.
+      .replace(/^\s*<[A-Z][\s\S]*?\/>(\s*)$/gm, '')
+      // Remove paired component blocks.
+      .replace(/^\s*<[A-Z][\s\S]*?<\/[A-Z][A-Za-z0-9]*>(\s*)$/gm, '')
+      // Remove inline MDX expression containers.
+      .replace(/\{[^{}]*\}/g, '')
+      .trim()
+  );
 }
 
 function getOgImageUrl(post, site) {
@@ -34,12 +45,21 @@ function getOgImageUrl(post, site) {
 
 function buildRssContent(post, context) {
   const body = post.body || '';
-  if (!body || looksLikeMdx(body)) {
+  if (!body) {
     const postUrl = new URL(`/posts/${post.id}/`, context.site).toString();
     return `<p>${post.data.description} <a href="${postUrl}">[read more...]</a></p>`;
   }
 
-  const rendered = parser.render(body);
+  // Check if body has components before stripping
+  const hadComponents = /<[A-Z][A-Za-z0-9]*/.test(body);
+
+  const rssBody = stripMdxSyntax(body);
+  if (!rssBody) {
+    const postUrl = new URL(`/posts/${post.id}/`, context.site).toString();
+    return `<p>${post.data.description} <a href="${postUrl}">[read more...]</a></p>`;
+  }
+
+  const rendered = parser.render(rssBody);
   const sanitized = sanitizeHtml(rendered, {
     allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img']),
     allowedAttributes: {
@@ -49,7 +69,15 @@ function buildRssContent(post, context) {
     },
   });
 
-  return absolutizeHtmlUrls(sanitized, context.site);
+  let content = absolutizeHtmlUrls(sanitized, context.site);
+
+  // Add notice if components were stripped
+  if (hadComponents) {
+    const postUrl = new URL(`/posts/${post.id}/`, context.site).toString();
+    content += `<blockquote><p><em>Interactive element removed from RSS. <a href="${postUrl}">View the full post</a></em></p></blockquote>`;
+  }
+
+  return content;
 }
 
 export async function GET(context) {
@@ -68,12 +96,32 @@ export async function GET(context) {
     },
     items: posts.map(post => {
       const ogImage = getOgImageUrl(post, context.site);
+
+      // Build category link
+      const categoryLink = `<p><strong>Posted in:</strong> <a href="${new URL(`/${post.data.category.toLowerCase()}/`, context.site).toString()}">${post.data.category}</a></p>`;
+
+      // Build tags
+      let tagsHtml = '';
+      if (post.data.tags && post.data.tags.length > 0) {
+        const tagLinks = post.data.tags
+          .map(
+            tag =>
+              `<a href="${new URL(`/tags/${tag.toLowerCase().replace(/\s+/g, '-')}/`, context.site).toString()}">${tag}</a>`,
+          )
+          .join(', ');
+        tagsHtml = `<p><strong>Tagged:</strong> ${tagLinks}</p>`;
+      }
+
+      // Combine metadata and content
+      const metadata = categoryLink + tagsHtml;
+      const mainContent = buildRssContent(post, context);
+
       return {
         title: post.data.title,
         pubDate: post.data.pubDate,
         description: post.data.description,
         link: `/posts/${post.id}/`,
-        content: buildRssContent(post, context),
+        content: metadata + mainContent,
         customData: `
           <enclosure url="${toAbsoluteSiteUrl(context.site, ogImage)}" type="image/png" />
           <media:content url="${toAbsoluteSiteUrl(context.site, ogImage)}" medium="image" />
