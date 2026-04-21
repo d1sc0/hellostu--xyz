@@ -37,6 +37,8 @@ function stripMdxSyntax(body) {
       )
       // Remove inline MDX expression containers.
       .replace(/\{[^{}]*\}/g, '')
+      // Replace raw image tags with marker.
+      .replace(/<img\b[\s\S]*?>/gm, '\n[IMAGE_REMOVED]\n')
       // Replace iframe tags with marker (including multiline).
       .replace(/<iframe[\s\S]*?<\/iframe>/gm, '\n[INTERACTIVE_REMOVED]\n')
       .trim()
@@ -59,7 +61,7 @@ function buildRssContent(post, context) {
   const hadComponents = /<[A-Z][A-Za-z0-9]*/.test(body);
   const hadIframes = /<iframe/.test(body);
   // Check if body has images
-  const hadImages = /!\[/.test(body);
+  const hadImages = /!\[|<img\b/i.test(body);
 
   const rssBody = stripMdxSyntax(body);
   if (!rssBody) {
