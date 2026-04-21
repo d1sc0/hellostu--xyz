@@ -1,22 +1,21 @@
 ---
 title: 15 | Geometry
-draft: false
 slug: 15-geometry
-category: Play
+draft: false
 pubDate: 2023-06-07
-description: 'A self-portrait series entry with thoughts on organization, work, and personal growth, inspired by geometric art.'
+category: Play
+featureImage: /src/assets/uploaded_images/52_2023_15_FULL.jpg
+description: A self-portrait series entry with thoughts on organization, work, and personal growth, inspired by geometric art.
 tags:
-  [
-    '52weeks',
-    'photography',
-    'olympus',
-    'self',
-    'organisation',
-    'podcast',
-    'gardening',
-    'work',
-    'growth',
-  ]
+  - 52weeks
+  - photography
+  - olympus
+  - self
+  - organisation
+  - podcast
+  - gardening
+  - work
+  - growth
 ---
 
 ![Stuart puts and tugs on his beard in front of a wall containing two arty geometric print](../../assets/uploaded_images/52_2023_15_FULL.jpg)
