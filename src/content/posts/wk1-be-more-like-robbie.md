@@ -1,11 +1,18 @@
 ---
 title: Week1 - Be more like Robbie
-draft: false
 slug: wk1-be-more-like-robbie
-category: Work
+draft: false
 pubDate: 2019-03-15
+category: Work
+featureImage: /src/assets/uploaded_images/kermitLEFT.gif
 description: 'I share highlights from the week: valuable family time, engaging community practice sessions, and progress in my data visualization studies.'
-tags: ['weeknote', 'work', 'reflection', 'growth', 'balance', 'learning']
+tags:
+  - weeknote
+  - work
+  - reflection
+  - growth
+  - balance
+  - learning
 ---
 
 ![kermit types fast](../../assets/uploaded_images/kermitLEFT.gif)
@@ -40,6 +47,6 @@ This weeks assignment had me visualising data to tell a story around some Fire S
 
 ### A few of my favourite things
 
-**Link:** [Article 50 Petition](https://twitter.com/emilytulloh) (admirably hanging in there) and subsequently [this](https://odileeds.org/projects/petitions/?241584)  
-**Track:** [All the single ladies](https://www.youtube.com/watch?v=4m1EFMoRFvY) — I blame [Lil!](https://twitter.com/liliasadair?) 💍  
+**Link:** [Article 50 Petition](https://twitter.com/emilytulloh) (admirably hanging in there) and subsequently [this](https://odileeds.org/projects/petitions/?241584)
+**Track:** [All the single ladies](https://www.youtube.com/watch?v=4m1EFMoRFvY) — I blame [Lil!](https://twitter.com/liliasadair?) 💍
 **Instagram:** [When stickers go rogue!](https://www.instagram.com/p/BvRE_q_gww5/)
