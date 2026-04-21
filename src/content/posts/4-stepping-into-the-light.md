@@ -1,12 +1,18 @@
 ---
 title: 4 | Stepping into the light
-draft: false
 slug: 4-stepping-into-the-light
-category: Play
+draft: false
 pubDate: 2023-02-12
-description: 'Self-portrait on stairs, exploring light, shadow, and personal journeys.'
-tags: ['52weeks', 'photography', 'creativity', 'self', 'light', 'stairs']
-
+category: Play
+featureImage: /src/assets/uploaded_images/52_2023_4_FULL.jpg
+description: Self-portrait on stairs, exploring light, shadow, and personal journeys.
+tags:
+  - 52weeks
+  - photography
+  - creativity
+  - self
+  - light
+  - stairs
 ---
 
 ![sat on the stairs in my house with a strong shadows cast against the wall](../../assets/uploaded_images/52_2023_4_FULL.jpg)
