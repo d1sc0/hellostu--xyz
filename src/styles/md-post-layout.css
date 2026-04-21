@@ -73,6 +73,14 @@
   display: block;
 }
 
+.post-layout__meta-updated {
+  display: block;
+  margin-top: -1rem;
+  margin-bottom: 1.2rem;
+  font-size: 0.72em;
+  opacity: 0.8;
+}
+
 .post-layout__content {
 }
 

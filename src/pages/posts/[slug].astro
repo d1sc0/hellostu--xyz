@@ -1,6 +1,54 @@
 ---
+import { execFileSync } from 'node:child_process';
+import fs from 'node:fs';
+import path from 'node:path';
 import { getCollection, render } from 'astro:content';
 import MarkdownPostLayout from '../../layouts/MarkdownPostLayout.astro';
+
+function getGitLastUpdatedDate(relativeFilePath: string) {
+  try {
+    const output = execFileSync(
+      'git',
+      ['log', '-1', '--format=%cI', '--', relativeFilePath],
+      {
+        cwd: process.cwd(),
+        encoding: 'utf8',
+      },
+    ).trim();
+
+    if (!output) {
+      return null;
+    }
+
+    const date = new Date(output);
+    return Number.isNaN(date.getTime()) ? null : date;
+  } catch {
+    return null;
+  }
+}
+
+function getLastUpdatedDate(entry: { id: string; filePath?: string }) {
+  const sourcePath = path.resolve(
+    process.cwd(),
+    entry.filePath || path.join('src/content/posts', entry.id),
+  );
+
+  if (!fs.existsSync(sourcePath)) {
+    return null;
+  }
+
+  const relativePath = path
+    .relative(process.cwd(), sourcePath)
+    .split(path.sep)
+    .join('/');
+  const gitDate = getGitLastUpdatedDate(relativePath);
+
+  if (gitDate) {
+    return gitDate;
+  }
+
+  return fs.statSync(sourcePath).mtime;
+}
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts', ({ data }: { data: any }) => {
@@ -23,11 +71,13 @@ export async function getStaticPaths() {
 
 const { entry, nextpost, prevpost } = Astro.props;
 const { Content } = await render(entry);
+const lastUpdated = getLastUpdatedDate(entry);
 ---
 
 <MarkdownPostLayout
   frontmatter={entry.data}
   slug={entry.id}
+  lastUpdated={lastUpdated}
   prevpost={prevpost}
   nextpost={nextpost}
 >

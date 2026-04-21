@@ -1,4 +1,7 @@
 import rss from '@astrojs/rss';
+import { execFileSync } from 'node:child_process';
+import fs from 'node:fs';
+import path from 'node:path';
 import { getCollection } from 'astro:content';
 import sanitizeHtml from 'sanitize-html';
 import MarkdownIt from 'markdown-it';
@@ -48,6 +51,56 @@ function stripMdxSyntax(body) {
 function getOgImageUrl(post, site) {
   const slug = post.data.slug || post.id;
   return new URL(`/generated_social_images/${slug}.png`, site).toString();
+}
+
+function getGitLastUpdatedDate(relativeFilePath) {
+  try {
+    const output = execFileSync(
+      'git',
+      ['log', '-1', '--format=%cI', '--', relativeFilePath],
+      {
+        cwd: process.cwd(),
+        encoding: 'utf8',
+      },
+    ).trim();
+
+    if (!output) return null;
+
+    const date = new Date(output);
+    return Number.isNaN(date.getTime()) ? null : date;
+  } catch {
+    return null;
+  }
+}
+
+function resolvePostSourcePath(post) {
+  if (post.filePath) {
+    return path.resolve(process.cwd(), post.filePath);
+  }
+
+  const base = path.resolve(process.cwd(), 'src/content/posts');
+  const candidates = [
+    path.join(base, post.id),
+    path.join(base, `${post.id}.md`),
+    path.join(base, `${post.id}.mdx`),
+  ];
+
+  return candidates.find(candidate => fs.existsSync(candidate)) || null;
+}
+
+function getPostLastUpdated(post) {
+  const sourcePath = resolvePostSourcePath(post);
+  if (!sourcePath) return null;
+
+  const relativePath = path
+    .relative(process.cwd(), sourcePath)
+    .split(path.sep)
+    .join('/');
+
+  const gitDate = getGitLastUpdatedDate(relativePath);
+  if (gitDate) return gitDate;
+
+  return fs.statSync(sourcePath).mtime;
 }
 
 function buildRssContent(post, context) {
@@ -132,13 +185,25 @@ export async function GET(context) {
       // Combine metadata and content
       const metadata = categoryLink + tagsHtml;
       const mainContent = buildRssContent(post, context);
+      const updatedDate =
+        getPostLastUpdated(post) || new Date(post.data.pubDate);
+      const updatedLine = `<p><em>Post last update ${updatedDate.toLocaleString(
+        'en-GB',
+        {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit',
+        },
+      )}</em></p>`;
 
       return {
         title: post.data.title,
         pubDate: post.data.pubDate,
         description: post.data.description,
         link: `/posts/${post.id}/`,
-        content: metadata + mainContent,
+        content: metadata + mainContent + updatedLine,
         customData: `
           <enclosure url="${toAbsoluteSiteUrl(context.site, ogImage)}" type="image/png" />
           <media:content url="${toAbsoluteSiteUrl(context.site, ogImage)}" medium="image" />
