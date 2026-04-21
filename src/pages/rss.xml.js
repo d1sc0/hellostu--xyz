@@ -157,7 +157,7 @@ export async function GET(context) {
   posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
   return rss({
-    title: 'Hello Stu - Posts',
+    title: 'HelloStu - Posts',
     description:
       'Latest posts from Stuart Mackenzie. Feed contains post content with images and interactive elements removed for improved readability in RSS readers.',
     site: context.site,
