@@ -1,11 +1,18 @@
 ---
 title: Week2 - How High
-draft: false
 slug: wk2-how-high
-category: Work
+draft: false
 pubDate: 2019-03-29
-description: 'I tackle a high ropes course, pushing my limits and reflecting on the experience. I share insights on teamwork, challenge, and progress, plus weekly highlights in study, projects, and social events.'
-tags: ['weeknote', 'work', 'challenge', 'teamwork', 'adventure', 'reflection']
+category: Work
+featureImage: /src/assets/uploaded_images/high-fivesLEFT.jpg
+description: I tackle a high ropes course, pushing my limits and reflecting on the experience. I share insights on teamwork, challenge, and progress, plus weekly highlights in study, projects, and social events.
+tags:
+  - weeknote
+  - work
+  - challenge
+  - teamwork
+  - adventure
+  - reflection
 ---
 
 _I'm back for a second week. Yay! but no longer on Medium. It potentially limits my audience but I'm not writing for fame and fortune so that's ok._
@@ -47,12 +54,12 @@ I like to think there is plenty above I already bring into my work practice but 
 
 ### A few of my favourite things
 
-**Clicks:**  
-[Why have difficult conversations when you can talk about tools instead?](https://twitter.com/ewebber/status/1111192864313262080) 😍  
-[Strategy needs good words](https://martinweigel.org/2019/03/20/strategy-needs-good-words/) 💯  
+**Clicks:**
+[Why have difficult conversations when you can talk about tools instead?](https://twitter.com/ewebber/status/1111192864313262080) 😍
+[Strategy needs good words](https://martinweigel.org/2019/03/20/strategy-needs-good-words/) 💯
 [Benefits of being a vulnerable leader](https://www.inc.com/marcel-schwantes/what-does-it-take-to-be-an-effective-leader-research-nails-down-answer-to-1-rare-trait.html) 🤔
 
-**Tune:**  
+**Tune:**
 [Tom Jones - Burning down the house](https://www.youtube.com/watch?v=iYuldgIOelY) (From the Homes England playlist 🏡)
 
 **From the 'Gram:**
