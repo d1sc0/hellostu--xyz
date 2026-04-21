@@ -1,11 +1,17 @@
 ---
 title: Week3 - Dear Diary
-draft: false
 slug: wk3-dear-diary
-category: Work
+draft: false
 pubDate: 2019-04-06
-description: 'I share late notes from a busy week, feeling refreshed after Easter break. Highlights include a productive work return, attending an AWS event, and discussing feedback methods.'
-tags: ['weeknote', 'work', 'reflection', 'life', 'learning']
+category: Work
+featureImage: /src/assets/uploaded_images/monkeyRIGHT.gif
+description: I share late notes from a busy week, feeling refreshed after Easter break. Highlights include a productive work return, attending an AWS event, and discussing feedback methods.
+tags:
+  - weeknote
+  - work
+  - reflection
+  - life
+  - learning
 ---
 
 _3 weeks of weeknotes and 3 weeks without smoking! 🎉_
@@ -14,7 +20,7 @@ I thought I'd try a different format this week and give a daily digest of my wee
 
 ### Monday
 
-My day off. **Sunshine and a 6 mile stroll with the dog. Glorious! **
+My day off. \*\*Sunshine and a 6 mile stroll with the dog. Glorious! \*\*
 
 ### Tuesday
 
@@ -42,7 +48,7 @@ At some point during the day it had dawned on me that if I could create a reason
 
 Collecting feedback and analytics sooner, rather than later, to help evaluate whether the experiment was worth further effort/headspace is always appealing.
 
-So . . . I got back to my Peckham pad at 8pm opened up the laptop and beavered away until the early hours. **There was a small lull in activity to have a rather hilarious conversation with my wife about pretty much nothing! I take joy in these moments. **
+So . . . I got back to my Peckham pad at 8pm opened up the laptop and beavered away until the early hours. \*\*There was a small lull in activity to have a rather hilarious conversation with my wife about pretty much nothing! I take joy in these moments. \*\*
 
 ### Thursday
 
@@ -70,5 +76,5 @@ A good week, lot's of variety. Next week sadly won't be anywhere near as diverse
 
 ### Elsewhere
 
-**Tune of the week:** [Jon Bellion - The Internet](https://www.youtube.com/watch?v=W936TWjKZBQ) (obvs)  
+**Tune of the week:** [Jon Bellion - The Internet](https://www.youtube.com/watch?v=W936TWjKZBQ) (obvs)
 **Gram of my week:** That weekend sun!! A shot taken at [Portland Bill](https://www.instagram.com/p/Bvo5ybDA7ZV/) 😍
