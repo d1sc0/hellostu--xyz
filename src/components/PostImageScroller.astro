@@ -49,6 +49,7 @@ const imageModules = import.meta.glob(
 
 const imageByRelativePath = new Map<string, ImageMetadata>();
 const imageByBaseName = new Map<string, ImageMetadata>();
+const excludedBaseNames = new Set(['og-background.png']);
 
 for (const [assetPath, metadata] of Object.entries(imageModules)) {
   const relativePath = assetPath.replace('/src/assets/uploaded_images/', '');
@@ -137,6 +138,9 @@ for (const post of posts) {
 
     const normalized = normalizeImageRef(refKey);
     const dedupeKey = normalized.relativePath || normalized.baseName;
+    const baseName = normalized.baseName.toLowerCase();
+
+    if (excludedBaseNames.has(baseName)) continue;
     if (!dedupeKey || seenImageKeys.has(dedupeKey)) continue;
 
     const resolved = resolveImageMetadata(imageRef.src);
