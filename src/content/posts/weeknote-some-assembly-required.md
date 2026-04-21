@@ -1,11 +1,18 @@
 ---
 title: Weeknote - Some Assembly Required
-draft: false
 slug: weeknote-some-assembly-required
-category: Work
+draft: false
 pubDate: 2024-07-20T10:20:00
+category: Work
+featureImage: /src/assets/uploaded_images/43-assembly-requiredFULL.jpg
 description: Some quick reflections on life at work and at home from the week 12th to the 19th of July.
-tags: ['weeknote', 'work', 'life', 'office', 'change', 'home']
+tags:
+  - weeknote
+  - work
+  - life
+  - office
+  - change
+  - home
 ---
 
 I'll keep this one brief. Changes on the domestic front continue to move at pace and have consumed most of my energy outside of working days. Writing this is a struggle through the fog of jobs to be done and things to process.
