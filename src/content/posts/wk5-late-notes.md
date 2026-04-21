@@ -1,12 +1,19 @@
 ---
 title: Week5 - Late Notes
-draft: false
 slug: wk5-late-notes
-category: Work
+draft: false
 pubDate: 2019-05-01T00:00:00.000Z
+category: Work
+featureImage: /src/assets/uploaded_images/pexels-www.kaboompics.com-5624978.jpg
 description: I share late notes from a busy week. Highlights include a productive work return, attending an AWS event, and discussing feedback methods.
 tags:
-  ['weeknote', 'work', 'event', 'feedback', 'learning', 'reflection', 'notes']
+  - weeknote
+  - work
+  - event
+  - feedback
+  - learning
+  - reflection
+  - notes
 ---
 
 I was hoping to post these last Friday but I got side-tracked with all of the other things! Main point to note was that I returned back from a much needed Easter Break feeling massively refreshed.
@@ -27,9 +34,9 @@ I finished the evening having a really good chat with Rashmi & Selwyn from the H
 
 ### Elsewhere
 
-**Parenting project phase 589 - ** Mostly it now seems like our role is to offer advice and guidance during this long transition to live! We're often asked to take a human centered approach to help solve problems such as... How do I work out if I want to go to University? What career options suit me best? How will I cope without my parents? or living with other people? **We have sharpies and post-its and a trello board. What could possibly go wrong? ** 😂
+\*\*Parenting project phase 589 - \*\* Mostly it now seems like our role is to offer advice and guidance during this long transition to live! We're often asked to take a human centered approach to help solve problems such as... How do I work out if I want to go to University? What career options suit me best? How will I cope without my parents? or living with other people? \*\*We have sharpies and post-its and a trello board. What could possibly go wrong? \*\* 😂
 
-**Monty turned 4 - **Happy Birthday Dog!! 🎉 ( I missed the celebrations as I was busy in London working to put dog treats on the table).
+\*\*Monty turned 4 - \*\*Happy Birthday Dog!! 🎉 ( I missed the celebrations as I was busy in London working to put dog treats on the table).
 
 **Avengers Endgame** (Is great) - Seeing the Avengers films has become a bit of a father and daughter ritual so was actually quite sad to see it end. We'll make do with other Marvel offerings and cross fingers for some less-terrible Disney Star Wars action towards the end of the year.
 
@@ -37,5 +44,5 @@ I finished the evening having a really good chat with Rashmi & Selwyn from the H
 
 ### Miscellany
 
-**Tunes:** Bastille released Doom Days which although fairly sobering has me itching for the new album  
+**Tunes:** Bastille released Doom Days which although fairly sobering has me itching for the new album
 **From the gram:** My realisation that [window cleaning in central London](https://www.instagram.com/p/Bwoar6Yg_m7/) is a very different gig to that in the 'shire.
