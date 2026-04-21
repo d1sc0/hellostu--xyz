@@ -1,12 +1,20 @@
 ---
 title: 16 | Fever dream
-draft: false
 slug: 16-fever-dream
-category: Work
+draft: false
 pubDate: 2023-07-14
-description: 'A self-portrait and journal entry exploring organizational structure and working methods, created during a flu bout.'
-tags: ['52weeks', 'photography', 'olympus', 'self', 'snot', 'flu', 'strobist', 'bogroll']
-
+category: Work
+featureImage: /src/assets/uploaded_images/52_2023_16_FULL.jpg
+description: A self-portrait and journal entry exploring organizational structure and working methods, created during a flu bout.
+tags:
+  - 52weeks
+  - photography
+  - olympus
+  - self
+  - snot
+  - flu
+  - strobist
+  - bogroll
 ---
 
 ![Stuart against a dark backdrop, lit using a small amount of light, he is swaddled in clothes made of bogroll channeling a lawrence of arabia look](../../assets/uploaded_images/52_2023_16_FULL.jpg)
