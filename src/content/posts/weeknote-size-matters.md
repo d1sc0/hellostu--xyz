@@ -1,11 +1,19 @@
 ---
 title: Weeknote - Size matters
-draft: false
 slug: weeknote-size-matters
-category: Work
+draft: false
 pubDate: 2024-11-29T15:30:00
+category: Work
+featureImage: /src/assets/uploaded_images/47-trainFULL.jpg
 description: an overview of the last week of November. Contains reflections about scaling things, a lovely day at Product for the People and some random life updates
-tags: ['weeknote', 'work', 'life', 'product', 'scaling', 'events', 'reflection']
+tags:
+  - weeknote
+  - work
+  - life
+  - product
+  - scaling
+  - events
+  - reflection
 ---
 
 ![a photo of a sticker that reads Hello my name is Stuart stuck to the back of a seat in an empty train carriage](../../assets/uploaded_images/47-trainFULL.jpg)
