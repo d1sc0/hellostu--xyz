@@ -50,8 +50,9 @@ function buildRssContent(post, context) {
     return `<p>${post.data.description} <a href="${postUrl}">[read more...]</a></p>`;
   }
 
-  // Check if body has components before stripping
+  // Check if body has components or iframes before stripping
   const hadComponents = /<[A-Z][A-Za-z0-9]*/.test(body);
+  const hadIframes = /<iframe/.test(body);
 
   const rssBody = stripMdxSyntax(body);
   if (!rssBody) {
@@ -71,8 +72,8 @@ function buildRssContent(post, context) {
 
   let content = absolutizeHtmlUrls(sanitized, context.site);
 
-  // Add notice if components were stripped
-  if (hadComponents) {
+  // Add notice if components or iframes were stripped
+  if (hadComponents || hadIframes) {
     const postUrl = new URL(`/posts/${post.id}/`, context.site).toString();
     content += `<blockquote><p><em>Interactive element removed from RSS. <a href="${postUrl}">View the full post</a></em></p></blockquote>`;
   }
