@@ -133,6 +133,7 @@ Builds SEO/meta head output, JSON-LD, canonical URL, social tags, fonts, and OG 
 - Falls back to `default_social.png` when no generated image exists.
 - Injects schema JSON-LD and SEO metadata.
 - Loads Lexend + Gochi Hand via `astro-font`.
+- Loads the Umami Cloud analytics script globally.
 - Loads `/scripts/apexchart-loader.js` globally.
 
 ### Props

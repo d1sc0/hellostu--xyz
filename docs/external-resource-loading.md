@@ -16,10 +16,17 @@
 - This prevents multiple executions and duplicate chart hydration, which can occur if the loader is included in every chart component instance.
 - ApexCharts itself is loaded only on pages that need it (e.g., via MDX `<Head>` block or per-page `<script>` tag), minimizing bandwidth usage.
 
+## Analytics
+
+- Umami Cloud analytics is loaded globally from `src/components/Head.astro`.
+- Keeping the script in `Head.astro` ensures tracking is injected once per page and stays separate from page/component content.
+- If the analytics provider or script changes, update the shared head component rather than duplicating the script in page files.
+
 ## Summary
 
 - **Loader scripts:** Always in `public/scripts/`, referenced statically.
 - **CDN libraries:** Only loaded where needed, not globally.
+- **Analytics:** Global tracking belongs in `src/components/Head.astro`.
 - **No hydration bugs:** Loader script is only loaded once per page, preventing duplicate charts.
 
 ---

@@ -29,6 +29,7 @@ See the [docs/](docs/) folder for full guides and details:
 - [Sveltia CMS guide](docs/sveltia-cms.md)
 - [OG image generation](docs/og-image-generation-guide.md)
 - [Preview image generation](docs/preview-image-generation-guide.md)
+- [Analytics setup](docs/analytics.md)
 - [Astro Markdown guide](docs/astro-markdown-guide.md)
 - [Astro v6 migration notes](docs/astro-v6-migration.md)
 - [CSS naming conventions](docs/css-naming-conventions.md)
@@ -40,6 +41,7 @@ See the [docs/](docs/) folder for full guides and details:
 
 - See [OG image generation guide](docs/og-image-generation-guide.md) and [Preview image generation guide](docs/preview-image-generation-guide.md) for automation details.
 - See [Sveltia CMS guide](docs/sveltia-cms.md) for content workflow and prebuild automation.
+- See [Analytics setup](docs/analytics.md) for the Umami Cloud script and where it is loaded.
 
 ## Optional `featureImage` Frontmatter
 
