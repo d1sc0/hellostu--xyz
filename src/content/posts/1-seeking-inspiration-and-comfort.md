@@ -1,11 +1,18 @@
 ---
 title: 1 | Seeking inspiration and comfort
-draft: false
 slug: 1-seeking-inspiration-and-comfort
-category: Play
+draft: false
 pubDate: 2023-01-19
-description: 'Starting a self-portrait series, setting the tone for personal exploration and artistic expression.'
-tags: ['52weeks', 'photography', 'creativity', 'self', 'project', 'reflection']
+category: Play
+featureImage: /src/assets/uploaded_images/52_2023_1_FULL.jpg
+description: Starting a self-portrait series, setting the tone for personal exploration and artistic expression.
+tags:
+  - 52weeks
+  - photography
+  - creativity
+  - self
+  - project
+  - reflection
 ---
 
 ![man sits alone in a chair with his phone, he's in his home office surrounded by desk, laptop & guitars](../../assets/uploaded_images/52_2023_1_FULL.jpg)
