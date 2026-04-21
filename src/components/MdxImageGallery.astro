@@ -25,7 +25,7 @@ interface Props {
   heading?: string;
   showHeading?: boolean;
   showCaptions?: boolean;
-  linkMode?: 'none' | 'full-image';
+  linkMode?: 'none' | 'full-image' | 'lightbox';
   imageHeight?: string;
   imageHeightMobile?: string;
   imageHeightDesktop?: string;
@@ -63,6 +63,8 @@ const {
   imageHeightMobile,
   imageHeightDesktop,
 } = Astro.props as Props;
+
+let lightboxIndex: number | null = null;
 
 const resolvedImageHeightMobile = imageHeightMobile || imageHeight;
 const resolvedImageHeightDesktop = imageHeightDesktop || imageHeight;
@@ -231,7 +233,7 @@ const showMissingState =
       <div class="mdx-image-gallery__viewport-shell">
         <div class="mdx-image-gallery__viewport" tabindex="0">
           <ul class="mdx-image-gallery__track">
-            {resolvedImages.map(item => (
+            {resolvedImages.map((item, idx) => (
               <li class="mdx-image-gallery__item">
                 <figure class="mdx-image-gallery__figure">
                   {linkMode === 'full-image' ? (
@@ -251,6 +253,22 @@ const showMissingState =
                         class="mdx-image-gallery__image"
                       />
                     </a>
+                  ) : linkMode === 'lightbox' ? (
+                    <button
+                      type="button"
+                      class="mdx-image-gallery__image-link mdx-image-gallery__image-lightbox-btn"
+                      aria-label="Open image in lightbox"
+                      data-lightbox-index={idx}
+                    >
+                      <Image
+                        src={item.image}
+                        alt={item.alt}
+                        loading="lazy"
+                        widths={[240, 320, 480, 640, 768, 960]}
+                        sizes="(min-width: 768px) and (orientation: landscape) 18rem, 72vw"
+                        class="mdx-image-gallery__image"
+                      />
+                    </button>
                   ) : (
                     <Image
                       src={item.image}
@@ -272,6 +290,26 @@ const showMissingState =
           </ul>
         </div>
       </div>
+
+      {linkMode === 'lightbox' ? (
+        <div class="mdx-image-gallery__lightbox" tabindex="-1" hidden>
+          <div
+            class="mdx-image-gallery__lightbox-overlay"
+            data-lightbox-close
+          />
+          <figure class="mdx-image-gallery__lightbox-figure">
+            <img class="mdx-image-gallery__lightbox-img" alt="" />
+            <figcaption class="mdx-image-gallery__lightbox-caption" />
+            <button
+              type="button"
+              class="mdx-image-gallery__lightbox-close"
+              aria-label="Close image"
+            >
+              &times;
+            </button>
+          </figure>
+        </div>
+      ) : null}
     </section>
   )
 }
@@ -310,5 +348,72 @@ const showMissingState =
         viewport.scrollBy({ left: direction * amount, behavior: 'smooth' });
       });
     });
+
+    // Lightbox logic
+    const lightbox = root.querySelector('.mdx-image-gallery__lightbox');
+    if (lightbox) {
+      const images = Array.from(
+        root.querySelectorAll('.mdx-image-gallery__image-lightbox-btn'),
+      );
+      const imgEl = lightbox.querySelector('.mdx-image-gallery__lightbox-img');
+      const captionEl = lightbox.querySelector(
+        '.mdx-image-gallery__lightbox-caption',
+      );
+      const closeBtn = lightbox.querySelector(
+        '.mdx-image-gallery__lightbox-close',
+      );
+      const overlay = lightbox.querySelector(
+        '.mdx-image-gallery__lightbox-overlay',
+      );
+      const figures = Array.from(
+        root.querySelectorAll('.mdx-image-gallery__figure'),
+      );
+
+      let currentIdx = null;
+
+      function openLightbox(idx) {
+        currentIdx = idx;
+        const btn = images[idx];
+        const img = btn.querySelector('img');
+        imgEl.src = img.src.replace(/w=\d+/, 'w=1600'); // try to get largest version
+        imgEl.alt = img.alt;
+        // Try to get caption
+        let caption = '';
+        const fig = figures[idx];
+        if (fig) {
+          const cap = fig.querySelector('.mdx-image-gallery__caption');
+          if (cap) caption = cap.textContent;
+        }
+        captionEl.textContent = caption || '';
+        lightbox.hidden = false;
+        lightbox.focus();
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        lightbox.hidden = true;
+        imgEl.src = '';
+        imgEl.alt = '';
+        captionEl.textContent = '';
+        document.body.style.overflow = '';
+        currentIdx = null;
+      }
+
+      images.forEach((btn, idx) => {
+        btn.addEventListener('click', () => openLightbox(idx));
+      });
+      closeBtn.addEventListener('click', closeLightbox);
+      overlay.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('keydown', e => {
+        if (e.key === 'Escape') closeLightbox();
+      });
+      // Trap focus inside lightbox
+      lightbox.addEventListener('focusout', e => {
+        if (!lightbox.hidden && !lightbox.contains(e.relatedTarget)) {
+          e.preventDefault();
+          lightbox.focus();
+        }
+      });
+    }
   });
 </script>
