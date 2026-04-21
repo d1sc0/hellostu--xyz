@@ -1,12 +1,18 @@
 ---
 title: Birthday stroll - 46 before 46
-draft: false
 slug: 46-before-46
-category: Rest
+draft: false
 pubDate: 2025-06-08
+category: Rest
+featureImage: /src/assets/uploaded_images/48-mapRIGHT.jpg
 description: Plans are forming for a little birthday challenge. Something to keep me fit and an excuse to spend time outdoors in the company of brilliant people
-tags: ['birthday', 'walking', 'challenge', 'invite', 'friends', 'outdoors']
-
+tags:
+  - birthday
+  - walking
+  - challenge
+  - invite
+  - friends
+  - outdoors
 ---
 
 ![a map showing the intended route of my birthday walk route from portland to dorchester depicted by a red line](../../assets/uploaded_images/48-mapRIGHT.jpg) On August 31, 2025, I'll turn the ripe old age of 46 years old (I know - I don't look a day over 52!). To mark this occasion, I've decided to set myself a little challenge on Saturday, 30th to walk 46km (28.5 miles). I set myself similar challenges in 2012 and 2013, where I ran 26.2 miles with friends over a similar route.
