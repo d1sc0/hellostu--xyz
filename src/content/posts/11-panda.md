@@ -1,12 +1,18 @@
 ---
 title: 11 | Panda
-draft: false
 slug: 11-panda
-category: Play
+draft: false
 pubDate: 2023-04-03
-description: 'Wearing a panda mask in a self-portrait series, reflecting on distractions and maintaining focus.'
-tags: ['52weeks', 'photography', 'creativity', 'self', 'mask', 'portrait']
-
+category: Play
+featureImage: /src/assets/uploaded_images/52_2023_11_FULL.jpg
+description: Wearing a panda mask in a self-portrait series, reflecting on distractions and maintaining focus.
+tags:
+  - 52weeks
+  - photography
+  - creativity
+  - self
+  - mask
+  - portrait
 ---
 
 ![I sit at the table weaking a panda mask, staring at my phone](../../assets/uploaded_images/52_2023_11_FULL.jpg)
