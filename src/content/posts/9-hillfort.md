@@ -1,12 +1,18 @@
 ---
 title: 9 | Hillfort
-draft: false
 slug: 9-hillfort
-category: Play
+draft: false
 pubDate: 2023-03-25
-description: 'Late self-portrait taken while running at an Iron Age hillfort, blending history and personal fitness.'
-tags: ['52weeks', 'photography', 'running', 'creativity', 'self', 'outdoors']
-
+category: Play
+featureImage: /src/assets/uploaded_images/52_2023_9_FULL.jpg
+description: Late self-portrait taken while running at an Iron Age hillfort, blending history and personal fitness.
+tags:
+  - 52weeks
+  - photography
+  - running
+  - creativity
+  - self
+  - outdoors
 ---
 
 ![Trail running Stu stumbles into the distance on the ramparts of maiden castle in dorset!](../../assets/uploaded_images/52_2023_9_FULL.jpg)
