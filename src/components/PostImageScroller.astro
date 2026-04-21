@@ -129,15 +129,20 @@ for (const post of posts) {
   }
 
   imageRefs.push(...parseImageRefs(body));
-  const seenRefs = new Set<string>();
+  const seenImageKeys = new Set<string>();
 
   for (const imageRef of imageRefs) {
     const refKey = imageRef.src.trim();
-    if (!refKey || seenRefs.has(refKey)) continue;
-    seenRefs.add(refKey);
+    if (!refKey) continue;
+
+    const normalized = normalizeImageRef(refKey);
+    const dedupeKey = normalized.relativePath || normalized.baseName;
+    if (!dedupeKey || seenImageKeys.has(dedupeKey)) continue;
 
     const resolved = resolveImageMetadata(imageRef.src);
     if (!resolved) continue;
+
+    seenImageKeys.add(dedupeKey);
 
     matchedImages.push({
       image: resolved,
