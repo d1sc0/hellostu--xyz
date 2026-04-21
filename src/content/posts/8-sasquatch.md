@@ -1,12 +1,18 @@
 ---
 title: 8 | Sasquatch
-draft: false
 slug: 8-sasquatch
-category: Play
+draft: false
 pubDate: 2023-03-13
-description: 'Experimenting with lighting in self-portraits, feeling artistically unsatisfied and pushing creative boundaries.'
-tags: ['52weeks', 'photography', 'creativity', 'self', 'experiment', 'lighting']
-
+category: Play
+featureImage: /src/assets/uploaded_images/52_2023_8_FULL.jpg
+description: Experimenting with lighting in self-portraits, feeling artistically unsatisfied and pushing creative boundaries.
+tags:
+  - 52weeks
+  - photography
+  - creativity
+  - self
+  - experiment
+  - lighting
 ---
 
 ![Half naked Stu appears to comically pout for the camera!](../../assets/uploaded_images/52_2023_8_FULL.jpg)
