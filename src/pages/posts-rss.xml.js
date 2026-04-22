@@ -53,6 +53,29 @@ function getOgImageUrl(post, site) {
   return new URL(`/generated_social_images/${slug}.png`, site).toString();
 }
 
+function getOgImageFileSize(post) {
+  // Try both .png and .jpg for robustness
+  const slug = post.data.slug || post.id;
+  const pngPath = path.join(
+    process.cwd(),
+    'public',
+    'generated_social_images',
+    `${slug}.png`,
+  );
+  const jpgPath = path.join(
+    process.cwd(),
+    'public',
+    'generated_social_images',
+    `${slug}.jpg`,
+  );
+  if (fs.existsSync(pngPath)) {
+    return fs.statSync(pngPath).size;
+  } else if (fs.existsSync(jpgPath)) {
+    return fs.statSync(jpgPath).size;
+  }
+  return 0;
+}
+
 function getGitLastUpdatedDate(relativeFilePath) {
   try {
     const output = execFileSync(
@@ -159,6 +182,8 @@ export async function GET(context) {
   // Use the current build time for lastBuildDate
   const buildDate = new Date();
 
+  // Atom namespace for self-link
+  const feedUrl = new URL(context.request.url, context.site).toString();
   return rss({
     title: 'HelloStu - Posts',
     description:
@@ -166,10 +191,15 @@ export async function GET(context) {
     site: context.site,
     xmlns: {
       media: 'http://search.yahoo.com/mrss/',
+      atom: 'http://www.w3.org/2005/Atom',
     },
-    customData: `<lastBuildDate>${buildDate.toUTCString()}</lastBuildDate>`,
+    customData: `
+      <lastBuildDate>${buildDate.toUTCString()}</lastBuildDate>
+      <atom:link href="${feedUrl}" rel="self" type="application/rss+xml" />
+    `,
     items: posts.map(post => {
       const ogImage = getOgImageUrl(post, context.site);
+      const ogImageLength = getOgImageFileSize(post);
 
       // Build category link
       const categoryLink = `<p><strong>Posted in:</strong> <a href="${new URL(`/${post.data.category.toLowerCase()}/`, context.site).toString()}">${post.data.category}</a></p>`;
@@ -209,7 +239,7 @@ export async function GET(context) {
         link: `/posts/${post.id}/`,
         content: metadata + mainContent + updatedLine,
         customData: `
-          <enclosure url="${toAbsoluteSiteUrl(context.site, ogImage)}" type="image/png" />
+          <enclosure url="${toAbsoluteSiteUrl(context.site, ogImage)}" type="image/png" length="${ogImageLength}" />
           <media:content url="${toAbsoluteSiteUrl(context.site, ogImage)}" medium="image" />
         `,
       };
