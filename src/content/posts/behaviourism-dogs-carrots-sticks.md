@@ -26,7 +26,7 @@ I was digging into Behaviourism as part of my studies earlier today. It’s the 
 
 Of course, these rules aren’t as simple as they seem. Context and human complexity make all the difference.
 
-### **Some Initial Thoughts**
+### Some Initial Thoughts
 
 Carrots and sticks feel like simple tools to employ, but where there are consequences, there are almost always **unintended consequences**. This is especially true in group scenarios. A few things I'm chewing on:
 
