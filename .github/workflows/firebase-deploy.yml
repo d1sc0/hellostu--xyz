@@ -37,3 +37,11 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
           channelId: live
           projectId: ${{ secrets.FIREBASE_PROJECT_ID }}
+
+      - name: Notify PubSubHubbub/WebSub hub
+        run: |
+          curl -X POST https://pubsubhubbub.appspot.com/publish \
+            -d "hub.mode=publish" \
+            -d "hub.url=https://hellostu.xyz/rss-feed.xml"
+        env:
+          FEED_URL: https://hellostu.xyz/rss-feed.xml
