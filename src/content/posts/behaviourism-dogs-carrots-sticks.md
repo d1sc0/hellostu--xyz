@@ -7,12 +7,13 @@ category: Work
 featureImage: /src/assets/uploaded_images/ned-FULL.jpg
 description: Learning, puppies, and the pitfalls of the carrot and the stick. A short reflection following a lecture on behaviourism. The cortisol hit of Slack notifications and why we often mistake compliance for commitment in design.
 tags:
-  - LearningDesign
-  - SystemsThinking
-  - Behaviourism
-  - Motivation
-  - PublicService
-  - Ned
+  - learningDesign
+  - systemsThinking
+  - behaviourism
+  - motivation
+  - publicService
+  - ned
+  - study
 ---
 
 I was digging into Behaviourism as part of my studies earlier today. It’s the school of thought that treats learning as a change in observable behaviour, triggered by external stimuli. Think of it as the "physics" of learning—action and reaction. These are common concepts, but it was interesting to rip them apart in the classroom. It also gave me a great excuse to share some picture of my mate’s new puppy, Ned (I love him).

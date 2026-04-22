@@ -7,7 +7,7 @@ category: Work
 featureImage: /src/assets/uploaded_images/pexels-pixabay-209728.jpg
 description: Some thoughts on how to use learning design theory to align goals and activities in a Community of Practice. Move from "humaning together" and great vibes to practicing with purpose.
 tags:
-  - learning
+  - learningDesign
   - communities
   - digital
   - transformation
