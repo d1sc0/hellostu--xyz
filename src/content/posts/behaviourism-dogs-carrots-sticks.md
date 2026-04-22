@@ -15,7 +15,7 @@ tags:
   - Ned
 ---
 
-I was digging into Behaviourism as part of my studies earlier today. It’s the school of thought that treats learning as a change in observable behaviour, triggered by external stimuli. Think of it as the "physics" of learning—action and reaction. These are common concepts, but it was interesting to rip them apart in the classroom. It also gave me a great excuse to share this picture of my mate’s new puppy, Ned (I love him).
+I was digging into Behaviourism as part of my studies earlier today. It’s the school of thought that treats learning as a change in observable behaviour, triggered by external stimuli. Think of it as the "physics" of learning—action and reaction. These are common concepts, but it was interesting to rip them apart in the classroom. It also gave me a great excuse to share some picture of my mate’s new puppy, Ned (I love him).
 
 ![A very good puppy named Ned sitting patiently, the ultimate example of positive reinforcement.](../../assets/uploaded_images/ned-FULL.jpg)
 
@@ -35,3 +35,5 @@ Carrots and sticks feel like simple tools to employ, but where there are consequ
 - **Beyond the Classroom:** This stuff isn't restricted to learning design. The way these mechanics show up in the DNA of organisations and teams is fascinating. We can probably all list experiences where a poorly designed "incentive" actually broke the culture it was trying to fix or just plainly disregarded the outcome - I think we see this play out in the implementation of gov policy all the time. Good intentions meet ill-thought out delivery (often because of time & budget constraints or just message decay as it works its way through the system).
 
 We often mistake compliance for commitment. Behaviorism can give you the former, but if we want the latter we need to look beyond the simple physics of stimulus and response.
+
+![More Ned action. What a handsome hound.](../../assets/uploaded_images/ned2-FULL.jpg)
