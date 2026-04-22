@@ -3,7 +3,7 @@
     { "label": "Work", "url": "/work" },
     { "label": "Rest", "url": "/rest" },
     { "label": "Play", "url": "/play" },
-    { "label": "RSS", "url": "/rss.xml", "icon": "rss" },
+    { "label": "RSS", "url": "/rss-feed.xml", "icon": "rss" },
     {
       "label": "Photos",
       "url": "https://photos.hellostu.xyz",

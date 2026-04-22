@@ -4,7 +4,7 @@
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "headers": [
       {
-        "source": "/feed.xml",
+        "source": "/rss-feed.xml",
         "headers": [
           {
             "key": "Cache-Control",
@@ -25,6 +25,11 @@
       {
         "source": "/podcast.xml",
         "destination": "https://feeds.acast.com/public/shows/hello-stu",
+        "type": 301
+      },
+      {
+        "source": "/rss.xml",
+        "destination": "/rss-feed.xml",
         "type": 301
       }
     ]
