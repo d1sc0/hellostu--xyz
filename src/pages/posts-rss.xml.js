@@ -5,6 +5,8 @@ import path from 'node:path';
 import { getCollection } from 'astro:content';
 import sanitizeHtml from 'sanitize-html';
 import MarkdownIt from 'markdown-it';
+import { parseDocument } from 'htmlparser2';
+import { default as domSerializer } from 'dom-serializer';
 
 const parser = new MarkdownIt({
   html: false,
@@ -167,6 +169,14 @@ function buildRssContent(post, context) {
     const imageNotice = `<blockquote><p><em>Image removed from RSS. <a href="${postUrl}">View the full post</a></em></p></blockquote>`;
     content = content.replace(/\[INTERACTIVE_REMOVED\]/g, interactiveNotice);
     content = content.replace(/\[IMAGE_REMOVED\]/g, imageNotice);
+  }
+
+  // Auto-fix: parse and re-serialize to ensure valid HTML (closes tags)
+  try {
+    const doc = parseDocument(content);
+    content = domSerializer(doc, { encodeEntities: 'utf8' });
+  } catch (e) {
+    // If parsing fails, fall back to original content
   }
 
   return content;
