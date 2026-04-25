@@ -1,0 +1,72 @@
+{
+  "building-things": [
+    {
+      "id": "fresh-paint",
+      "justification": "You've just read about the latest website refresh, and I previously wrote here about an earlier rebuild, delving into the practical motivations like cutting hosting costs and considering its environmental footprint."
+    },
+    {
+      "id": "weeknote-buffet",
+      "justification": "Here I continue to explore the joy of making things, including some small but hopefully helpful improvements to this very website."
+    },
+    {
+      "id": "homesick",
+      "justification": "Having just read about the joy of building and adapting things, here I take a more personal look at trying to adapt to new surroundings, and wonder if some bits of our own 'programming' just can't be fixed."
+    }
+  ],
+  "weeknote-the-uber": [
+    {
+      "id": "weeknote-swipe-right",
+      "justification": "Following on from the interesting, random encounters in that Uber, you might be keen to read about my rather more deliberate foray into the strange world of online dating, where the new EV also makes an appearance."
+    },
+    {
+      "id": "15-geometry",
+      "justification": "If you enjoyed my reflections on working with good teams and managing projects, this post expands on how organisational structures can either help or hinder our ability to collaborate effectively."
+    },
+    {
+      "id": "14-head-above-water",
+      "justification": "Here, I continue to reflect on navigating the daily demands of work, sharing a more personal take on tackling imposter anxiety and launching a new creative side project."
+    }
+  ],
+  "weeknote-buffet": [
+    {
+      "id": "14-head-above-water",
+      "justification": "If you enjoyed the reflections on managing a varied week, you might also be interested in this entry where I delve further into navigating work-life balance, tackling imposter syndrome, and the excitement of launching a new personal creative venture, all whilst recuperating from a minor health procedure."
+    },
+    {
+      "id": "weeknote-swipe-right",
+      "justification": "Just as this entry touches on social reconnection and observing web tools, a subsequent note continues the reflection, diving into the often-challenging world of online dating with my characteristic blend of curiosity, observation, and self-awareness."
+    },
+    {
+      "id": "building-things",
+      "justification": "Following on from the website improvements mentioned here, you might enjoy reading more about the thinking and hands-on experience of rebuilding the site from scratch."
+    }
+  ],
+  "wk3-dear-diary": [
+    {
+      "id": "weeknote-swipe-right",
+      "justification": "Continuing to share the varied experiences and reflections of everyday life, here I recount family moments, a trip to Cornwall, and a rather candid (and sometimes amusing) dive into the world of online dating."
+    },
+    {
+      "id": "tinkering-monday",
+      "justification": "If you found the bits about exploring new tools and tackling tech issues in my weeknotes interesting, you might enjoy delving into this earlier piece where I share the challenges and triumphs of setting up my own blog."
+    },
+    {
+      "id": "15-geometry",
+      "justification": "Here I continue to ponder the intricacies of work and team organisation, expanding my reflections into the broader realm of how company structures truly influence effective collaboration."
+    }
+  ],
+  "4-stepping-into-the-light": [
+    {
+      "id": "weeknote-buffet",
+      "justification": "Moving beyond the lens, this weeknote shares a broader reflection on a varied week, from leadership training and socialising to a bit of technical tinkering on the site."
+    },
+    {
+      "id": "46-before-46",
+      "justification": "Having just read about my creative exploration with light and recent running, you might also enjoy a look at a much larger physical challenge I'm planning to mark my upcoming birthday."
+    },
+    {
+      "id": "16-fever-dream",
+      "justification": "If you enjoyed my photographic experiments with light, you might like another self-portrait from my weekly project where I use a single speedlight setup, all while battling the flu and a rather ambitious toilet paper costume."
+    }
+  ]
+}

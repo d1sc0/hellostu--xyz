@@ -27,6 +27,19 @@ jobs:
       - name: Run prebuild script
         run: npm run prebuild
 
+      - name: Cache Semantic Embeddings
+        uses: actions/cache@v4
+        with:
+          path: src/data/embeddings-cache.json
+          key: embeddings-${{ runner.os }}-${{ github.sha }}
+          restore-keys: |
+            embeddings-${{ runner.os }}-
+
+      - name: Generate AI Recommendations
+        run: npm run generate:recommendations
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
       - name: Build Astro site
         run: npm run build
 

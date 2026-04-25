@@ -1,0 +1,44 @@
+---
+import { getCollection } from 'astro:content';
+import recommendationsData from '../data/recommendations.json';
+
+const { currentSlug } = Astro.props;
+
+// Get the recommendations for this specific post
+const relatedIds = recommendationsData[currentSlug] || [];
+
+// Fetch the full post details for the recommended IDs
+const allPosts = await getCollection('posts');
+const relatedPosts = relatedIds
+  .map(rec => {
+    const post = allPosts.find(p => p.slug === rec.id);
+    return {
+      post,
+      justification: rec.justification,
+    };
+  })
+  .filter(item => item.post); // Filter out any missing posts
+---
+
+{
+  relatedPosts.length > 0 && (
+    <section
+      class="recommendations"
+      style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #ccc;"
+    >
+      <h3>What to read next</h3>
+      <ul class="recommendations-list">
+        {relatedPosts.map(({ post, justification }) => (
+          <li style="margin-bottom: 1.5rem;">
+            <a href={`/posts/${post.slug}`}>
+              <strong>{post.data.title}</strong>
+            </a>
+            <p style="margin-top: 0.5rem; color: #555;">
+              <em>{justification}</em>
+            </p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
+}

@@ -14,13 +14,16 @@
     "preview": "astro preview",
     "astro": "astro",
     "generate:og": "ts-node src/scripts/image-generation/generate-og-images.ts",
-    "generate:preview": "ts-node src/scripts/image-generation/generate-preview-images.ts"
+    "generate:preview": "ts-node src/scripts/image-generation/generate-preview-images.ts",
+    "generate:recommendations": "node src/scripts/recommendations.mjs",
+    "generate:recommendations:test": "node src/scripts/recommendations.mjs --test"
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.3",
     "@astrojs/react": "^5.0.3",
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.2",
+    "@google/generative-ai": "^0.24.1",
     "@sveltia/cms": "0.152.5",
     "astro": "^6.1.5",
     "astro-font": "1.1.0",
