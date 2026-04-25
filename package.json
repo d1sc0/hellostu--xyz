@@ -6,7 +6,7 @@
     "node": "24.x"
   },
   "scripts": {
-    "dev": "npm run prebuild && astro dev",
+    "dev": "npm run prebuild && npm run generate:recommendations && astro dev",
     "start": "astro dev",
     "prebuild": "node src/scripts/pre-build-sveltia-cms-catches.js && ts-node src/scripts/image-generation/generate-og-images.ts",
     "prebuild:clean": "node src/scripts/pre-build-sveltia-cms-catches.js --clean && ts-node src/scripts/image-generation/generate-og-images.ts",
