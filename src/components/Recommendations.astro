@@ -19,6 +19,14 @@ const relatedPosts = relatedIds
     };
   })
   .filter(item => item.post); // Filter out any missing posts
+
+const getPirateCategory = (category) => {
+  const lowerCat = category?.toLowerCase();
+  if (lowerCat === 'work') return "Swabbin' the Decks ☠️";
+  if (lowerCat === 'rest') return "Restin' Yer Bones 🛌";
+  if (lowerCat === 'play') return "Carousin' for Fun 🎉";
+  return category;
+};
 ---
 
 {
@@ -42,6 +50,8 @@ const relatedPosts = relatedIds
               <a
                 href={`/${encodeURIComponent(post.data.category.toLowerCase())}/`}
                 class="recommendations__category"
+                data-primary={post.data.category}
+                data-alt={getPirateCategory(post.data.category)}
               >
                 {post.data.category}
               </a>
@@ -62,7 +72,7 @@ const relatedPosts = relatedIds
         toggle.addEventListener('change', (e) => {
           const isAltMode = (e.target as HTMLInputElement).checked;
           
-          document.querySelectorAll('.recommendations__justification').forEach(el => {
+          document.querySelectorAll('.recommendations__justification, .recommendations__category').forEach(el => {
             const primaryText = el.getAttribute('data-primary');
             const altText = el.getAttribute('data-alt');
             
