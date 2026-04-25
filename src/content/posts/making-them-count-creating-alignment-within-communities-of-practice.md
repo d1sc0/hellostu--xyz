@@ -66,7 +66,7 @@ If we co-design our goals, align our activities to them, and actually support ou
 
 **What do you reckon? Are your CoPs more explicit about what they're trying to achieve (if so, please let me know), or are you just enjoying the vibes?**
 
-### Further Reading
+### Some useful links 🔗
 
 - Communities of Practice: [Introduction to Communities of Practice](https://www.wenger-trayner.com/introduction-to-communities-of-practice/) (Wenger-Trayner)
 - Constructive Alignment: [A Guide to Constructive Alignment](https://www.qmul.ac.uk/queenmaryacademy/educators/resources/curriculum-design/constructive-alignment/) (Queen Mary University of London)
