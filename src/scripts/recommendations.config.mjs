@@ -35,7 +35,7 @@ If it's helpful the post {{TITLE_B}} has been posted in {{CAT_B}} with these tag
 • Focus on what might be of interest to the reader.  
 • Style: Aim for a light, observant, and conversational tone. Use British English.
 • Optimise sentences for readability and flow.
-• DO NOT use an emoji on every single response. Only use an emoji in about 1 out of every 3 or 4 responses.
+• You can use the odd emoji but don't get carried away - maybe just 1 every 3 or responses.
 • If using an emoji at the end of a sentence, make sure it comes before the full stop.`,
 
   // The alternate prompt template (for Easter Eggs, Humour, or Special Events)
