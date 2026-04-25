@@ -18,7 +18,12 @@ const relatedPosts = relatedIds
       justificationAlt: rec.justificationAlt,
     };
   })
-  .filter(item => item.post); // Filter out any missing posts
+  .filter(item => item.post) // Filter out any missing posts
+  .sort((a, b) => {
+    const order = { work: 1, rest: 2, play: 3 };
+    const getOrder = (cat) => order[cat?.toLowerCase()] || 4;
+    return getOrder(a.post.data.category) - getOrder(b.post.data.category);
+  });
 
 const getPirateCategory = (category) => {
   const lowerCat = category?.toLowerCase();
