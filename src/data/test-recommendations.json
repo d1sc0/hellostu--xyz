@@ -1,72 +1,87 @@
 {
-  "building-things": [
+  "14-head-above-water": [
     {
-      "id": "fresh-paint",
-      "justification": "You've just read about the latest website refresh, and I previously wrote here about an earlier rebuild, delving into the practical motivations like cutting hosting costs and considering its environmental footprint."
+      "id": "13-healing-wounds",
+      "justification": "Having just read about my recovery from surgery, you might be interested in my earlier thoughts on an impending hospital visit and the personal reflections woven into my healing tattoos.",
+      "justificationAlt": "Yargh! If ye've navigated the seas of mending, then sail forth and witness more healing tales and fresh ink, me hearty! ⚓"
     },
     {
-      "id": "weeknote-buffet",
-      "justification": "Here I continue to explore the joy of making things, including some small but hopefully helpful improvements to this very website."
+      "id": "weeknote-main-character-energy",
+      "justification": "Having touched on managing my anxiety and the need to recalibrate, I explore a much deeper personal transformation and how I’m trying to embrace my own main character energy.",
+      "justificationAlt": "Gather 'round, for if ye've learned to breathe amidst the churnin' waters, now hear the saga of shapin' yer own grand tale, ye bold soul ⚓."
+    },
+    {
+      "id": "weeknote-swipe-right",
+      "justification": "Expanding on my journal entry about finding my footing and embracing new personal projects, I later share more candid thoughts on life's ups and downs, including an unexpected dive into online dating.",
+      "justificationAlt": "Cast yer gaze, if ye dare, upon another log o' my journey, where I strive to keep my spirits aloft amidst uncharted personal seas ⚓."
+    }
+  ],
+  "12-these-hands": [
+    {
+      "id": "14-head-above-water",
+      "justification": "Having shared my plans for a new work-life balance and exploring fresh creative avenues, I reflect on how those intentions are beginning to play out, alongside an unexpected health update and the launch of a new podcast.",
+      "justificationAlt": "Yargh! If ye enjoyed the journey of makin', then set yer sights on how I keep me spirit afloat amidst the gales ⚓!"
+    },
+    {
+      "id": "46-before-46",
+      "justification": "As I continue to sketch out plans for my expanded work-life balance and upcoming summer, I detail a significant birthday challenge I'm plotting to celebrate turning 46.",
+      "justificationAlt": "Should ye fancy more tales of me own challenges and the grand plans I hoist for myself, then prepare for a mighty journey!"
+    },
+    {
+      "id": "weeknote-update-and-grow",
+      "justification": "Thinking about the future I was shaping and the adventures I was planning, I subsequently reflected on the dramatic personal shifts and challenges that then began to unfold.",
+      "justificationAlt": "Ye've seen me hands at work with the camera; now witness how me spirit grapples with the tides of change to find new bearings."
+    }
+  ],
+  "8-sasquatch": [
+    {
+      "id": "3-skip-intro",
+      "justification": "If my reflections on the creative struggle for an honest self-portrait resonated, here I delve into finding a more genuine reflection of myself, wrinkles and all.",
+      "justificationAlt": "Avast! If ye be questionin' yer own true colours in a self-portrait, then set yer course for an earlier voyage where I wrestled with the face in the glass! ⚓"
+    },
+    {
+      "id": "weeknote-update-and-grow",
+      "justification": "My last piece touched on anxiety and a renewed focus on self-care, and here I dig a bit deeper into the ongoing personal challenges and how I'm working to grow.",
+      "justificationAlt": "When yer artistic compass spins wild and yer spirit feels adrift, peer into this log to see how a pirate strives to mend his tattered sails and catch a fresh breeze. ⚓"
     },
     {
       "id": "homesick",
-      "justification": "Having just read about the joy of building and adapting things, here I take a more personal look at trying to adapt to new surroundings, and wonder if some bits of our own 'programming' just can't be fixed."
-    }
-  ],
-  "weeknote-the-uber": [
-    {
-      "id": "weeknote-swipe-right",
-      "justification": "Following on from the interesting, random encounters in that Uber, you might be keen to read about my rather more deliberate foray into the strange world of online dating, where the new EV also makes an appearance."
-    },
-    {
-      "id": "15-geometry",
-      "justification": "If you enjoyed my reflections on working with good teams and managing projects, this post expands on how organisational structures can either help or hinder our ability to collaborate effectively."
-    },
-    {
-      "id": "14-head-above-water",
-      "justification": "Here, I continue to reflect on navigating the daily demands of work, sharing a more personal take on tackling imposter anxiety and launching a new creative side project."
-    }
-  ],
-  "weeknote-buffet": [
-    {
-      "id": "14-head-above-water",
-      "justification": "If you enjoyed the reflections on managing a varied week, you might also be interested in this entry where I delve further into navigating work-life balance, tackling imposter syndrome, and the excitement of launching a new personal creative venture, all whilst recuperating from a minor health procedure."
-    },
-    {
-      "id": "weeknote-swipe-right",
-      "justification": "Just as this entry touches on social reconnection and observing web tools, a subsequent note continues the reflection, diving into the often-challenging world of online dating with my characteristic blend of curiosity, observation, and self-awareness."
-    },
-    {
-      "id": "building-things",
-      "justification": "Following on from the website improvements mentioned here, you might enjoy reading more about the thinking and hands-on experience of rebuilding the site from scratch."
-    }
-  ],
-  "wk3-dear-diary": [
-    {
-      "id": "weeknote-swipe-right",
-      "justification": "Continuing to share the varied experiences and reflections of everyday life, here I recount family moments, a trip to Cornwall, and a rather candid (and sometimes amusing) dive into the world of online dating."
-    },
-    {
-      "id": "tinkering-monday",
-      "justification": "If you found the bits about exploring new tools and tackling tech issues in my weeknotes interesting, you might enjoy delving into this earlier piece where I share the challenges and triumphs of setting up my own blog."
-    },
-    {
-      "id": "15-geometry",
-      "justification": "Here I continue to ponder the intricacies of work and team organisation, expanding my reflections into the broader realm of how company structures truly influence effective collaboration."
+      "justification": "Building on my recent reflections about navigating moments of anxiety and striving for mental equilibrium, here I explore why a persistent feeling of homesickness still crops up.",
+      "justificationAlt": "If ye be vexed by the unending tides of yer own troubled mind, then follow this chart to another account of a restless soul."
     }
   ],
   "4-stepping-into-the-light": [
     {
+      "id": "3-skip-intro",
+      "justification": "If my recent creative self-portrait sparked your interest, I also reflected on an earlier piece that offered a more direct and honest look at myself through the lens.",
+      "justificationAlt": "Yargh! Ye've seen how I wrestle the light to reveal me self, now cast yer eye upon another bare-faced look."
+    },
+    {
       "id": "weeknote-buffet",
-      "justification": "Moving beyond the lens, this weeknote shares a broader reflection on a varied week, from leadership training and socialising to a bit of technical tinkering on the site."
+      "justification": "If you appreciated my exploration of light and self through photography, my regular weeknotes often present a broader canvas of creative projects and personal reflections.",
+      "justificationAlt": "If ye peered into me soul by the light, then come take a look at the hearty spread o' me week's endeavors."
     },
     {
       "id": "46-before-46",
-      "justification": "Having just read about my creative exploration with light and recent running, you might also enjoy a look at a much larger physical challenge I'm planning to mark my upcoming birthday."
+      "justification": "Reflecting on my recent photographic exploration and the joy of a good run, I'm also putting plans in motion for a rather ambitious birthday walk.",
+      "justificationAlt": "Since ye've charted the course o' my creative journey, come follow me on a mighty trek o' years."
+    }
+  ],
+  "11-panda": [
+    {
+      "id": "14-head-above-water",
+      "justification": "If you connected with my quirky self-portrait and the need for a bit of a mental break, this piece shows how I'm really trying to keep myself afloat and creating.",
+      "justificationAlt": "Yargh! If ye be ponderin' yer own struggle to stay afloat, then come witness how this old sea dog keeps his head above the waves."
     },
     {
       "id": "16-fever-dream",
-      "justification": "If you enjoyed my photographic experiments with light, you might like another self-portrait from my weekly project where I use a single speedlight setup, all while battling the flu and a rather ambitious toilet paper costume."
+      "justification": "Building on the theme of unexpected self-portraits and the need to keep the creative wheels turning, this time I found myself navigating a rather unusual predicament whilst unwell.",
+      "justificationAlt": "If ye fancy another voyage into how a true buccaneer crafts beauty even when the bilge water rises, then give this yarn a read."
+    },
+    {
+      "id": "zen-friday",
+      "justification": "Venturing beyond the quiet, panda-masked moment of reflection, this audio note offers a wider update on how I'm balancing work, friendships, and fitness.",
+      "justificationAlt": "After facin' yer inner panda's struggle with the screen, hear how a true captain finds his calm."
     }
   ]
 }

@@ -1,7 +1,8 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import '../styles/md-post-layout.css';
-const { frontmatter, lastUpdated, prevpost, nextpost, slug } = Astro.props;
+import Recommendations from '../components/Recommendations.astro';
+const { frontmatter, lastUpdated, prevpost, nextpost } = Astro.props;
 const dateOptions = {
   year: 'numeric' as const,
   month: 'long' as const,
@@ -71,6 +72,7 @@ const showUpdatedDate =
       <slot />
     </div>
   </section>
+  <Recommendations currentSlug={frontmatter.slug} />
   <nav class="post-navigation content-padding">
     <div class="post-navigation__item post-navigation__prev">
       {

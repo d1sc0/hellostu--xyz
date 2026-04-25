@@ -1,9 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
 import recommendationsData from '../data/recommendations.json';
+import '../styles/recommendations.css';
 
 const { currentSlug } = Astro.props;
-
 // Get the recommendations for this specific post
 const relatedIds = recommendationsData[currentSlug] || [];
 
@@ -11,10 +11,11 @@ const relatedIds = recommendationsData[currentSlug] || [];
 const allPosts = await getCollection('posts');
 const relatedPosts = relatedIds
   .map(rec => {
-    const post = allPosts.find(p => p.slug === rec.id);
+    const post = allPosts.find(p => p.id === rec.id);
     return {
       post,
       justification: rec.justification,
+      justificationAlt: rec.justificationAlt,
     };
   })
   .filter(item => item.post); // Filter out any missing posts
@@ -22,23 +23,57 @@ const relatedPosts = relatedIds
 
 {
   relatedPosts.length > 0 && (
-    <section
-      class="recommendations"
-      style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #ccc;"
-    >
-      <h3>What to read next</h3>
-      <ul class="recommendations-list">
-        {relatedPosts.map(({ post, justification }) => (
-          <li style="margin-bottom: 1.5rem;">
-            <a href={`/posts/${post.slug}`}>
+    <section class="recommendations content-padding">
+      <h3 class="recommendations__title">
+        What to read next
+        <label class="recommendations__easter-egg" aria-label="Toggle Pirate Mode" title="Toggle Pirate Mode">
+          <input type="checkbox" id="rec-mode-toggle" />
+          <span class="emoji-books">📚</span>
+          <span class="emoji-pirate">🏴‍☠️</span>
+        </label>
+      </h3>
+      <ul class="recommendations__list">
+        {relatedPosts.map(({ post, justification, justificationAlt }) => (
+          <li class="recommendations__item">
+            <a href={`/posts/${post.id}/`} class="recommendations__link">
               <strong>{post.data.title}</strong>
             </a>
-            <p style="margin-top: 0.5rem; color: #555;">
-              <em>{justification}</em>
+            {post.data.category && (
+              <a
+                href={`/${encodeURIComponent(post.data.category.toLowerCase())}/`}
+                class="recommendations__category"
+              >
+                {post.data.category}
+              </a>
+            )}
+            <p class="recommendations__justification" data-primary={justification} data-alt={justificationAlt || ''}>
+              {justification}
             </p>
           </li>
         ))}
       </ul>
     </section>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const toggle = document.getElementById('rec-mode-toggle') as HTMLInputElement;
+        if (!toggle) return;
+
+        toggle.addEventListener('change', (e) => {
+          const isAltMode = (e.target as HTMLInputElement).checked;
+          
+          document.querySelectorAll('.recommendations__justification').forEach(el => {
+            const primaryText = el.getAttribute('data-primary');
+            const altText = el.getAttribute('data-alt');
+            
+            if (isAltMode && altText) {
+              el.textContent = altText;
+            } else if (!isAltMode && primaryText) {
+              el.textContent = primaryText;
+            }
+          });
+        });
+      });
+    </script>
   )
 }

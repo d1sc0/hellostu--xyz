@@ -333,30 +333,39 @@ async function generateRecommendations() {
           postB.embedding.length > 0,
       )
       .map(postB => {
-        let baseScore = cosineSimilarity(postA.embedding, postB.embedding);
-        // Cross-Pollinator (Category Math): Boost score if posts are in different categories
-        if (postA.category !== postB.category) {
-          baseScore += config.weights.crossCategoryBoost;
-        }
+        const baseScore = cosineSimilarity(postA.embedding, postB.embedding);
         return { id: postB.id, score: baseScore, postB };
       });
 
     // Maximal Marginal Relevance (MMR) - Diversity Math
     const scores = [];
+    const pickedCategories = new Set();
     const lambda = config.weights.mmrLambda;
 
     while (scores.length < 3 && candidates.length > 0) {
       if (scores.length === 0) {
         // First pick is just the absolute highest score
         candidates.sort((a, b) => b.score - a.score);
-        scores.push(candidates.shift());
+        const firstPick = candidates.shift();
+        scores.push(firstPick);
+        pickedCategories.add(firstPick.postB.category);
       } else {
-        // Subsequent picks balance similarity with diversity
+        // Subsequent picks balance similarity with diversity AND category uniqueness
         let bestMmrScore = -Infinity;
         let bestIndex = -1;
 
-        for (let j = 0; j < candidates.length; j++) {
-          const candidate = candidates[j];
+        // 1. Try to find candidates from categories we HAVEN'T picked yet
+        let validCandidates = candidates.filter(
+          c => !pickedCategories.has(c.postB.category),
+        );
+
+        // 2. If we've exhausted all categories, fall back to all remaining candidates
+        if (validCandidates.length === 0) {
+          validCandidates = candidates;
+        }
+
+        for (let j = 0; j < validCandidates.length; j++) {
+          const candidate = validCandidates[j];
           // Find how similar this candidate is to the posts we ALREADY selected
           let maxSimToSelected = Math.max(
             ...scores.map(s =>
@@ -368,18 +377,25 @@ async function generateRecommendations() {
             lambda * candidate.score - (1 - lambda) * maxSimToSelected;
           if (mmrScore > bestMmrScore) {
             bestMmrScore = mmrScore;
-            bestIndex = j;
+            // We need the index in the ORIGINAL candidates array so we can splice it
+            bestIndex = candidates.findIndex(c => c.id === candidate.id);
           }
         }
-        scores.push(candidates.splice(bestIndex, 1)[0]);
+
+        const nextPick = candidates.splice(bestIndex, 1)[0];
+        scores.push(nextPick);
+        pickedCategories.add(nextPick.postB.category);
       }
     }
 
     recommendations[postA.id] = [];
+    const generatedJustifications = [];
+    const generatedJustificationsAlt = [];
 
     // Generate Reasoning for the Top 3 Matches
     for (const match of scores) {
       let justification = '';
+      let justificationAlt = '';
       const cachedMatch = existingRecommendations[postA.id]?.find(
         r => r.id === match.id,
       );
@@ -391,12 +407,15 @@ async function generateRecommendations() {
       if (
         cachedMatch &&
         cachedMatch.justification &&
+        cachedMatch.justificationAlt &&
         !isInvalidCache &&
         !isTestMode
       ) {
         justification = cachedMatch.justification; // Reuse existing rationale
+        justificationAlt = cachedMatch.justificationAlt;
       } else {
-        const prompt = config.prompt
+        // --- GENERATE PRIMARY JUSTIFICATION ---
+        let prompt = config.prompt
           .replace(/\{\{TITLE_A\}\}/g, postA.title)
           .replace(/\{\{CAT_A\}\}/g, postA.category)
           .replace(/\{\{TAGS_A\}\}/g, postA.tags)
@@ -408,6 +427,15 @@ async function generateRecommendations() {
           .replace(/\{\{DESC_B\}\}/g, match.postB.description)
           .replace(/\{\{CONTENT_B\}\}/g, match.postB.body);
 
+        // Dynamic anti-repetition constraint based on previously generated text
+        if (generatedJustifications.length > 0) {
+          prompt += `\n\n**CRITICAL ANTI-REPETITION CONSTRAINT:**\n`;
+          prompt += `You must use a completely different sentence structure and opening phrase than the other recommendations I have already written for this post. Do NOT start your sentence similarly to these:\n`;
+          generatedJustifications.forEach(j => {
+            prompt += `- "${j}"\n`;
+          });
+        }
+
         try {
           const response = await reasoningModel.generateContent(prompt);
           justification = response.response.text().trim();
@@ -418,12 +446,47 @@ async function generateRecommendations() {
           justification = 'A highly recommended related post.';
         }
 
+        // --- GENERATE ALTERNATE JUSTIFICATION ---
+        let promptAltText = config.promptAlt
+          .replace(/\{\{TITLE_A\}\}/g, postA.title)
+          .replace(/\{\{CAT_A\}\}/g, postA.category)
+          .replace(/\{\{TAGS_A\}\}/g, postA.tags)
+          .replace(/\{\{DESC_A\}\}/g, postA.description)
+          .replace(/\{\{CONTENT_A\}\}/g, postA.body)
+          .replace(/\{\{TITLE_B\}\}/g, match.postB.title)
+          .replace(/\{\{CAT_B\}\}/g, match.postB.category)
+          .replace(/\{\{TAGS_B\}\}/g, match.postB.tags)
+          .replace(/\{\{DESC_B\}\}/g, match.postB.description)
+          .replace(/\{\{CONTENT_B\}\}/g, match.postB.body);
+
+        if (generatedJustificationsAlt.length > 0) {
+          promptAltText += `\n\n**CRITICAL ANTI-REPETITION CONSTRAINT:**\n`;
+          promptAltText += `You must use a completely different sentence structure and opening phrase than the other recommendations I have already written for this post. Do NOT start your sentence similarly to these:\n`;
+          generatedJustificationsAlt.forEach(j => {
+            promptAltText += `- "${j}"\n`;
+          });
+        }
+
+        try {
+          const responseAlt =
+            await reasoningModel.generateContent(promptAltText);
+          justificationAlt = responseAlt.response.text().trim();
+        } catch (err) {
+          console.error(
+            `\nFailed to reason ALT match ${postA.id} -> ${match.id} - ${err.message}`,
+          );
+          justificationAlt = 'A highly recommended related post.';
+        }
+
         if (config.delayMs > 0) await delay(config.delayMs);
       }
 
+      generatedJustifications.push(justification);
+      generatedJustificationsAlt.push(justificationAlt);
       recommendations[postA.id].push({
         id: match.id,
         justification,
+        justificationAlt,
       });
     }
     process.stdout.write(
