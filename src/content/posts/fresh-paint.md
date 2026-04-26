@@ -9,7 +9,7 @@ description: a post explaining my foray into re-building my blog and my desire t
 tags:
   - data
   - tech
-  - experiments
+  - experiment
   - climate
 ---
 
@@ -72,6 +72,6 @@ That's about it. A bit of a ramble - you were warned! Considering I pulled toget
 
 Maybe the new paint will even inspire me to publish more posts....maybe 😂
 
-***
+---
 
 Photo Credit:- [Joey Huang on Unsplash](https://unsplash.com/photos/XfIuCOl8kI8)

@@ -295,9 +295,9 @@
       "justificationAlt": "If ye've tallied the numbers o' our local crew, then set yer compass to chart the origins o' all our visiting buccaneers!"
     },
     {
-      "id": "wk3-dear-diary",
-      "justification": "Since I mentioned learning a few new tricks with the parkrun data, you might also enjoy reading my weekly diary, where I reflect on other bits of learning, tech tinkering, and navigating the general juggle of life.",
-      "justificationAlt": "Hark, me hearty! Ye've seen the treasure from a data dive, now inspect the captain's log o' how these voyages of learnin' be made!"
+      "id": "weeknote-main-character-energy",
+      "justification": "Considering my exploration of parkrun data and the tech behind it, I also share a recent weeknote detailing my continued web tinkering and how running helps me navigate significant personal shifts.",
+      "justificationAlt": "Cast yer eyes beyond the data charts, for here be the weekly log o' me own adventure, where I take the helm of me own fate!"
     },
     {
       "id": "46-before-46",
@@ -482,9 +482,9 @@
       "justificationAlt": "Ye've sailed with me at the big parley; now peer into the logbook o' me daily voyages and ponderings."
     },
     {
-      "id": "tgf-data-dive",
-      "justification": "Where that piece reflected on the broad landscape of digital transformation and data's role, I later applied some of my own curiosity to crunching the numbers from a local community event, seeing what insights emerged.",
-      "justificationAlt": "Ye've pondered the use o' numbers for the public good; now, behold me own logbook of a local crew's comings and goings!"
+      "id": "tinkering-monday",
+      "justification": "Reflecting on the conversations around digital transformation and what's possible, I also like to get hands-on with the very web technologies that allow me to share these ideas and experiences.",
+      "justificationAlt": "After the grand discussions of where the digital winds might blow, chart a course to see how I wrestle me own website into shape, learnin' by doin'!"
     },
     {
       "id": "weeknote-swipe-right",
@@ -562,9 +562,9 @@
   ],
   "the-mathematician-and-the-storyteller": [
     {
-      "id": "tinkering-monday",
-      "justification": "If you enjoyed my recent coding experiment to build AI recommendations, you might also like to explore my earlier adventures in tinkering with blogging platforms and finding a place for my digital garden.",
-      "justificationAlt": "Yargh! If ye relish the spirit o' my code experiments, then set yer sights on how I built this very digital haven, arrr! 🏴‍☠️"
+      "id": "clean-and-rebuild",
+      "justification": "Having just delved into my AI-powered recommendations, you might be keen to read about the spring website rebuild where I began contemplating adding a feature just like it.",
+      "justificationAlt": "Avast, me heartie! If ye've enjoyed the making of a clever component, then cast yer gaze upon the greater renovation of this whole digital island."
     },
     {
       "id": "weeknote-buffet",
