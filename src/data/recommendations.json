@@ -499,9 +499,9 @@
       "justificationAlt": "Belay that, scallywag! After charting a course for purposeful practice, hear how this old seadog navigates the real-world tides of transformation."
     },
     {
-      "id": "blogging-about-not-blogging",
-      "justification": "My exploration of designing for more intentional learning within communities extends here to a very personal look at the tricky process of developing my own creative practice.",
-      "justificationAlt": "Shiver me timbers! After settin' a course for purposeful practice in yer communities, witness how this scallywag navigates the treacherous currents of his own creative work."
+      "id": "the-mathematician-and-the-storyteller",
+      "justification": "While exploring how we might make communities of practice more intentional, I also delved into the intriguing challenge of balancing objective data with compelling narratives in my latest AI experiment.",
+      "justificationAlt": "If yer heart warms to shapin' learnin' with purpose, then glimpse the art of teachin' machines to spin their own compelling tales."
     },
     {
       "id": "weeknote-swipe-right",
@@ -558,6 +558,23 @@
       "id": "weeknote-buffet",
       "justification": "That parkrun visitor map was a real pleasure to create, and here I share some reflections on a week where my appreciation for playing with data and making visualisations continued to grow.",
       "justificationAlt": "After chartin' the runners' homes, come peruse the week's varied bounty, where more digital-craftin' be found!"
+    }
+  ],
+  "the-mathematician-and-the-storyteller": [
+    {
+      "id": "tinkering-monday",
+      "justification": "If you enjoyed my recent coding experiment to build AI recommendations, you might also like to explore my earlier adventures in tinkering with blogging platforms and finding a place for my digital garden.",
+      "justificationAlt": "Yargh! If ye relish the spirit o' my code experiments, then set yer sights on how I built this very digital haven, arrr! 🏴‍☠️"
+    },
+    {
+      "id": "weeknote-buffet",
+      "justification": "Given my ongoing interest in crafting a better online experience, I also noted in a recent update some of the other small tech and content improvements I've made to my site ✨.",
+      "justificationAlt": "Cast yer gaze upon a tale o' a seadog's week, filled with a motley crew o' ventures and the quest for a more satisfyin' feast."
+    },
+    {
+      "id": "weeknote-swipe-right",
+      "justification": "Stepping away from building AI to connect posts, I found myself in the bewildering world where algorithms try to connect people instead, with some rather curious results 😬.",
+      "justificationAlt": "Unfurl yer sails for a voyage into how the algorithms guide our hearts as much as our queries."
     }
   ],
   "tinkering-monday": [

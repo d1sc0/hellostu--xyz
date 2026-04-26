@@ -28,26 +28,27 @@ A plan formed in my head to outsource this lower-priority micro-content to AI to
 
 Gemini was useful in helping me scope out a detailed prompt to then pass into Gemini Code Assist plugin within VS Code. Having given it a pretty thorough architectural steer and talked about how I would integrate the component into my astro site and content pipeline, it set about doing lots of good work pulling things together.
 
-Then things quickly went wrong. The 1st iteration kept failing with 404 errors and Gemini got caught up worrying about all of the wrong problems. Constantly changing things that clearly (imo) the source of the issue. Eventually I stepped in to help debug and point it away from some delusions it was having, and we figured out the issue. The interesting root cause really boiled down to Google's rapid iteration of models, names, and versions in this space as meant even its own AI is struggling keep up with it all and understand their docs. As frustrating as it was we got there in the end and we had some humorous banter along the way (if not slight sycophantic at times) Apparently, I have "great architectural intuition." - Yass queen. I do. 😂
+Then things quickly went wrong. The 1st iteration kept failing with 404 errors and Gemini got caught up worrying about all of the wrong problems. Constantly changing things that clearly (imo) were not the source of the issue. Eventually I stepped in to help debug and point it away from some delusions it was having, and we figured out the problems together. The actual root cause being Google's rapid iteration of models, names, and versions in this space has meant even its own AI is struggling keep up with it all and understand their docs. As frustrating as it was we got there in the end and we had some humorous banter along the way (if not slighty sycophantic at times) Apparently, I have "great architectural intuition." - Yass queen. I do. 😂
 
 ### An AH-HA Moment
 
-So after a bit of a rocky start, we quickly picked up speed. When we did hit problems I seemed more in-tune with where things might be going wrong than my Gemini companion. This surprised me given my amateur level coding skills but possibly testament to my ability to learn from my MANY mistakes.
+So after a bit of a rocky start, we quickly picked up speed. When we did hit problems I still seemed more in-tune with where things might be going wrong than my Gemini companion. This surprised me given my amateur level coding skills but possibly testament to my ability to learn from my MANY mistakes.
 
 During the build, I had a bit of an AH-HA moment. I thought I vaguely knew how some of this AI stuff works, but putting it to the test like this gave me a far more tangible working example of the underlying tech at play. To create the recommendations, the code was utilising 2 different models: 1 to select which 3 posts will be recommended and 1 to explain why they were selected.
+
 This is what prompted the moment: surely if we're using 2 different models, the second model doesn't know why the first model made the recommendations it did!
 
-And I'm right—it doesn't need to. It's an "illusion of intelligence" (and a clever one at that). Getting Gemini to read all of my posts in-depth and understand them in enough detail to generate recommendations every time the content changes would be slow and expensive.
+And I'm right! but it doesn't need to. It's an "illusion of intelligence" (and a clever one at that). Getting Gemini to read all of my posts in-depth and understand them in enough detail to generate recommendations with reasoning every time the content changes would be slow and expensive.
 
 ### The Math (Meaning) and the Story (The illusion of meaning)
 
-So as I've now learnt - the way this works is by turning each post into a long set of numbers, known as a **vector**. The first model does this quickly (gemini-embedding-2)—this post on '[GPS coordinates for meaning](https://medium.com/data-science-collective/what-are-embeddings-87f0c667925e)' is a great primer if you want to fall down that particular rabbit hole.
+So as I've now learnt - the way this works is by turning each post into a long set of numbers, known as a **vector**. The first model does this quickly (gemini-embedding-2) —this post on '[GPS coordinates for meaning](https://medium.com/data-science-collective/what-are-embeddings-87f0c667925e)' is a great primer if you want to fall down that particular rabbit hole.
 
 I store a hash of each post's vectors in JSON format to avoid having to hit the API when posts don't change. Then my script does some clever stuff where it compares these vectors to know which ones are most similar (using math) and therefore which 3 posts to shortlist for a recommendation. Don't ask me to explain the maths - I couldn't.
 
 The second model (gemini-2.5-flash) doesn't really know or care **how** or **why** this recommendation has been made. It’s just charged with retrospectively making a case for it. It has the job of saying: "a user is reading post A and I'm recommending Post B; tell me a story about how they are related". The recommendation has already been made by its friendly vector creating counterpart. It's kind of just making up a reason without needing to understand it.
 
-This separation of concerns is actually the genius behind lots of AI functionality. It's fast, efficient, and very versatile. It doesn't care; it just generates a story based on what it's told. It could if I wanted give me all the reasons why these posts aren't relevant to each other it's in no way fussy, It does what it is told.
+This separation of concerns is actually the genius behind lots of AI functionality. It's fast, efficient, and very versatile. It doesn't care; it just generates a story based on what it's told by a much more efficient and smarter mathematical model. It could if I wanted give me all the reasons why these posts aren't relevant to each other it's in no way fussy, It does what it is told.
 
 ### Too Good to be Interesting
 
