@@ -421,11 +421,13 @@ async function generateRecommendations() {
           .replace(/\{\{TAGS_A\}\}/g, postA.tags)
           .replace(/\{\{DESC_A\}\}/g, postA.description)
           .replace(/\{\{CONTENT_A\}\}/g, postA.body)
+          .replace(/\{\{DATE_A\}\}/g, postA.pubDate)
           .replace(/\{\{TITLE_B\}\}/g, match.postB.title)
           .replace(/\{\{CAT_B\}\}/g, match.postB.category)
           .replace(/\{\{TAGS_B\}\}/g, match.postB.tags)
           .replace(/\{\{DESC_B\}\}/g, match.postB.description)
-          .replace(/\{\{CONTENT_B\}\}/g, match.postB.body);
+          .replace(/\{\{CONTENT_B\}\}/g, match.postB.body)
+          .replace(/\{\{DATE_B\}\}/g, match.postB.pubDate);
 
         // Dynamic anti-repetition constraint based on previously generated text
         if (generatedJustifications.length > 0) {
@@ -453,11 +455,13 @@ async function generateRecommendations() {
           .replace(/\{\{TAGS_A\}\}/g, postA.tags)
           .replace(/\{\{DESC_A\}\}/g, postA.description)
           .replace(/\{\{CONTENT_A\}\}/g, postA.body)
+          .replace(/\{\{DATE_A\}\}/g, postA.pubDate)
           .replace(/\{\{TITLE_B\}\}/g, match.postB.title)
           .replace(/\{\{CAT_B\}\}/g, match.postB.category)
           .replace(/\{\{TAGS_B\}\}/g, match.postB.tags)
           .replace(/\{\{DESC_B\}\}/g, match.postB.description)
-          .replace(/\{\{CONTENT_B\}\}/g, match.postB.body);
+          .replace(/\{\{CONTENT_B\}\}/g, match.postB.body)
+          .replace(/\{\{DATE_B\}\}/g, match.postB.pubDate);
 
         if (generatedJustificationsAlt.length > 0) {
           promptAltText += `\n\n**CRITICAL ANTI-REPETITION CONSTRAINT:**\n`;

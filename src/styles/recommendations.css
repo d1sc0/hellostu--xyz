@@ -42,8 +42,8 @@
 .recommendations__justification {
   margin-top: 0.4rem;
   font-size: 0.9em;
-  opacity: 0.8;
   font-style: italic;
+  font-synthesis: none;
 }
 
 /* Easter Egg Toggle Styles */
