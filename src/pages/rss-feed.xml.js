@@ -25,6 +25,30 @@ function absolutizeHtmlUrls(html, site) {
     .replace(/(src=")\/(?!\/)/g, `$1${new URL('/', site).toString()}`);
 }
 
+function addUtmToHtml(html, site) {
+  const utm = 'utm_source=rss&utm_medium=feed';
+  const siteUrl = new URL('/', site).toString();
+
+  return html.replace(/href="([^"]+)"/g, (match, href) => {
+    // Only target internal links: relative paths or absolute paths to this site
+    if (
+      (href.startsWith('/') && !href.startsWith('//')) ||
+      href.startsWith(siteUrl)
+    ) {
+      if (href.includes(utm)) return match;
+
+      const hashIndex = href.indexOf('#');
+      const hasHash = hashIndex !== -1;
+      const urlPart = hasHash ? href.slice(0, hashIndex) : href;
+      const hashPart = hasHash ? href.slice(hashIndex) : '';
+      const separator = urlPart.includes('?') ? '&' : '?';
+
+      return `href="${urlPart}${separator}${utm}${hashPart}"`;
+    }
+    return match;
+  });
+}
+
 function stripMdxSyntax(body) {
   return (
     body
@@ -232,12 +256,15 @@ export async function GET(context) {
         },
       )}</em></p>`;
 
+      const rawContent = metadata + mainContent + updatedLine;
+      const trackedContent = addUtmToHtml(rawContent, context.site);
+
       return {
         title: post.data.title,
         pubDate: post.data.pubDate,
         description: post.data.description,
         link: `/posts/${post.id}/`,
-        content: metadata + mainContent + updatedLine,
+        content: trackedContent,
         customData: `
           <enclosure url="${toAbsoluteSiteUrl(context.site, ogImage)}" type="image/png" length="${ogImageLength}" />
           <media:content url="${toAbsoluteSiteUrl(context.site, ogImage)}" medium="image" />
