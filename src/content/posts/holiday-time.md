@@ -1,7 +1,7 @@
 ---
 title: Holiday time
 slug: holiday-time
-draft: true
+draft: false
 pubDate: 2026-04-27T16:20:00
 category: Rest
 featureImage: /src/assets/uploaded_images/IMG_6766.jpeg
