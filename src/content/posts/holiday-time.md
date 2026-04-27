@@ -1,6 +1,6 @@
 ---
-title: Holiday time
-slug: holiday-time
+title: Holiday at home
+slug: holiday-at-home
 draft: true
 pubDate: 2026-04-27T16:20:00
 category: Rest
