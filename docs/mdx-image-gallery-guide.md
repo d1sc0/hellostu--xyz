@@ -12,7 +12,7 @@ This guide covers `MdxImageGallery`, the MDX component used for rendering build-
 ## Basic usage
 
 ```mdx
-import MdxImageGallery from '../../components/MdxImageGallery.astro';
+import MdxImageGallery from '../../components/for_posts/MdxImageGallery/MdxImageGallery.astro';
 
 <MdxImageGallery gallery="clean-and-rebuild" />
 ```
@@ -75,7 +75,7 @@ galleries:
 
 ## Related files
 
-- Component: `src/components/MdxImageGallery.astro`
+- Component: `src/components/for_posts/MdxImageGallery/MdxImageGallery.astro`
 - Styles: `src/styles/mdx-image-gallery.css`
 - Manifest: `src/content/galleries.yaml`
 - CMS config: `public/admin/config.yaml`

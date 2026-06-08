@@ -1,0 +1,114 @@
+---
+// Usage:
+// import PlaylistWidget from '../../components/for_posts/PlaylistWidget/PlaylistWidget.astro';
+//
+// <PlaylistWidget
+//   spotifyId="37i9dQZF1DX8UebhpWZJGm"
+//   appleId="pl.f8a927a4b0d04d8bb18ea8a26b68e9be"
+// />
+// <PlaylistWidget spotifyId="37i9dQZF1DX8UebhpWZJGm" height="150" />
+//
+
+import '../../../styles/playlist-widget.css';
+
+
+interface Props {
+  spotifyId?: string;
+  appleId?: string;
+  height?: string; // e.g. "380" (default) or "150" for compact
+}
+
+const { spotifyId, appleId, height = "380" } = Astro.props;
+
+const hasSpotify = !!spotifyId;
+const hasApple = !!appleId;
+
+if (!hasSpotify && !hasApple) {
+  return null;
+}
+
+const initialTab = hasSpotify ? 'spotify' : 'apple';
+---
+
+<div class="playlist-widget" data-height={height}>
+  <div class="playlist-widget__header">
+    <span class="playlist-widget__title">Listen along</span>
+    <div class="playlist-widget__tabs" role="tablist">
+      {hasSpotify && (
+        <button
+          type="button"
+          class={`playlist-widget__tab playlist-widget__tab--spotify ${initialTab === 'spotify' ? 'is-active' : ''}`}
+          role="tab"
+          aria-selected={initialTab === 'spotify'}
+          aria-controls="panel-spotify"
+          id="tab-spotify"
+          data-platform="spotify"
+          data-id={spotifyId}
+        >
+          Spotify
+        </button>
+      )}
+      {hasApple && (
+        <button
+          type="button"
+          class={`playlist-widget__tab playlist-widget__tab--apple ${initialTab === 'apple' ? 'is-active' : ''}`}
+          role="tab"
+          aria-selected={initialTab === 'apple'}
+          aria-controls="panel-apple"
+          id="tab-apple"
+          data-platform="apple"
+          data-id={appleId}
+        >
+          Apple Music
+        </button>
+      )}
+    </div>
+  </div>
+
+  <div class="playlist-widget__container" style={`min-height: ${height}px;`}>
+    {hasSpotify && (
+      <div
+        id="panel-spotify"
+        class={`playlist-widget__panel ${initialTab === 'spotify' ? 'is-active' : ''}`}
+        role="tabpanel"
+        aria-labelledby="tab-spotify"
+      >
+        {initialTab === 'spotify' ? (
+          <iframe
+            src={`https://open.spotify.com/embed/playlist/${spotifyId}?utm_source=generator`}
+            width="100%"
+            height={`${height}px`}
+            style="border-radius:12px; border:0;"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        ) : null}
+      </div>
+    )}
+
+    {hasApple && (
+      <div
+        id="panel-apple"
+        class={`playlist-widget__panel ${initialTab === 'apple' ? 'is-active' : ''}`}
+        role="tabpanel"
+        aria-labelledby="tab-apple"
+      >
+        {initialTab === 'apple' ? (
+          <iframe
+            src={`https://embed.music.apple.com/gb/playlist/${appleId}`}
+            width="100%"
+            height={`${height}px`}
+            style="width:100%; max-width:100%; overflow:hidden; border-radius:10px; border:0; background:transparent;"
+            allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write *"
+            loading="lazy"
+          ></iframe>
+        ) : null}
+      </div>
+    )}
+  </div>
+</div>
+
+<script>
+  import '../../../scripts/playlist-widget.js';
+</script>

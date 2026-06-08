@@ -1,6 +1,6 @@
 ---
 // Usage:
-// import MdxImageGallery from '../../components/MdxImageGallery.astro';
+// import MdxImageGallery from '../../components/for_posts/MdxImageGallery/MdxImageGallery.astro';
 //
 // <MdxImageGallery gallery="clean-and-rebuild" />
 // <MdxImageGallery gallery="clean-and-rebuild" heading="Project gallery" showCaptions={true} />
@@ -18,7 +18,7 @@ import { fileURLToPath } from 'node:url';
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 import YAML from 'yaml';
-import '../styles/mdx-image-gallery.css';
+import '../../../styles/mdx-image-gallery.css';
 
 interface Props {
   gallery: string;

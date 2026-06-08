@@ -1,0 +1,88 @@
+.playlist-widget {
+  margin: 2rem 0;
+  background: var(--color-line);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--color-line);
+}
+
+.playlist-widget__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.playlist-widget__title {
+  font-family: 'Gochi Hand', cursive, sans-serif;
+  font-size: 1.4rem;
+  color: var(--color-text);
+}
+
+.playlist-widget__tabs {
+  display: flex;
+  gap: 0.4rem;
+  background: var(--color-page);
+  padding: 0.25rem;
+  border-radius: 2rem;
+}
+
+.playlist-widget__tab {
+  border: none;
+  background: transparent;
+  color: var(--color-text);
+  padding: 0.35rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  opacity: 0.65;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.playlist-widget__tab:hover {
+  opacity: 1;
+}
+
+/* Brand-specific active tabs */
+.playlist-widget__tab--spotify.is-active {
+  background: #1DB954;
+  color: #fff;
+  opacity: 1;
+  box-shadow: 0 2px 8px rgba(29, 185, 84, 0.35);
+}
+
+.playlist-widget__tab--apple.is-active {
+  background: #FC3C44;
+  color: #fff;
+  opacity: 1;
+  box-shadow: 0 2px 8px rgba(252, 60, 68, 0.35);
+}
+
+.playlist-widget__container {
+  position: relative;
+  width: 100%;
+}
+
+.playlist-widget__panel {
+  display: none;
+  width: 100%;
+}
+
+.playlist-widget__panel.is-active {
+  display: block;
+  animation: widgetFadeIn 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes widgetFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -11,13 +11,14 @@ This document gives a quick reference for all components in `src/components/` an
 - `src/components/LatestPosts.astro`
 - `src/components/LikeAndShare.astro`
 - `src/components/Navigation.astro`
-- `src/components/MdxImageGallery.astro`
 - `src/components/PostImageScroller.astro`
 - `src/components/PostsLists.astro`
 - `src/components/SocialLinks.astro`
 - `src/components/TagList.astro`
 - `src/components/for_posts/ApexCharts/ApexChart.astro`
 - `src/components/for_posts/Choropleth/ChoroplethMap.astro`
+- `src/components/for_posts/MdxImageGallery/MdxImageGallery.astro`
+- `src/components/for_posts/PlaylistWidget/PlaylistWidget.astro`
 - `src/components/for_posts/VisitorMap/VisitorMap.astro`
 
 ---
@@ -285,48 +286,6 @@ Horizontally scrollable image strip sourced from images found in post bodies.
 
 ---
 
-## `MdxImageGallery.astro`
-
-### Purpose
-
-Provides an MDX-embeddable image gallery sourced from a YAML manifest at build time.
-
-### Core logic
-
-- Reads gallery data from `src/content/galleries.yaml` at build time.
-- Selects a gallery by `id` passed via props.
-- Resolves image references to local uploaded assets, including CMS-written paths such as `/src/assets/uploaded_images/...` and older relative refs.
-- Uses Astro `Image` optimization with responsive `widths` and `sizes`.
-- Implements horizontal swipe/scroll, arrow buttons, keyboard arrow support, and fade-edge affordances.
-- Can optionally render image captions.
-- Supports either inline image cards or linked full-image output.
-
-### Props
-
-- `gallery` (string, required)
-- `heading?` (string)
-- `showHeading?` (boolean, default `true`)
-- `showCaptions?` (boolean, default `false`)
-- `linkMode?` (`none` | `full-image`, default `none`)
-- `imageHeight?` (string, default `10rem`)
-- `imageHeightMobile?` (string)
-- `imageHeightDesktop?` (string)
-
-### Example
-
-```astro
-<MdxImageGallery gallery="clean-and-rebuild" />
-<MdxImageGallery gallery="clean-and-rebuild" heading="Project gallery" showCaptions={true} />
-<MdxImageGallery gallery="clean-and-rebuild" linkMode="full-image" imageHeightMobile="8rem" imageHeightDesktop="12rem" />
-```
-
-### Verified from source
-
-- Path: `src/components/MdxImageGallery.astro`
-- Last verified: 2026-04-20
-
----
-
 ## `PostsLists.astro`
 
 ### Purpose
@@ -491,6 +450,50 @@ Embeds a Leaflet choropleth map in posts.
 
 ---
 
+## `for_posts/MdxImageGallery/MdxImageGallery.astro`
+
+### Purpose
+
+Provides an MDX-embeddable image gallery sourced from a YAML manifest at build time.
+
+### Core logic
+
+- Reads gallery data from `src/content/galleries.yaml` at build time.
+- Selects a gallery by `id` passed via props.
+- Resolves image references to local uploaded assets, including CMS-written paths such as `/src/assets/uploaded_images/...` and older relative refs.
+- Uses Astro `Image` optimization with responsive `widths` and `sizes`.
+- Implements horizontal swipe/scroll, arrow buttons, keyboard arrow support, and fade-edge affordances.
+- Can optionally render image captions.
+- Supports either inline image cards or linked full-image output.
+
+### Props
+
+- `gallery` (string, required)
+- `heading?` (string)
+- `showHeading?` (boolean, default `true`)
+- `showCaptions?` (boolean, default `false`)
+- `linkMode?` (`none` | `full-image`, default `none`)
+- `imageHeight?` (string, default `10rem`)
+- `imageHeightMobile?` (string)
+- `imageHeightDesktop?` (string)
+
+### Example
+
+```astro
+import MdxImageGallery from '../../components/for_posts/MdxImageGallery/MdxImageGallery.astro';
+
+<MdxImageGallery gallery="clean-and-rebuild" />
+<MdxImageGallery gallery="clean-and-rebuild" heading="Project gallery" showCaptions={true} />
+<MdxImageGallery gallery="clean-and-rebuild" linkMode="full-image" imageHeightMobile="8rem" imageHeightDesktop="12rem" />
+```
+
+### Verified from source
+
+- Path: `src/components/for_posts/MdxImageGallery/MdxImageGallery.astro`
+- Last verified: 2026-06-08
+
+---
+
 ## `for_posts/VisitorMap/VisitorMap.astro`
 
 ### Purpose
@@ -520,6 +523,42 @@ Embeds a Leaflet visitors map with territory shortcut buttons.
 
 - Path: `src/components/for_posts/VisitorMap/VisitorMap.astro`
 - Last verified: 2026-04-20
+
+---
+
+## `for_posts/PlaylistWidget/PlaylistWidget.astro`
+
+### Purpose
+
+Embeds a responsive tabbed player widget allowing readers to toggle and listen to a playlist on either Spotify or Apple Music.
+
+### Core logic
+
+- Renders tab buttons for Spotify and Apple Music.
+- Client-side script ([playlist-widget.js](file:///Users/d1sc0/Projects/hellostu--xyz/src/scripts/playlist-widget.js)) toggles visible panels and **lazy-loads** the iframe player when the tab is clicked to protect privacy and improve initial page load performance.
+- Active states use official brand colors (#1DB954 for Spotify, #FC3C44 for Apple Music).
+
+### Props
+
+- `spotifyId?` (string) - The Spotify playlist ID.
+- `appleId?` (string) - The Apple Music playlist ID.
+- `height?` (string, default `"380"`) - The height in pixels of the player.
+
+### Example
+
+```mdx
+import PlaylistWidget from '../../components/for_posts/PlaylistWidget/PlaylistWidget.astro';
+
+<PlaylistWidget 
+  spotifyId="37i9dQZF1DX8UebhpWZJGm"
+  appleId="pl.f8a927a4b0d04d8bb18ea8a26b68e9be"
+/>
+```
+
+### Verified from source
+
+- Path: `src/components/for_posts/PlaylistWidget/PlaylistWidget.astro`
+- Last verified: 2026-06-08
 
 ---
 
