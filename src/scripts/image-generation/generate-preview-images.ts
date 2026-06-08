@@ -106,13 +106,19 @@ async function generatePreviewImages() {
     fs.mkdirSync(OUTPUT_DIR, { recursive: true });
   }
   const posts = await getPosts();
-  const browser = await puppeteer.launch({
+  const launchOptions: any = {
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox',
       '--disable-dev-shm-usage',
     ],
-  });
+  };
+
+  if (process.env.GITHUB_ACTIONS === 'true') {
+    launchOptions.executablePath = '/usr/bin/google-chrome';
+  }
+
+  const browser = await puppeteer.launch(launchOptions);
   for (const post of posts) {
     const outFile = `${post.id}.png`;
     const outPath = path.join(OUTPUT_DIR, outFile);

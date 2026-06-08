@@ -121,13 +121,19 @@ async function generateOGImages() {
     fs.mkdirSync(OUTPUT_DIR, { recursive: true });
   }
   const posts = await getPosts();
-  const browser = await puppeteer.launch({
+  const launchOptions: any = {
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox',
       '--disable-dev-shm-usage',
     ],
-  });
+  };
+
+  if (process.env.GITHUB_ACTIONS === 'true') {
+    launchOptions.executablePath = '/usr/bin/google-chrome';
+  }
+
+  const browser = await puppeteer.launch(launchOptions);
   for (const post of posts) {
     // Always use lowercased slug for filename
     const outFile = `${post.id.toLowerCase()}.png`;
