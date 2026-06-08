@@ -426,19 +426,19 @@
   ],
   "harry-styles": [
     {
-      "id": "sunday-long-run",
-      "justification": "If you enjoyed the unexpected vibe from that concert and my new playlist widget, you might also like to see another little component I made to share one of my recent Sunday runs 🏃‍♂️.",
-      "justificationAlt": "Yargh! If ye enjoyed the joyful racket of my first component test with Harry's tunes, ye might also fancy the quiet joy I found on the trails, testin' out another new contraption of mine, from the very same mornin's log! ⚓"
-    },
-    {
       "id": "clean-and-rebuild",
       "justification": "Having just shared a playlist with you, you might be interested in a previous article where I talked about my site's spring refresh and how I made it easier to include new elements, like that little playlist widget.",
       "justificationAlt": "Aye, if ye be likin' the fresh music player I crafted, ye'll want to see the grand overhaul I gave this very vessel months afore so it could carry such tunes! ⚓"
     },
     {
-      "id": "weeknote-tired-bunny",
-      "justification": "Beyond the music, I sometimes share snapshots of my working life and personal reflections, like in this earlier post where I captured a week of juggling tiredness with small triumphs, including my runs and a happy election outcome.",
-      "justificationAlt": "Given ye've sampled the sonic bounty from me Harry Styles voyage, perhaps ye'd be keen to hear of the many other adventures, includin' the dash of me own sea legs on land, that filled me days long ere I sailed to Amsterdam! ⚓"
+      "id": "holiday-time",
+      "justification": "It was a blast to share my Amsterdam concert vibe, and I had also previously mused on how to sprinkle a bit of that holiday magic into a stay-at-home break, complete with a checklist of un-productive delights ✨.",
+      "justificationAlt": "Blow me down, if ye enjoyed the unexpected good fortune of me Amsterdam caper, ye might be amused to read how I had to design me own joy on a much quieter, land-locked 'holiday' many weeks before! ⚓"
+    },
+    {
+      "id": "weeknote-buffet",
+      "justification": "If you enjoyed the unexpected vibe of the concert, you might like to read a slightly older post where I shared a buffet of other goings-on, including some new digital tinkering and social catch-ups.",
+      "justificationAlt": "Hark, me hearty, if yer heart sailed with glee on that unexpected musical journey, then ye might find amusement in the tale of an earlier week where my plate was filled with a different sort of joyful, albeit random, plunder! ⚓"
     }
   ],
   "holiday-time": [
@@ -558,23 +558,6 @@
       "id": "weeknote-update-and-grow",
       "justification": "You might like to read how I'd earlier taken some time out from work to reflect on life's changes, still finding space for my camera and other creative habits despite things feeling a bit rubbish.",
       "justificationAlt": "Since ye've just witnessed me skill with the lens for other folk, ye might be amused to discover how I earlier turned the camera upon me own grizzled mug amidst a right personal squall, recorded in me weekly ramblings 🏴‍☠️."
-    }
-  ],
-  "sunday-long-run": [
-    {
-      "id": "harry-styles",
-      "justification": "Perhaps, after seeing me test out my new Strava embed, you'd be interested in another post where I was trying out a playlist component whilst sharing the brilliant energy from a live music experience.",
-      "justificationAlt": "Hark, if ye found joy in me tinkerings with new components whilst on a hearty run, then chart a course to hear how I put another such gizmo to work with a trove of pop tunes from a grand concert voyage! 🏴‍☠️"
-    },
-    {
-      "id": "4-stepping-into-the-light",
-      "justification": "If you enjoyed reading about my recent run, I shared some thoughts about finding my stride in running (and a creative photography experiment!) in a piece I wrote a while back.",
-      "justificationAlt": "If ye be likin' the feel o' the wind in yer sails on me recent run, ye might enjoy a voyage back in time to where I, a younger scallywag, felt truly like a runner even as I captured me own shadows."
-    },
-    {
-      "id": "weeknote-tired-bunny",
-      "justification": "Thinking about my recent run, you might enjoy an earlier weekly reflection where, despite being absolutely knackered after an election night, I still found joy and benefit in getting out for a couple of slower runs and a good long walk.",
-      "justificationAlt": "Upon reflectin' on me latest jaunt, ye might find yer compass pointin' to an older chart where, through bleary eyes, I chronicled me continued runs amidst a week of weary woes, a true testament to keepin' the spirit afloat ⚓."
     }
   ],
   "tgf-data-dive": [
