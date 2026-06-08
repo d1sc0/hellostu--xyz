@@ -63,7 +63,7 @@
 - [ ] (Optional) Revisit webmentions and see if they're useful
 - [x] (Optional) Refactor latest posts to use same styling method as posts page (remove table)
 - [ ] (Optional) Consider implementing Jam comments again
-- [ ] (Optional) Add a Strava running component/widget to show a specific recent activities
+- [x] (Optional) Add a Strava running component/widget to show a specific recent activities (implemented lightweight StravaEmbed)
 - [x] (Optional) Add a playlist component/widget to showcase favorite music/playlists, should allow playlists to be viewed in both spotify or apple music (implemented tabbed PlaylistWidget with lazy-loading)
 - [ ] (Optional) Add a component for embedding Instagram posts/reels
 

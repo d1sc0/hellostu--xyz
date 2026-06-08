@@ -1,0 +1,49 @@
+---
+// Usage:
+// import StravaEmbed from '../../components/for_posts/StravaEmbed/StravaEmbed.astro';
+//
+// <StravaEmbed
+//   activityId="18821274385"
+//   token="UdacmuDDVRG5Y0jio9Febd-MBLw3gbPJF023BYGctm8"
+// />
+//
+
+interface Props {
+  activityId: string;
+  token: string; // Strava requires a verification token to load the activity widget
+}
+
+const { activityId, token } = Astro.props;
+---
+
+<div class="strava-embed">
+  <div
+    class="strava-embed-placeholder"
+    data-embed-type="activity"
+    data-embed-id={activityId}
+    data-style="standard"
+    data-token={token}
+    data-from-embed="false"
+  ></div>
+</div>
+
+<script is:inline src="https://strava-embeds.com/embed.js"></script>
+
+<style>
+  .strava-embed {
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 100%;
+    background: transparent;
+    border: none;
+  }
+
+  /* Target the dynamically injected iframe from Strava */
+  .strava-embed :global(iframe) {
+    width: 100% !important;
+    max-width: 100% !important;
+    border: 0 !important;
+    margin: 0 auto !important;
+    border-radius: 11px !important; /* Matches Strava's inner widget radius */
+  }
+</style>
