@@ -59,10 +59,10 @@
 - [x] Add a way to browse by post image on the home page
 - [x] Add a small like (heart) button to posts alongside social share component (implemented using Firebase RTDB and native Web Share)
 - [x] (Optional) Consider adapting a copy of the ImageStream component for inserting galleries of post images into mdx posts
-- [ ] (Optional) Consider implementing Jam comments again
 - [x] (Optional) Create a recommended posts component for post pages
 - [ ] (Optional) Revisit webmentions and see if they're useful
 - [ ] (Optional) Refactor latest posts to use same styling method as posts page (remove table)
+- [ ] (Optional) Consider implementing Jam comments again
 
 ---
 
