@@ -18,6 +18,7 @@ This document gives a quick reference for all components in `src/components/` an
 - `src/components/TagList.astro`
 - `src/components/for_posts/ApexCharts/ApexChart.astro`
 - `src/components/for_posts/Choropleth/ChoroplethMap.astro`
+- `src/components/for_posts/InstagramEmbed/InstagramEmbed.astro`
 - `src/components/for_posts/MdxImageGallery/MdxImageGallery.astro`
 - `src/components/for_posts/PlaylistWidget/PlaylistWidget.astro`
 - `src/components/for_posts/StravaEmbed/StravaEmbed.astro`
@@ -479,6 +480,46 @@ Embeds a Leaflet choropleth map in posts.
 
 - Path: `src/components/for_posts/Choropleth/ChoroplethMap.astro`
 - Last verified: 2026-04-20
+
+---
+
+## `for_posts/InstagramEmbed/InstagramEmbed.astro`
+
+### Purpose
+
+Embeds a responsive Instagram post, reel, or TV video inside blog posts and pages.
+
+### Core logic
+
+- Parses input URL to extract the unique shortcode and resource type (`p`, `reel`, or `tv`).
+- Supports two modes:
+  1. **Script-based Embed (default)**: Renders a lightweight `blockquote` placeholder that is hydrated client-side into a perfectly sized responsive frame via Instagram's official `https://www.instagram.com/embed.js` script.
+  2. **Iframe Embed**: Renders a sandboxed `iframe` directly without loading any external third-party scripts.
+- Supports turning captions on or off.
+
+### Props
+
+- `url` (string, required) - The full Instagram post/reel/tv URL or just the shortcode ID (e.g. `C8o79e7v7aO`).
+- `captioned?` (boolean, default `true`) - Displays post caption.
+- `maxWidth?` (string, default `"540px"`) - Constraint on the width of the embed container.
+- `useIframe?` (boolean, default `false`) - Uses a plain `iframe` rather than script hydration.
+- `height?` (string, default `"480"`) - Height in pixels for the iframe mode.
+
+### Example
+
+```mdx
+import InstagramEmbed from '../../components/for_posts/InstagramEmbed/InstagramEmbed.astro';
+
+<InstagramEmbed url="https://www.instagram.com/p/C8o79e7v7aO/" />
+<InstagramEmbed url="C8o79e7v7aO" captioned={false} />
+<InstagramEmbed url="C8o79e7v7aO" maxWidth="100%" />
+<InstagramEmbed url="C8o79e7v7aO" useIframe={true} height="500" />
+```
+
+### Verified from source
+
+- Path: `src/components/for_posts/InstagramEmbed/InstagramEmbed.astro`
+- Last verified: 2026-06-09
 
 ---
 
