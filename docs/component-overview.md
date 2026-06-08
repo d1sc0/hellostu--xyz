@@ -13,6 +13,7 @@ This document gives a quick reference for all components in `src/components/` an
 - `src/components/Navigation.astro`
 - `src/components/PostImageScroller.astro`
 - `src/components/PostsLists.astro`
+- `src/components/Recommendations.astro`
 - `src/components/SocialLinks.astro`
 - `src/components/TagList.astro`
 - `src/components/for_posts/ApexCharts/ApexChart.astro`
@@ -316,6 +317,36 @@ Renders posts grouped by year, optionally filtered by category.
 
 - Path: `src/components/PostsLists.astro`
 - Last verified: 2026-04-20
+
+---
+
+## `Recommendations.astro`
+
+### Purpose
+
+Displays dynamic, LLM-generated reading recommendations at the bottom of blog posts, with a toggle to switch between standard (📚) and pirate (🏴‍☠️) modes.
+
+### Core logic
+
+- Retrieves recommendation links and custom justifications from `src/data/recommendations.json` matching `currentSlug`.
+- Fetches all posts from the `posts` collection, filtering and mapping them to the resolved recommended entries.
+- Sorts recommended posts by category (Work first, then Rest, then Play).
+- Mounts client-side JavaScript that listens for a checkbox toggle (`#rec-mode-toggle`) to switch content dynamically between `data-primary` and `data-alt` attributes (containing the standard vs. pirate text justifications and category titles).
+
+### Props
+
+- `currentSlug` (string, required)
+
+### Example
+
+```astro
+<Recommendations currentSlug={frontmatter.slug} />
+```
+
+### Verified from source
+
+- Path: `src/components/Recommendations.astro`
+- Last verified: 2026-06-08
 
 ---
 

@@ -60,7 +60,6 @@
 - [x] Add a small like (heart) button to posts alongside social share component (implemented using Firebase RTDB and native Web Share)
 - [x] (Optional) Consider adapting a copy of the ImageStream component for inserting galleries of post images into mdx posts
 - [x] (Optional) Create a recommended posts component for post pages
-- [ ] (Optional) Revisit webmentions and see if they're useful
 - [x] (Optional) Refactor latest posts to use same styling method as posts page (remove table)
 - [ ] (Optional) Consider implementing Jam comments again
 - [x] (Optional) Add a Strava running component/widget to show a specific recent activities (implemented lightweight StravaEmbed)
