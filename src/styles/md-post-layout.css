@@ -106,3 +106,28 @@
   border-radius: 6px;
   padding: 0.2em 0.7em;
 }
+
+.post-layout__comments {
+  margin-top: 3rem;
+  border-top: 1px dashed var(--color-line, #e0e0e0);
+  padding-top: 2rem;
+}
+
+/* Custom styling for JamComments using site-wide theme variables */
+.post-layout__comments .jc {
+  --jc-color-text: var(--color-text);
+  --jc-color-text-muted: var(--color-text);
+  --jc-color-border: var(--color-line);
+  --jc-color-bg: var(--color-line);
+  --jc-color-bg-subtle: var(--color-line);
+  --jc-color-accent: var(--color-link);
+  --jc-font-family: 'Lexend', sans-serif;
+  --jc-max-width: 100%;
+}
+
+.post-layout__comments .jc .jc-form__attribution {
+  display: none;
+}
+.post-layout__comments .jc .jc-upload-hint {
+  display: none;
+}
