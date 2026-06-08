@@ -27,34 +27,20 @@ const latestPosts = posts
     latestPosts.length === 0 ? (
       <p class="latest-posts__empty">No posts available yet.</p>
     ) : (
-      <div class="latest-posts__table-wrap">
-        <table class="latest-posts__table">
-          <colgroup>
-            <col class="latest-posts__col--date" />
-            <col class="latest-posts__col--title" />
-          </colgroup>
-          <thead>
-            <tr>
-              <th scope="col">Date</th>
-              <th scope="col">Title</th>
-            </tr>
-          </thead>
-          <tbody>
-            {latestPosts.map(post => (
-              <tr>
-                <td>
-                  {post.data.pubDate.toLocaleDateString('en-GB', {
-                    month: 'short',
-                    year: '2-digit',
-                  })}
-                </td>
-                <td>
-                  <a href={`/posts/${post.id}/`}>{post.data.title}</a>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+      <div class="latest-posts__list">
+        {latestPosts.map(post => (
+          <div class="latest-posts__row">
+            <div class="latest-posts__col latest-posts__col--date">
+              {post.data.pubDate.toLocaleDateString('en-GB', {
+                month: 'short',
+                year: '2-digit',
+              })}
+            </div>
+            <div class="latest-posts__col latest-posts__col--title">
+              <a href={`/posts/${post.id}/`}>{post.data.title}</a>
+            </div>
+          </div>
+        ))}
       </div>
     )
   }

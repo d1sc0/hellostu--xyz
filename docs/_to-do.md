@@ -61,7 +61,7 @@
 - [x] (Optional) Consider adapting a copy of the ImageStream component for inserting galleries of post images into mdx posts
 - [x] (Optional) Create a recommended posts component for post pages
 - [ ] (Optional) Revisit webmentions and see if they're useful
-- [ ] (Optional) Refactor latest posts to use same styling method as posts page (remove table)
+- [x] (Optional) Refactor latest posts to use same styling method as posts page (remove table)
 - [ ] (Optional) Consider implementing Jam comments again
 
 ---
