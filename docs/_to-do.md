@@ -57,10 +57,10 @@
 
 - [x] (Implemented) Consider an image navigation component—scan posts for images and provide a sliding carousel for navigation
 - [x] Add a way to browse by post image on the home page
-- [ ] Add a small like (heart) button to posts alongside social share component (check if social share is still maintained)
-- [ ] (Optional) Consider adapting a copy of the ImageStream component for inserting galleries of post images into mdx posts
+- [x] Add a small like (heart) button to posts alongside social share component (implemented using Firebase RTDB and native Web Share)
+- [x] (Optional) Consider adapting a copy of the ImageStream component for inserting galleries of post images into mdx posts
 - [ ] (Optional) Consider implementing Jam comments again
-- [ ] (Optional) Create a recommended posts component for post pages
+- [x] (Optional) Create a recommended posts component for post pages
 - [ ] (Optional) Revisit webmentions and see if they're useful
 - [ ] (Optional) Refactor latest posts to use same styling method as posts page (remove table)
 

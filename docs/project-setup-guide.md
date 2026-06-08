@@ -122,3 +122,40 @@ Where it appears:
 
 - On post pages, `Updated on ...` is shown only when last-updated is newer than `pubDate`.
 - In RSS items, `Post last updated: ...` is always appended (using the resolved timestamp, or `pubDate` as fallback).
+
+## Like Button and Firebase Realtime Database Integration
+
+Likes and page shares are handled by:
+- [LikeAndShare.astro](file:///Users/d1sc0/Projects/hellostu--xyz/src/components/LikeAndShare.astro)
+- [like-share.js](file:///Users/d1sc0/Projects/hellostu--xyz/src/scripts/like-share.js)
+- [firebase-client.js](file:///Users/d1sc0/Projects/hellostu--xyz/src/scripts/firebase-client.js)
+
+### How it works:
+1. **Firebase RTDB:** Likes are stored in a Realtime Database under `likes/{slug}` as integer values.
+2. **Client-side Scripting:** The script checks if client-side Firebase credentials are set. If so, it listens to realtime updates via Firebase SDK's `onValue` and writes increments/decrements via `runTransaction`.
+3. **Offline Fallback:** If Firebase credentials are not set (e.g. locally without env variables), the component seamlessly operates in a local Mock Mode using `localStorage` to simulate the interaction.
+4. **Native Share:** The Share button attempts to use the device's native browser `navigator.share` API. If unavailable, it copies the URL to the clipboard and shows a temporary validation label.
+
+### Security Rules (Realtime Database):
+To restrict writes to increments/decrements of exactly 1 and prevent spamming:
+```json
+{
+  "rules": {
+    "likes": {
+      "$slug": {
+        ".read": "true",
+        ".write": "newData.exists() && (!data.exists() ? newData.val() === 1 : (newData.val() === data.val() + 1 || newData.val() === data.val() - 1)) && newData.val() >= 0"
+      }
+    }
+  }
+}
+```
+
+### Required Environment Variables:
+Add the following parameters to your `.env` file (prefixed with `PUBLIC_` to expose them to client-side bundles):
+- `PUBLIC_FIREBASE_PROJECT_ID=hellostu--xyz`
+- `PUBLIC_FIREBASE_API_KEY=your-api-key`
+- `PUBLIC_FIREBASE_DATABASE_URL=your-database-url`
+
+Make sure these same variables are configured in your GitHub Secrets (`PUBLIC_FIREBASE_API_KEY`, `PUBLIC_FIREBASE_DATABASE_URL`) to allow the CI pipeline to compile them into production assets!
+

@@ -9,6 +9,7 @@ This document gives a quick reference for all components in `src/components/` an
 - `src/components/Footer.astro`
 - `src/components/Head.astro`
 - `src/components/LatestPosts.astro`
+- `src/components/LikeAndShare.astro`
 - `src/components/Navigation.astro`
 - `src/components/MdxImageGallery.astro`
 - `src/components/PostImageScroller.astro`
@@ -181,6 +182,37 @@ Shows a table of the most recent posts.
 
 - Path: `src/components/LatestPosts.astro`
 - Last verified: 2026-04-20
+
+---
+
+## `LikeAndShare.astro`
+
+### Purpose
+
+Displays dynamic Like (heart) and Share buttons at the bottom of blog posts.
+
+### Core logic
+
+- Displays an SVG heart icon with a count of current likes, and a Share icon.
+- Renders container elements with `data-slug`, `data-title`, and `data-desc`.
+- Loads a script tag referencing `src/scripts/like-share.js` to execute client-side logic.
+
+### Props
+
+- `currentSlug` (string, required)
+- `title?` (string)
+- `description?` (string)
+
+### Example
+
+```astro
+<LikeAndShare currentSlug={frontmatter.slug} title={frontmatter.title} description={frontmatter.description} />
+```
+
+### Verified from source
+
+- Path: `src/components/LikeAndShare.astro`
+- Last verified: 2026-06-08
 
 ---
 

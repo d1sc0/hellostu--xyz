@@ -1,0 +1,86 @@
+.like-share {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: none;
+}
+
+.like-share__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--color-line);
+  color: var(--color-text);
+  border: 2px solid transparent;
+  padding: 0.4rem 1.1rem;
+  border-radius: 2rem;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.like-share__btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  border-color: var(--color-accent);
+}
+
+.like-share__btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.like-share__btn:disabled {
+  opacity: 0.65;
+  cursor: default;
+}
+
+.like-share__icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  transition:
+    transform 0.25s,
+    fill 0.25s,
+    stroke 0.25s;
+}
+
+/* Like Button Specific Transitions */
+.like-share__btn--like.is-liked {
+  background: var(--color-text);
+  color: var(--color-page);
+}
+
+.like-share__btn--like.is-liked .like-share__icon--heart {
+  fill: var(--color-accent);
+  stroke: var(--color-accent);
+  animation: heartPop 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.4);
+}
+
+@keyframes heartPop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Share Button Specific Transitions */
+.like-share__btn--share.is-copied {
+  background: var(--color-accent);
+  color: var(--color-page);
+  border-color: var(--color-accent);
+}
+
+.like-share__btn--share.is-copied .like-share__icon--share {
+  transform: rotate(360deg);
+  stroke: var(--color-page);
+}
