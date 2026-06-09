@@ -16,6 +16,7 @@ To activate Jam Comments on your blog posts, configure the following variables i
 # Jam Comments Configuration
 JAM_COMMENTS_DOMAIN=hellostu.xyz
 JAM_COMMENTS_API_KEY=your_jam_comments_api_key_here
+JAM_COMMENTS_TZ=Europe/London
 ```
 
 If these keys are not set, the comment form is completely ignored during compile time without throwing errors.
@@ -33,6 +34,7 @@ import JamComments from '@jam-comments/astro';
 
 const jamCommentsDomain = import.meta.env.JAM_COMMENTS_DOMAIN || process.env.JAM_COMMENTS_DOMAIN;
 const jamCommentsApiKey = import.meta.env.JAM_COMMENTS_API_KEY || process.env.JAM_COMMENTS_API_KEY;
+const jamCommentsTz = import.meta.env.JAM_COMMENTS_TZ || process.env.JAM_COMMENTS_TZ;
 const hasJamComments = !!(jamCommentsDomain && jamCommentsApiKey);
 const currentPath = new URL(Astro.request.url).pathname;
 ---
@@ -40,7 +42,7 @@ const currentPath = new URL(Astro.request.url).pathname;
 {
   hasJamComments && (
     <div class="post-layout__comments">
-      <JamComments domain={jamCommentsDomain} apiKey={jamCommentsApiKey} path={currentPath} />
+      <JamComments domain={jamCommentsDomain} apiKey={jamCommentsApiKey} path={currentPath} tz={jamCommentsTz} />
     </div>
   )
 }

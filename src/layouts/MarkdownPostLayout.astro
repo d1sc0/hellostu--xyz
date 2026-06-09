@@ -32,6 +32,8 @@ const jamCommentsDomain =
   import.meta.env.JAM_COMMENTS_DOMAIN || process.env.JAM_COMMENTS_DOMAIN;
 const jamCommentsApiKey =
   import.meta.env.JAM_COMMENTS_API_KEY || process.env.JAM_COMMENTS_API_KEY;
+const jamCommentsTz =
+  import.meta.env.JAM_COMMENTS_TZ || process.env.JAM_COMMENTS_TZ;
 const hasJamComments = !!(jamCommentsDomain && jamCommentsApiKey);
 const currentPath = new URL(Astro.request.url).pathname;
 ---
@@ -94,6 +96,7 @@ const currentPath = new URL(Astro.request.url).pathname;
             apiKey={jamCommentsApiKey}
             path={currentPath}
             dateFormat="dd/mm/yy"
+            tz={jamCommentsTz}
           />
         </div>
       )
