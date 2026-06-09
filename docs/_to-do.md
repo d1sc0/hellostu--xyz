@@ -61,7 +61,7 @@
 - [x] (Optional) Consider adapting a copy of the ImageStream component for inserting galleries of post images into mdx posts
 - [x] (Optional) Create a recommended posts component for post pages
 - [x] (Optional) Refactor latest posts to use same styling method as posts page (remove table)
-- [x] (Optional) Consider implementing Jam comments again (implemented conditional JamComments integration)
+- [ ] (Optional) Consider implementing Jam comments again
 - [x] (Optional) Add a Strava running component/widget to show a specific recent activities (implemented lightweight StravaEmbed)
 - [x] (Optional) Add a playlist component/widget to showcase favorite music/playlists, should allow playlists to be viewed in both spotify or apple music (implemented tabbed PlaylistWidget with lazy-loading)
 - [x] (Optional) Add a component for embedding Instagram posts/reels (implemented InstagramEmbed)

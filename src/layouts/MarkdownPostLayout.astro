@@ -3,7 +3,6 @@ import BaseLayout from './BaseLayout.astro';
 import '../styles/md-post-layout.css';
 import Recommendations from '../components/Recommendations.astro';
 import LikeAndShare from '../components/LikeAndShare.astro';
-import JamComments from '@jam-comments/astro';
 
 const { frontmatter, lastUpdated, prevpost, nextpost } = Astro.props;
 const dateOptions = {
@@ -27,15 +26,6 @@ const formattedUpdatedDate = lastUpdated
 const showUpdatedDate =
   lastUpdated &&
   new Date(lastUpdated).getTime() > new Date(frontmatter.pubDate).getTime();
-
-const jamCommentsDomain =
-  import.meta.env.JAM_COMMENTS_DOMAIN || process.env.JAM_COMMENTS_DOMAIN;
-const jamCommentsApiKey =
-  import.meta.env.JAM_COMMENTS_API_KEY || process.env.JAM_COMMENTS_API_KEY;
-const jamCommentsTz =
-  import.meta.env.JAM_COMMENTS_TZ || process.env.JAM_COMMENTS_TZ;
-const hasJamComments = !!(jamCommentsDomain && jamCommentsApiKey);
-const currentPath = new URL(Astro.request.url).pathname;
 ---
 
 <BaseLayout frontmatter={frontmatter} prevpost={prevpost} nextpost={nextpost}>
@@ -88,19 +78,6 @@ const currentPath = new URL(Astro.request.url).pathname;
       title={frontmatter.title}
       description={frontmatter.description}
     />
-    {
-      hasJamComments && (
-        <div class="post-layout__comments">
-          <JamComments
-            domain={jamCommentsDomain}
-            apiKey={jamCommentsApiKey}
-            path={currentPath}
-            dateFormat="dd/mm/yy"
-            tz={jamCommentsTz}
-          />
-        </div>
-      )
-    }
   </section>
   <Recommendations currentSlug={frontmatter.slug} />
   <nav class="post-navigation content-padding">

@@ -51,9 +51,6 @@ jobs:
           PUBLIC_FIREBASE_PROJECT_ID: "hellostu--xyz"
           PUBLIC_FIREBASE_API_KEY: ${{ secrets.PUBLIC_FIREBASE_API_KEY }}
           PUBLIC_FIREBASE_DATABASE_URL: ${{ secrets.PUBLIC_FIREBASE_DATABASE_URL }}
-          JAM_COMMENTS_DOMAIN: ${{ secrets.JAM_COMMENTS_DOMAIN }}
-          JAM_COMMENTS_API_KEY: ${{ secrets.JAM_COMMENTS_API_KEY }}
-          JAM_COMMENTS_TZ: ${{ secrets.JAM_COMMENTS_TZ }}
 
 
       - name: Deploy to Firebase Hosting

@@ -37,7 +37,6 @@ See the [docs/](docs/) folder for full guides and details:
 - [CSS naming conventions](docs/css-naming-conventions.md)
 - [Component overview](docs/component-overview.md)
 - [MDX image gallery guide](docs/mdx-image-gallery-guide.md)
-- [Jam Comments integration](docs/jam-comments.md)
 - [To-do & project plan](docs/_to-do.md)
 
 ## RSS and Last Updated

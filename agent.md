@@ -68,5 +68,4 @@
 - [Sveltia CMS Guide](docs/sveltia-cms.md)
 - [OG Image Generation Guide](docs/og-image-generation-guide.md)
 - [Preview Image Generation Guide](docs/preview-image-generation-guide.md)
-- [Jam Comments Guide](docs/jam-comments.md)
 - [Project Plan](docs/project-plan.md)
