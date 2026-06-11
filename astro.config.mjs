@@ -1,6 +1,5 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
-import { astroImageTools } from 'astro-imagetools';
 import icon from 'astro-icon';
 import sitemap from '@astrojs/sitemap';
 import react from '@astrojs/react';
@@ -20,7 +19,6 @@ export default defineConfig({
   },
   integrations: [
     mdx(),
-    astroImageTools,
     icon({
       iconDir: 'src/assets/icons',
     }),
