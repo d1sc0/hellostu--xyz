@@ -39,10 +39,14 @@ const getPirateCategory = (category) => {
     <section class="recommendations content-padding">
       <h3 class="recommendations__title">
         What to read next
-        <label class="recommendations__easter-egg" aria-label="Toggle Pirate Mode" title="Toggle Pirate Mode">
-          <input type="checkbox" id="rec-mode-toggle" />
-          <span class="emoji-books">📚</span>
-          <span class="emoji-pirate">🏴‍☠️</span>
+        <label class="recommendations__easter-egg" title="Toggle Pirate Mode">
+          <input
+            type="checkbox"
+            id="rec-mode-toggle"
+            aria-label="Toggle pirate-themed recommendations"
+          />
+          <span class="emoji-books" aria-hidden="true">📚</span>
+          <span class="emoji-pirate" aria-hidden="true">🏴‍☠️</span>
         </label>
       </h3>
       <ul class="recommendations__list">
