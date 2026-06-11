@@ -61,6 +61,17 @@
 
 ---
 
+## Content & Writing Tone Guidelines
+
+- **Writing Style and Tone of Voice**: Before writing or drafting new blog posts, the agent must read existing posts in `src/content/posts/` and pages in `src/content/pages/` (both `.md` and `.mdx` formats) to understand and match the author's unique voice (conversational, personal, reflective, candid, with public sector design context and creative/active hobbies).
+- **Post Ideas & Inspiration**: Refine and build upon the active brainstormed post ideas list stored in the scratchpad's README:
+  - Path: [src/content/scratchpad/README.md](file:///Users/d1sc0/Projects/hellostu--xyz/src/content/scratchpad/README.md)
+  - Purpose: Tracks content ideas across *Work*, *Rest*, and *Play* based on the author's priorities.
+  - Updates: Always update the `*Last updated:*` date in the "Blog Post Ideas & Inspiration" section of the README when modifying this list.
+- **Scratchpad Directory**: A private playground is located at [src/content/scratchpad/](file:///Users/d1sc0/Projects/hellostu--xyz/src/content/scratchpad/) for drafting posts and brainstorming ideas locally with the user. Astro ignores this folder. When a draft is ready to be published, move it to `src/content/posts/` and run `npm run prebuild`.
+
+---
+
 ## Documentation Quick Links
 
 - [Astro Markdown Guide](docs/astro-markdown-guide.md)
@@ -69,3 +80,4 @@
 - [OG Image Generation Guide](docs/og-image-generation-guide.md)
 - [Preview Image Generation Guide](docs/preview-image-generation-guide.md)
 - [Project Plan](docs/project-plan.md)
+- [Post Ideas List](file:///Users/d1sc0/Projects/hellostu--xyz/src/content/scratchpad/README.md)
