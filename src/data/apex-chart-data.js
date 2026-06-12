@@ -302,7 +302,7 @@ export const weightLossOptions = {
     type: 'datetime',
     title: { text: 'Date' },
     labels: {
-      hideOverlappingLabels: false,
+      hideOverlappingLabels: true,
       datetimeFormatter: {
         year: 'yy',
         month: "MMM 'yy",
@@ -355,7 +355,7 @@ export const monthlyStepsOptions = {
   xaxis: {
     type: 'category',
     categories: ["Jun 25", "Jul 25", "Aug 25", "Sep 25", "Oct 25", "Nov 25", "Dec 25", "Jan 26", "Feb 26", "Mar 26", "Apr 26", "May 26", "Jun 26"],
-    labels: { rotate: -45, hideOverlappingLabels: false }
+    labels: { rotate: -45, hideOverlappingLabels: true }
   },
   yaxis: {
     title: { text: 'Steps' },
