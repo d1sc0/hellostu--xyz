@@ -4,7 +4,6 @@ slug: the-mathematician-and-the-storyteller
 draft: false
 pubDate: 2026-04-26T01:59:00
 category: Play
-featureImage: /src/assets/uploaded_images/AI_recommended_posts_FULL.jpg
 description: How I built an AI-powered recommended posts component for my Astro site using vector embeddings and Gemini 2.5 Flash. A look at balancing math-based relevance with human-centric discovery and the power of separating concerns. Oh and Pirates!
 tags:
   - tech

@@ -10,10 +10,13 @@
 - Custom loader scripts (e.g., `apexchart-loader.js`, `choropleth-map-loader.js`) are placed in the `public/scripts/` directory.
 - These scripts are referenced with `<script src="/scripts/your-loader.js"></script>` so they are served statically and not bundled by Astro.
 
-## ApexCharts Loader & Hydration Note
+## ApexCharts Loader, Hydration, and Theme Integration
 
 - The `apexchart-loader.js` script is included in the main `<Head>` component so it is only loaded once per page.
 - This prevents multiple executions and duplicate chart hydration, which can occur if the loader is included in every chart component instance.
+- **Dark Mode Integration (On Load)**: The loader checks `document.body` for the `dark-mode` class on initialization. If present, it sets the chart's configuration to `theme: { mode: 'dark' }` (updating labels, tooltips, and titles to high-contrast colors) and dynamically maps light gray grid lines (`#f3f3f3`) to slate gray (`#1e293b`).
+- **State Preservation**: It stores the initialized chart instance (`container.chartInstance`) and the parsed original config (`container.originalConfig`) directly on the DOM containers.
+- **Dynamic Theme Toggling (Runtime)**: The theme switch script `src/scripts/darkmode.js` hooks into `#darkmode-toggle` and queries all `.apexchart-container` elements in the DOM. It calls `chart.updateOptions()` to dynamically swap themes and grid styles on the fly, offering a smooth transitions without requiring a page reload.
 - ApexCharts itself is loaded only on pages that need it (e.g., via MDX `<Head>` block or per-page `<script>` tag), minimizing bandwidth usage.
 
 ## Analytics

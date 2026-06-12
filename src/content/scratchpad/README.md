@@ -36,12 +36,6 @@ _Focuses on weeknotes, public sector transformation, learning design, and consul
 
 _Focuses on life transitions, mindfulness, fitness recovery, books, and self-care._
 
-### 4. Re-lacing the Shoes: Recovering the Running Habit
-
-- **Angle**: Reflecting on the desire to rebuild your running habit with a fresh goal, while consciously avoiding the pressure of formal race events, training schedules, or hard deadlines.
-- **Key Themes**: How to structure goals around the enjoyment and mental space that running provides; strategies for increasing fitness and endurance without turning the sport into a chore; avoiding the "deadline trap" when balancing active hobbies with work and study.
-- **Format**: Personal reflection / digital garden essay.
-
 ### 5. The Comfort Watch: Quiet Media for Anxious Days
 
 - **Angle**: Reflecting on the power of "comfort viewing"—choosing simple, familiar, and heartwarming films (like _The Secret Life of Walter Mitty_ or _Forrest Gump_) to quiet the mind during periods of high anxiety or exhaustion, rather than feeling pressured to watch "challenging" or "highbrow" TV.

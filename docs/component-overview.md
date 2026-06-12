@@ -431,7 +431,7 @@ Embeds an ApexCharts container in MDX posts.
 
 - Outputs container with `id` and JSON config in `data-config`.
 - Loads ApexCharts via CDN script.
-- Loader behavior is handled separately by `/scripts/apexchart-loader.js`.
+- Loader behavior is handled separately by `/scripts/apexchart-loader.js` (which automatically configures light/dark mode on initial render and saves instance references to support dynamic theme toggling).
 
 ### Props
 
