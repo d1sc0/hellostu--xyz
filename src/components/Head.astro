@@ -10,14 +10,46 @@ const urlPath = Astro.url?.pathname?.replace(/\/$/, '') || '';
 const urlId =
   frontmatter?.id || frontmatter?.slug || urlPath.split('/').pop() || 'index';
 
+const isHomePage = urlId === 'index' || urlPath === '';
+const isAboutPage = urlId === 'about' || urlPath === '/about';
+const isPost = Boolean(
+  frontmatter?.category ||
+    urlPath.startsWith('/posts') ||
+    Astro.url?.pathname?.includes('/posts/'),
+);
+
 let ogImage = `${siteURL}generated_social_images/${urlId}.png`;
-const siteWidePreviewImage = `${siteURL}default_social_square.png`;
-const ogImageWidth = 1200;
-const ogImageHeight = 630;
-const squareImageSize = 600;
-const ogImagePath = `public/generated_social_images/${urlId}.png`;
-if (!fs.existsSync(ogImagePath)) {
-  ogImage = `${siteURL}default_social.png`;
+let ogImageWidth = 1200;
+let ogImageHeight = 630;
+let ogImageType = 'image/png';
+let twitterImage = `${siteURL}default_social_square.png`;
+let twitterImageWidth = 600;
+let twitterImageHeight = 600;
+let twitterImageType = 'image/png';
+let thumbnailImage = `${siteURL}default_social_square.png`;
+
+if (isAboutPage) {
+  ogImage = `${siteURL}stuart-mackenzie.jpg`;
+  ogImageWidth = 750;
+  ogImageHeight = 1000;
+  ogImageType = 'image/jpeg';
+  twitterImage = `${siteURL}stuart-mackenzie.jpg`;
+  twitterImageWidth = 750;
+  twitterImageHeight = 1000;
+  twitterImageType = 'image/jpeg';
+  thumbnailImage = `${siteURL}stuart-mackenzie.jpg`;
+} else if (isPost) {
+  const ogImagePath = `public/generated_social_images/${urlId}.png`;
+  if (!fs.existsSync(ogImagePath)) {
+    ogImage = `${siteURL}default_social.png`;
+  }
+  thumbnailImage = ogImage;
+} else {
+  const ogImagePath = `public/generated_social_images/${urlId}.png`;
+  if (!fs.existsSync(ogImagePath)) {
+    ogImage = `${siteURL}default_social.png`;
+  }
+  thumbnailImage = isHomePage ? `${siteURL}stuart-mackenzie.jpg` : ogImage;
 }
 
 const rawTitle = frontmatter?.title || pageMeta?.title || '';
@@ -62,12 +94,6 @@ const personEntity = {
   ],
 };
 
-const isHomePage = urlId === 'index' || urlPath === '';
-const isAboutPage = urlId === 'about';
-const isPost = Boolean(
-  frontmatter?.pubDate && (urlPath.startsWith('/posts') || frontmatter?.slug),
-);
-
 let jsonLd: Record<string, any>;
 
 if (isPost) {
@@ -96,6 +122,16 @@ if (isPost) {
         url: siteURL.replace(/\/$/, '') + (Astro.url?.pathname || '/'),
         name: title,
         description: description,
+        ...(isAboutPage
+          ? {
+              image: `${siteURL}stuart-mackenzie.jpg`,
+              primaryImageOfPage: {
+                '@type': 'ImageObject',
+                url: `${siteURL}stuart-mackenzie.jpg`,
+                caption: 'Stuart Mackenzie',
+              },
+            }
+          : {}),
         about: { '@id': `${siteURL.replace(/\/$/, '')}/#person` },
         mainEntity: { '@id': `${siteURL.replace(/\/$/, '')}/#person` },
       },
@@ -170,29 +206,30 @@ if (isPost) {
     openGraph={{
       basic: {
         title: title,
-        type: frontmatter !== undefined ? 'article' : 'website',
+        type: isPost ? 'article' : 'website',
         image: ogImage,
       },
       optional: {
         description: description,
       },
-      article: { authors: ['Stuart Mackenzie'] },
+      ...(isPost ? { article: { authors: ['Stuart Mackenzie'] } } : {}),
     }}
     twitter={{
       creator: '@_disco',
       card: 'summary',
       title: title,
-      image: siteWidePreviewImage,
+      image: twitterImage,
       description: description,
     }}
   />
+  <meta name="thumbnail" content={thumbnailImage} />
   <meta property="og:image:width" content={String(ogImageWidth)} />
   <meta property="og:image:height" content={String(ogImageHeight)} />
-  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:type" content={ogImageType} />
   <meta property="og:image:alt" content={socialImageAlt} />
-  <meta name="twitter:image:width" content={String(squareImageSize)} />
-  <meta name="twitter:image:height" content={String(squareImageSize)} />
-  <meta name="twitter:image:type" content="image/png" />
+  <meta name="twitter:image:width" content={String(twitterImageWidth)} />
+  <meta name="twitter:image:height" content={String(twitterImageHeight)} />
+  <meta name="twitter:image:type" content={twitterImageType} />
   <meta name="twitter:image:alt" content={socialImageAlt} />
   <script
     defer
