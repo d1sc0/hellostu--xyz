@@ -68,6 +68,7 @@
   - Path: [src/content/scratchpad/README.md](file:///Users/d1sc0/Projects/hellostu--xyz/src/content/scratchpad/README.md)
   - Purpose: Tracks content ideas across *Work*, *Rest*, and *Play* based on the author's priorities.
   - Updates: Always update the `*Last updated:*` date in the "Blog Post Ideas & Inspiration" section of the README when modifying this list.
+  - **Important Reference Rule for Agents**: Always refer to this backlog file explicitly as `src/content/scratchpad/README.md` or `scratchpad/README.md` (never say "the README" or `README.md`, which is reserved for the root project README to avoid confusing the author).
 - **Scratchpad Directory**: A private playground is located at [src/content/scratchpad/](file:///Users/d1sc0/Projects/hellostu--xyz/src/content/scratchpad/) for drafting posts and brainstorming ideas locally with the user. Astro ignores this folder. When a draft is ready to be published, move it to `src/content/posts/` and run `npm run prebuild`.
 
 ---
