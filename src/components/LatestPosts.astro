@@ -7,9 +7,10 @@ import '../styles/latest-posts.css';
 
 interface Props {
   count?: number;
+  showMore?: boolean;
 }
 
-const { count = 3 } = Astro.props as Props;
+const { count = 3, showMore = true } = Astro.props as Props;
 
 const posts = (await getCollection('posts', ({ data }) => {
   return import.meta.env.PROD ? data.draft !== true : true;
@@ -27,21 +28,30 @@ const latestPosts = posts
     latestPosts.length === 0 ? (
       <p class="latest-posts__empty">No posts available yet.</p>
     ) : (
-      <div class="latest-posts__list">
-        {latestPosts.map(post => (
-          <div class="latest-posts__row">
-            <div class="latest-posts__col latest-posts__col--date">
-              {post.data.pubDate.toLocaleDateString('en-GB', {
-                month: 'short',
-                year: '2-digit',
-              })}
+      <>
+        <div class="latest-posts__list">
+          {latestPosts.map(post => (
+            <div class="latest-posts__row">
+              <div class="latest-posts__col latest-posts__col--date">
+                {post.data.pubDate.toLocaleDateString('en-GB', {
+                  month: 'short',
+                  year: '2-digit',
+                })}
+              </div>
+              <div class="latest-posts__col latest-posts__col--title">
+                <a href={`/posts/${post.id}/`}>{post.data.title}</a>
+              </div>
             </div>
-            <div class="latest-posts__col latest-posts__col--title">
-              <a href={`/posts/${post.id}/`}>{post.data.title}</a>
-            </div>
+          ))}
+        </div>
+        {showMore && (
+          <div class="latest-posts__more">
+            <a href="/posts/" class="latest-posts__more-link">
+              more...
+            </a>
           </div>
-        ))}
-      </div>
+        )}
+      </>
     )
   }
 </section>

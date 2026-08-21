@@ -51,6 +51,26 @@
   color: var(--color-accent);
 }
 
+.latest-posts__more {
+  margin-top: 0.6rem;
+  text-align: right;
+}
+
+.latest-posts__more-link {
+  font-size: 0.82rem;
+  color: var(--color-text);
+  opacity: 0.55;
+  text-decoration: none;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.latest-posts__more-link:hover,
+.latest-posts__more-link:focus-visible {
+  opacity: 1;
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
 @media (min-width: 768px) and (orientation: landscape) {
   .latest-posts {
     margin-top: 2.5rem;
