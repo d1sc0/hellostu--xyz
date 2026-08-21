@@ -20,29 +20,99 @@ if (!fs.existsSync(ogImagePath)) {
   ogImage = `${siteURL}default_social.png`;
 }
 
-const title =
-  (frontmatter?.title && `HelloStu | ${frontmatter.title}`) ||
-  (pageMeta?.title && `HelloStu | ${pageMeta.title}`) ||
-  'HelloStu';
+const rawTitle = frontmatter?.title || pageMeta?.title || '';
+let title = 'HelloStu';
+if (rawTitle) {
+  title = `${rawTitle} | HelloStu`;
+} else if (urlId === 'index' || urlPath === '') {
+  title = 'Stuart Mackenzie | HelloStu';
+}
+
 const description = frontmatter?.description || pageMeta?.description || '';
 const socialImageAlt = `${title} social preview image`;
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': frontmatter?.title ? 'Article' : 'WebPage',
-  headline: title,
-  description: description,
-  image: ogImage,
-  author: {
-    '@type': 'Person',
-    name: 'Stuart Mackenzie',
+// Canonical Person Entity for Google Knowledge Graph
+const personEntity = {
+  '@type': 'Person',
+  '@id': `${siteURL.replace(/\/$/, '')}/#person`,
+  name: 'Stuart Mackenzie',
+  alternateName: ['HelloStu', 'disco-stu', 'd1sc0', 'disco'],
+  url: siteURL.replace(/\/$/, '') || 'https://hellostu.xyz',
+  image: `${siteURL}default_social.png`,
+  jobTitle: 'Senior Partner',
+  worksFor: {
+    '@type': 'Organization',
+    name: 'TPXimpact',
+    url: 'https://tpximpact.com',
   },
-  ...(frontmatter?.pubDate && { datePublished: frontmatter.pubDate }),
-  mainEntityOfPage: {
-    '@type': 'WebPage',
-    '@id': siteURL.replace(/\/$/, '') + (Astro.url?.pathname || '/'),
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Dorchester',
+    addressRegion: 'Dorset',
+    addressCountry: 'UK',
   },
+  sameAs: [
+    'https://uk.linkedin.com/in/stuartjmackenzie/',
+    'https://github.com/d1sc0/',
+    'https://www.instagram.com/_d1sco/',
+    'https://bsky.app/profile/hellostu.xyz',
+    'https://www.strava.com/athletes/1170885/',
+  ],
 };
+
+const isHomePage = urlId === 'index' || urlPath === '';
+const isAboutPage = urlId === 'about';
+const isPost = Boolean(
+  frontmatter?.pubDate && (urlPath.startsWith('/posts') || frontmatter?.slug),
+);
+
+let jsonLd: Record<string, any>;
+
+if (isPost) {
+  jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: frontmatter?.title || title,
+    description: description,
+    image: ogImage,
+    datePublished: frontmatter?.pubDate,
+    author: personEntity,
+    publisher: personEntity,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': siteURL.replace(/\/$/, '') + (Astro.url?.pathname || '/'),
+    },
+  };
+} else if (isHomePage || isAboutPage) {
+  jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      personEntity,
+      {
+        '@type': isHomePage ? 'WebSite' : 'ProfilePage',
+        '@id': siteURL.replace(/\/$/, '') + (Astro.url?.pathname || '/'),
+        url: siteURL.replace(/\/$/, '') + (Astro.url?.pathname || '/'),
+        name: title,
+        description: description,
+        about: { '@id': `${siteURL.replace(/\/$/, '')}/#person` },
+        mainEntity: { '@id': `${siteURL.replace(/\/$/, '')}/#person` },
+      },
+    ],
+  };
+} else {
+  jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    headline: title,
+    description: description,
+    image: ogImage,
+    author: personEntity,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': siteURL.replace(/\/$/, '') + (Astro.url?.pathname || '/'),
+    },
+  };
+}
 ---
 
 <head>
