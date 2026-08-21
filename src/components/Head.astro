@@ -52,6 +52,12 @@ const jsonLd = {
     rel="canonical"
     href={siteURL.replace(/\/$/, '') + (Astro.url?.pathname || '/')}
   />
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="HelloStu"
+    href="/rss-feed.xml"
+  />
   <script
     type="application/ld+json"
     is:inline
