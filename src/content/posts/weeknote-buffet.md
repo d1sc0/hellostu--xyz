@@ -21,7 +21,7 @@ This week has been a real self-service buffet. I found the variety enjoyable, bu
 
 ### Some of the work
 
-We finished the tender response I mentioned [last week](/posts/weeknote-london-calling). The team did a great job on it and I keep my fingers crossed that they are rewarded by getting through to the next stage. I also had positive news on two other potential bits of work I’ve helped shape. Both are very different and will need a little more effort to land, but it’s nice to know they are progressing after a little bit of a lull.
+We finished the tender response I mentioned [last week](/posts/weeknote-london-calling/). The team did a great job on it and I keep my fingers crossed that they are rewarded by getting through to the next stage. I also had positive news on two other potential bits of work I’ve helped shape. Both are very different and will need a little more effort to land, but it’s nice to know they are progressing after a little bit of a lull.
 
 I spent all day Wednesday at a leadership and line management training course. It was well facilitated, and spending the day in person with TPX colleagues, old and new, was excellent. I didn’t learn many new things, but given the years I’ve spent managing and coaching people, I guess that was to be expected. It did serve as an excellent refresher and a moment for reflection. It also reminded me of some tools I could polish, sharpen, and use more regularly to be effective. I really feel I should pursue some more formal coaching training. I’ve started to explore this before, but life has gotten in the way. I need to give this more focus and attention. If you have thoughts or experiences you could share on this, please get in touch.
 

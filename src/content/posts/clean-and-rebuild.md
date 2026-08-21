@@ -31,8 +31,8 @@ Along the way, I've also had the chance to simplify parts of the codebase, add s
 ### Summary of the changes completed
 
 - New layouts, styles and navigation
-- Introduced 3 categories to organise my writing - [work](/work), [rest](/rest) and [play](/play)
-- Migrated all old posts and pages, tidying up [tags](/tags) a little along the way
+- Introduced 3 categories to organise my writing - [work](/work/), [rest](/rest/) and [play](/play/)
+- Migrated all old posts and pages, tidying up [tags](/tags/) a little along the way
 - Moved much of the page context out of [Astro](https://astro.build/) files and into [Mdx](https://mdxjs.com/) files so the content can be updated alongside posts in the CMS (Content Management System)
 - Took the same approach moving menu items previously baked into astro pages or components into json files to allow these to be more easily updated via the CMS
 - Implemented a '[Dark Mode](https://www.sanity.io/glossary/dark-mode)' feature for the lolz
@@ -40,7 +40,7 @@ Along the way, I've also had the chance to simplify parts of the codebase, add s
 - A new home page component that allows a user to browse and navigate to posts by the images used within them.
 - Created a set of pre-build scripts that handle some of the more irritating quirks between Sveltia & Astro whilst also generating social preview images for automatic reference in open graph meta.
 - Lots of other subtle SEO and accessibility improvements
-- Revised/updated the [about page](/about) content and introduced a [now page](/now)
+- Revised/updated the [about page](/about/) content and introduced a [now page](/now/)
 
 ### Things I'm considering next
 
