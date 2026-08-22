@@ -178,47 +178,40 @@ photos:
     date: Oct 2017
     alt: Portfolio photograph 27
   - src: /src/assets/images/portfolio/portfolio-29.jpg
-    title: Photograph 29
-    caption: ''
-    category: Portfolio
+    title: Wedding Day
+    caption: Weymouth
+    category: People
     camera: Olympus E-M5 Mark II • 12-40mm F2.8
     date: Apr 2017
     alt: Portfolio photograph 29
   - src: /src/assets/images/portfolio/portfolio-30.jpg
-    title: Photograph 30
-    caption: ''
-    category: Portfolio
+    title: Instant Fam
+    caption: Lake District
+    category: Places
     camera: Olympus E-M5 Mark II • 17mm F1.8
     date: Aug 2016
     alt: Portfolio photograph 30
   - src: /src/assets/images/portfolio/portfolio-31.jpg
-    title: Photograph 31
-    caption: ''
-    category: Portfolio
+    title: West Bay
+    caption: West Bay
+    category: Places
     camera: Olympus E-M5 Mark II • 12-40mm F2.8
     date: Apr 2016
     alt: Portfolio photograph 31
   - src: /src/assets/images/portfolio/portfolio-32.jpg
-    title: Photograph 32
-    caption: ''
-    category: Portfolio
+    title: Librarian
+    caption: Dorset Ape Rescue Centre
+    category: Animals
     camera: Nikon D7000 • 70.0-300.0 mm f/4.0-5.6
     date: Feb 2015
     alt: Portfolio photograph 32
   - src: /src/assets/images/portfolio/portfolio-33.jpg
-    title: Photograph 33
+    title: Run Fatboy Run
     caption: ''
-    category: Portfolio
+    category: Self
     camera: Nikon D7000 • 35.0 mm f/1.8
     date: Sept 2014
     alt: Portfolio photograph 33
-  - src: /src/assets/images/portfolio/portfolio-34.jpg
-    title: Photograph 34
-    caption: ''
-    category: Portfolio
-    camera: Nikon D7000 • 35.0 mm f/1.8
-    date: Jul 2013
-    alt: Portfolio photograph 34
   - src: /src/assets/images/portfolio/portfolio-35.jpg
     title: Photograph 35
     caption: ''
