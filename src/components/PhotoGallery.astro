@@ -10,11 +10,13 @@ import '../styles/photos.css';
 interface Props {
   manifest?: string;
   showFilters?: boolean;
+  enableDeepLinking?: boolean;
 }
 
 const {
   manifest = 'src/content/photos.yaml',
   showFilters = true,
+  enableDeepLinking = true,
 } = Astro.props;
 
 interface PhotoItem {
@@ -25,6 +27,7 @@ interface PhotoItem {
   camera?: string;
   category?: string;
   date?: string;
+  slug?: string;
 }
 
 interface PhotosManifest {
@@ -36,6 +39,7 @@ interface PhotosManifest {
 
 interface ResolvedPhoto {
   index: number;
+  slug: string;
   metadata: ImageMetadata;
   title: string;
   alt: string;
@@ -145,6 +149,29 @@ function cleanLens(lens?: string) {
     .trim();
 }
 
+function generateSlug(title: string, src: string, usedSlugs: Set<string>): string {
+  let base = '';
+  if (title) {
+    base = title.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+  }
+  if (!base) {
+    const rawName = path.basename(src).replace(/\.[^.]+$/, '');
+    base = rawName.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+  }
+  if (!base) base = 'photo';
+
+  let slug = base;
+  let counter = 1;
+  while (usedSlugs.has(slug)) {
+    counter++;
+    slug = `${base}-${counter}`;
+  }
+  usedSlugs.add(slug);
+  return slug;
+}
+
+const usedSlugs = new Set<string>();
+
 const rawResolved = await Promise.all(
   (photosData.photos || []).map(async (p, idx) => {
     const meta = resolveImage(p.src);
@@ -176,8 +203,11 @@ const rawResolved = await Promise.all(
       }
     }
 
+    const slug = p.slug || generateSlug(p.title || '', p.src, usedSlugs);
+
     return {
       index: idx,
+      slug,
       metadata: meta,
       title: p.title || '',
       alt: p.alt || p.title || 'Portfolio photograph',
@@ -199,7 +229,7 @@ const otherActive = Array.from(activeCategories).filter((c) => !PREFERRED_ORDER.
 const categories = ['All', ...orderedCategories, ...otherActive];
 ---
 
-<div class="photo-gallery-wrapper">
+<div class="photo-gallery-wrapper" data-deep-linking={enableDeepLinking ? 'true' : 'false'}>
   {showFilters && categories.length > 2 && (
     <nav class="photos-filters" aria-label="Filter photos by category">
       {categories.map((cat, idx) => (
@@ -220,8 +250,10 @@ const categories = ['All', ...orderedCategories, ...otherActive];
       <button
         type="button"
         class="photo-item"
+        id={`photo-${photo.slug}`}
         data-category={photo.category}
         data-index={photo.index}
+        data-slug={photo.slug}
         data-title={photo.title}
         data-caption={photo.caption}
         data-camera={photo.camera}
@@ -242,13 +274,29 @@ const categories = ['All', ...orderedCategories, ...otherActive];
     ))}
   </div>
 
-  <!-- Fullscreen Lightbox Modal with Text Overlay -->
+  <!-- Fullscreen Lightbox Modal with Text Overlay & Direct Permalinks -->
   <dialog class="lightbox" id="photo-lightbox" aria-label="Photo Lightbox">
     <div class="lightbox__top">
       <span class="lightbox__counter" id="lightbox-counter">1 / 1</span>
-      <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Close photo viewer">
-        ✕
-      </button>
+      
+      <div class="lightbox__actions">
+        <span class="lightbox__share-feedback" id="lightbox-share-feedback">Link Copied!</span>
+        <button
+          type="button"
+          class="lightbox__btn-top"
+          id="lightbox-share"
+          aria-label="Copy direct link to this photograph"
+          title="Copy direct link"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+          </svg>
+        </button>
+        <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Close photo viewer">
+          ✕
+        </button>
+      </div>
     </div>
 
     <div class="lightbox__stage">
@@ -289,6 +337,7 @@ const categories = ['All', ...orderedCategories, ...otherActive];
 
 <script>
   function setupGallery() {
+    const wrapper = document.querySelector('.photo-gallery-wrapper');
     const grid = document.getElementById('photos-grid');
     const filterBtns = document.querySelectorAll('.filter-btn');
     const photoItems = Array.from(document.querySelectorAll<HTMLElement>('.photo-item'));
@@ -301,13 +350,29 @@ const categories = ['All', ...orderedCategories, ...otherActive];
     const lightboxDate = document.getElementById('lightbox-date');
     const lightboxCounter = document.getElementById('lightbox-counter');
     const lightboxClose = document.getElementById('lightbox-close');
+    const lightboxShare = document.getElementById('lightbox-share');
+    const lightboxFeedback = document.getElementById('lightbox-share-feedback');
     const lightboxPrev = document.getElementById('lightbox-prev');
     const lightboxNext = document.getElementById('lightbox-next');
 
     if (!grid || !lightbox || !lightboxImg) return;
 
+    const deepLinkingEnabled = wrapper?.getAttribute('data-deep-linking') === 'true';
+
     let currentVisibleItems = [...photoItems];
     let currentIndex = 0;
+
+    function updateUrlHash(slug: string) {
+      if (!deepLinkingEnabled || !slug) return;
+      history.replaceState(null, '', `#${slug}`);
+    }
+
+    function clearUrlHash() {
+      if (!deepLinkingEnabled) return;
+      if (window.location.hash) {
+        history.replaceState(null, '', window.location.pathname + window.location.search);
+      }
+    }
 
     // Filter functionality
     filterBtns.forEach((btn) => {
@@ -343,6 +408,7 @@ const categories = ['All', ...orderedCategories, ...otherActive];
       const date = item.getAttribute('data-date') || '';
       const alt = item.getAttribute('data-alt') || '';
       const category = item.getAttribute('data-category') || '';
+      const slug = item.getAttribute('data-slug') || '';
 
       lightboxImg!.src = fullSrc;
       lightboxImg!.alt = alt;
@@ -382,10 +448,13 @@ const categories = ['All', ...orderedCategories, ...otherActive];
       }
       document.body.style.overflow = 'hidden';
       lightbox!.classList.add('active');
+
+      updateUrlHash(slug);
     }
 
     function closeLightbox() {
       lightbox!.classList.remove('active');
+      clearUrlHash();
       setTimeout(() => {
         if (lightbox!.open) lightbox!.close();
         document.body.style.overflow = '';
@@ -404,7 +473,7 @@ const categories = ['All', ...orderedCategories, ...otherActive];
       openLightbox(next);
     }
 
-    // Click events
+    // Click events on thumbnails
     photoItems.forEach((item) => {
       item.addEventListener('click', () => {
         const visibleIdx = currentVisibleItems.indexOf(item);
@@ -412,6 +481,28 @@ const categories = ['All', ...orderedCategories, ...otherActive];
           openLightbox(visibleIdx);
         }
       });
+    });
+
+    // Copy direct link action
+    lightboxShare?.addEventListener('click', async (e) => {
+      e.stopPropagation();
+      const currentItem = currentVisibleItems[currentIndex];
+      const slug = currentItem?.getAttribute('data-slug') || '';
+      const url = `${window.location.origin}${window.location.pathname}#${slug}`;
+
+      try {
+        if (navigator.clipboard) {
+          await navigator.clipboard.writeText(url);
+        }
+        if (lightboxFeedback) {
+          lightboxFeedback.classList.add('visible');
+          setTimeout(() => {
+            lightboxFeedback.classList.remove('visible');
+          }, 2000);
+        }
+      } catch (err) {
+        console.error('Failed to copy photo permalink:', err);
+      }
     });
 
     // Button event listeners
@@ -464,6 +555,38 @@ const categories = ['All', ...orderedCategories, ...otherActive];
       },
       { passive: true },
     );
+
+    // Check URL Hash for deep linking on load or hash change
+    function handleHashChange() {
+      if (!deepLinkingEnabled) return;
+      const rawHash = window.location.hash.replace(/^#/, '').toLowerCase();
+      if (!rawHash) return;
+
+      const targetItem = photoItems.find((item) => {
+        const slug = item.getAttribute('data-slug')?.toLowerCase();
+        return slug === rawHash || item.id === `photo-${rawHash}` || item.id === rawHash;
+      });
+
+      if (targetItem) {
+        const category = targetItem.getAttribute('data-category');
+        const activeFilterBtn = document.querySelector('.filter-btn.active');
+        const currentFilter = activeFilterBtn?.getAttribute('data-filter') || '*';
+
+        if (currentFilter !== '*' && currentFilter !== category) {
+          const allBtn = document.querySelector('.filter-btn[data-filter="*"]') as HTMLButtonElement;
+          allBtn?.click();
+        }
+
+        const visibleIdx = currentVisibleItems.indexOf(targetItem);
+        if (visibleIdx >= 0) {
+          openLightbox(visibleIdx);
+        }
+      }
+    }
+
+    // Trigger on load
+    handleHashChange();
+    window.addEventListener('hashchange', handleHashChange);
   }
 
   // Support Astro ViewTransitions and standard page loads
