@@ -24,8 +24,15 @@
 ## Key Automation/Workflow
 
 - `prebuild` script (`src/scripts/pre-build-sveltia-cms-catches.js`): normalizes CMS-inserted image paths to `../../assets/images/` and syncs Markdown filenames to match post slugs.
-- Image assets are stored cleanly in `src/assets/images/` (no `_FULL`/`_LEFT`/`_RIGHT` disk suffixes).
+- Image assets are stored cleanly in `src/assets/images/` (portfolio master photos in `src/assets/images/portfolio/`).
 - Markdown image alignment is handled by `src/plugins/remark-image-align.mjs` using URL hashes (`#left`, `#right`, `#full`) or query parameters (`?align=left`).
+- **Photo Portfolio (`/photos`)**:
+  - Reusable component: `src/components/PhotoGallery.astro`.
+  - Manifest: `src/content/photos.yaml`.
+  - Page: `src/content/pages/photos.mdx` rendered via `src/pages/photos.astro`.
+  - Categories: `Self`, `People`, `Animals`, `Places`, `Other`.
+  - Build-time EXIF extraction: `exifr` automatically parses `date` (Month Year) and `camera` gear at build time when fields are left blank in `photos.yaml` / Sveltia CMS.
+  - Image accessibility `alt` automatically falls back to `title`.
 - `npm run build` runs Astro build only and copies all public/ assets to `dist/` for deployment.
 
 ## Best Practices

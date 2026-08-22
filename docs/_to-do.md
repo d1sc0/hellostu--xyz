@@ -66,10 +66,13 @@
 - [x] (Optional) Add a playlist component/widget to showcase favorite music/playlists, should allow playlists to be viewed in both spotify or apple music (implemented tabbed PlaylistWidget with lazy-loading)
 - [x] (Optional) Add a component for embedding Instagram posts/reels (implemented InstagramEmbed)
 - [x] Build native Photos portfolio into Astro (replacing external Adobe Lightroom link):
-  - [x] Add Photo Portfolio collection to Sveltia CMS config (`public/admin/config.yaml`) backed by `src/content/photos.yaml`
+  - [x] Add Photo Portfolio collection to Sveltia CMS config (`public/admin/config.yaml`) backed by `src/content/photos.yaml` with select categories (`Self`, `People`, `Animals`, `Places`, `Other`)
   - [x] Build responsive `/photos` portfolio page with Astro image tools (`astro:assets` + Sharp) and category filter pills
-  - [x] Implement responsive full-screen lightbox with touch/swipe, keyboard navigation (`←`/`→`/`Esc`), and caption/category display
+  - [x] Implement responsive full-screen lightbox with touch/swipe, keyboard navigation (`←`/`→`/`Esc`), and bottom-right frosted glass overlay badge
+  - [x] Dynamic build-time EXIF metadata extraction (`exifr`) for automatic capture dates and camera bodies/lenses
+  - [x] Recent-weighted randomized ordering algorithm
   - [x] Update site navigation (`src/content/main-nav.json`) from external link to native `/photos` route
+  - [x] Update copyright notice in footer and add repository license distinguishing CC BY-NC-SA text from All Rights Reserved photography
 
 ---
 

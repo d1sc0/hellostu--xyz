@@ -4,6 +4,7 @@ import path from 'node:path';
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 import YAML from 'yaml';
+import exifr from 'exifr';
 import '../styles/photos.css';
 
 interface Props {
@@ -94,22 +95,101 @@ function resolveImage(src: string): ImageMetadata | null {
   );
 }
 
-const resolvedPhotos: ResolvedPhoto[] = (photosData.photos || [])
-  .map((p, idx) => {
+function resolveDiskPath(src: string): string | null {
+  const clean = src.split('?')[0].split('#')[0].replace(/\\/g, '/');
+  const marker = 'assets/images/';
+  const markerIndex = clean.indexOf(marker);
+  const rel = markerIndex >= 0 ? clean.slice(markerIndex + marker.length) : path.basename(clean);
+  const candidate = path.join(process.cwd(), 'src/assets/images', rel);
+  if (fs.existsSync(candidate)) return candidate;
+  
+  const base = path.basename(clean);
+  const portfolioCandidate = path.join(process.cwd(), 'src/assets/images/portfolio', base);
+  if (fs.existsSync(portfolioCandidate)) return portfolioCandidate;
+  
+  return null;
+}
+
+function cleanCamera(make?: string, model?: string) {
+  if (!model) return '';
+  let str = model;
+  if (make && /apple/i.test(make)) {
+    return model.replace(/^Apple\s+/i, '');
+  }
+  if (make && /google/i.test(make)) {
+    return model;
+  }
+  if (make && /nikon/i.test(make)) {
+    str = model.replace(/^NIKON CORPORATION\s*/i, '').replace(/^NIKON\s+/i, 'Nikon ');
+    if (!str.startsWith('Nikon')) str = `Nikon ${str}`;
+  }
+  if (make && /olympus/i.test(make)) {
+    str = model
+      .replace(/^OLYMPUS CORPORATION\s*/i, '')
+      .replace(/E-M1MarkIII/i, 'Olympus E-M1 Mark III')
+      .replace(/E-M1MarkII/i, 'Olympus E-M1 Mark II')
+      .replace(/E-M5MarkII/i, 'Olympus E-M5 Mark II')
+      .replace(/E-M10MarkII/i, 'Olympus E-M10 Mark II');
+    if (!str.startsWith('Olympus')) str = `Olympus ${str}`;
+  }
+  return str.trim();
+}
+
+function cleanLens(lens?: string) {
+  if (!lens) return '';
+  if (/iphone|pixel|galaxy|huawei|camera/i.test(lens)) return '';
+  return lens
+    .replace(/^Olympus M\.Zuiko Digital ED /i, '')
+    .replace(/^OLYMPUS M\./i, '')
+    .replace(/^NIKON /i, '')
+    .trim();
+}
+
+const rawResolved = await Promise.all(
+  (photosData.photos || []).map(async (p, idx) => {
     const meta = resolveImage(p.src);
     if (!meta) return null;
+
+    let date = p.date || '';
+    let camera = p.camera || '';
+
+    // If date or camera are missing, extract dynamically from EXIF at build time
+    if (!date || !camera) {
+      const diskPath = resolveDiskPath(p.src);
+      if (diskPath) {
+        try {
+          const exif = await exifr.parse(diskPath, { tiff: true, exif: true });
+          if (!date) {
+            const rawDate = exif?.DateTimeOriginal || exif?.CreateDate || exif?.ModifyDate;
+            if (rawDate) {
+              date = new Date(rawDate).toLocaleDateString('en-GB', { month: 'short', year: 'numeric' });
+            }
+          }
+          if (!camera) {
+            const cam = cleanCamera(exif?.Make, exif?.Model);
+            const lens = cleanLens(exif?.LensModel);
+            camera = [cam, lens].filter(Boolean).join(' • ');
+          }
+        } catch {
+          // Gracefully ignore EXIF errors if metadata is missing/unreadable
+        }
+      }
+    }
+
     return {
       index: idx,
       metadata: meta,
       title: p.title || '',
       alt: p.alt || p.title || 'Portfolio photograph',
       caption: p.caption || '',
-      camera: p.camera || '',
-      category: p.category || 'Portfolio',
-      date: p.date || '',
+      camera: camera || '',
+      category: p.category || 'Other',
+      date: date || '',
     };
   })
-  .filter((p): p is ResolvedPhoto => p !== null);
+);
+
+const resolvedPhotos: ResolvedPhoto[] = rawResolved.filter((p): p is ResolvedPhoto => p !== null);
 
 const PREFERRED_ORDER = ['Self', 'People', 'Animals', 'Places', 'Other'];
 const activeCategories = new Set(resolvedPhotos.map((p) => p.category).filter(Boolean));
@@ -273,7 +353,7 @@ const categories = ['All', ...orderedCategories, ...otherActive];
       }
 
       if (lightboxCaption) {
-        const captionParts = [caption, category !== 'Portfolio' ? category : ''].filter(Boolean);
+        const captionParts = [caption, category !== 'Portfolio' && category !== 'Other' ? category : ''].filter(Boolean);
         lightboxCaption.textContent = captionParts.join(' • ');
         lightboxCaption.style.display = captionParts.length > 0 ? 'block' : 'none';
       }

@@ -72,26 +72,31 @@ To make curating and adding new photographs effortless without touching code, we
 
 ---
 
-#### 2. Automatic EXIF Metadata Extraction
+#### 2. Automatic Build-Time EXIF Metadata Extraction
 
-Rather than manually looking up when every photo was taken or what camera was in my hand, we used `exifr` in Node.js to scan the master files at build time:
+Rather than manually looking up when every photo was taken or what camera was in my hand, `PhotoGallery.astro` automatically parses image EXIF metadata at build time using `exifr` if the fields are left empty in the CMS:
 
 ```js
-// Extracting capture date and camera body/lens
-const data = await exifr.parse(imageFilePath, { tiff: true, exif: true });
+// Inside PhotoGallery.astro (build-time frontmatter)
+if (!date || !camera) {
+  const exif = await exifr.parse(diskPath, { tiff: true, exif: true });
+  
+  if (!date && exif?.DateTimeOriginal) {
+    date = new Date(exif.DateTimeOriginal).toLocaleDateString('en-GB', { 
+      month: 'short', 
+      year: 'numeric' 
+    });
+  }
 
-// Formatted as "Sep 2024" or "Aug 2025"
-const date = new Date(data.DateTimeOriginal).toLocaleDateString('en-GB', { 
-  month: 'short', 
-  year: 'numeric' 
-});
-
-// Clean camera & lens: e.g. "Olympus E-M1 Mark III • 12-40mm F2.8 Pro"
-const camera = cleanCamera(data.Make, data.Model);
-const lens = cleanLens(data.LensModel);
+  if (!camera) {
+    const cam = cleanCamera(exif?.Make, exif?.Model);
+    const lens = cleanLens(exif?.LensModel);
+    camera = [cam, lens].filter(Boolean).join(' • ');
+  }
+}
 ```
 
-100% of my initial 89 portfolio images were instantly tagged with accurate capture dates and camera bodies spanning from my old Nikon D7000 and Pixel phones to my Olympus gear.
+This means new uploads in Sveltia CMS only require an image and a title. Astro automatically tags them with accurate capture dates and camera bodies spanning from my old Nikon D7000 and Pixel phones to my Olympus gear—with full freedom to provide a custom manual override whenever desired.
 
 ---
 

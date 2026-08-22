@@ -15,6 +15,7 @@ A modern Astro v6 static site with Sveltia CMS, automated image generation, and 
 
 - Astro v6 with Content Layer API for Markdown/MDX
 - Sveltia CMS for content editing
+- Native Photo Portfolio (`/photos`) with responsive masonry layout, dynamic build-time EXIF metadata extraction (`exifr`), and accessible lightbox modal
 - Automated OG and preview image generation (Node + Puppeteer)
 - Modular, mobile-first CSS with a single desktop breakpoint
 - Strict 5-variable color palette

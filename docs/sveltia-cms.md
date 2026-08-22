@@ -68,7 +68,7 @@ Selection precedence:
 2. first markdown image in body
 3. configured fallback background
 
-## Gallery Manifest
+## Gallery Manifest (In-Post Galleries)
 
 The gallery component reads image data from `src/content/galleries.yaml`.
 
@@ -88,6 +88,22 @@ galleries:
                 alt: Example image
                 caption: Optional caption text
 ```
+
+---
+
+## Photo Portfolio (`/photos`)
+
+The standalone photography stream uses `src/content/photos.yaml` and is managed in Sveltia CMS under **Photo Portfolio**:
+
+- **Media Folder**: `src/assets/images/portfolio`
+- **Fields**:
+  - `Image` (`src`): Master photo asset.
+  - `Title` (`title`): Photo name (also used as automatic fallback for `alt` accessibility text).
+  - `Caption / Location` (`caption`): Optional location / context.
+  - `Category` (`category`): Select dropdown (`Self`, `People`, `Animals`, `Places`, `Other`).
+  - `Camera / Gear` (`camera`): Optional gear override (e.g. `Olympus E-M1 Mark III • 12-40mm F2.8 Pro`).
+  - `Year / Date` (`date`): Optional capture date override (e.g. `Aug 2025`).
+- **Dynamic Build-Time EXIF Extraction**: If `date` or `camera` are left blank in the CMS, Astro uses `exifr` during build to automatically parse capture dates and camera bodies/lenses from the image files.
 
 ---
 
