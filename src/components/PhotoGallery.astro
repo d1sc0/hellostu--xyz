@@ -111,7 +111,12 @@ const resolvedPhotos: ResolvedPhoto[] = (photosData.photos || [])
   })
   .filter((p): p is ResolvedPhoto => p !== null);
 
-const categories = ['All', ...Array.from(new Set(resolvedPhotos.map((p) => p.category).filter(Boolean)))];
+const PREFERRED_ORDER = ['Self', 'Portraits', 'Animals', 'Street', 'Abstract', 'Other'];
+const activeCategories = new Set(resolvedPhotos.map((p) => p.category).filter(Boolean));
+const orderedCategories = PREFERRED_ORDER.filter((cat) => activeCategories.has(cat));
+const otherActive = Array.from(activeCategories).filter((c) => !PREFERRED_ORDER.includes(c));
+
+const categories = ['All', ...orderedCategories, ...otherActive];
 ---
 
 <div class="photo-gallery-wrapper">
