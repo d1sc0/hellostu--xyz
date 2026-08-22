@@ -83,7 +83,7 @@ title: Example post
 slug: example-post
 pubDate: 2026-04-20T10:00:00
 description: Example
-featureImage: /src/assets/images/example-FULL.jpg
+featureImage: /src/assets/images/example.jpg
 ---
 ```
 

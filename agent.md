@@ -23,14 +23,17 @@
 
 ## Key Automation/Workflow
 
-- `prebuild` script runs before `npm run dev`: fixes image paths, renames Markdown files to match slug, generates OG/preview images
-- `npm run build` runs Astro build only and copies all public/ assets to `dist/` for deployment
+- `prebuild` script (`src/scripts/pre-build-sveltia-cms-catches.js`): normalizes CMS-inserted image paths to `../../assets/images/` and syncs Markdown filenames to match post slugs.
+- Image assets are stored cleanly in `src/assets/images/` (no `_FULL`/`_LEFT`/`_RIGHT` disk suffixes).
+- Markdown image alignment is handled by `src/plugins/remark-image-align.mjs` using URL hashes (`#left`, `#right`, `#full`) or query parameters (`?align=left`).
+- `npm run build` runs Astro build only and copies all public/ assets to `dist/` for deployment.
 
 ## Best Practices
 
-- Always run `npm run prebuild` before committing new/edited Markdown or images to ensure filenames and paths are correct
-- If you change the folder structure for media or content, update the prebuild script accordingly
-- For troubleshooting image generation, check Puppeteer logs and template files
+- Use `#left`, `#right`, or `#full` URL fragments when embedding images in Markdown.
+- Always run `npm run prebuild` before committing new/edited Markdown or images.
+- If you change the folder structure for media or content, update the prebuild script accordingly.
+- For troubleshooting image generation, check Puppeteer logs and template files.
 
 ## Deployment
 

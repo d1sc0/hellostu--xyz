@@ -40,6 +40,14 @@ This project uses a modern, modular approach to CSS and component naming to ensu
 - **Keep selectors flat** (avoid deep nesting).
 - **Prefer utility classes** for spacing/margin when possible.
 
+## Image Alignment Utility Classes (in `global.css`)
+
+Applied automatically to Markdown `<img>` tags via the Remark Image Align plugin based on URL directives (`#left`, `#right`, `#full`):
+
+- `img.align-full`: Full-width image (centered, max-width: 100%, 1.5rem vertical margin).
+- `img.align-left`: Left-aligned with text wrap on desktop landscape (`float: left; width: 45%; margin-right: 1.5rem;`), full-width on mobile.
+- `img.align-right`: Right-aligned with text wrap on desktop landscape (`float: right; width: 45%; margin-left: 1.5rem;`), full-width on mobile.
+
 ## Media Query & Responsive CSS Guidelines
 
 - All CSS should be mobile-first: default styles are for mobile.

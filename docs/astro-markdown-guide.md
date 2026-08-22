@@ -85,6 +85,32 @@ import MyComponent from '../components/MyComponent.astro';
 
 ---
 
+## Image Alignment & Layout
+
+Images stored in `src/assets/images/` can be aligned and styled directly from Markdown links using URL hashes or query parameters.
+
+### Syntax
+
+```markdown
+<!-- Full width (centered / default) -->
+![Description](../../assets/images/photo.jpg#full)
+
+<!-- Left aligned with text wrap -->
+![Description](../../assets/images/photo.jpg#left)
+
+<!-- Right aligned with text wrap -->
+![Description](../../assets/images/photo.jpg#right)
+```
+
+You can also use query parameters: `?align=left`, `?align=right`, `?align=full`, or shorthand `?left`, `?right`, `?full`.
+
+### How It Works
+
+1. A custom Remark plugin (`src/plugins/remark-image-align.mjs`) parses the directive from the URL, assigns CSS alignment classes (`align-left`, `align-right`, `align-full`), and strips the directive from the path so Astro's asset pipeline optimizes the image cleanly.
+2. The CSS rules in `src/styles/global.css` format the images with mobile-first responsiveness (full width on mobile, floats/margins applied on desktop landscape).
+
+---
+
 ## Best Practices
 
 - Use headings to structure your content.
