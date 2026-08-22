@@ -10,15 +10,15 @@ photos:
     camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
     date: Sept 2025
   - src: /src/assets/images/portfolio/portfolio-02.jpg
-    title: Photograph 02
-    alt: Portfolio photograph 02
+    title: Vape Dancing
+    alt: Vape Dancing
     caption: ''
-    category: Portfolio
+    category: Self
     camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
     date: Aug 2025
   - src: /src/assets/images/portfolio/portfolio-03.jpg
-    title: Photograph 03
-    alt: Portfolio photograph 03
+    title: Iron Banana
+    alt: Iron Banana
     caption: ''
     category: Portfolio
     camera: Olympus E-M1 Mark III • 12-40mm F2.8
