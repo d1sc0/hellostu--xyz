@@ -613,3 +613,17 @@ photos:
     camera: Olympus E-M1 Mark III • 12-40mm F2.8
     category: Portfolio
     date: Aug 2026
+  - src: /src/assets/images/portfolio/portfolio-87.jpg
+    title: Photograph 87
+    alt: Portfolio photograph 87
+    caption: ""
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    category: Portfolio
+    date: Jan 2025
+  - src: /src/assets/images/portfolio/portfolio-88.jpg
+    title: Photograph 88
+    alt: Portfolio photograph 88
+    caption: ""
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    category: Portfolio
+    date: Jan 2025
