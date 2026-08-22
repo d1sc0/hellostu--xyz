@@ -2,49 +2,49 @@ title: Photos
 description: A curated selection of favorite photographs across portraiture, street, landscapes, and creative experiments.
 intro: A small, curated selection of photographs made over the years. Click any image to view in high resolution.
 photos:
-  - src: /src/assets/images/slight-return-6.jpg
+  - src: /src/assets/images/portfolio/slight-return-6.jpg
     title: Tommy & Darren
     alt: Tommy and Darren in Digbeth by an orange van
     caption: Digbeth, Birmingham
     category: Portraits
     date: '2024'
-  - src: /src/assets/images/slight-return-1.jpg
+  - src: /src/assets/images/portfolio/slight-return-1.jpg
     title: Slight Return
     alt: Black and white portrait of Tommy and Darren by a brick wall
     caption: Backstage portrait
     category: Portraits
     date: '2024'
-  - src: /src/assets/images/durdle.jpg
+  - src: /src/assets/images/portfolio/durdle.jpg
     title: Durdle Door
     alt: Durdle Door coastal landscape
     caption: Jurassic Coast
     category: Landscapes
     date: '2023'
-  - src: /src/assets/images/hackney_animal.jpg
+  - src: /src/assets/images/portfolio/hackney_animal.jpg
     title: Hackney Scene
     alt: Hackney animal street scene
     caption: East London
     category: Street
     date: '2023'
-  - src: /src/assets/images/one-man-island.jpg
+  - src: /src/assets/images/portfolio/one-man-island.jpg
     title: One Man Island
     alt: Coastline landscape
     caption: Coastal wanderings
     category: Landscapes
     date: '2023'
-  - src: /src/assets/images/36-whitechapel.jpg
+  - src: /src/assets/images/portfolio/36-whitechapel.jpg
     title: Whitechapel
     alt: London underground station entrance
     caption: London
     category: Street
     date: '2023'
-  - src: /src/assets/images/52_2023_1.jpg
+  - src: /src/assets/images/portfolio/52_2023_1.jpg
     title: Seeking Inspiration
     alt: Self portrait in home office surrounded by desk and guitars
     caption: Project 52
     category: Portraits
     date: '2023'
-  - src: /src/assets/images/harry_concert.jpg
+  - src: /src/assets/images/portfolio/harry_concert.jpg
     title: Concert Lights
     alt: Live music concert stage and crowd
     caption: Live in concert

@@ -182,7 +182,8 @@ collections:
 
   - name: 'portfolio'
     label: 'Photo Portfolio'
-    media_folder_relative: true
+    media_folder: 'src/assets/images/portfolio'
+    public_folder: '/src/assets/images/portfolio'
     files:
       - file: 'src/content/photos.yaml'
         label: 'Curated Photos'
