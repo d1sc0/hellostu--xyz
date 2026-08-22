@@ -2,20 +2,6 @@ title: Photos
 description: A curated selection of favorite photographs across portraiture, street, landscapes, and creative experiments.
 intro: A curated selection of photographs made over the years. Click any photo to view in high resolution.
 photos:
-  - src: /src/assets/images/portfolio/portfolio-83.jpg
-    title: Laura with Keys
-    caption: ''
-    category: People
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
-    date: Feb 2026
-    alt: Portfolio photograph 83
-  - src: /src/assets/images/portfolio/portfolio-80.jpg
-    title: Brewing with Brad
-    caption: ''
-    category: People
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
-    date: Oct 2025
-    alt: Portfolio photograph 80
   - src: /src/assets/images/portfolio/portfolio-85.jpg
     title: Nat
     caption: ''
@@ -23,6 +9,20 @@ photos:
     camera: Olympus E-M1 Mark III • 12-40mm F2.8
     date: Apr 2026
     alt: Portfolio photograph 85
+  - src: /src/assets/images/portfolio/portfolio-80.jpg
+    title: Brewing with Brad
+    caption: ''
+    category: People
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    date: Oct 2025
+    alt: Portfolio photograph 80
+  - src: /src/assets/images/portfolio/portfolio-83.jpg
+    title: Laura with Keys
+    caption: ''
+    category: People
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
+    date: Feb 2026
+    alt: Portfolio photograph 83
   - src: /src/assets/images/portfolio/portfolio-79.jpg
     title: Hero
     caption: ''
