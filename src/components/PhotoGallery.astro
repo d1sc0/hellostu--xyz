@@ -419,9 +419,8 @@ const categories = ['All', ...orderedCategories, ...otherActive];
       }
 
       if (lightboxCaption) {
-        const captionParts = [caption, category !== 'Portfolio' && category !== 'Other' ? category : ''].filter(Boolean);
-        lightboxCaption.textContent = captionParts.join(' • ');
-        lightboxCaption.style.display = captionParts.length > 0 ? 'block' : 'none';
+        lightboxCaption.textContent = caption;
+        lightboxCaption.style.display = caption ? 'block' : 'none';
       }
 
       if (lightboxCamera) {
