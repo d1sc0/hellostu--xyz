@@ -24,17 +24,17 @@ photos:
     camera: Olympus E-M1 Mark III • 12-40mm F2.8
     date: Sept 2024
   - src: /src/assets/images/portfolio/portfolio-04.jpg
-    title: Photograph 04
-    alt: Portfolio photograph 04
-    caption: ''
-    category: Portfolio
+    title: Ape Mono
+    alt: Ape Mono
+    caption: Monkey World, Dorset
+    category: Animals
     camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
     date: Jun 2024
   - src: /src/assets/images/portfolio/portfolio-05.jpg
-    title: Photograph 05
-    alt: Portfolio photograph 05
-    caption: ''
-    category: Portfolio
+    title: Polar Bear
+    alt: Polar Bear
+    caption: Vienna
+    category: Animals
     camera: iPhone 14 Pro
     date: Aug 2023
   - src: /src/assets/images/portfolio/portfolio-06.jpg
