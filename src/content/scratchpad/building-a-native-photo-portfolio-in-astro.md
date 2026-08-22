@@ -27,6 +27,7 @@ Here is why I made the switch, how it's engineered, and a look at the configurat
 2. **Blazing Performance**: Astro's asset pipeline with Sharp automatically generates modern responsive WebP formats at multiple breakpoints (`400px` to `1600px`), delivering razor-sharp Retina display quality with fraction-of-a-second load times.
 3. **Seamless Digital Garden Aesthetic**: The gallery uses the exact same typography, palette variables, and responsive layout conventions as the rest of the site.
 4. **Separation of Concerns**: In-post story galleries remain contextual within articles, while `/photos` serves as a high-resolution, curated portfolio stream.
+5. **Direct Photo Permalinks**: Every individual photograph now has its own linkable URL (e.g. `https://hellostu.xyz/photos#iron-banana`), complete with an instant "Copy Link" button in the lightbox. Adobe Portfolio made direct photo linking clunky and awkward.
 
 ---
 
@@ -181,6 +182,18 @@ Recent shots from 2024–2026 naturally greet visitors first, followed by older 
 
 ---
 
+#### 6. Direct Photo Permalinks & Deep Linking
+
+One limitation with many third-party galleries is that you can rarely share a link to a *single* photograph inside a fullscreen viewer. 
+
+We wired up reversible deep linking into `PhotoGallery.astro`:
+- Every image generates a clean slug from its title (e.g. `#vape-dancing`, `#cocktail-menu`, `#iron-banana`).
+- When navigating or sharing, `history.replaceState` updates the URL hash dynamically.
+- Visiting `/photos#vape-dancing` directly automatically scrolls to and launches that exact photograph in the fullscreen lightbox.
+- A discrete share button in the lightbox header lets you copy the direct permalink in one click with instant visual feedback.
+
+---
+
 ### What's Next?
 
-Having my photography live inside the same codebase as my thoughts and essays makes the whole digital garden feel complete. If you'd like to take a look, explore the new **[Photos Portfolio](/photos/)**!
+Having my photography live inside the same codebase as my thoughts and essays makes the whole digital garden feel complete. If you'd like to take a look, explore the new **[Photos Portfolio](/photos/)** (or test a direct link like **[/photos#vape-dancing](/photos#vape-dancing)**)!
