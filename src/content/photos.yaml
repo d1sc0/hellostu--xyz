@@ -409,30 +409,30 @@ photos:
     date: Sept 2008
     alt: Portfolio photograph 64
   - src: /src/assets/images/portfolio/portfolio-65.jpg
-    title: Photograph 65
+    title: Toy Axe
     caption: ''
-    category: Portfolio
-    camera: ''
+    category: Other
+    camera: Instax Wide
     date: Aug 2008
     alt: Portfolio photograph 65
   - src: /src/assets/images/portfolio/portfolio-66.jpg
-    title: Photograph 66
-    caption: ''
-    category: Portfolio
+    title: Pavilion
+    caption: Brighton
+    category: Places
     camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Aug 2008
     alt: Portfolio photograph 66
   - src: /src/assets/images/portfolio/portfolio-67.jpg
-    title: Photograph 67
-    caption: ''
-    category: Portfolio
+    title: Graf
+    caption: Brighton
+    category: Other
     camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Aug 2008
     alt: Portfolio photograph 67
   - src: /src/assets/images/portfolio/portfolio-68.jpg
-    title: Photograph 68
+    title: Eyeball
     caption: ''
-    category: Portfolio
+    category: Other
     camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Aug 2008
     alt: Portfolio photograph 68
