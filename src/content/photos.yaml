@@ -290,89 +290,82 @@ photos:
     date: Apr 2011
     alt: Portfolio photograph 45
   - src: /src/assets/images/portfolio/portfolio-46.jpg
-    title: Photograph 46
+    title: '4'
     caption: ''
-    category: Portfolio
+    category: Other
     camera: Nikon D80 • 70.0-300.0 mm f/4.0-5.6
     date: Mar 2011
     alt: Portfolio photograph 46
   - src: /src/assets/images/portfolio/portfolio-47.jpg
-    title: Photograph 47
-    caption: ''
-    category: Portfolio
+    title: Beach Walk
+    caption: Weymouth
+    category: Places
     camera: Nikon D80 • 35.0 mm f/1.8
     date: Feb 2011
     alt: Portfolio photograph 47
   - src: /src/assets/images/portfolio/portfolio-48.jpg
-    title: Photograph 48
+    title: Jam
     caption: ''
-    category: Portfolio
+    category: Other
     camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Jan 2011
     alt: Portfolio photograph 48
   - src: /src/assets/images/portfolio/portfolio-49.jpg
-    title: Photograph 49
+    title: In stone
     caption: ''
-    category: Portfolio
+    category: Other
     camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Jan 2011
     alt: Portfolio photograph 49
   - src: /src/assets/images/portfolio/portfolio-50.jpg
-    title: Photograph 50
+    title: Sunshine
     caption: ''
-    category: Portfolio
+    category: Other
     camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Sept 2010
     alt: Portfolio photograph 50
   - src: /src/assets/images/portfolio/portfolio-51.jpg
-    title: Photograph 51
+    title: Corrogated
     caption: ''
-    category: Portfolio
+    category: Other
     camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Jun 2010
     alt: Portfolio photograph 51
   - src: /src/assets/images/portfolio/portfolio-52.jpg
-    title: Photograph 52
+    title: Left
     caption: ''
-    category: Portfolio
+    category: Other
     camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Jun 2010
     alt: Portfolio photograph 52
   - src: /src/assets/images/portfolio/portfolio-53.jpg
-    title: Photograph 53
+    title: Steps Framed
     caption: ''
-    category: Portfolio
+    category: People
     camera: ''
     date: May 2010
     alt: Portfolio photograph 53
   - src: /src/assets/images/portfolio/portfolio-54.jpg
-    title: Photograph 54
+    title: Ellie
     caption: ''
-    category: Portfolio
+    category: People
     camera: Nikon D80 • 35.0 mm f/1.8
     date: Jan 2010
     alt: Portfolio photograph 54
   - src: /src/assets/images/portfolio/portfolio-55.jpg
-    title: Photograph 55
+    title: Break time
     caption: ''
-    category: Portfolio
+    category: Other
     camera: Nikon D80 • 35.0 mm f/1.8
     date: Jan 2010
     alt: Portfolio photograph 55
   - src: /src/assets/images/portfolio/portfolio-56.jpg
-    title: Photograph 56
+    title: Ice Cream
     caption: ''
-    category: Portfolio
-    camera: SP-3000
+    category: People
+    camera: Olympus Trip
     date: Jan 2010
     alt: Portfolio photograph 56
-  - src: /src/assets/images/portfolio/portfolio-57.jpg
-    title: Photograph 57
-    caption: ''
-    category: Portfolio
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
-    date: Jul 2009
-    alt: Portfolio photograph 57
   - src: /src/assets/images/portfolio/portfolio-58.jpg
     title: Photograph 58
     caption: ''
