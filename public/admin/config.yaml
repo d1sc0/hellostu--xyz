@@ -202,4 +202,5 @@ collections:
               - { label: 'Alt Text', name: 'alt', widget: 'string' }
               - { label: 'Caption / Location', name: 'caption', widget: 'string', required: false }
               - { label: 'Category / Tag', name: 'category', widget: 'string', required: false, hint: 'e.g. Portraits, Street, Landscapes, Music' }
+              - { label: 'Camera / Gear', name: 'camera', widget: 'string', required: false, hint: 'e.g. Olympus E-M1 Mark III • 12-40mm F2.8 Pro' }
               - { label: 'Year / Date', name: 'date', widget: 'string', required: false }

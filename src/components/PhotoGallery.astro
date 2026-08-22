@@ -21,6 +21,7 @@ interface PhotoItem {
   title?: string;
   alt?: string;
   caption?: string;
+  camera?: string;
   category?: string;
   date?: string;
 }
@@ -38,6 +39,7 @@ interface ResolvedPhoto {
   title: string;
   alt: string;
   caption: string;
+  camera: string;
   category: string;
   date: string;
 }
@@ -102,6 +104,7 @@ const resolvedPhotos: ResolvedPhoto[] = (photosData.photos || [])
       title: p.title || '',
       alt: p.alt || p.title || 'Portfolio photograph',
       caption: p.caption || '',
+      camera: p.camera || '',
       category: p.category || 'Portfolio',
       date: p.date || '',
     };
@@ -136,6 +139,7 @@ const categories = ['All', ...Array.from(new Set(resolvedPhotos.map((p) => p.cat
         data-index={photo.index}
         data-title={photo.title}
         data-caption={photo.caption}
+        data-camera={photo.camera}
         data-date={photo.date}
         data-src={photo.metadata.src}
         data-alt={photo.alt}
@@ -187,10 +191,11 @@ const categories = ['All', ...Array.from(new Set(resolvedPhotos.map((p) => p.cat
         </svg>
       </button>
 
-      <!-- Overlay for Titles & Metadata -->
+      <!-- Overlay for Titles & EXIF Metadata -->
       <div class="lightbox__overlay" id="lightbox-overlay">
         <h2 class="lightbox__title" id="lightbox-title"></h2>
         <p class="lightbox__caption" id="lightbox-caption"></p>
+        <p class="lightbox__meta" id="lightbox-meta"></p>
       </div>
     </div>
   </dialog>
@@ -206,6 +211,7 @@ const categories = ['All', ...Array.from(new Set(resolvedPhotos.map((p) => p.cat
     const lightboxOverlay = document.getElementById('lightbox-overlay');
     const lightboxTitle = document.getElementById('lightbox-title');
     const lightboxCaption = document.getElementById('lightbox-caption');
+    const lightboxMeta = document.getElementById('lightbox-meta');
     const lightboxCounter = document.getElementById('lightbox-counter');
     const lightboxClose = document.getElementById('lightbox-close');
     const lightboxPrev = document.getElementById('lightbox-prev');
@@ -246,9 +252,10 @@ const categories = ['All', ...Array.from(new Set(resolvedPhotos.map((p) => p.cat
       const fullSrc = item.getAttribute('data-src') || '';
       const title = item.getAttribute('data-title') || '';
       const caption = item.getAttribute('data-caption') || '';
+      const camera = item.getAttribute('data-camera') || '';
+      const date = item.getAttribute('data-date') || '';
       const alt = item.getAttribute('data-alt') || '';
       const category = item.getAttribute('data-category') || '';
-      const date = item.getAttribute('data-date') || '';
 
       lightboxImg!.src = fullSrc;
       lightboxImg!.alt = alt;
@@ -259,13 +266,19 @@ const categories = ['All', ...Array.from(new Set(resolvedPhotos.map((p) => p.cat
       }
 
       if (lightboxCaption) {
-        const metaParts = [caption, category, date].filter(Boolean);
-        lightboxCaption.textContent = metaParts.join(' • ');
-        lightboxCaption.style.display = metaParts.length > 0 ? 'block' : 'none';
+        const captionParts = [caption, category !== 'Portfolio' ? category : ''].filter(Boolean);
+        lightboxCaption.textContent = captionParts.join(' • ');
+        lightboxCaption.style.display = captionParts.length > 0 ? 'block' : 'none';
+      }
+
+      if (lightboxMeta) {
+        const metaParts = [camera, date].filter(Boolean);
+        lightboxMeta.textContent = metaParts.join(' • ');
+        lightboxMeta.style.display = metaParts.length > 0 ? 'block' : 'none';
       }
 
       if (lightboxOverlay) {
-        const hasText = Boolean(title || caption || category || date);
+        const hasText = Boolean(title || caption || camera || date);
         lightboxOverlay.style.display = hasText ? 'flex' : 'none';
       }
 
