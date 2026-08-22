@@ -395,23 +395,16 @@ photos:
     date: Nov 2008
     alt: Portfolio photograph 61
   - src: /src/assets/images/portfolio/portfolio-62.jpg
-    title: Photograph 62
+    title: Station Floor
     caption: ''
-    category: Portfolio
+    category: Other
     camera: ''
     date: Nov 2008
     alt: Portfolio photograph 62
-  - src: /src/assets/images/portfolio/portfolio-63.jpg
-    title: Photograph 63
-    caption: ''
-    category: Portfolio
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
-    date: Oct 2008
-    alt: Portfolio photograph 63
   - src: /src/assets/images/portfolio/portfolio-64.jpg
-    title: Photograph 64
+    title: Bike Start
     caption: ''
-    category: Portfolio
+    category: People
     camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Sept 2008
     alt: Portfolio photograph 64
