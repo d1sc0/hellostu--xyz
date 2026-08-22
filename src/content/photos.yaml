@@ -3,11 +3,11 @@ description: A curated selection of favorite photographs across portraiture, str
 intro: A curated selection of photographs made over the years. Click any photo to view in high resolution.
 photos:
   - src: /src/assets/images/portfolio/portfolio-01.jpg
-    title: Photograph 01
-    alt: Portfolio photograph 01
+    title: Cocktail Menu
+    alt: Cocktail Menu
     caption: ''
-    category: Portfolio
-    camera: ''
+    category: Self
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
     date: Sept 2025
   - src: /src/assets/images/portfolio/portfolio-02.jpg
     title: Photograph 02
