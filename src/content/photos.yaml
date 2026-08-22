@@ -164,26 +164,19 @@ photos:
     date: Apr 2018
     alt: Portfolio photograph 25
   - src: /src/assets/images/portfolio/portfolio-26.jpg
-    title: Photograph 26
-    caption: ''
-    category: Portfolio
+    title: Monkey
+    caption: Dorset Ape Rescue Centre, Dorset
+    category: Animals
     camera: ''
     date: Oct 2017
     alt: Portfolio photograph 26
   - src: /src/assets/images/portfolio/portfolio-27.jpg
-    title: Photograph 27
-    caption: ''
-    category: Portfolio
+    title: Mountain Stream
+    caption: Lake District
+    category: Places
     camera: ''
     date: Oct 2017
     alt: Portfolio photograph 27
-  - src: /src/assets/images/portfolio/portfolio-28.jpg
-    title: Photograph 28
-    caption: ''
-    category: Portfolio
-    camera: ''
-    date: Oct 2017
-    alt: Portfolio photograph 28
   - src: /src/assets/images/portfolio/portfolio-29.jpg
     title: Photograph 29
     caption: ''
