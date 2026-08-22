@@ -4,7 +4,7 @@ slug: 5-ablution
 draft: false
 pubDate: 2023-02-18
 category: Play
-featureImage: /src/assets/uploaded_images/52_2023_5_FULL.jpg
+featureImage: /src/assets/images/52_2023_5.jpg
 description: Shower-themed self-portrait, contemplating routine, creativity, and personal rituals.
 tags:
   - 52weeks
@@ -15,7 +15,7 @@ tags:
   - routine
 ---
 
-![A symetrical image of a man in profile showering, water drips of of his beard](../../assets/uploaded_images/52_2023_5_FULL.jpg)
+![A symetrical image of a man in profile showering, water drips of of his beard](../../assets/images/52_2023_5.jpg#full)
 
 This evolved into a very different image from what I originally had in mind when I started shooting it but I’m pleased with how it’s turned out. I generally hate any photographs of me from this angle, but the combination of the texture and movement created by the water and the symmetrical composition makes it something I can live with sharing. When I stare at this image long enough my brain starts to imagine the outline of another person from the negative space between me(s) which is kinda cool.
 

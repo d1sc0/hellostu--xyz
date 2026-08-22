@@ -4,7 +4,7 @@ slug: weeknote-tired-bunny
 draft: false
 pubDate: 2024-07-05T17:40:00
 category: Work
-featureImage: /src/assets/uploaded_images/41-tired-bunnyFULL.jpg
+featureImage: /src/assets/images/41-tired-bunny.jpg
 description: A brief look at the good, the bad and the ugly through tired eyes. Covers the period 28th June to 5th July.
 tags:
   - weeknote
@@ -15,7 +15,7 @@ tags:
   - reflection
 ---
 
-![an anime bunny sat on the grass looking sad and tired](../../assets/uploaded_images/41-tired-bunnyFULL.jpg)
+![an anime bunny sat on the grass looking sad and tired](../../assets/images/41-tired-bunny.jpg#full)
 
 Writing is a struggle today (yes, more than usual!). I am very, very, very tired. I stayed up and watched election coverage until about 3:30am and then woke up at 6:30am for more of the same. Three hours of sleep is not enough. I'm not thinking clearly, and my fatigue is presenting as grumpiness. I will keep this short.
 

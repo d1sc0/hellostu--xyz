@@ -30,7 +30,7 @@ import MdxImageGallery from '../../components/for_posts/MdxImageGallery/MdxImage
 
 ## CMS-backed image paths
 
-When image galleries are edited in Sveltia CMS, image paths are stored as `/src/assets/uploaded_images/...`.
+When image galleries are edited in Sveltia CMS, image paths are stored as `/src/assets/images/...`.
 
 The component resolves those paths at build time, so the YAML file can stay CMS-friendly while the final site still uses Astro image optimisation.
 
@@ -50,7 +50,7 @@ Example:
 ---
 title: Gallery post
 slug: gallery-post
-featureImage: /src/assets/uploaded_images/example.jpg
+featureImage: /src/assets/images/example.jpg
 ---
 ```
 
@@ -61,7 +61,7 @@ galleries:
   - id: clean-and-rebuild
     title: Clean and rebuild gallery
     images:
-      - src: /src/assets/uploaded_images/example.jpg
+      - src: /src/assets/images/example.jpg
         alt: Example image description
         caption: Optional caption text
 ```

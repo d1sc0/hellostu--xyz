@@ -4,7 +4,7 @@ slug: wk5-late-notes
 draft: false
 pubDate: 2019-05-01T00:00:00.000Z
 category: Work
-featureImage: /src/assets/uploaded_images/pexels-www.kaboompics.com-5624978.jpg
+featureImage: /src/assets/images/pexels-www.kaboompics.com-5624978.jpg
 description: I share late notes from a busy week. Highlights include a productive work return, attending an AWS event, and discussing feedback methods.
 tags:
   - weeknote

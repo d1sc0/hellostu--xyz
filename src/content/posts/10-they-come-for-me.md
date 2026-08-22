@@ -4,7 +4,7 @@ slug: 10-they-come-for-me
 draft: false
 pubDate: 2023-03-26
 category: Play
-featureImage: /src/assets/uploaded_images/52_2023_10_FULL.jpg
+featureImage: /src/assets/images/52_2023_10.jpg
 description: Sci-fi themed self-portrait, exploring creativity and storytelling through photography.
 tags:
   - 52weeks
@@ -16,7 +16,7 @@ tags:
   - reflection
 ---
 
-![A bright red glowing light beam is focussed across my face. I use my hand to block the glare](../../assets/uploaded_images/52_2023_10_FULL.jpg)
+![A bright red glowing light beam is focussed across my face. I use my hand to block the glare](../../assets/images/52_2023_10.jpg#full)
 
 I am seemingly starring in my own science fiction [b-movie](https://en.wikipedia.org/wiki/B_movie) this week. It’s an idea that emerged while I was playing with a set of [barn doors](https://strobist.blogspot.com/2008/05/barn-doors-and-blue-dragons.html) and some coloured gels on my flash. I’m not sure if the world were to be invaded by body-snatching aliens, I’d be that high up on their priority list?! You can never be sure, though. I’ll head to the shops for a new tinfoil hat tomorrow, just in case.
 

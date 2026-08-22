@@ -4,7 +4,7 @@ slug: 15-geometry
 draft: false
 pubDate: 2023-06-07
 category: Play
-featureImage: /src/assets/uploaded_images/52_2023_15_FULL.jpg
+featureImage: /src/assets/images/52_2023_15.jpg
 description: A self-portrait series entry with thoughts on organization, work, and personal growth, inspired by geometric art.
 tags:
   - 52weeks
@@ -18,7 +18,7 @@ tags:
   - growth
 ---
 
-![Stuart puts and tugs on his beard in front of a wall containing two arty geometric print](../../assets/uploaded_images/52_2023_15_FULL.jpg)
+![Stuart puts and tugs on his beard in front of a wall containing two arty geometric print](../../assets/images/52_2023_15.jpg#full)
 
 Yet another late post. I did skip a week whilst I was away camping in Devon. I’m glad I did. It was nice to give myself a break from routine on all fronts! This shot was taken using my new camera. I upgraded from an Olympus EM5 mkII to an Olympus EM1 mkIII. It’s a similar system with upgraded bells, whistles, and a much-improved sensor. So far, I’m enjoying the upgrade, and given it’s been on the market for some time, I picked it up for a price that hasn’t made me weep! The two prints flanking me in the frame are also a new addition to the living room wall and inspired the title.
 

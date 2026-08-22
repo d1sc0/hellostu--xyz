@@ -3,7 +3,7 @@ backend:
   branch: main
   repo: d1sc0/hellostu--xyz
 
-media_folder: 'src/assets/uploaded_images'
+media_folder: 'src/assets/images'
 
 collections:
   - name: 'posts'

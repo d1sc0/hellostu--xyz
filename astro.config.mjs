@@ -3,6 +3,7 @@ import mdx from '@astrojs/mdx';
 import icon from 'astro-icon';
 import sitemap from '@astrojs/sitemap';
 import react from '@astrojs/react';
+import { remarkImageAlign } from './src/plugins/remark-image-align.mjs';
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,6 +14,7 @@ export default defineConfig({
     },
   },
   markdown: {
+    remarkPlugins: [remarkImageAlign],
     shikiConfig: {
       theme: 'houston',
     },

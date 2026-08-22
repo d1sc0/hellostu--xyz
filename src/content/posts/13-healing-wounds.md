@@ -4,7 +4,7 @@ slug: 13-healing-wounds
 draft: false
 pubDate: 2023-05-15
 category: Play
-featureImage: /src/assets/uploaded_images/52_2023_13_FULL.jpg
+featureImage: /src/assets/images/52_2023_13.jpg
 description: A self-portrait showing new tattoos beginning to heal, reflecting on creativity and the healing process.
 tags:
   - 52weeks
@@ -17,7 +17,7 @@ tags:
   - reflection
 ---
 
-![A tightly cropped photo of my arms, showing my tattoos, illuminated by window light](../../assets/uploaded_images/52_2023_13_FULL.jpg)
+![A tightly cropped photo of my arms, showing my tattoos, illuminated by window light](../../assets/images/52_2023_13.jpg#full)
 
 _"A fresh tattoo is considered an open wound. Like all wounds, it will scab over as part of a natural healing response."_
 

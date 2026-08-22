@@ -4,7 +4,7 @@ slug: fresh-paint
 draft: false
 pubDate: 2020-01-28
 category: Work
-featureImage: /src/assets/uploaded_images/spraycansFULL.jpg
+featureImage: /src/assets/images/spraycans.jpg
 description: a post explaining my foray into re-building my blog and my desire to both reduce my hosting costs, save the planet and play with the JAM stack
 tags:
   - data
@@ -13,7 +13,7 @@ tags:
   - climate
 ---
 
-![some coloutful spray cans](../../assets/uploaded_images/spraycansFULL.jpg)
+![some coloutful spray cans](../../assets/images/spraycans.jpg#full)
 
 It feels like I change blogging platforms more often than I actually write blog posts...but
 rather than just a desire to apply a fresh coat of paint this time my rebuild had

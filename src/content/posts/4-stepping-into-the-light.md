@@ -4,7 +4,7 @@ slug: 4-stepping-into-the-light
 draft: false
 pubDate: 2023-02-12
 category: Play
-featureImage: /src/assets/uploaded_images/52_2023_4_FULL.jpg
+featureImage: /src/assets/images/52_2023_4.jpg
 description: Self-portrait on stairs, exploring light, shadow, and personal journeys.
 tags:
   - 52weeks
@@ -15,7 +15,7 @@ tags:
   - stairs
 ---
 
-![sat on the stairs in my house with a strong shadows cast against the wall](../../assets/uploaded_images/52_2023_4_FULL.jpg)
+![sat on the stairs in my house with a strong shadows cast against the wall](../../assets/images/52_2023_4.jpg#full)
 
 A little bit more effort in this week’s photograph. To follow up on my intention of using this project to refresh and improve my photography skills, I purchased some new gear this week to increase my creative options. The two significant purchases that made this shot possible were a cheap flash unit and a remote trigger.
 

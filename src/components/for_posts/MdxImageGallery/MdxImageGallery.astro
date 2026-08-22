@@ -70,7 +70,7 @@ const resolvedImageHeightMobile = imageHeightMobile || imageHeight;
 const resolvedImageHeightDesktop = imageHeightDesktop || imageHeight;
 
 const imageModules = import.meta.glob(
-  '/src/assets/uploaded_images/**/*.{avif,gif,jpeg,jpg,png,webp}',
+  '/src/assets/images/**/*.{avif,gif,jpeg,jpg,png,webp}',
   {
     eager: true,
     import: 'default',
@@ -81,7 +81,7 @@ const imageByRelativePath = new Map<string, ImageMetadata>();
 const imageByBaseName = new Map<string, ImageMetadata>();
 
 for (const [assetPath, metadata] of Object.entries(imageModules)) {
-  const relativePath = assetPath.replace('/src/assets/uploaded_images/', '');
+  const relativePath = assetPath.replace('/src/assets/images/', '');
   imageByRelativePath.set(relativePath, metadata);
 
   const baseName = path.basename(relativePath);
@@ -125,7 +125,7 @@ function normalizeImageRef(src: string): {
     'src/content',
     normalized,
   );
-  const marker = 'assets/uploaded_images/';
+  const marker = 'assets/images/';
   const markerIndex = normalized.indexOf(marker);
 
   const relativePath = (() => {
@@ -139,8 +139,8 @@ function normalizeImageRef(src: string): {
         ? candidatePath.slice(process.cwd().length + 1)
         : candidatePath.replace(/^\/?/, '');
 
-      if (projectRelativePath.startsWith('src/assets/uploaded_images/')) {
-        return projectRelativePath.replace('src/assets/uploaded_images/', '');
+      if (projectRelativePath.startsWith('src/assets/images/')) {
+        return projectRelativePath.replace('src/assets/images/', '');
       }
     }
 

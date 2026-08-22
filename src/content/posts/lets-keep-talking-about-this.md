@@ -4,7 +4,7 @@ slug: lets-keep-talking-about-this
 draft: false
 pubDate: 2019-10-15
 category: Rest
-featureImage: /src/assets/uploaded_images/morganbethanyFULL.jpg
+featureImage: /src/assets/images/morganbethany.jpg
 description: Discussing Baby Loss Awareness Week, emphasizing the importance of breaking the silence and sharing personal stories.
 tags:
   - babyloss
@@ -20,7 +20,7 @@ These two toys once sat in a beautiful garden at our local cemetery. That beauti
 
 Buried there are 3 of my daughters. The twins - Morgan & Bethany and Pob. Time has passed, the sadness has faded but I still hold them dear. Over 18 years on and I have drawn strength from these experiences but still remember the darker days we went through.
 
-![morgan and Bethany](../../assets/uploaded_images/morganbethanyFULL.jpg)
+![morgan and Bethany](../../assets/images/morganbethany.jpg#full)
 
 This week is [Baby Loss Awareness Week](https://babyloss-awareness.org/). Baby Loss is common and hard on Mothers, Fathers, Siblings and supporting family members. It's important we talk about it and support each other and fight to help improve bereavement care.
 

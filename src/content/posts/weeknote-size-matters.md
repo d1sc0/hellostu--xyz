@@ -4,7 +4,7 @@ slug: weeknote-size-matters
 draft: false
 pubDate: 2024-11-29T15:30:00
 category: Work
-featureImage: /src/assets/uploaded_images/47-trainFULL.jpg
+featureImage: /src/assets/images/47-train.jpg
 description: an overview of the last week of November. Contains reflections about scaling things, a lovely day at Product for the People and some random life updates
 tags:
   - weeknote
@@ -16,7 +16,7 @@ tags:
   - reflection
 ---
 
-![a photo of a sticker that reads Hello my name is Stuart stuck to the back of a seat in an empty train carriage](../../assets/uploaded_images/47-trainFULL.jpg)
+![a photo of a sticker that reads Hello my name is Stuart stuck to the back of a seat in an empty train carriage](../../assets/images/47-train.jpg#full)
 
 I'm back to do some writing after taking a break. Did you miss me? 😂
 

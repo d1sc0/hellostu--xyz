@@ -4,7 +4,7 @@ slug: 12-these-hands
 draft: false
 pubDate: 2023-04-10
 category: Play
-featureImage: /src/assets/uploaded_images/52_2023_12_FULL.jpg
+featureImage: /src/assets/images/52_2023_12.jpg
 description: Exploring new backdrops and monochrome vibes in self-portrait series, reflecting on the artistic process and personal growth.
 tags:
   - 52weeks
@@ -16,7 +16,7 @@ tags:
   - process
 ---
 
-![I stare into the camera lens with my hands up in front of my face](../../assets/uploaded_images/52_2023_12_FULL.jpg)
+![I stare into the camera lens with my hands up in front of my face](../../assets/images/52_2023_12.jpg#full)
 
 I’m pleased with this photograph. I like the black and white tones, the shadows and the detail captured. I changed some camera settings this weekend, making setting focus and checking the shot’s framing easier. A small win, but making my workflow more efficient reduces the draw on my time. The black background is also a new addition. I’ve had an old set of background stands in the garage for some time, so it’s nice to have some new fabric to hang and use finally.
 

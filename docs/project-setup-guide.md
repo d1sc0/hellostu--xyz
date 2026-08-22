@@ -79,10 +79,9 @@ Image path corrections and Markdown file renaming are now handled automatically 
 This script:
 
 - Fixes image paths in Markdown files (uploaded via Sveltia CMS) to ensure static build compatibility
-- Ensures image filenames in Markdown end with \_RIGHT, \_LEFT, or \_FULL (adds \_FULL if missing)
 - Renames Markdown files to match their `slug` frontmatter (if present)
 
-No manual changes are needed after uploading images or creating new posts in the CMS.
+Image alignment is controlled using URL hashes in Markdown (`#left`, `#right`, `#full`) via the remark image alignment plugin without renaming files on disk.
 
 ## RSS Feed Behavior
 

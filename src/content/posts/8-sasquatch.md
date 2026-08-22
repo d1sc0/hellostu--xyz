@@ -4,7 +4,7 @@ slug: 8-sasquatch
 draft: false
 pubDate: 2023-03-13
 category: Play
-featureImage: /src/assets/uploaded_images/52_2023_8_FULL.jpg
+featureImage: /src/assets/images/52_2023_8.jpg
 description: Experimenting with lighting in self-portraits, feeling artistically unsatisfied and pushing creative boundaries.
 tags:
   - 52weeks
@@ -15,7 +15,7 @@ tags:
   - lighting
 ---
 
-![Half naked Stu appears to comically pout for the camera!](../../assets/uploaded_images/52_2023_8_FULL.jpg)
+![Half naked Stu appears to comically pout for the camera!](../../assets/images/52_2023_8.jpg#full)
 
 I took this shot on Saturday and nearly didn’t post it. I’m not pleased with it. It was taken while playing with a new lighting setup. I just ordered a second flash unit so I wanted to play with different configurations using two flashes off-camera and using shoot-through umbrellas to soften the light. The lighting is good. During the same shoot I got some fun pictures of Chloe which I [shared here on Instagram](https://www.instagram.com/p/CpqKBQRNfLy/). The same lighting setup doesn’t work quite so nicely here as it doesn’t account for the shadows created by my spectacles.
 

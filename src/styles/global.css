@@ -159,6 +159,7 @@ p.toplink {
   text-align: right;
 }
 
+img.align-full,
 img[src*='FULL'],
 .imageFull {
   width: 100%;
@@ -167,6 +168,7 @@ img[src*='FULL'],
   border-radius: 1rem;
 }
 
+img.align-right,
 img[src*='RIGHT'] {
   width: 100%;
   height: auto;
@@ -175,6 +177,7 @@ img[src*='RIGHT'] {
   border-radius: 1rem;
 }
 
+img.align-left,
 img[src*='LEFT'] {
   width: 100%;
   height: auto;
@@ -184,12 +187,14 @@ img[src*='LEFT'] {
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
+  img.align-right,
   img[src*='RIGHT'] {
     width: 50%;
     float: right;
     margin-left: 1rem;
     margin-bottom: 1rem;
   }
+  img.align-left,
   img[src*='LEFT'] {
     width: 50%;
     float: left;

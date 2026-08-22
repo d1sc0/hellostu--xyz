@@ -4,7 +4,7 @@ slug: holiday-time
 draft: false
 pubDate: 2026-04-27T16:20:00
 category: Rest
-featureImage: /src/assets/uploaded_images/IMG_6766.jpeg
+featureImage: /src/assets/images/IMG_6766.jpeg
 description: A few notes about my week off plans and the realities of a solo holiday that will be featuring life admin, university work, and a possible checklist of un-productive tasks.
 tags:
   - life

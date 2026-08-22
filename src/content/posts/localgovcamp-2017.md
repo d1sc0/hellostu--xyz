@@ -4,7 +4,7 @@ slug: localgovcamp-2017
 draft: false
 pubDate: 2017-09-26
 category: Work
-featureImage: /src/assets/uploaded_images/localgovcampRIGHT.jpg
+featureImage: /src/assets/images/localgovcamp.jpg
 description: My thoughts after taking a trip to LocalGovCamp in Bristol
 tags:
   - work
@@ -20,7 +20,7 @@ Recently I had the pleasure of attending my first [LocalGovCamp and Fringe!](htt
 
 Having worked in local government before joining FutureGov, I’d heard of the event but never attended. So, as you can imagine, I was excited to finally have the chance to witness first hand what all the fuss was about. It was worth the wait.
 
-![LocalGovCamp promo pic](../../assets/uploaded_images/localgovcampRIGHT.jpg)
+![LocalGovCamp promo pic](../../assets/images/localgovcamp.jpg#right)
 
 ### Friday Fringe
 

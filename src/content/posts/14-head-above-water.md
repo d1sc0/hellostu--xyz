@@ -4,7 +4,7 @@ slug: 14-head-above-water
 draft: false
 pubDate: 2023-05-24
 category: Play
-featureImage: /src/assets/uploaded_images/52_2023_14_FULL.jpg
+featureImage: /src/assets/images/52_2023_14.jpg
 description: A self-portrait and journal entry revealing a new side project, discussing work-life balance and personal challenges.
 tags:
   - 52weeks
@@ -15,7 +15,7 @@ tags:
   - health
 ---
 
-![The water/sea fills two thirds of the frame, my head appears over a wave in the top left of the frame, backed by blue sky](../../assets/uploaded_images/52_2023_14_FULL.jpg)
+![The water/sea fills two thirds of the frame, my head appears over a wave in the top left of the frame, backed by blue sky](../../assets/images/52_2023_14.jpg#full)
 
 This week I’m posting late and from my bed. I had some planned surgery at the hospital yesterday. Everything went well, but I’m feeling a bit groggy today and numb with painkillers. I’ve taken the day to recover but currently can’t sleep, so I’m trying blogging instead!
 

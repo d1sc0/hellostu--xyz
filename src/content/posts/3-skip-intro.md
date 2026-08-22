@@ -4,7 +4,7 @@ slug: 3-skip-intro
 draft: false
 pubDate: 2023-02-05
 category: Play
-featureImage: /src/assets/uploaded_images/52_2023_3_FULL.jpg
+featureImage: /src/assets/images/52_2023_3.jpg
 description: Reflections in self-portrait series, exploring identity, perception, and the impact of self-view.
 tags:
   - 52weeks
@@ -15,7 +15,7 @@ tags:
   - reflection
 ---
 
-![My grumpy, pitted, wrinkled face illunminated in a dark frame by a desk lamp](../../assets/uploaded_images/52_2023_3_FULL.jpg)
+![My grumpy, pitted, wrinkled face illunminated in a dark frame by a desk lamp](../../assets/images/52_2023_3.jpg#full)
 
 I almost copped out and posted yet another running selfie today! All of the snaps on my phone were pretty lame though and I’m _trying_ not to be lazy with this project. Instead, I reached for my Olympus DSLR and tried to create something a little more interesting. I didn’t have any clear idea, vision or concept in mind so I shot off 6-8 frames of me holding an LED desk lamp over my head in a dark room and then tweaked things a little in Adobe Lightroom. The shot won’t win any prizes but there is something honest and appealing to me about the closeup framing showing my pitted, wrinkled skin, my giant nose and my unkempt facial fuzz. I’m not a model, I’m just a guy, getting older by the day - this is me.
 

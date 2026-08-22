@@ -47,7 +47,7 @@ Or add it back to your build scripts if needed in the future.
 - **Font loading:** The template now includes a Google Fonts link for Inter, ensuring correct font rendering in both browser preview and generated images.
 - All config (template path, fallback, output dir, site title, style, site URL) is in `image-config.json`.
 - Output directory is auto-created if missing.
-- Image filenames in Markdown are normalized to end with _RIGHT, _LEFT, or _FULL (default _FULL) by the prebuild script.
+- Image alignment in Markdown is controlled via URL hash/query (#left, #right, #full) without modifying filenames on disk.
 
 ---
 

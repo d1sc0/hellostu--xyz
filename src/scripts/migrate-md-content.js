@@ -7,7 +7,7 @@ const MIGRATE_SRC = path.join('src', 'content', '_to_migrate');
 const POSTS_DEST = path.join('src', 'content', 'posts');
 const CONTENT_COMPLETED = path.join('src', 'content', 'completed');
 const ASSETS_SRC = path.join('src', 'assets', '_to_migrate');
-const ASSETS_DEST = path.join('src', 'assets', 'uploaded_images');
+const ASSETS_DEST = path.join('src', 'assets', 'images');
 const ASSETS_COMPLETED = path.join('src', 'assets', 'completed');
 
 // Helper: Guess category from content/title/tags
@@ -163,7 +163,7 @@ async function migrate({ limit = 10, dryRun = false } = {}) {
         }
         newContent = newContent.replace(
           imgPath,
-          `../../assets/uploaded_images/${imgName}`,
+          `../../assets/images/${imgName}`,
         );
       } else {
         console.log(`[MISSING IMAGE] ${imgPath} referenced in ${file}`);

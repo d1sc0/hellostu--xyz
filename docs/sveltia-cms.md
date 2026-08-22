@@ -9,7 +9,7 @@ For details on how styles and class names are structured in this project, see [c
 This project uses Sveltia CMS (Netlify CMS compatible) for content editing.
 
 - CMS config: `public/admin/config.yaml`
-- Media folder: `src/assets/uploaded_images`
+- Media folder: `src/assets/images`
 - Main content folder: `src/content/posts`
 - Additional editable content:
     - `src/content/pages`
@@ -38,10 +38,9 @@ Image path corrections and Markdown file renaming are now handled automatically 
 This script:
 
 - Fixes image paths in Markdown files (uploaded via Sveltia CMS) to ensure static build compatibility
-- Ensures image filenames in Markdown end with _RIGHT, _LEFT, or _FULL (adds _FULL if missing) and renames the image file to match
 - Renames Markdown files to match their `slug` frontmatter (if present)
 
-No manual changes are needed after uploading images or creating new posts in the CMS.
+Image alignment is controlled via URL hash/query in Markdown (`#left`, `#right`, `#full` or `?align=left`) via the remark image alignment plugin without modifying filenames on disk.
 
 ## Optional Feature Image Frontmatter
 
@@ -55,7 +54,7 @@ Use it when you want an explicit image override instead of relying on the first 
 
 Recommended value format:
 
-- `/src/assets/uploaded_images/your-image.jpg`
+- `/src/assets/images/your-image.jpg`
 
 This field is used by:
 
@@ -74,7 +73,7 @@ Selection precedence:
 The gallery component reads image data from `src/content/galleries.yaml`.
 
 - Each gallery entry uses an `id` that matches the `gallery` prop passed to `MdxImageGallery`.
-- The CMS stores each image path as `/src/assets/uploaded_images/...`.
+- The CMS stores each image path as `/src/assets/images/...`.
 - The component resolves those CMS paths at build time, so editors do not need to rewrite them manually.
 - Captions and alt text are optional, but alt text is recommended for accessibility.
 
@@ -85,7 +84,7 @@ galleries:
     - id: clean-and-rebuild
         title: Clean and rebuild gallery
         images:
-            - src: /src/assets/uploaded_images/example.jpg
+            - src: /src/assets/images/example.jpg
                 alt: Example image
                 caption: Optional caption text
 ```

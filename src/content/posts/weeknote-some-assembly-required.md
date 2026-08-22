@@ -4,7 +4,7 @@ slug: weeknote-some-assembly-required
 draft: false
 pubDate: 2024-07-20T10:20:00
 category: Work
-featureImage: /src/assets/uploaded_images/43-assembly-requiredFULL.jpg
+featureImage: /src/assets/images/43-assembly-required.jpg
 description: Some quick reflections on life at work and at home from the week 12th to the 19th of July.
 tags:
   - weeknote
@@ -29,7 +29,7 @@ Next week, some new client project work is on the horizon (but I have yet to lea
 
 There is a lot of change. My wife has keys to her new place and will move things incrementally over the next few days. Things are being put into boxes, and things at home here feel increasingly messy and hollow—both in the physical environment and in my brain. I've spent a lot of time thinking through and starting to make minor changes to the house, so it might work better for me when I begin to occupy it solo (This has also been a nice distraction from getting stuck in all the feelings).
 
-![A black and white of ikea desk parts and fittings layed out on the carpet before me ready for assembly](../../assets/uploaded_images/43-assembly-requiredFULL.jpg)
+![A black and white of ikea desk parts and fittings layed out on the carpet before me ready for assembly](../../assets/images/43-assembly-required.jpg#full)
 
 This week, I concentrated on the office space. When we moved in, I intended the space for work and play. Over time, I've found that I don't use the room outside of work hours, which has helped me enforce boundaries and compartmentalise between work and home.
 

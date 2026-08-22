@@ -4,7 +4,7 @@ slug: behaviourism-dogs-carrots-sticks
 draft: false
 pubDate: 2026-04-22T22:05:00
 category: Work
-featureImage: /src/assets/uploaded_images/ned-FULL.jpg
+featureImage: /src/assets/images/ned.jpg
 description: Learning, puppies, and the pitfalls of the carrot and the stick. A short reflection following a lecture on behaviourism. The cortisol hit of Slack notifications and why we often mistake compliance for commitment in design.
 tags:
   - learningDesign
@@ -18,7 +18,7 @@ tags:
 
 I was digging into Behaviourism as part of my studies earlier today. It’s the school of thought that treats learning as a change in observable behaviour, triggered by external stimuli. Think of it as the "physics" of learning—action and reaction. These are common concepts, but it was interesting to rip them apart in the classroom. It also gave me a great excuse to share some picture of my mate’s new puppy, Ned (I love him).
 
-![A very good puppy named Ned sitting patiently, the ultimate example of positive reinforcement.](../../assets/uploaded_images/ned-FULL.jpg)
+![A very good puppy named Ned sitting patiently, the ultimate example of positive reinforcement.](../../assets/images/ned.jpg#full)
 
 ### The big hitters in this space..
 
@@ -37,4 +37,4 @@ Carrots and sticks feel like simple tools to employ, but where there are consequ
 
 We often mistake compliance for commitment. Behaviorism can give you the former, but if we want the latter we need to look beyond the simple physics of stimulus and response.
 
-![More Ned action. What a handsome hound.](../../assets/uploaded_images/ned2-FULL.jpg)
+![More Ned action. What a handsome hound.](../../assets/images/ned2.jpg#full)

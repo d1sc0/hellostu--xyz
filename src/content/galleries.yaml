@@ -2,24 +2,24 @@ galleries:
   - id: slight-return
     title: Slight Return
     images:
-      - src: /src/assets/uploaded_images/slight-return-6.jpg
+      - src: /src/assets/images/slight-return-6.jpg
         alt: Portrait of Tommy and Darren by an orange van
         caption: ''
-      - src: /src/assets/uploaded_images/slight-return-1.jpg
+      - src: /src/assets/images/slight-return-1.jpg
         alt: black and white portrait of Tommy and Darren by a brick wall
         caption: ''
-      - src: /src/assets/uploaded_images/slight-return-4.jpg
+      - src: /src/assets/images/slight-return-4.jpg
         alt: Portrait of Tommy and Darren by a white wall.
         caption: ''
-      - src: /src/assets/uploaded_images/slight-return-5.jpg
+      - src: /src/assets/images/slight-return-5.jpg
         alt: portrait of Slight Return in the street
         caption: ''
-      - src: /src/assets/uploaded_images/slight-return-3.jpg
+      - src: /src/assets/images/slight-return-3.jpg
         alt: portrait of the band in the old market
         caption: ''
-      - src: /src/assets/uploaded_images/slight-return-2.jpg
+      - src: /src/assets/images/slight-return-2.jpg
         alt: Portrait of Tommy
         caption: ''
-      - src: /src/assets/uploaded_images/slight-return-7.jpg
+      - src: /src/assets/images/slight-return-7.jpg
         alt: black and white portrait in urban scene
         caption: ''

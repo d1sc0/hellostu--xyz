@@ -4,7 +4,7 @@ slug: what-makes-a-great-retrospective
 draft: false
 pubDate: 2017-12-04
 category: Work
-featureImage: /src/assets/uploaded_images/avengers-assembleFULL.jpg
+featureImage: /src/assets/images/avengers-assemble.jpg
 description: 'I give advice on what makes a great retrospective: dedicating time, celebrating successes, fostering team building, encouraging honesty, and focusing on actionable outcomes.'
 tags:
   - agile
@@ -17,7 +17,7 @@ tags:
 
 > This was originally posted [here on Medium and cross posted to FutureGov's blog page](https://blog.wearefuturegov.com/what-makes-a-great-retrospective-eef24e1ef9d0) - As I'm no longer using medium I have copied below for the histotic feels!!
 
-![avengers assemble movie poster](../../assets/uploaded_images/avengers-assembleFULL.jpg)
+![avengers assemble movie poster](../../assets/images/avengers-assemble.jpg#full)
 
 As a delivery manager running agile projects, my favourite tool in the agile arsenal is the [retrospective](http://searchsoftwarequality.techtarget.com/definition/Agile-retrospective). Having come from a background where waterfall projects reigned supreme I really appreciate how valuable having regular structured conversations with teams around improving delivery and team dynamics can be. Especially in comparison to the seldom completed and often ignored ‘lessons learned’ logs of old.
 

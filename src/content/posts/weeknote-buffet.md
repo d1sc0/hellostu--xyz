@@ -4,7 +4,7 @@ slug: weeknote-buffet
 draft: false
 pubDate: 2024-06-14T10:25:00
 category: Work
-featureImage: /src/assets/uploaded_images/pexels-monica-tran-33673617.jpg
+featureImage: /src/assets/images/pexels-monica-tran-33673617.jpg
 description: A weeknote covering the period 7th-14th June. This week was an assorted buffet including sales work, leadership training, reconnecting socially and making things
 tags:
   - weeknote
@@ -17,7 +17,7 @@ tags:
 
 This week has been a real self-service buffet. I found the variety enjoyable, but the random assortment of cold pizza, carrot sticks, mini samosas, and party rings filling my plate didn’t quite satisfy my need for a more substantial meal!
 
-![animated gif from schitt's creek of character talking about a smattering of everything](../../assets/uploaded_images/37-buffet-LEFT.webp)
+![animated gif from schitt's creek of character talking about a smattering of everything](../../assets/images/37-buffet.webp#left)
 
 ### Some of the work
 

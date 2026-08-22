@@ -4,7 +4,7 @@ slug: 16-fever-dream
 draft: false
 pubDate: 2023-07-14
 category: Work
-featureImage: /src/assets/uploaded_images/52_2023_16_FULL.jpg
+featureImage: /src/assets/images/52_2023_16.jpg
 description: A self-portrait and journal entry exploring organizational structure and working methods, created during a flu bout.
 tags:
   - 52weeks
@@ -17,7 +17,7 @@ tags:
   - bogroll
 ---
 
-![Stuart against a dark backdrop, lit using a small amount of light, he is swaddled in clothes made of bogroll channeling a lawrence of arabia look](../../assets/uploaded_images/52_2023_16_FULL.jpg)
+![Stuart against a dark backdrop, lit using a small amount of light, he is swaddled in clothes made of bogroll channeling a lawrence of arabia look](../../assets/images/52_2023_16.jpg#full)
 
 Last week I was struck by a flu bug that meant I spent pretty much the whole week in bed coughing up a lung or blowing snot out of my nose. It wasn’t pleasant. I’ve been back to work this week but still not totally shaken it.
 

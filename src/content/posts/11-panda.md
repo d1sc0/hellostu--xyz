@@ -4,7 +4,7 @@ slug: 11-panda
 draft: false
 pubDate: 2023-04-03
 category: Play
-featureImage: /src/assets/uploaded_images/52_2023_11_FULL.jpg
+featureImage: /src/assets/images/52_2023_11.jpg
 description: Wearing a panda mask in a self-portrait series, reflecting on distractions and maintaining focus.
 tags:
   - 52weeks
@@ -15,7 +15,7 @@ tags:
   - portrait
 ---
 
-![I sit at the table weaking a panda mask, staring at my phone](../../assets/uploaded_images/52_2023_11_FULL.jpg)
+![I sit at the table weaking a panda mask, staring at my phone](../../assets/images/52_2023_11.jpg#full)
 
 Sometimes you have to abandon interesting locations, complex lighting and creative composition. Some days you need to put on a panda mask and take a snap at your kitchen table. Yesterday was that day…and I LOVE IT! 😂😍
 

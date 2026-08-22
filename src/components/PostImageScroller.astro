@@ -40,7 +40,7 @@ const selectedCategories =
   categories.length > 0 ? categories : category ? [category] : [];
 
 const imageModules = import.meta.glob(
-  '/src/assets/uploaded_images/**/*.{avif,gif,jpeg,jpg,png,webp}',
+  '/src/assets/images/**/*.{avif,gif,jpeg,jpg,png,webp}',
   {
     eager: true,
     import: 'default',
@@ -52,7 +52,7 @@ const imageByBaseName = new Map<string, ImageMetadata>();
 const excludedBaseNames = new Set(['og-background.png']);
 
 for (const [assetPath, metadata] of Object.entries(imageModules)) {
-  const relativePath = assetPath.replace('/src/assets/uploaded_images/', '');
+  const relativePath = assetPath.replace('/src/assets/images/', '');
   imageByRelativePath.set(relativePath, metadata);
 
   const baseName = path.basename(relativePath);
@@ -87,7 +87,7 @@ function normalizeImageRef(src: string): {
 } {
   const withoutQueryOrHash = src.split('?')[0].split('#')[0];
   const normalized = decodeURIComponent(withoutQueryOrHash).replace(/\\/g, '/');
-  const marker = 'assets/uploaded_images/';
+  const marker = 'assets/images/';
   const markerIndex = normalized.indexOf(marker);
 
   const relativePath =

@@ -258,7 +258,7 @@ Horizontally scrollable image strip sourced from images found in post bodies.
 
 ### Core logic
 
-- Loads all uploaded images via `import.meta.glob` from `src/assets/uploaded_images`.
+- Loads all uploaded images via `import.meta.glob` from `src/assets/images`.
 - Parses markdown image syntax and `<img>` tags from each post body.
 - Resolves image references to local image modules.
 - Sorts posts newest first.
@@ -533,7 +533,7 @@ Provides an MDX-embeddable image gallery sourced from a YAML manifest at build t
 
 - Reads gallery data from `src/content/galleries.yaml` at build time.
 - Selects a gallery by `id` passed via props.
-- Resolves image references to local uploaded assets, including CMS-written paths such as `/src/assets/uploaded_images/...` and older relative refs.
+- Resolves image references to local uploaded assets, including CMS-written paths such as `/src/assets/images/...` and older relative refs.
 - Uses Astro `Image` optimization with responsive `widths` and `sizes`.
 - Implements horizontal swipe/scroll, arrow buttons, keyboard arrow support, and fade-edge affordances.
 - Can optionally render image captions.

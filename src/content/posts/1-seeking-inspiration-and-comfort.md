@@ -4,7 +4,7 @@ slug: 1-seeking-inspiration-and-comfort
 draft: false
 pubDate: 2023-01-19
 category: Play
-featureImage: /src/assets/uploaded_images/52_2023_1_FULL.jpg
+featureImage: /src/assets/images/52_2023_1.jpg
 description: Starting a self-portrait series, setting the tone for personal exploration and artistic expression.
 tags:
   - 52weeks
@@ -15,7 +15,7 @@ tags:
   - reflection
 ---
 
-![man sits alone in a chair with his phone, he's in his home office surrounded by desk, laptop & guitars](../../assets/uploaded_images/52_2023_1_FULL.jpg)
+![man sits alone in a chair with his phone, he's in his home office surrounded by desk, laptop & guitars](../../assets/images/52_2023_1.jpg#full)
 
 I’m committing to capture and publish a self-portrait with a short accompanying post here on my blog each week. Some weeks I might aim for an abstract creative masterpiece - adorned with filters, photoshop magic and flying unicorns. Sometimes it might just be a photo of my feet snapped on my iphone. Most weeks will fall somewhere in between (just like this first specimen). The only real rule is some part of me has to be in the frame.
 

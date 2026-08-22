@@ -12,41 +12,15 @@ const PAGES_DIR = path.join(__dirname, '../content/pages');
 function fixImagePathsInFile(filePath) {
   let content = fs.readFileSync(filePath, 'utf8');
   let changed = false;
-  // Fix path and suffix, and rename image if needed
+  // Normalize markdown image paths for static build compatibility
   content = content.replace(
-    /\]\((?:\.\.\/\.\.\/assets\/uploaded_images|\/src\/assets\/uploaded_images)\/([^\)]+)\)/g,
+    /\]\((?:\.\.\/\.\.\/assets\/images|\/src\/assets\/images)\/([^\)]+)\)/g,
     (match, p1) => {
-      // p1 is the filename, e.g. foo.jpg
-      const ext = path.extname(p1);
-      const base = p1.slice(0, -ext.length);
-      // Case-insensitive check for RIGHT, LEFT, FULL at end of base (no underscore)
-      const baseUpper = base.toUpperCase();
-      if (
-        !baseUpper.endsWith('RIGHT') &&
-        !baseUpper.endsWith('LEFT') &&
-        !baseUpper.endsWith('FULL')
-      ) {
-        const newName = `${base}_FULL${ext}`;
-        const replacement = `](../../assets/uploaded_images/${newName})`;
-        if (match !== replacement) {
-          changed = true;
-        }
-        // Try to rename the image file if it exists
-        const imgDir = path.join(__dirname, '../assets/uploaded_images');
-        const oldPath = path.join(imgDir, p1);
-        const newPath = path.join(imgDir, newName);
-        if (fs.existsSync(oldPath) && !fs.existsSync(newPath)) {
-          fs.renameSync(oldPath, newPath);
-          console.log(`path-fixes: ${newName} - updated`);
-        }
-        return replacement;
-      } else {
-        const replacement = `](../../assets/uploaded_images/${p1})`;
-        if (match !== replacement) {
-          changed = true;
-        }
-        return replacement;
+      const replacement = `](../../assets/images/${p1})`;
+      if (match !== replacement) {
+        changed = true;
       }
+      return replacement;
     },
   );
   if (changed) {
