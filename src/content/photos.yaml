@@ -80,61 +80,54 @@ photos:
     date: May 2023
     alt: Portfolio photograph 11
   - src: /src/assets/images/portfolio/portfolio-12.jpg
-    title: Photograph 12
+    title: Unwrapped
     caption: ''
-    category: Portfolio
+    category: Self
     camera: Olympus E-M5 Mark II • 12-40mm F2.8
     date: Apr 2023
     alt: Portfolio photograph 12
   - src: /src/assets/images/portfolio/portfolio-13.jpg
-    title: Photograph 13
-    caption: ''
-    category: Portfolio
+    title: Skyline
+    caption: Boston, USA
+    category: Places
     camera: Pixel 6 Pro
     date: Jul 2022
     alt: Portfolio photograph 13
   - src: /src/assets/images/portfolio/portfolio-14.jpg
-    title: Photograph 14
-    caption: ''
-    category: Portfolio
+    title: Mother
+    caption: Portugal
+    category: Places
     camera: Pixel 5
     date: Oct 2021
     alt: Portfolio photograph 14
   - src: /src/assets/images/portfolio/portfolio-15.jpg
-    title: Photograph 15
+    title: Bedtime Reading
     caption: ''
-    category: Portfolio
-    camera: ''
+    category: People
+    camera: Polaroid Land Camera
     date: Jan 2019
     alt: Portfolio photograph 15
   - src: /src/assets/images/portfolio/portfolio-16.jpg
-    title: Photograph 16
-    caption: ''
-    category: Portfolio
-    camera: ''
+    title: View Point
+    caption: Weymouth Beach
+    category: Places
+    camera: Instax Wide
     date: Jan 2019
     alt: Portfolio photograph 16
   - src: /src/assets/images/portfolio/portfolio-17.jpg
-    title: Photograph 17
+    title: Snow Monty
     caption: ''
-    category: Portfolio
-    camera: ''
+    category: Animals
+    camera: Google Pixel
     date: Jan 2019
     alt: Portfolio photograph 17
   - src: /src/assets/images/portfolio/portfolio-18.jpg
-    title: Photograph 18
+    title: Snow Patrol
     caption: ''
-    category: Portfolio
+    category: Other
     camera: ''
     date: Jan 2019
     alt: Portfolio photograph 18
-  - src: /src/assets/images/portfolio/portfolio-19.jpg
-    title: Photograph 19
-    caption: ''
-    category: Portfolio
-    camera: ''
-    date: Jan 2019
-    alt: Portfolio photograph 19
   - src: /src/assets/images/portfolio/portfolio-20.jpg
     title: Photograph 20
     caption: ''
