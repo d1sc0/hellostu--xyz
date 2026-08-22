@@ -1,24 +1,96 @@
 title: Photos
-description: A curated selection of favorite photographs across portraiture, street, landscapes, and creative experiments.
-intro: A curated selection of photographs made over the years. Click any photo to view in high resolution.
+description: A curated selection of favorite photographs across portraiture,
+  street, landscapes, and creative experiments.
+intro: A curated selection of photographs made over the years. Click any photo
+  to view in high resolution.
 photos:
-  - src: /src/assets/images/portfolio/portfolio-01.jpg
-    title: Cocktail Menu
-    caption: ''
-    category: Self
+  - src: /src/assets/images/portfolio/portfolio-83.jpg
+    title: Laura with Keys
+    caption: ""
+    category: People
     camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
-    date: Sept 2025
-    alt: Cocktail Menu
+    date: Feb 2026
+    alt: Portfolio photograph 83
+  - src: /src/assets/images/portfolio/portfolio-80.jpg
+    title: Brewing with Brad
+    caption: ""
+    category: People
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    date: Oct 2025
+    alt: Portfolio photograph 80
+  - src: /src/assets/images/portfolio/portfolio-79.jpg
+    title: Hero
+    caption: ""
+    category: People
+    camera: Olympus E-M1 Mark III • Zuiko Digital 25mm F1.8
+    date: Aug 2025
+    alt: Portfolio photograph 79
   - src: /src/assets/images/portfolio/portfolio-02.jpg
     title: Vape Dancing
-    caption: ''
+    caption: ""
     category: Self
     camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
     date: Aug 2025
     alt: Vape Dancing
+  - src: /src/assets/images/portfolio/portfolio-86.jpg
+    title: Me
+    caption: ""
+    category: Self
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    date: Aug 2026
+    alt: Portfolio photograph 86
+  - src: /src/assets/images/portfolio/portfolio-85.jpg
+    title: Nat
+    caption: ""
+    category: People
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    date: Apr 2026
+    alt: Portfolio photograph 85
+  - src: /src/assets/images/portfolio/portfolio-82.jpg
+    title: Happy Christmas
+    caption: ""
+    category: Self
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    date: Dec 2025
+    alt: Portfolio photograph 82
+  - src: /src/assets/images/portfolio/portfolio-87.jpg
+    title: Mathew
+    caption: ""
+    category: People
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    date: Jan 2025
+    alt: Portfolio photograph 87
+  - src: /src/assets/images/portfolio/portfolio-84.jpg
+    title: Slight Return
+    caption: ""
+    category: People
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    date: Apr 2026
+    alt: Portfolio photograph 84
+  - src: /src/assets/images/portfolio/portfolio-88.jpg
+    title: Mathew Mono
+    caption: ""
+    category: People
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    date: Jan 2025
+    alt: Portfolio photograph 88
+  - src: /src/assets/images/portfolio/portfolio-78.jpg
+    title: Mentalist
+    caption: ""
+    category: People
+    camera: Olympus E-M1 Mark III • Zuiko Digital 25mm F1.8
+    date: Aug 2025
+    alt: Portfolio photograph 78
+  - src: /src/assets/images/portfolio/portfolio-81.jpg
+    title: Filter Coffee
+    caption: ""
+    category: Other
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    date: Oct 2025
+    alt: Portfolio photograph 81
   - src: /src/assets/images/portfolio/portfolio-03.jpg
     title: Iron Banana
-    caption: ''
+    caption: ""
     category: Portfolio
     camera: Olympus E-M1 Mark III • 12-40mm F2.8
     date: Sept 2024
@@ -30,6 +102,13 @@ photos:
     camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
     date: Jun 2024
     alt: Ape Mono
+  - src: /src/assets/images/portfolio/portfolio-01.jpg
+    title: Cocktail Menu
+    caption: ""
+    category: Self
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
+    date: Sept 2025
+    alt: Cocktail Menu
   - src: /src/assets/images/portfolio/portfolio-05.jpg
     title: Polar Bear
     caption: Vienna
@@ -37,20 +116,13 @@ photos:
     camera: iPhone 14 Pro
     date: Aug 2023
     alt: Polar Bear
-  - src: /src/assets/images/portfolio/portfolio-06.jpg
-    title: Hot Dog Vendor
-    caption: Vienna
-    category: Places
-    camera: iPhone 14 Pro
-    date: Aug 2023
-    alt: Portfolio photograph 06
-  - src: /src/assets/images/portfolio/portfolio-07.jpg
-    title: The house that love built
-    caption: Seventh Seal, Dorchester
-    category: Places
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
-    date: Jul 2023
-    alt: Portfolio photograph 07
+  - src: /src/assets/images/portfolio/portfolio-12.jpg
+    title: Unwrapped
+    caption: ""
+    category: Self
+    camera: Olympus E-M5 Mark II • 12-40mm F2.8
+    date: Apr 2023
+    alt: Portfolio photograph 12
   - src: /src/assets/images/portfolio/portfolio-08.jpg
     title: Babytan
     caption: Dorset Ape Rescue Centre
@@ -58,34 +130,20 @@ photos:
     camera: Olympus E-M1 Mark III • 12-40mm F2.8
     date: Jun 2023
     alt: Portfolio photograph 08
-  - src: /src/assets/images/portfolio/portfolio-09.jpg
-    title: Mono Beach Scene
-    caption: Cornwall
+  - src: /src/assets/images/portfolio/portfolio-07.jpg
+    title: The house that love built
+    caption: Seventh Seal, Dorchester
     category: Places
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
-    date: May 2023
-    alt: Portfolio photograph 09
-  - src: /src/assets/images/portfolio/portfolio-10.jpg
-    title: Busy Waters
-    caption: Cornwall
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
+    date: Jul 2023
+    alt: Portfolio photograph 07
+  - src: /src/assets/images/portfolio/portfolio-06.jpg
+    title: Hot Dog Vendor
+    caption: Vienna
     category: Places
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
-    date: May 2023
-    alt: Portfolio photograph 10
-  - src: /src/assets/images/portfolio/portfolio-11.jpg
-    title: Astronaut Ink
-    caption: ''
-    category: Self
-    camera: Olympus E-M5 Mark II • 12-40mm F2.8
-    date: May 2023
-    alt: Portfolio photograph 11
-  - src: /src/assets/images/portfolio/portfolio-12.jpg
-    title: Unwrapped
-    caption: ''
-    category: Self
-    camera: Olympus E-M5 Mark II • 12-40mm F2.8
-    date: Apr 2023
-    alt: Portfolio photograph 12
+    camera: iPhone 14 Pro
+    date: Aug 2023
+    alt: Portfolio photograph 06
   - src: /src/assets/images/portfolio/portfolio-13.jpg
     title: Skyline
     caption: Boston, USA
@@ -93,6 +151,27 @@ photos:
     camera: Pixel 6 Pro
     date: Jul 2022
     alt: Portfolio photograph 13
+  - src: /src/assets/images/portfolio/portfolio-11.jpg
+    title: Astronaut Ink
+    caption: ""
+    category: Self
+    camera: Olympus E-M5 Mark II • 12-40mm F2.8
+    date: May 2023
+    alt: Portfolio photograph 11
+  - src: /src/assets/images/portfolio/portfolio-10.jpg
+    title: Busy Waters
+    caption: Cornwall
+    category: Places
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    date: May 2023
+    alt: Portfolio photograph 10
+  - src: /src/assets/images/portfolio/portfolio-09.jpg
+    title: Mono Beach Scene
+    caption: Cornwall
+    category: Places
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    date: May 2023
+    alt: Portfolio photograph 09
   - src: /src/assets/images/portfolio/portfolio-14.jpg
     title: Mother
     caption: Portugal
@@ -100,83 +179,55 @@ photos:
     camera: Pixel 5
     date: Oct 2021
     alt: Portfolio photograph 14
-  - src: /src/assets/images/portfolio/portfolio-15.jpg
-    title: Bedtime Reading
-    caption: ''
-    category: People
-    camera: Polaroid Land Camera
-    date: Jan 2019
-    alt: Portfolio photograph 15
-  - src: /src/assets/images/portfolio/portfolio-16.jpg
-    title: View Point
-    caption: Weymouth Beach
-    category: Places
-    camera: Instax Wide
-    date: Jan 2019
-    alt: Portfolio photograph 16
-  - src: /src/assets/images/portfolio/portfolio-17.jpg
-    title: Snow Monty
-    caption: ''
-    category: Animals
-    camera: Google Pixel
-    date: Jan 2019
-    alt: Portfolio photograph 17
-  - src: /src/assets/images/portfolio/portfolio-18.jpg
-    title: Snow Patrol
-    caption: ''
-    category: Other
-    camera: ''
-    date: Jan 2019
-    alt: Portfolio photograph 18
   - src: /src/assets/images/portfolio/portfolio-20.jpg
     title: Dragon Fly
-    caption: ''
+    caption: ""
     category: Animals
-    camera: ''
+    camera: ""
     date: Jan 2019
     alt: Portfolio photograph 20
-  - src: /src/assets/images/portfolio/portfolio-21.jpg
-    title: Running in the shadows
-    caption: ''
-    category: Self
-    camera: ''
-    date: Jan 2019
-    alt: Portfolio photograph 21
   - src: /src/assets/images/portfolio/portfolio-23.jpg
     title: Like Dad
-    caption: ''
+    caption: ""
     category: People
-    camera: ''
+    camera: ""
     date: Jan 2019
     alt: Portfolio photograph 23
-  - src: /src/assets/images/portfolio/portfolio-24.jpg
-    title: Elvis isn't dead
-    caption: Turkey
-    category: People
-    camera: Google Pixel
-    date: Aug 2018
-    alt: Portfolio photograph 24
-  - src: /src/assets/images/portfolio/portfolio-25.jpg
-    title: Murray Murray Murray
-    caption: ''
-    category: Other
-    camera: Olympus E-M5 Mark II • 12-40mm F2.8
-    date: Apr 2018
-    alt: Portfolio photograph 25
-  - src: /src/assets/images/portfolio/portfolio-26.jpg
-    title: Monkey
-    caption: Dorset Ape Rescue Centre, Dorset
-    category: Animals
-    camera: ''
-    date: Oct 2017
-    alt: Portfolio photograph 26
   - src: /src/assets/images/portfolio/portfolio-27.jpg
     title: Mountain Stream
     caption: Lake District
     category: Places
-    camera: ''
+    camera: ""
     date: Oct 2017
     alt: Portfolio photograph 27
+  - src: /src/assets/images/portfolio/portfolio-18.jpg
+    title: Snow Patrol
+    caption: ""
+    category: Other
+    camera: ""
+    date: Jan 2019
+    alt: Portfolio photograph 18
+  - src: /src/assets/images/portfolio/portfolio-26.jpg
+    title: Monkey
+    caption: Dorset Ape Rescue Centre, Dorset
+    category: Animals
+    camera: ""
+    date: Oct 2017
+    alt: Portfolio photograph 26
+  - src: /src/assets/images/portfolio/portfolio-17.jpg
+    title: Snow Monty
+    caption: ""
+    category: Animals
+    camera: Google Pixel
+    date: Jan 2019
+    alt: Portfolio photograph 17
+  - src: /src/assets/images/portfolio/portfolio-21.jpg
+    title: Running in the shadows
+    caption: ""
+    category: Self
+    camera: ""
+    date: Jan 2019
+    alt: Portfolio photograph 21
   - src: /src/assets/images/portfolio/portfolio-29.jpg
     title: Wedding Day
     caption: Weymouth
@@ -184,6 +235,13 @@ photos:
     camera: Olympus E-M5 Mark II • 12-40mm F2.8
     date: Apr 2017
     alt: Portfolio photograph 29
+  - src: /src/assets/images/portfolio/portfolio-16.jpg
+    title: View Point
+    caption: Weymouth Beach
+    category: Places
+    camera: Instax Wide
+    date: Jan 2019
+    alt: Portfolio photograph 16
   - src: /src/assets/images/portfolio/portfolio-30.jpg
     title: Instant Fam
     caption: Lake District
@@ -191,6 +249,27 @@ photos:
     camera: Olympus E-M5 Mark II • 17mm F1.8
     date: Aug 2016
     alt: Portfolio photograph 30
+  - src: /src/assets/images/portfolio/portfolio-15.jpg
+    title: Bedtime Reading
+    caption: ""
+    category: People
+    camera: Polaroid Land Camera
+    date: Jan 2019
+    alt: Portfolio photograph 15
+  - src: /src/assets/images/portfolio/portfolio-25.jpg
+    title: Murray Murray Murray
+    caption: ""
+    category: Other
+    camera: Olympus E-M5 Mark II • 12-40mm F2.8
+    date: Apr 2018
+    alt: Portfolio photograph 25
+  - src: /src/assets/images/portfolio/portfolio-24.jpg
+    title: Elvis isn't dead
+    caption: Turkey
+    category: People
+    camera: Google Pixel
+    date: Aug 2018
+    alt: Portfolio photograph 24
   - src: /src/assets/images/portfolio/portfolio-31.jpg
     title: West Bay
     caption: West Bay
@@ -198,6 +277,13 @@ photos:
     camera: Olympus E-M5 Mark II • 12-40mm F2.8
     date: Apr 2016
     alt: Portfolio photograph 31
+  - src: /src/assets/images/portfolio/portfolio-33.jpg
+    title: Run Fatboy Run
+    caption: ""
+    category: Self
+    camera: Nikon D7000 • 35.0 mm f/1.8
+    date: Sept 2014
+    alt: Portfolio photograph 33
   - src: /src/assets/images/portfolio/portfolio-32.jpg
     title: Librarian
     caption: Dorset Ape Rescue Centre
@@ -205,20 +291,27 @@ photos:
     camera: Nikon D7000 • 70.0-300.0 mm f/4.0-5.6
     date: Feb 2015
     alt: Portfolio photograph 32
-  - src: /src/assets/images/portfolio/portfolio-33.jpg
-    title: Run Fatboy Run
-    caption: ''
+  - src: /src/assets/images/portfolio/portfolio-37.jpg
+    title: Badly Drawn Boy
+    caption: ""
     category: Self
     camera: Nikon D7000 • 35.0 mm f/1.8
-    date: Sept 2014
-    alt: Portfolio photograph 33
-  - src: /src/assets/images/portfolio/portfolio-35.jpg
-    title: Blue Dor
-    caption: Durdle Dor
-    category: Places
-    camera: Nikon D7000 • 10.0-24.0 mm f/3.5-4.5
-    date: Jul 2013
-    alt: Portfolio photograph 35
+    date: Jun 2013
+    alt: Portfolio photograph 37
+  - src: /src/assets/images/portfolio/portfolio-43.jpg
+    title: Bracken
+    caption: ""
+    category: Animals
+    camera: Nikon D80 • 35.0 mm f/1.8
+    date: Apr 2012
+    alt: Portfolio photograph 43
+  - src: /src/assets/images/portfolio/portfolio-38.jpg
+    title: Wet face
+    caption: ""
+    category: Self
+    camera: Nikon D7000 • 35.0 mm f/1.8
+    date: Nov 2012
+    alt: Portfolio photograph 38
   - src: /src/assets/images/portfolio/portfolio-36.jpg
     title: One man island
     caption: West Bay
@@ -226,27 +319,6 @@ photos:
     camera: Nikon D7000 • 10.0-24.0 mm f/3.5-4.5
     date: Jul 2013
     alt: Portfolio photograph 36
-  - src: /src/assets/images/portfolio/portfolio-37.jpg
-    title: Badly Drawn Boy
-    caption: ''
-    category: Self
-    camera: Nikon D7000 • 35.0 mm f/1.8
-    date: Jun 2013
-    alt: Portfolio photograph 37
-  - src: /src/assets/images/portfolio/portfolio-38.jpg
-    title: Wet face
-    caption: ''
-    category: Self
-    camera: Nikon D7000 • 35.0 mm f/1.8
-    date: Nov 2012
-    alt: Portfolio photograph 38
-  - src: /src/assets/images/portfolio/portfolio-39.jpg
-    title: Fight Club
-    caption: ''
-    category: Self
-    camera: Nikon D7000 • 35.0 mm f/1.8
-    date: Sept 2012
-    alt: Portfolio photograph 39
   - src: /src/assets/images/portfolio/portfolio-40.jpg
     title: Ice Cream
     caption: Portland Bill
@@ -254,27 +326,13 @@ photos:
     camera: Nikon D7000 • 18.0-70.0 mm f/3.5-4.5
     date: Sept 2012
     alt: Portfolio photograph 40
-  - src: /src/assets/images/portfolio/portfolio-41.jpg
-    title: No angel
-    caption: ''
+  - src: /src/assets/images/portfolio/portfolio-39.jpg
+    title: Fight Club
+    caption: ""
     category: Self
     camera: Nikon D7000 • 35.0 mm f/1.8
     date: Sept 2012
-    alt: Portfolio photograph 41
-  - src: /src/assets/images/portfolio/portfolio-42.jpg
-    title: Runner
-    caption: ''
-    category: Self
-    camera: Nikon D7000 • 35.0 mm f/1.8
-    date: Aug 2012
-    alt: Portfolio photograph 42
-  - src: /src/assets/images/portfolio/portfolio-43.jpg
-    title: Bracken
-    caption: ''
-    category: Animals
-    camera: Nikon D80 • 35.0 mm f/1.8
-    date: Apr 2012
-    alt: Portfolio photograph 43
+    alt: Portfolio photograph 39
   - src: /src/assets/images/portfolio/portfolio-44.jpg
     title: Secret Agent
     caption: London
@@ -282,6 +340,20 @@ photos:
     camera: Nikon D80 • 70.0-300.0 mm f/4.0-5.6
     date: Apr 2011
     alt: Portfolio photograph 44
+  - src: /src/assets/images/portfolio/portfolio-35.jpg
+    title: Blue Dor
+    caption: Durdle Dor
+    category: Places
+    camera: Nikon D7000 • 10.0-24.0 mm f/3.5-4.5
+    date: Jul 2013
+    alt: Portfolio photograph 35
+  - src: /src/assets/images/portfolio/portfolio-46.jpg
+    title: "4"
+    caption: ""
+    category: Other
+    camera: Nikon D80 • 70.0-300.0 mm f/4.0-5.6
+    date: Mar 2011
+    alt: Portfolio photograph 46
   - src: /src/assets/images/portfolio/portfolio-45.jpg
     title: Drunk
     caption: London
@@ -289,13 +361,34 @@ photos:
     camera: Nikon D80 • 70.0-300.0 mm f/4.0-5.6
     date: Apr 2011
     alt: Portfolio photograph 45
-  - src: /src/assets/images/portfolio/portfolio-46.jpg
-    title: '4'
-    caption: ''
+  - src: /src/assets/images/portfolio/portfolio-50.jpg
+    title: Sunshine
+    caption: ""
     category: Other
-    camera: Nikon D80 • 70.0-300.0 mm f/4.0-5.6
-    date: Mar 2011
-    alt: Portfolio photograph 46
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    date: Sept 2010
+    alt: Portfolio photograph 50
+  - src: /src/assets/images/portfolio/portfolio-42.jpg
+    title: Runner
+    caption: ""
+    category: Self
+    camera: Nikon D7000 • 35.0 mm f/1.8
+    date: Aug 2012
+    alt: Portfolio photograph 42
+  - src: /src/assets/images/portfolio/portfolio-41.jpg
+    title: No angel
+    caption: ""
+    category: Self
+    camera: Nikon D7000 • 35.0 mm f/1.8
+    date: Sept 2012
+    alt: Portfolio photograph 41
+  - src: /src/assets/images/portfolio/portfolio-54.jpg
+    title: Ellie
+    caption: ""
+    category: People
+    camera: Nikon D80 • 35.0 mm f/1.8
+    date: Jan 2010
+    alt: Portfolio photograph 54
   - src: /src/assets/images/portfolio/portfolio-47.jpg
     title: Beach Walk
     caption: Weymouth
@@ -303,76 +396,27 @@ photos:
     camera: Nikon D80 • 35.0 mm f/1.8
     date: Feb 2011
     alt: Portfolio photograph 47
-  - src: /src/assets/images/portfolio/portfolio-48.jpg
-    title: Jam
-    caption: ''
-    category: Other
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
-    date: Jan 2011
-    alt: Portfolio photograph 48
-  - src: /src/assets/images/portfolio/portfolio-49.jpg
-    title: In stone
-    caption: ''
-    category: Other
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
-    date: Jan 2011
-    alt: Portfolio photograph 49
-  - src: /src/assets/images/portfolio/portfolio-50.jpg
-    title: Sunshine
-    caption: ''
-    category: Other
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
-    date: Sept 2010
-    alt: Portfolio photograph 50
-  - src: /src/assets/images/portfolio/portfolio-51.jpg
-    title: Corrogated
-    caption: ''
-    category: Other
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
-    date: Jun 2010
-    alt: Portfolio photograph 51
-  - src: /src/assets/images/portfolio/portfolio-52.jpg
-    title: Left
-    caption: ''
-    category: Other
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
-    date: Jun 2010
-    alt: Portfolio photograph 52
-  - src: /src/assets/images/portfolio/portfolio-53.jpg
-    title: Steps Framed
-    caption: ''
-    category: People
-    camera: ''
-    date: May 2010
-    alt: Portfolio photograph 53
-  - src: /src/assets/images/portfolio/portfolio-54.jpg
-    title: Ellie
-    caption: ''
-    category: People
-    camera: Nikon D80 • 35.0 mm f/1.8
-    date: Jan 2010
-    alt: Portfolio photograph 54
   - src: /src/assets/images/portfolio/portfolio-55.jpg
     title: Break time
-    caption: ''
+    caption: ""
     category: Other
     camera: Nikon D80 • 35.0 mm f/1.8
     date: Jan 2010
     alt: Portfolio photograph 55
-  - src: /src/assets/images/portfolio/portfolio-56.jpg
-    title: Ice Cream
-    caption: ''
-    category: People
-    camera: Olympus Trip
-    date: Jan 2010
-    alt: Portfolio photograph 56
-  - src: /src/assets/images/portfolio/portfolio-58.jpg
-    title: End
-    caption: ''
+  - src: /src/assets/images/portfolio/portfolio-52.jpg
+    title: Left
+    caption: ""
     category: Other
-    camera: Nikon D80 • 35.0 mm f/1.8
-    date: May 2009
-    alt: Portfolio photograph 58
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    date: Jun 2010
+    alt: Portfolio photograph 52
+  - src: /src/assets/images/portfolio/portfolio-49.jpg
+    title: In stone
+    caption: ""
+    category: Other
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    date: Jan 2011
+    alt: Portfolio photograph 49
   - src: /src/assets/images/portfolio/portfolio-59.jpg
     title: Bench
     caption: Dorchester
@@ -380,37 +424,44 @@ photos:
     camera: Olympus XA2
     date: Feb 2009
     alt: Portfolio photograph 59
-  - src: /src/assets/images/portfolio/portfolio-60.jpg
-    title: Pencils
-    caption: ''
-    category: Other
-    camera: Nikon D80 • 50.0 mm f/1.8
-    date: Dec 2008
-    alt: Portfolio photograph 60
-  - src: /src/assets/images/portfolio/portfolio-61.jpg
-    title: Astro
-    caption: Science Museum, London
-    category: Other
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
-    date: Nov 2008
-    alt: Portfolio photograph 61
   - src: /src/assets/images/portfolio/portfolio-62.jpg
     title: Station Floor
-    caption: ''
+    caption: ""
     category: Other
-    camera: ''
+    camera: ""
     date: Nov 2008
     alt: Portfolio photograph 62
-  - src: /src/assets/images/portfolio/portfolio-64.jpg
-    title: Bike Start
-    caption: ''
+  - src: /src/assets/images/portfolio/portfolio-56.jpg
+    title: Ice Cream
+    caption: ""
+    category: People
+    camera: Olympus Trip
+    date: Jan 2010
+    alt: Portfolio photograph 56
+  - src: /src/assets/images/portfolio/portfolio-73.jpg
+    title: Pressure
+    caption: ""
+    category: Other
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    date: Jun 2008
+    alt: Portfolio photograph 73
+  - src: /src/assets/images/portfolio/portfolio-69.jpg
+    title: Ted, Dee and Robyn
+    caption: ""
     category: People
     camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
-    date: Sept 2008
-    alt: Portfolio photograph 64
+    date: Aug 2008
+    alt: Portfolio photograph 69
+  - src: /src/assets/images/portfolio/portfolio-48.jpg
+    title: Jam
+    caption: ""
+    category: Other
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    date: Jan 2011
+    alt: Portfolio photograph 48
   - src: /src/assets/images/portfolio/portfolio-65.jpg
     title: Toy Axe
-    caption: ''
+    caption: ""
     category: Other
     camera: Instax Wide
     date: Aug 2008
@@ -422,34 +473,41 @@ photos:
     camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Aug 2008
     alt: Portfolio photograph 66
-  - src: /src/assets/images/portfolio/portfolio-67.jpg
-    title: Graf
-    caption: Brighton
+  - src: /src/assets/images/portfolio/portfolio-51.jpg
+    title: Corrogated
+    caption: ""
     category: Other
     camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
-    date: Aug 2008
-    alt: Portfolio photograph 67
-  - src: /src/assets/images/portfolio/portfolio-68.jpg
-    title: Eyeball
-    caption: ''
+    date: Jun 2010
+    alt: Portfolio photograph 51
+  - src: /src/assets/images/portfolio/portfolio-58.jpg
+    title: End
+    caption: ""
     category: Other
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
-    date: Aug 2008
-    alt: Portfolio photograph 68
-  - src: /src/assets/images/portfolio/portfolio-69.jpg
-    title: Ted, Dee and Robyn
-    caption: ''
+    camera: Nikon D80 • 35.0 mm f/1.8
+    date: May 2009
+    alt: Portfolio photograph 58
+  - src: /src/assets/images/portfolio/portfolio-53.jpg
+    title: Steps Framed
+    caption: ""
     category: People
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
-    date: Aug 2008
-    alt: Portfolio photograph 69
-  - src: /src/assets/images/portfolio/portfolio-70.jpg
-    title: Girl on bench
-    caption: ''
-    category: People
-    camera: Instax Wide
-    date: Jul 2008
-    alt: Portfolio photograph 70
+    camera: ""
+    date: May 2010
+    alt: Portfolio photograph 53
+  - src: /src/assets/images/portfolio/portfolio-60.jpg
+    title: Pencils
+    caption: ""
+    category: Other
+    camera: Nikon D80 • 50.0 mm f/1.8
+    date: Dec 2008
+    alt: Portfolio photograph 60
+  - src: /src/assets/images/portfolio/portfolio-75.jpg
+    title: Seeds
+    caption: ""
+    category: Other
+    camera: Nikon D80 • 50.0 mm f/1.8
+    date: May 2008
+    alt: Portfolio photograph 75
   - src: /src/assets/images/portfolio/portfolio-71.jpg
     title: t-shirt suntan
     caption: Weymouth
@@ -457,122 +515,66 @@ photos:
     camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Jul 2008
     alt: Portfolio photograph 71
+  - src: /src/assets/images/portfolio/portfolio-67.jpg
+    title: Graf
+    caption: Brighton
+    category: Other
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    date: Aug 2008
+    alt: Portfolio photograph 67
   - src: /src/assets/images/portfolio/portfolio-72.jpg
     title: Surveillance
-    caption: ''
+    caption: ""
     category: Other
     camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Jun 2008
     alt: Portfolio photograph 72
-  - src: /src/assets/images/portfolio/portfolio-73.jpg
-    title: Pressure
-    caption: ''
+  - src: /src/assets/images/portfolio/portfolio-61.jpg
+    title: Astro
+    caption: Science Museum, London
     category: Other
     camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
-    date: Jun 2008
-    alt: Portfolio photograph 73
-  - src: /src/assets/images/portfolio/portfolio-74.jpg
-    title: Weeping Angel
-    caption: ''
-    category: Other
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
-    date: Jun 2008
-    alt: Portfolio photograph 74
-  - src: /src/assets/images/portfolio/portfolio-75.jpg
-    title: Seeds
-    caption: ''
-    category: Other
-    camera: Nikon D80 • 50.0 mm f/1.8
-    date: May 2008
-    alt: Portfolio photograph 75
+    date: Nov 2008
+    alt: Portfolio photograph 61
   - src: /src/assets/images/portfolio/portfolio-76.jpg
     title: Shadow Play
-    caption: ''
+    caption: ""
     category: Other
     camera: FinePix S7000
     date: Feb 2008
     alt: Portfolio photograph 76
+  - src: /src/assets/images/portfolio/portfolio-70.jpg
+    title: Girl on bench
+    caption: ""
+    category: People
+    camera: Instax Wide
+    date: Jul 2008
+    alt: Portfolio photograph 70
+  - src: /src/assets/images/portfolio/portfolio-64.jpg
+    title: Bike Start
+    caption: ""
+    category: People
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    date: Sept 2008
+    alt: Portfolio photograph 64
+  - src: /src/assets/images/portfolio/portfolio-74.jpg
+    title: Weeping Angel
+    caption: ""
+    category: Other
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    date: Jun 2008
+    alt: Portfolio photograph 74
+  - src: /src/assets/images/portfolio/portfolio-68.jpg
+    title: Eyeball
+    caption: ""
+    category: Other
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    date: Aug 2008
+    alt: Portfolio photograph 68
   - src: /src/assets/images/portfolio/portfolio-77.jpg
     title: Double Trouble
-    caption: ''
+    caption: ""
     category: People
     camera: Lomo Smena
     date: Nov 2007
     alt: Portfolio photograph 77
-  - src: /src/assets/images/portfolio/portfolio-78.jpg
-    title: Mentalist
-    caption: ''
-    category: People
-    camera: Olympus E-M1 Mark III • Zuiko Digital 25mm F1.8
-    date: Aug 2025
-    alt: Portfolio photograph 78
-  - src: /src/assets/images/portfolio/portfolio-79.jpg
-    title: Hero
-    caption: ''
-    category: People
-    camera: Olympus E-M1 Mark III • Zuiko Digital 25mm F1.8
-    date: Aug 2025
-    alt: Portfolio photograph 79
-  - src: /src/assets/images/portfolio/portfolio-80.jpg
-    title: Brewing with Brad
-    caption: ''
-    category: People
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
-    date: Oct 2025
-    alt: Portfolio photograph 80
-  - src: /src/assets/images/portfolio/portfolio-81.jpg
-    title: Filter Coffee
-    caption: ''
-    category: Other
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
-    date: Oct 2025
-    alt: Portfolio photograph 81
-  - src: /src/assets/images/portfolio/portfolio-82.jpg
-    title: Happy Christmas
-    caption: ''
-    category: Self
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
-    date: Dec 2025
-    alt: Portfolio photograph 82
-  - src: /src/assets/images/portfolio/portfolio-83.jpg
-    title: Laura with Keys
-    caption: ''
-    category: People
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
-    date: Feb 2026
-    alt: Portfolio photograph 83
-  - src: /src/assets/images/portfolio/portfolio-84.jpg
-    title: Slight Return
-    caption: ''
-    category: People
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
-    date: Apr 2026
-    alt: Portfolio photograph 84
-  - src: /src/assets/images/portfolio/portfolio-85.jpg
-    title: Nat
-    caption: ''
-    category: People
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
-    date: Apr 2026
-    alt: Portfolio photograph 85
-  - src: /src/assets/images/portfolio/portfolio-86.jpg
-    title: Me
-    caption: ''
-    category: Self
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
-    date: Aug 2026
-    alt: Portfolio photograph 86
-  - src: /src/assets/images/portfolio/portfolio-87.jpg
-    title: Mathew
-    caption: ''
-    category: People
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
-    date: Jan 2025
-    alt: Portfolio photograph 87
-  - src: /src/assets/images/portfolio/portfolio-88.jpg
-    title: Mathew Mono
-    caption: ''
-    category: People
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
-    date: Jan 2025
-    alt: Portfolio photograph 88
