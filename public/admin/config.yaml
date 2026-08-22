@@ -199,7 +199,6 @@ collections:
             fields:
               - { label: 'Image', name: 'src', widget: 'image' }
               - { label: 'Title', name: 'title', widget: 'string', required: false }
-              - { label: 'Alt Text', name: 'alt', widget: 'string' }
               - { label: 'Caption / Location', name: 'caption', widget: 'string', required: false }
               - {
                   label: 'Category',
