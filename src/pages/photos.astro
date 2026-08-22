@@ -1,0 +1,18 @@
+---
+import MarkdownPageLayout from '../layouts/MarkdownPageLayout.astro';
+import { getEntry, render } from 'astro:content';
+import '../styles/photos.css';
+
+const photos = await getEntry('pages', 'photos');
+const { Content } = photos ? await render(photos) : { Content: null };
+const pageMeta = {
+  title: photos?.data.title || 'Photos',
+  description: photos?.data.description || 'Photo portfolio by Stuart Mackenzie.',
+};
+---
+
+<MarkdownPageLayout frontmatter={photos?.data} pageMeta={pageMeta}>
+  <div class="photos-page-content">
+    {Content && <Content />}
+  </div>
+</MarkdownPageLayout>

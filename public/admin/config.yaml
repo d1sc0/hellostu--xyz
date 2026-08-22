@@ -179,3 +179,26 @@ collections:
                       widget: 'string',
                       required: false,
                     }
+
+  - name: 'portfolio'
+    label: 'Photo Portfolio'
+    media_folder_relative: true
+    files:
+      - file: 'src/content/photos.yaml'
+        label: 'Curated Photos'
+        name: 'curated_photos'
+        fields:
+          - { label: 'Page Title', name: 'title', widget: 'string', default: 'Photos' }
+          - { label: 'Meta Description', name: 'description', widget: 'text', required: false }
+          - { label: 'Intro Text', name: 'intro', widget: 'markdown', required: false }
+          - label: 'Photos'
+            name: 'photos'
+            widget: 'list'
+            summary: '{{fields.title}} ({{fields.category}})'
+            fields:
+              - { label: 'Image', name: 'src', widget: 'image' }
+              - { label: 'Title', name: 'title', widget: 'string', required: false }
+              - { label: 'Alt Text', name: 'alt', widget: 'string' }
+              - { label: 'Caption / Location', name: 'caption', widget: 'string', required: false }
+              - { label: 'Category / Tag', name: 'category', widget: 'string', required: false, hint: 'e.g. Portraits, Street, Landscapes, Music' }
+              - { label: 'Year / Date', name: 'date', widget: 'string', required: false }

@@ -6,7 +6,7 @@
     { "label": "RSS", "url": "/rss-feed.xml", "icon": "rss" },
     {
       "label": "Photos",
-      "url": "https://photos.hellostu.xyz",
+      "url": "/photos/",
       "icon": "polaroid"
     },
     { "label": "Dark Mode", "url": "#", "icon": "moon" }

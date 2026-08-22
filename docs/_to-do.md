@@ -65,12 +65,11 @@
 - [x] (Optional) Add a Strava running component/widget to show a specific recent activities (implemented lightweight StravaEmbed)
 - [x] (Optional) Add a playlist component/widget to showcase favorite music/playlists, should allow playlists to be viewed in both spotify or apple music (implemented tabbed PlaylistWidget with lazy-loading)
 - [x] (Optional) Add a component for embedding Instagram posts/reels (implemented InstagramEmbed)
-- [ ] Build native Photos section into Astro (replace external Adobe Lightroom subdomain `photos.hellostu.xyz`):
-  - [ ] Add `albums` / `photos` collection schema to Sveltia CMS config (`public/admin/config.yaml`)
-  - [ ] Build `/photos` index page with album masonry grid, category filter pills, and photostream
-  - [ ] Build `/photos/[album]` album story/gallery view using Astro image tools (`astro:assets` + Sharp)
-  - [ ] Implement responsive full-screen lightbox with touch/swipe, keyboard navigation (`←`/`→`/`Esc`), and build-time EXIF metadata display (Camera, Lens, ƒ-stop, Shutter, ISO)
-  - [ ] Update site navigation (`src/content/main-nav.json`) from external link to native `/photos` route
+- [x] Build native Photos portfolio into Astro (replacing external Adobe Lightroom link):
+  - [x] Add Photo Portfolio collection to Sveltia CMS config (`public/admin/config.yaml`) backed by `src/content/photos.yaml`
+  - [x] Build responsive `/photos` portfolio page with Astro image tools (`astro:assets` + Sharp) and category filter pills
+  - [x] Implement responsive full-screen lightbox with touch/swipe, keyboard navigation (`←`/`→`/`Esc`), and caption/category display
+  - [x] Update site navigation (`src/content/main-nav.json`) from external link to native `/photos` route
 
 ---
 
