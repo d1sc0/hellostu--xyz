@@ -367,30 +367,30 @@ photos:
     date: Jan 2010
     alt: Portfolio photograph 56
   - src: /src/assets/images/portfolio/portfolio-58.jpg
-    title: Photograph 58
+    title: End
     caption: ''
-    category: Portfolio
+    category: Other
     camera: Nikon D80 • 35.0 mm f/1.8
     date: May 2009
     alt: Portfolio photograph 58
   - src: /src/assets/images/portfolio/portfolio-59.jpg
-    title: Photograph 59
-    caption: ''
-    category: Portfolio
-    camera: ''
+    title: Bench
+    caption: Dorchester
+    category: Places
+    camera: Olympus XA2
     date: Feb 2009
     alt: Portfolio photograph 59
   - src: /src/assets/images/portfolio/portfolio-60.jpg
-    title: Photograph 60
+    title: Pencils
     caption: ''
-    category: Portfolio
+    category: Other
     camera: Nikon D80 • 50.0 mm f/1.8
     date: Dec 2008
     alt: Portfolio photograph 60
   - src: /src/assets/images/portfolio/portfolio-61.jpg
-    title: Photograph 61
-    caption: ''
-    category: Portfolio
+    title: Astro
+    caption: Science Museum, London
+    category: Other
     camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Nov 2008
     alt: Portfolio photograph 61
