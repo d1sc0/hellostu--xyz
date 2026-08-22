@@ -129,44 +129,37 @@ photos:
     date: Jan 2019
     alt: Portfolio photograph 18
   - src: /src/assets/images/portfolio/portfolio-20.jpg
-    title: Photograph 20
+    title: Dragon Fly
     caption: ''
-    category: Portfolio
+    category: Animals
     camera: ''
     date: Jan 2019
     alt: Portfolio photograph 20
   - src: /src/assets/images/portfolio/portfolio-21.jpg
-    title: Photograph 21
+    title: Running in the shadows
     caption: ''
-    category: Portfolio
+    category: Self
     camera: ''
     date: Jan 2019
     alt: Portfolio photograph 21
-  - src: /src/assets/images/portfolio/portfolio-22.jpg
-    title: Photograph 22
-    caption: ''
-    category: Portfolio
-    camera: ''
-    date: Jan 2019
-    alt: Portfolio photograph 22
   - src: /src/assets/images/portfolio/portfolio-23.jpg
-    title: Photograph 23
+    title: Like Dad
     caption: ''
-    category: Portfolio
+    category: People
     camera: ''
     date: Jan 2019
     alt: Portfolio photograph 23
   - src: /src/assets/images/portfolio/portfolio-24.jpg
-    title: Photograph 24
-    caption: ''
-    category: Portfolio
-    camera: ''
+    title: Elvis isn't dead
+    caption: Turkey
+    category: People
+    camera: Google Pixel
     date: Aug 2018
     alt: Portfolio photograph 24
   - src: /src/assets/images/portfolio/portfolio-25.jpg
-    title: Photograph 25
+    title: Murray Murray Murray
     caption: ''
-    category: Portfolio
+    category: Other
     camera: Olympus E-M5 Mark II • 12-40mm F2.8
     date: Apr 2018
     alt: Portfolio photograph 25
