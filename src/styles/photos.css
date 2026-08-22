@@ -183,15 +183,15 @@
   transition: opacity 0.15s ease;
 }
 
-/* Lightbox Overlay (Right-aligned with translucent dark background) */
+/* Lightbox Overlay (Compact, Right-aligned with translucent dark background) */
 .lightbox__overlay {
   position: absolute;
-  bottom: 0.75rem;
-  right: 0.75rem;
+  bottom: 0.6rem;
+  right: 0.6rem;
   left: auto;
-  max-width: min(85%, 480px);
-  padding: 0.5rem 0.85rem;
-  background: rgba(0, 0, 0, 0.72);
+  max-width: min(80%, 340px);
+  padding: 0.35rem 0.65rem;
+  background: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   color: #ffffff;
@@ -200,10 +200,10 @@
   align-items: flex-end;
   text-align: right;
   pointer-events: none;
-  border-radius: 6px;
+  border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   transition: opacity 0.2s ease;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .lightbox__overlay:empty {
@@ -211,26 +211,37 @@
 }
 
 .lightbox__title {
-  font-size: 0.875rem;
+  font-size: 0.78rem;
   font-weight: 500;
-  margin: 0 0 0.15rem;
+  margin: 0 0 0.1rem;
   color: #ffffff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  line-height: 1.2;
 }
 
 .lightbox__caption {
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   color: rgba(255, 255, 255, 0.85);
-  margin: 0;
+  margin: 0 0 0.1rem;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  line-height: 1.2;
 }
 
-.lightbox__meta {
-  font-size: 0.725rem;
-  color: rgba(255, 255, 255, 0.65);
-  margin: 0.15rem 0 0;
+.lightbox__camera {
+  font-size: 0.68rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+
+.lightbox__date {
+  font-size: 0.62rem;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0.1rem 0 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 /* Lightbox Nav Buttons */
@@ -288,8 +299,8 @@
   }
 
   .lightbox__overlay {
-    bottom: 1.25rem;
-    right: 1.25rem;
-    padding: 0.55rem 0.95rem;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.4rem 0.75rem;
   }
 }

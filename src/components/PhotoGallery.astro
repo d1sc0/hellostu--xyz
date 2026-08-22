@@ -195,7 +195,8 @@ const categories = ['All', ...Array.from(new Set(resolvedPhotos.map((p) => p.cat
       <div class="lightbox__overlay" id="lightbox-overlay">
         <h2 class="lightbox__title" id="lightbox-title"></h2>
         <p class="lightbox__caption" id="lightbox-caption"></p>
-        <p class="lightbox__meta" id="lightbox-meta"></p>
+        <p class="lightbox__camera" id="lightbox-camera"></p>
+        <p class="lightbox__date" id="lightbox-date"></p>
       </div>
     </div>
   </dialog>
@@ -211,7 +212,8 @@ const categories = ['All', ...Array.from(new Set(resolvedPhotos.map((p) => p.cat
     const lightboxOverlay = document.getElementById('lightbox-overlay');
     const lightboxTitle = document.getElementById('lightbox-title');
     const lightboxCaption = document.getElementById('lightbox-caption');
-    const lightboxMeta = document.getElementById('lightbox-meta');
+    const lightboxCamera = document.getElementById('lightbox-camera');
+    const lightboxDate = document.getElementById('lightbox-date');
     const lightboxCounter = document.getElementById('lightbox-counter');
     const lightboxClose = document.getElementById('lightbox-close');
     const lightboxPrev = document.getElementById('lightbox-prev');
@@ -271,10 +273,14 @@ const categories = ['All', ...Array.from(new Set(resolvedPhotos.map((p) => p.cat
         lightboxCaption.style.display = captionParts.length > 0 ? 'block' : 'none';
       }
 
-      if (lightboxMeta) {
-        const metaParts = [camera, date].filter(Boolean);
-        lightboxMeta.textContent = metaParts.join(' • ');
-        lightboxMeta.style.display = metaParts.length > 0 ? 'block' : 'none';
+      if (lightboxCamera) {
+        lightboxCamera.textContent = camera;
+        lightboxCamera.style.display = camera ? 'block' : 'none';
+      }
+
+      if (lightboxDate) {
+        lightboxDate.textContent = date;
+        lightboxDate.style.display = date ? 'block' : 'none';
       }
 
       if (lightboxOverlay) {
