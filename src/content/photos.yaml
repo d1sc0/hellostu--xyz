@@ -1,629 +1,620 @@
 title: Photos
-description: A curated selection of favorite photographs across portraiture,
-  street, landscapes, and creative experiments.
-intro: A curated selection of photographs made over the years. Click any photo
-  to view in high resolution.
+description: A curated selection of favorite photographs across portraiture, street, landscapes, and creative experiments.
+intro: A curated selection of photographs made over the years. Click any photo to view in high resolution.
 photos:
-  - src: /src/assets/images/portfolio/portfolio-00.jpg
-    title: Photograph 00
-    alt: Portfolio photograph 00
-    caption: ""
-    camera: Nikon D7000 • 10.0-24.0 mm f/3.5-4.5
-    category: Portfolio
-    date: Jul 2013
   - src: /src/assets/images/portfolio/portfolio-01.jpg
     title: Photograph 01
     alt: Portfolio photograph 01
-    caption: ""
-    camera: ""
+    caption: ''
     category: Portfolio
+    camera: ''
     date: Sept 2025
   - src: /src/assets/images/portfolio/portfolio-02.jpg
     title: Photograph 02
     alt: Portfolio photograph 02
-    caption: ""
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
     date: Aug 2025
   - src: /src/assets/images/portfolio/portfolio-03.jpg
     title: Photograph 03
     alt: Portfolio photograph 03
-    caption: ""
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
     date: Sept 2024
   - src: /src/assets/images/portfolio/portfolio-04.jpg
     title: Photograph 04
     alt: Portfolio photograph 04
-    caption: ""
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
     date: Jun 2024
   - src: /src/assets/images/portfolio/portfolio-05.jpg
     title: Photograph 05
     alt: Portfolio photograph 05
-    caption: ""
-    camera: iPhone 14 Pro
+    caption: ''
     category: Portfolio
+    camera: iPhone 14 Pro
     date: Aug 2023
   - src: /src/assets/images/portfolio/portfolio-06.jpg
     title: Photograph 06
     alt: Portfolio photograph 06
-    caption: ""
-    camera: iPhone 14 Pro
+    caption: ''
     category: Portfolio
+    camera: iPhone 14 Pro
     date: Aug 2023
   - src: /src/assets/images/portfolio/portfolio-07.jpg
     title: Photograph 07
     alt: Portfolio photograph 07
-    caption: ""
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
     date: Jul 2023
   - src: /src/assets/images/portfolio/portfolio-08.jpg
     title: Photograph 08
     alt: Portfolio photograph 08
-    caption: ""
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
     date: Jun 2023
   - src: /src/assets/images/portfolio/portfolio-09.jpg
     title: Photograph 09
     alt: Portfolio photograph 09
-    caption: ""
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
     date: May 2023
   - src: /src/assets/images/portfolio/portfolio-10.jpg
     title: Photograph 10
     alt: Portfolio photograph 10
-    caption: ""
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
     date: May 2023
   - src: /src/assets/images/portfolio/portfolio-11.jpg
     title: Photograph 11
     alt: Portfolio photograph 11
-    caption: ""
-    camera: Olympus E-M5 Mark II • 12-40mm F2.8
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M5 Mark II • 12-40mm F2.8
     date: May 2023
   - src: /src/assets/images/portfolio/portfolio-12.jpg
     title: Photograph 12
     alt: Portfolio photograph 12
-    caption: ""
-    camera: Olympus E-M5 Mark II • 12-40mm F2.8
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M5 Mark II • 12-40mm F2.8
     date: Apr 2023
   - src: /src/assets/images/portfolio/portfolio-13.jpg
     title: Photograph 13
     alt: Portfolio photograph 13
-    caption: ""
-    camera: Pixel 6 Pro
+    caption: ''
     category: Portfolio
+    camera: Pixel 6 Pro
     date: Jul 2022
   - src: /src/assets/images/portfolio/portfolio-14.jpg
     title: Photograph 14
     alt: Portfolio photograph 14
-    caption: ""
-    camera: Pixel 5
+    caption: ''
     category: Portfolio
+    camera: Pixel 5
     date: Oct 2021
   - src: /src/assets/images/portfolio/portfolio-15.jpg
     title: Photograph 15
     alt: Portfolio photograph 15
-    caption: ""
-    camera: ""
+    caption: ''
     category: Portfolio
+    camera: ''
     date: Jan 2019
   - src: /src/assets/images/portfolio/portfolio-16.jpg
     title: Photograph 16
     alt: Portfolio photograph 16
-    caption: ""
-    camera: ""
+    caption: ''
     category: Portfolio
+    camera: ''
     date: Jan 2019
   - src: /src/assets/images/portfolio/portfolio-17.jpg
     title: Photograph 17
     alt: Portfolio photograph 17
-    caption: ""
-    camera: ""
+    caption: ''
     category: Portfolio
+    camera: ''
     date: Jan 2019
   - src: /src/assets/images/portfolio/portfolio-18.jpg
     title: Photograph 18
     alt: Portfolio photograph 18
-    caption: ""
-    camera: ""
+    caption: ''
     category: Portfolio
+    camera: ''
     date: Jan 2019
   - src: /src/assets/images/portfolio/portfolio-19.jpg
     title: Photograph 19
     alt: Portfolio photograph 19
-    caption: ""
-    camera: ""
+    caption: ''
     category: Portfolio
+    camera: ''
     date: Jan 2019
   - src: /src/assets/images/portfolio/portfolio-20.jpg
     title: Photograph 20
     alt: Portfolio photograph 20
-    caption: ""
-    camera: ""
+    caption: ''
     category: Portfolio
+    camera: ''
     date: Jan 2019
   - src: /src/assets/images/portfolio/portfolio-21.jpg
     title: Photograph 21
     alt: Portfolio photograph 21
-    caption: ""
-    camera: ""
+    caption: ''
     category: Portfolio
+    camera: ''
     date: Jan 2019
   - src: /src/assets/images/portfolio/portfolio-22.jpg
     title: Photograph 22
     alt: Portfolio photograph 22
-    caption: ""
-    camera: ""
+    caption: ''
     category: Portfolio
+    camera: ''
     date: Jan 2019
   - src: /src/assets/images/portfolio/portfolio-23.jpg
     title: Photograph 23
     alt: Portfolio photograph 23
-    caption: ""
-    camera: ""
+    caption: ''
     category: Portfolio
+    camera: ''
     date: Jan 2019
   - src: /src/assets/images/portfolio/portfolio-24.jpg
     title: Photograph 24
     alt: Portfolio photograph 24
-    caption: ""
-    camera: ""
+    caption: ''
     category: Portfolio
+    camera: ''
     date: Aug 2018
   - src: /src/assets/images/portfolio/portfolio-25.jpg
     title: Photograph 25
     alt: Portfolio photograph 25
-    caption: ""
-    camera: Olympus E-M5 Mark II • 12-40mm F2.8
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M5 Mark II • 12-40mm F2.8
     date: Apr 2018
   - src: /src/assets/images/portfolio/portfolio-26.jpg
     title: Photograph 26
     alt: Portfolio photograph 26
-    caption: ""
-    camera: ""
+    caption: ''
     category: Portfolio
+    camera: ''
     date: Oct 2017
   - src: /src/assets/images/portfolio/portfolio-27.jpg
     title: Photograph 27
     alt: Portfolio photograph 27
-    caption: ""
-    camera: ""
+    caption: ''
     category: Portfolio
+    camera: ''
     date: Oct 2017
   - src: /src/assets/images/portfolio/portfolio-28.jpg
     title: Photograph 28
     alt: Portfolio photograph 28
-    caption: ""
-    camera: ""
+    caption: ''
     category: Portfolio
+    camera: ''
     date: Oct 2017
   - src: /src/assets/images/portfolio/portfolio-29.jpg
     title: Photograph 29
     alt: Portfolio photograph 29
-    caption: ""
-    camera: Olympus E-M5 Mark II • 12-40mm F2.8
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M5 Mark II • 12-40mm F2.8
     date: Apr 2017
   - src: /src/assets/images/portfolio/portfolio-30.jpg
     title: Photograph 30
     alt: Portfolio photograph 30
-    caption: ""
-    camera: Olympus E-M5 Mark II • 17mm F1.8
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M5 Mark II • 17mm F1.8
     date: Aug 2016
   - src: /src/assets/images/portfolio/portfolio-31.jpg
     title: Photograph 31
     alt: Portfolio photograph 31
-    caption: ""
-    camera: Olympus E-M5 Mark II • 12-40mm F2.8
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M5 Mark II • 12-40mm F2.8
     date: Apr 2016
   - src: /src/assets/images/portfolio/portfolio-32.jpg
     title: Photograph 32
     alt: Portfolio photograph 32
-    caption: ""
-    camera: Nikon D7000 • 70.0-300.0 mm f/4.0-5.6
+    caption: ''
     category: Portfolio
+    camera: Nikon D7000 • 70.0-300.0 mm f/4.0-5.6
     date: Feb 2015
   - src: /src/assets/images/portfolio/portfolio-33.jpg
     title: Photograph 33
     alt: Portfolio photograph 33
-    caption: ""
-    camera: Nikon D7000 • 35.0 mm f/1.8
+    caption: ''
     category: Portfolio
+    camera: Nikon D7000 • 35.0 mm f/1.8
     date: Sept 2014
   - src: /src/assets/images/portfolio/portfolio-34.jpg
     title: Photograph 34
     alt: Portfolio photograph 34
-    caption: ""
-    camera: Nikon D7000 • 35.0 mm f/1.8
+    caption: ''
     category: Portfolio
+    camera: Nikon D7000 • 35.0 mm f/1.8
     date: Jul 2013
   - src: /src/assets/images/portfolio/portfolio-35.jpg
     title: Photograph 35
     alt: Portfolio photograph 35
-    caption: ""
-    camera: Nikon D7000 • 10.0-24.0 mm f/3.5-4.5
+    caption: ''
     category: Portfolio
+    camera: Nikon D7000 • 10.0-24.0 mm f/3.5-4.5
     date: Jul 2013
   - src: /src/assets/images/portfolio/portfolio-36.jpg
     title: Photograph 36
     alt: Portfolio photograph 36
-    caption: ""
-    camera: Nikon D7000 • 10.0-24.0 mm f/3.5-4.5
+    caption: ''
     category: Portfolio
+    camera: Nikon D7000 • 10.0-24.0 mm f/3.5-4.5
     date: Jul 2013
   - src: /src/assets/images/portfolio/portfolio-37.jpg
     title: Photograph 37
     alt: Portfolio photograph 37
-    caption: ""
-    camera: Nikon D7000 • 35.0 mm f/1.8
+    caption: ''
     category: Portfolio
+    camera: Nikon D7000 • 35.0 mm f/1.8
     date: Jun 2013
   - src: /src/assets/images/portfolio/portfolio-38.jpg
     title: Photograph 38
     alt: Portfolio photograph 38
-    caption: ""
-    camera: Nikon D7000 • 35.0 mm f/1.8
+    caption: ''
     category: Portfolio
+    camera: Nikon D7000 • 35.0 mm f/1.8
     date: Nov 2012
   - src: /src/assets/images/portfolio/portfolio-39.jpg
     title: Photograph 39
     alt: Portfolio photograph 39
-    caption: ""
-    camera: Nikon D7000 • 35.0 mm f/1.8
+    caption: ''
     category: Portfolio
+    camera: Nikon D7000 • 35.0 mm f/1.8
     date: Sept 2012
   - src: /src/assets/images/portfolio/portfolio-40.jpg
     title: Photograph 40
     alt: Portfolio photograph 40
-    caption: ""
-    camera: Nikon D7000 • 18.0-70.0 mm f/3.5-4.5
+    caption: ''
     category: Portfolio
+    camera: Nikon D7000 • 18.0-70.0 mm f/3.5-4.5
     date: Sept 2012
   - src: /src/assets/images/portfolio/portfolio-41.jpg
     title: Photograph 41
     alt: Portfolio photograph 41
-    caption: ""
-    camera: Nikon D7000 • 35.0 mm f/1.8
+    caption: ''
     category: Portfolio
+    camera: Nikon D7000 • 35.0 mm f/1.8
     date: Sept 2012
   - src: /src/assets/images/portfolio/portfolio-42.jpg
     title: Photograph 42
     alt: Portfolio photograph 42
-    caption: ""
-    camera: Nikon D7000 • 35.0 mm f/1.8
+    caption: ''
     category: Portfolio
+    camera: Nikon D7000 • 35.0 mm f/1.8
     date: Aug 2012
   - src: /src/assets/images/portfolio/portfolio-43.jpg
     title: Photograph 43
     alt: Portfolio photograph 43
-    caption: ""
-    camera: Nikon D80 • 35.0 mm f/1.8
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 35.0 mm f/1.8
     date: Apr 2012
   - src: /src/assets/images/portfolio/portfolio-44.jpg
     title: Photograph 44
     alt: Portfolio photograph 44
-    caption: ""
-    camera: Nikon D80 • 70.0-300.0 mm f/4.0-5.6
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 70.0-300.0 mm f/4.0-5.6
     date: Apr 2011
   - src: /src/assets/images/portfolio/portfolio-45.jpg
     title: Photograph 45
     alt: Portfolio photograph 45
-    caption: ""
-    camera: Nikon D80 • 70.0-300.0 mm f/4.0-5.6
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 70.0-300.0 mm f/4.0-5.6
     date: Apr 2011
   - src: /src/assets/images/portfolio/portfolio-46.jpg
     title: Photograph 46
     alt: Portfolio photograph 46
-    caption: ""
-    camera: Nikon D80 • 70.0-300.0 mm f/4.0-5.6
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 70.0-300.0 mm f/4.0-5.6
     date: Mar 2011
   - src: /src/assets/images/portfolio/portfolio-47.jpg
     title: Photograph 47
     alt: Portfolio photograph 47
-    caption: ""
-    camera: Nikon D80 • 35.0 mm f/1.8
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 35.0 mm f/1.8
     date: Feb 2011
   - src: /src/assets/images/portfolio/portfolio-48.jpg
     title: Photograph 48
     alt: Portfolio photograph 48
-    caption: ""
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Jan 2011
   - src: /src/assets/images/portfolio/portfolio-49.jpg
     title: Photograph 49
     alt: Portfolio photograph 49
-    caption: ""
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Jan 2011
   - src: /src/assets/images/portfolio/portfolio-50.jpg
     title: Photograph 50
     alt: Portfolio photograph 50
-    caption: ""
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Sept 2010
   - src: /src/assets/images/portfolio/portfolio-51.jpg
     title: Photograph 51
     alt: Portfolio photograph 51
-    caption: ""
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Jun 2010
   - src: /src/assets/images/portfolio/portfolio-52.jpg
     title: Photograph 52
     alt: Portfolio photograph 52
-    caption: ""
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Jun 2010
   - src: /src/assets/images/portfolio/portfolio-53.jpg
     title: Photograph 53
     alt: Portfolio photograph 53
-    caption: ""
-    camera: ""
+    caption: ''
     category: Portfolio
+    camera: ''
     date: May 2010
   - src: /src/assets/images/portfolio/portfolio-54.jpg
     title: Photograph 54
     alt: Portfolio photograph 54
-    caption: ""
-    camera: Nikon D80 • 35.0 mm f/1.8
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 35.0 mm f/1.8
     date: Jan 2010
   - src: /src/assets/images/portfolio/portfolio-55.jpg
     title: Photograph 55
     alt: Portfolio photograph 55
-    caption: ""
-    camera: Nikon D80 • 35.0 mm f/1.8
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 35.0 mm f/1.8
     date: Jan 2010
   - src: /src/assets/images/portfolio/portfolio-56.jpg
     title: Photograph 56
     alt: Portfolio photograph 56
-    caption: ""
-    camera: SP-3000
+    caption: ''
     category: Portfolio
+    camera: SP-3000
     date: Jan 2010
   - src: /src/assets/images/portfolio/portfolio-57.jpg
     title: Photograph 57
     alt: Portfolio photograph 57
-    caption: ""
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Jul 2009
   - src: /src/assets/images/portfolio/portfolio-58.jpg
     title: Photograph 58
     alt: Portfolio photograph 58
-    caption: ""
-    camera: Nikon D80 • 35.0 mm f/1.8
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 35.0 mm f/1.8
     date: May 2009
   - src: /src/assets/images/portfolio/portfolio-59.jpg
     title: Photograph 59
     alt: Portfolio photograph 59
-    caption: ""
-    camera: ""
+    caption: ''
     category: Portfolio
+    camera: ''
     date: Feb 2009
   - src: /src/assets/images/portfolio/portfolio-60.jpg
     title: Photograph 60
     alt: Portfolio photograph 60
-    caption: ""
-    camera: Nikon D80 • 50.0 mm f/1.8
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 50.0 mm f/1.8
     date: Dec 2008
   - src: /src/assets/images/portfolio/portfolio-61.jpg
     title: Photograph 61
     alt: Portfolio photograph 61
-    caption: ""
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Nov 2008
   - src: /src/assets/images/portfolio/portfolio-62.jpg
     title: Photograph 62
     alt: Portfolio photograph 62
-    caption: ""
-    camera: ""
+    caption: ''
     category: Portfolio
+    camera: ''
     date: Nov 2008
   - src: /src/assets/images/portfolio/portfolio-63.jpg
     title: Photograph 63
     alt: Portfolio photograph 63
-    caption: ""
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Oct 2008
   - src: /src/assets/images/portfolio/portfolio-64.jpg
     title: Photograph 64
     alt: Portfolio photograph 64
-    caption: ""
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Sept 2008
   - src: /src/assets/images/portfolio/portfolio-65.jpg
     title: Photograph 65
     alt: Portfolio photograph 65
-    caption: ""
-    camera: ""
+    caption: ''
     category: Portfolio
+    camera: ''
     date: Aug 2008
   - src: /src/assets/images/portfolio/portfolio-66.jpg
     title: Photograph 66
     alt: Portfolio photograph 66
-    caption: ""
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Aug 2008
   - src: /src/assets/images/portfolio/portfolio-67.jpg
     title: Photograph 67
     alt: Portfolio photograph 67
-    caption: ""
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Aug 2008
   - src: /src/assets/images/portfolio/portfolio-68.jpg
     title: Photograph 68
     alt: Portfolio photograph 68
-    caption: ""
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Aug 2008
   - src: /src/assets/images/portfolio/portfolio-69.jpg
     title: Photograph 69
     alt: Portfolio photograph 69
-    caption: ""
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Aug 2008
   - src: /src/assets/images/portfolio/portfolio-70.jpg
     title: Photograph 70
     alt: Portfolio photograph 70
-    caption: ""
-    camera: ""
+    caption: ''
     category: Portfolio
+    camera: ''
     date: Jul 2008
   - src: /src/assets/images/portfolio/portfolio-71.jpg
     title: Photograph 71
     alt: Portfolio photograph 71
-    caption: ""
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Jul 2008
   - src: /src/assets/images/portfolio/portfolio-72.jpg
     title: Photograph 72
     alt: Portfolio photograph 72
-    caption: ""
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Jun 2008
   - src: /src/assets/images/portfolio/portfolio-73.jpg
     title: Photograph 73
     alt: Portfolio photograph 73
-    caption: ""
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Jun 2008
   - src: /src/assets/images/portfolio/portfolio-74.jpg
     title: Photograph 74
     alt: Portfolio photograph 74
-    caption: ""
-    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 18.0-70.0 mm f/3.5-4.5
     date: Jun 2008
   - src: /src/assets/images/portfolio/portfolio-75.jpg
     title: Photograph 75
     alt: Portfolio photograph 75
-    caption: ""
-    camera: Nikon D80 • 50.0 mm f/1.8
+    caption: ''
     category: Portfolio
+    camera: Nikon D80 • 50.0 mm f/1.8
     date: May 2008
   - src: /src/assets/images/portfolio/portfolio-76.jpg
     title: Photograph 76
     alt: Portfolio photograph 76
-    caption: ""
-    camera: FinePix S7000
+    caption: ''
     category: Portfolio
+    camera: FinePix S7000
     date: Feb 2008
   - src: /src/assets/images/portfolio/portfolio-77.jpg
     title: Photograph 77
     alt: Portfolio photograph 77
-    caption: ""
-    camera: ""
+    caption: ''
     category: Portfolio
+    camera: ''
     date: Nov 2007
   - src: /src/assets/images/portfolio/portfolio-78.jpg
     title: Photograph 78
     alt: Portfolio photograph 78
-    caption: ""
-    camera: Olympus E-M1 Mark III • Zuiko Digital 25mm F1.8
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M1 Mark III • Zuiko Digital 25mm F1.8
     date: Aug 2025
   - src: /src/assets/images/portfolio/portfolio-79.jpg
     title: Photograph 79
     alt: Portfolio photograph 79
-    caption: ""
-    camera: Olympus E-M1 Mark III • Zuiko Digital 25mm F1.8
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M1 Mark III • Zuiko Digital 25mm F1.8
     date: Aug 2025
   - src: /src/assets/images/portfolio/portfolio-80.jpg
     title: Photograph 80
     alt: Portfolio photograph 80
-    caption: ""
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
     date: Oct 2025
   - src: /src/assets/images/portfolio/portfolio-81.jpg
     title: Photograph 81
     alt: Portfolio photograph 81
-    caption: ""
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
     date: Oct 2025
   - src: /src/assets/images/portfolio/portfolio-82.jpg
     title: Photograph 82
     alt: Portfolio photograph 82
-    caption: ""
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
     date: Dec 2025
   - src: /src/assets/images/portfolio/portfolio-83.jpg
     title: Photograph 83
     alt: Portfolio photograph 83
-    caption: ""
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8 Pro
     date: Feb 2026
   - src: /src/assets/images/portfolio/portfolio-84.jpg
     title: Photograph 84
     alt: Portfolio photograph 84
-    caption: ""
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
     date: Apr 2026
   - src: /src/assets/images/portfolio/portfolio-85.jpg
     title: Photograph 85
     alt: Portfolio photograph 85
-    caption: ""
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
     date: Apr 2026
   - src: /src/assets/images/portfolio/portfolio-86.jpg
     title: Photograph 86
     alt: Portfolio photograph 86
-    caption: ""
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
     date: Aug 2026
   - src: /src/assets/images/portfolio/portfolio-87.jpg
     title: Photograph 87
     alt: Portfolio photograph 87
-    caption: ""
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
     date: Jan 2025
   - src: /src/assets/images/portfolio/portfolio-88.jpg
     title: Photograph 88
     alt: Portfolio photograph 88
-    caption: ""
-    camera: Olympus E-M1 Mark III • 12-40mm F2.8
+    caption: ''
     category: Portfolio
+    camera: Olympus E-M1 Mark III • 12-40mm F2.8
     date: Jan 2025
