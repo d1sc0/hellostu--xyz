@@ -518,9 +518,31 @@ const categories = ['All', ...orderedCategories, ...otherActive];
       showNext();
     });
 
-    // Backdrop click to close
+    // Stage left/right click navigation (Left 50% = Prev, Right 50% = Next)
+    const lightboxStage = document.querySelector('.lightbox__stage') as HTMLElement | null;
+    let isSwiping = false;
+
+    lightboxStage?.addEventListener('click', (e) => {
+      if (isSwiping) {
+        isSwiping = false;
+        return;
+      }
+      // If clicking inside the overlay badge, don't trigger navigation
+      if ((e.target as HTMLElement).closest('.lightbox__overlay')) return;
+
+      const rect = lightboxStage.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+
+      if (clickX < rect.width / 2) {
+        showPrev();
+      } else {
+        showNext();
+      }
+    });
+
+    // Backdrop click outside stage to close
     lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox || (e.target as HTMLElement).classList.contains('lightbox__stage')) {
+      if (e.target === lightbox) {
         closeLightbox();
       }
     });
@@ -541,6 +563,7 @@ const categories = ['All', ...orderedCategories, ...otherActive];
       'touchstart',
       (e) => {
         touchStartX = e.changedTouches[0].screenX;
+        isSwiping = false;
       },
       { passive: true },
     );
@@ -551,6 +574,7 @@ const categories = ['All', ...orderedCategories, ...otherActive];
         touchEndX = e.changedTouches[0].screenX;
         const diff = touchEndX - touchStartX;
         if (Math.abs(diff) > 40) {
+          isSwiping = true;
           if (diff < 0) showNext();
           else showPrev();
         }
