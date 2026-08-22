@@ -293,37 +293,6 @@
   letter-spacing: 0.02em;
 }
 
-/* Lightbox Nav Buttons */
-.lightbox__btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #ffffff;
-  width: 2.8rem;
-  height: 2.8rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background 0.2s ease, transform 0.2s ease;
-  z-index: 15;
-}
-
-.lightbox__btn:hover {
-  background: rgba(255, 255, 255, 0.25);
-}
-
-.lightbox__btn--prev {
-  left: 0.5rem;
-}
-
-.lightbox__btn--next {
-  right: 0.5rem;
-}
-
 /* Desktop & Landscape Breakpoint Override */
 @media (min-width: 768px) and (orientation: landscape) {
   .photos-masonry {
@@ -333,14 +302,6 @@
 
   .photo-item {
     margin-bottom: 0.6rem;
-  }
-
-  .lightbox__btn--prev {
-    left: 1.5rem;
-  }
-
-  .lightbox__btn--next {
-    right: 1.5rem;
   }
 
   .lightbox__img {
