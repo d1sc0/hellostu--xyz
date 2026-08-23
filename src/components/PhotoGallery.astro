@@ -439,6 +439,8 @@ const categories = ['All', ...orderedCategories, ...otherActive];
       if (lightboxOverlay) {
         const hasText = Boolean(title || caption || camera || date);
         lightboxOverlay.style.display = hasText ? 'flex' : 'none';
+        lightboxOverlay.style.opacity = hasText ? '1' : '0';
+        lightboxOverlay.style.visibility = hasText ? 'visible' : 'hidden';
       }
 
       if (lightboxCounter) {
