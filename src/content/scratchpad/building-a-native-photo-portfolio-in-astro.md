@@ -17,7 +17,7 @@ In practice, it always felt like an annex.
 
 The typography never quite matched the rest of my digital garden, the color schemes clashed with the main site, and navigating back and forth felt disjointed. It felt like visiting two completely separate worlds.
 
-This weekend, I finally pulled the plug on the external subdomain and brought my photography **home** into a native **[Photo Portfolio](/photos/)** right inside `hellostu.xyz`.
+This weekend, I finally pulled the plug on the external subdomain and brought my photography **home** into a native **[Photo Portfolio](/photos/)** right inside `hellostu.xyz`—complete with a quick Cloudflare redirect rule so any existing links or bookmarks to `photos.hellostu.xyz` seamlessly route to the new home.
 
 ---
 
