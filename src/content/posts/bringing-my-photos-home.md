@@ -1,7 +1,7 @@
 ---
 title: "Bringing my photos home"
 slug: "bringing-my-photos-home"
-draft: false
+draft: true
 pubDate: 2026-08-23
 category: Play
 featureImage: /src/assets/images/portfolio/portfolio-02.jpg
