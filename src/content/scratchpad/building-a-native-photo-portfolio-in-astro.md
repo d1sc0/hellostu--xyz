@@ -48,7 +48,7 @@ Building the gallery natively meant I could set it up exactly how I wanted:
 
 ### Tidying up the garden
 
-A big part of keeping a personal website is about ownership and keeping things tidy. Relying on separate platforms and monthly subscriptions often means your creative work ends up scattered across the web in little forgotten silos.
+A big part of keeping a personal website is about ownership and keeping things tidy. Relying on detached hosted tools often means your creative work ends up scattered across the web in little forgotten silos.
 
 Having my photography sitting alongside my weeknotes, writing, and other experiments makes the place feel much more cohesive.
 
