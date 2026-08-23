@@ -1,199 +1,72 @@
 ---
-title: "Building a Native Photo Portfolio in Astro: Saying Goodbye to Adobe Portfolio"
+title: "Bringing My Photos Home: Building a Native Portfolio in My Digital Garden"
 pubDate: 2026-08-23
-description: "Why I moved my photography portfolio away from Adobe Portfolio and rebuilt it natively into my Astro digital garden—with responsive masonry, build-time EXIF extraction, and a sleek lightbox."
+description: "Why I moved my photography portfolio away from Adobe Portfolio and brought it natively into my Astro digital garden—focusing on ownership, cohesive design, category filtering, and deep linking."
 tags:
   - "photography"
   - "astro"
   - "webdev"
-  - "digital"
+  - "digital garden"
   - "creativity"
-slug: "native-photo-portfolio-in-astro"
+slug: "bringing-my-photos-home"
 ---
 
-For a long time, my photography lived over on an external subdomain powered by Adobe Portfolio (`photos.hellostu.xyz`). On paper, it was convenient—sync a collection straight from Lightroom, pick a template, and call it a day. 
+For several years, my photography lived over on a detached subdomain powered by Adobe Portfolio (`photos.hellostu.xyz`). On paper, it made a lot of sense: you pick a pre-made template, click sync in Adobe Lightroom, and your collections appear online with almost zero friction.
 
-In practice, it always felt like a disconnected annex. The design never quite matched the rest of my digital garden, navigating back and forth felt disjointed, and I was paying a monthly creative cloud subscription partly just to keep a web gallery alive.
+In practice, it always felt like an annex. 
 
-This weekend, I finally pulled the plug on the external subdomain and built a dedicated, native **[Photo Portfolio](/photos/)** right inside my Astro static site. 
+The typography never quite matched the rest of my digital garden, the color schemes clashed with the main site, and navigating back and forth felt disjointed. It felt like visiting two completely separate worlds.
 
-Here is why I made the switch, how it's engineered, and a look at the configuration behind the scenes.
-
----
-
-### Why Ditch Adobe Portfolio?
-
-1. **True Ownership & Zero Subscriptions**: My photographs now live directly in my GitHub repository and deploy effortlessly to Firebase alongside my weeknotes, writing, and projects. No vendor lock-in.
-2. **Blazing Performance**: Astro's asset pipeline with Sharp automatically generates modern responsive WebP formats at multiple breakpoints (`400px` to `1600px`), delivering razor-sharp Retina display quality with fraction-of-a-second load times.
-3. **Seamless Digital Garden Aesthetic**: The gallery uses the exact same typography, palette variables, and responsive layout conventions as the rest of the site.
-4. **Separation of Concerns**: In-post story galleries remain contextual within articles, while `/photos` serves as a high-resolution, curated portfolio stream.
-5. **Direct Photo Permalinks**: Every individual photograph now has its own linkable URL (e.g. `https://hellostu.xyz/photos#iron-banana`), complete with an instant "Copy Link" button in the lightbox. Adobe Portfolio made direct photo linking clunky and awkward.
+This weekend, I finally pulled the plug on the external subdomain and brought my photography **home** into a native **[Photo Portfolio](/photos/)** right inside `hellostu.xyz`.
 
 ---
 
-### How We Built It
+### The Catalyst: Switching to Sveltia CMS
 
-#### 1. Curated Data Schema in Sveltia CMS
+The biggest blocker to hosting photos natively in the past was maintenance. I didn't want to open Visual Studio Code, write raw YAML files, manually rename image files, and push git commits every time I wanted to add a picture. 
 
-To make curating and adding new photographs effortless without touching code, we created a dedicated `photos.yaml` data manifest and mapped it into **Sveltia CMS** (`/admin/`):
+The catalyst for making the switch was integrating **Sveltia CMS** into my static site. 
 
-```yaml
-# public/admin/config.yaml
-- name: 'portfolio'
-  label: 'Photo Portfolio'
-  media_folder: 'src/assets/images/portfolio'
-  public_folder: '/src/assets/images/portfolio'
-  files:
-    - file: 'src/content/photos.yaml'
-      label: 'Curated Photos'
-      name: 'curated_photos'
-      fields:
-        - { label: 'Page Title', name: 'title', widget: 'string', default: 'Photos' }
-        - { label: 'Intro Text', name: 'intro', widget: 'markdown', required: false }
-        - label: 'Photos'
-          name: 'photos'
-          widget: 'list'
-          summary: '{{fields.title}} ({{fields.category}})'
-          fields:
-            - { label: 'Image', name: 'src', widget: 'image' }
-            - { label: 'Title', name: 'title', widget: 'string', required: false }
-            - { label: 'Caption / Location', name: 'caption', widget: 'string', required: false }
-            - {
-                label: 'Category',
-                name: 'category',
-                widget: 'select',
-                options: ['Self', 'People', 'Animals', 'Places', 'Other'],
-                default: 'Other',
-              }
-            - { label: 'Camera / Gear', name: 'camera', widget: 'string', required: false }
-            - { label: 'Year / Date', name: 'date', widget: 'string', required: false }
-```
+Having a clean, visual content management interface changed everything. Now, curating the gallery is as simple as opening `/admin/`, selecting an image, giving it a title, and picking a category.
 
-> **Smart Defaults**: To keep CMS entries lightning fast, accessibility `alt` text automatically falls back to the photo's `title`, saving an extra field every time.
+Is it quite as effortless as clicking "Sync to Adobe Portfolio" straight out of Lightroom? Probably not. But because I curate and update my portfolio in thoughtful batches rather than daily dumps, that slight trade-off is negligible. Having the gallery live natively under the same roof—sharing the exact same aesthetic, fonts, and codebase—far outweighs any minor inconvenience.
 
 ---
 
-#### 2. Automatic Build-Time EXIF Metadata Extraction
+### Making the Gallery Feel Like Home
 
-Rather than manually looking up when every photo was taken or what camera was in my hand, `PhotoGallery.astro` automatically parses image EXIF metadata at build time using `exifr` if the fields are left empty in the CMS:
+Bringing the photos directly into Astro allowed me to design the viewing experience around how I actually want people to enjoy them:
 
-```js
-// Inside PhotoGallery.astro (build-time frontmatter)
-if (!date || !camera) {
-  const exif = await exifr.parse(diskPath, { tiff: true, exif: true });
-  
-  if (!date && exif?.DateTimeOriginal) {
-    date = new Date(exif.DateTimeOriginal).toLocaleDateString('en-GB', { 
-      month: 'short', 
-      year: 'numeric' 
-    });
-  }
+#### 1. Seamless Digital Garden Integration
+The gallery now uses the exact same warm palette, fonts, and responsive layout rules as the rest of the site. It no longer feels like a third-party widget taped onto the side; it feels like a natural wing of the house.
 
-  if (!camera) {
-    const cam = cleanCamera(exif?.Make, exif?.Model);
-    const lens = cleanLens(exif?.LensModel);
-    camera = [cam, lens].filter(Boolean).join(' • ');
-  }
-}
-```
+#### 2. Pure Masonry Layout
+Rather than cropping vertical portraits into rigid square thumbnails or leaving awkward gaps, the masonry grid flows naturally across 1 column on mobile and 2 columns on desktop landscape. Every photo retains its natural aspect ratio.
 
-This means new uploads in Sveltia CMS only require an image and a title. Astro automatically tags them with accurate capture dates and camera bodies spanning from my old Nikon D7000 and Pixel phones to my Olympus gear—with full freedom to provide a custom manual override whenever desired.
+#### 3. Category Filtering
+I wanted an easy way to organize my photography without creating dozens of separate pages. We set up simple filter pills across five core themes:
+* **Self**
+* **People**
+* **Animals**
+* **Places**
+* **Other**
 
----
+You can browse everything in a single stream, or filter down to a specific mood with a single tap.
 
-#### 3. Pure Masonry Layout (CSS Columns)
+#### 4. Deep Linking & Direct Permalinks
+One of the most frustrating limitations of many third-party photo tools is the inability to share a single photo. If you want to talk about a specific picture in an essay or send a link to a friend, you usually have to point them to the entire gallery and tell them to "scroll down a bit."
 
-Instead of rigid square thumbnails that crop portraits or awkward grid gaps, we implemented pure CSS multi-column masonry:
+Now, every photo generates its own direct permalink (like **[/photos#vape-dancing](/photos#vape-dancing)** or **[/photos#iron-banana](/photos#iron-banana)**). Clicking a link opens the gallery and immediately launches that exact picture in high resolution. There's even a discrete 1-click **Copy Link** button right in the lightbox header.
 
-```css
-/* src/styles/photos.css */
-.photos-masonry {
-  column-count: 1;
-  column-gap: 0.5rem;
-  margin-bottom: 3rem;
-}
-
-.photo-item {
-  break-inside: avoid;
-  margin-bottom: 0.5rem;
-  display: block;
-  width: 100%;
-  border-radius: 6px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.2s ease, opacity 0.3s ease;
-}
-
-@media (min-width: 768px) and (orientation: landscape) {
-  .photos-masonry {
-    column-count: 2;
-    column-gap: 0.6rem;
-  }
-  .photo-item {
-    margin-bottom: 0.6rem;
-  }
-}
-```
-
-Every photograph retains its natural vertical or horizontal proportions, creating a seamless, tactile masonry flow.
+#### 5. Intelligent Metadata Behind the Scenes
+To keep the editing process effortless, the site automatically reads each photo's EXIF data at build time. When I upload a photo, Astro automatically extracts the capture date (e.g. `Aug 2025`) and camera gear (e.g. `Olympus E-M1 Mark III • 12-40mm F2.8 Pro`), meaning I only ever need to type a title.
 
 ---
 
-#### 4. Minimalist, Accessible Lightbox Modal
+### The Payoff
 
-Clicking any photo opens a native `<dialog>` modal with:
-- Keyboard navigation (`←`, `→` arrow keys to cycle, `Esc` to close).
-- Mobile touch swipe gestures.
-- A compact, frosted-glass dark badge anchored to the bottom right showing Title, Location, Camera Gear, and Date:
+Digital gardens are about ownership and intentionality. Relying on closed silos and monthly subscriptions often pulls us away from the craft of building spaces that truly feel like our own.
 
-```html
-<!-- Lightbox Overlay -->
-<div class="lightbox__overlay" id="lightbox-overlay">
-  <h2 class="lightbox__title" id="lightbox-title">Vape Dancing</h2>
-  <p class="lightbox__caption" id="lightbox-caption"></p>
-  <p class="lightbox__camera" id="lightbox-camera">Olympus E-M1 Mark III • 12-40mm F2.8 Pro</p>
-  <p class="lightbox__date" id="lightbox-date">Aug 2025</p>
-</div>
-```
+Having my visual work live alongside my weeknotes, writing, and experiments makes the whole site feel whole again.
 
----
-
-#### 5. Recent-Weighted Randomization
-
-I didn't want a strict chronological timeline (which can feel predictable), but I also didn't want my best recent work buried at the bottom. We applied a weighted shuffle algorithm:
-
-```js
-// Weight recent photos towards the top with controlled random jitter
-function weightedShuffle(photos, jitterYears = 1.6) {
-  const ONE_YEAR_MS = 365.25 * 24 * 60 * 60 * 1000;
-  const jitterMs = jitterYears * ONE_YEAR_MS;
-
-  return photos
-    .map(p => ({
-      photo: p,
-      score: parseDateToTimestamp(p.date) + (Math.random() * 2 - 1) * jitterMs,
-    }))
-    .sort((a, b) => b.score - a.score)
-    .map(s => s.photo);
-}
-```
-
-Recent shots from 2024–2026 naturally greet visitors first, followed by older visual memories, all woven together with pleasant variety.
-
----
-
-#### 6. Direct Photo Permalinks & Deep Linking
-
-One limitation with many third-party galleries is that you can rarely share a link to a *single* photograph inside a fullscreen viewer. 
-
-We wired up reversible deep linking into `PhotoGallery.astro`:
-- Every image generates a clean slug from its title (e.g. `#vape-dancing`, `#cocktail-menu`, `#iron-banana`).
-- When navigating or sharing, `history.replaceState` updates the URL hash dynamically.
-- Visiting `/photos#vape-dancing` directly automatically scrolls to and launches that exact photograph in the fullscreen lightbox.
-- A discrete share button in the lightbox header lets you copy the direct permalink in one click with instant visual feedback.
-
----
-
-### What's Next?
-
-Having my photography live inside the same codebase as my thoughts and essays makes the whole digital garden feel complete. If you'd like to take a look, explore the new **[Photos Portfolio](/photos/)** (or test a direct link like **[/photos#vape-dancing](/photos#vape-dancing)**)!
+If you'd like to take a look around, explore the new **[Photos Portfolio](/photos/)**!
