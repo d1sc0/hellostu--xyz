@@ -16,6 +16,7 @@
     "generate:og": "ts-node src/scripts/image-generation/generate-og-images.ts",
     "generate:preview": "ts-node src/scripts/image-generation/generate-preview-images.ts",
     "generate:recommendations": "node src/scripts/recommendations.mjs",
+    "generate:recommendations:force": "node src/scripts/recommendations.mjs --force",
     "generate:recommendations:test": "node src/scripts/recommendations.mjs --test"
   },
   "dependencies": {

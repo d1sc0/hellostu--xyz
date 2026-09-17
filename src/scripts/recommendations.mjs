@@ -33,6 +33,7 @@ const reasoningModel = genAI.getGenerativeModel({
 });
 
 const isTestMode = process.argv.includes('--test');
+const isForceMode = process.argv.includes('--force') || process.argv.includes('--clean');
 const BASE_DIR = process.cwd();
 const CONTENT_DIR = path.join(BASE_DIR, 'src/content/posts');
 const OUTPUT_FILE = path.join(
@@ -340,7 +341,7 @@ async function generateRecommendations() {
   }
 
   let existingRecommendations = {};
-  if (existsSync(OUTPUT_FILE)) {
+  if (existsSync(OUTPUT_FILE) && !isForceMode) {
     try {
       const fileContent = await fs.readFile(OUTPUT_FILE, 'utf-8');
       existingRecommendations = JSON.parse(fileContent);
@@ -350,6 +351,8 @@ async function generateRecommendations() {
     } catch (e) {
       console.log('Could not parse existing recommendations. Starting fresh.');
     }
+  } else if (isForceMode) {
+    console.log('Force mode enabled: regenerating all recommendations from scratch.');
   }
 
   const recommendations = {};
@@ -545,6 +548,20 @@ async function generateRecommendations() {
     process.stdout.write(
       `\rProcessed relationships for ${Math.min(i + CONCURRENCY_LIMIT, postsToProcess.length)}/${postsToProcess.length} posts...`,
     );
+  }
+
+  if (isTestMode) {
+    console.log('\n\n=== [TEST MODE PREVIEW] ===');
+    for (const [slug, matches] of Object.entries(recommendations)) {
+      console.log(`\n📄 Post: ${slug}`);
+      matches.forEach(m => {
+        console.log(`  -> [${m.id}]`);
+        console.log(`     Primary: "${m.justification}"`);
+        console.log(`     Pirate:  "${m.justificationAlt}"`);
+      });
+    }
+    console.log('\n[TEST MODE] Complete! No files were overwritten.');
+    return;
   }
 
   console.log('\n\n[4/4] Writing recommendations to JSON...');
