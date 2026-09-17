@@ -288,6 +288,23 @@
       "justificationAlt": "Should ye be hungerin' for more of me thoughts from atop those ancient ramparts, ye'll later discover me spouting tales of fitness and friendship, a proper audio log from that very spot! ⚓"
     }
   ],
+  "back-to-school": [
+    {
+      "id": "weeknote-london-calling",
+      "justification": "If my reflections on balancing academic life with the realities of public service transformation resonated, you might like a previous weeknote where I explored navigating some tricky personal challenges whilst pushing forward with work and taking a brave trip back to London.",
+      "justificationAlt": "Yargh! Ye've just heard this old sea dog grumble 'bout learnin' that mirrors real work, so cast yer eye back to a time when I was truly deep in the briney depths o' a work week, battlin' monstrous trains and the ghosts of London past! 🏴‍☠️"
+    },
+    {
+      "id": "2-running-around",
+      "justification": "Reflecting on how work and study can blur and the challenge of protecting your headspace, I previously wrote about how getting back into running became a crucial way for me to maintain mental balance and find some creative calm during a busy working week.",
+      "justificationAlt": "Blast and bothers! Should my recent bleatings about studies blurrin' with work strike a chord, then cast yer spyglass back to when my spirit sought solace from a truly arduous work-week by gallopin' across the land, camera in hand, like a wild sea dog!"
+    },
+    {
+      "id": "holiday-time",
+      "justification": "Building on my thoughts about the blurring lines between work and study, and the importance of safeguarding your mental space, I previously wrote about my efforts to properly unwind and find a bit of joy during a \"holiday at home\" that surprisingly involved both university assignments and a fair bit of life admin.",
+      "justificationAlt": "After me ramblings 'bout how my studies merge with my toil, ye might fancy a peek back to a time when I grappled with takin' a true break, even tryin' to chart a course for some 'un-productivity' amidst the waves of life admin and learnin' 🏴‍☠️."
+    }
+  ],
   "behaviourism-dogs-carrots-sticks": [
     {
       "id": "weeknote-london-calling",
@@ -322,6 +339,23 @@
       "justificationAlt": "After witnessin' me chart the turbulent waters of me own writin' habits, perhaps ye'd be keen to hear a later recountin' of how I navigated a personal journey to a lighter self, using naught but hard-earned data and daily treks, arrr! 🏴‍☠️"
     }
   ],
+  "bringing-my-photos-home": [
+    {
+      "id": "clean-and-rebuild",
+      "justification": "Since I mentioned the digital garden rebuild and how Sveltia CMS made bringing my photos home possible, you might enjoy this earlier piece where I delve into the bigger spring clean and renovation that streamlined everything.",
+      "justificationAlt": "Avast, matey! If ye fancied a look at how I anchored me photo treasures right here, ye'll be keen to hear about the massive spring clean and grand refit I gave the whole website's deck just afore 🏴‍☠️."
+    },
+    {
+      "id": "fresh-paint",
+      "justification": "You've just seen how I brought my photos home, and I had earlier explored the much bigger site rebuild that set the stage for all that, covering my journey into the JAM stack and my aims for a greener web.",
+      "justificationAlt": "Now that yer spyglass has scried how I moored me precious snaps right here, perhaps ye'd be interested in the older logbook that tells of how I first laid the keel for this entire digital vessel, years back, seekin' a more efficient and greener journey! ⚓"
+    },
+    {
+      "id": "one-year-lighter",
+      "justification": "Having explored how I brought my creative work back under my own roof, I had previously reflected on how using my personal data helped me take ownership of my well-being, leaving me feeling quite literally lighter.",
+      "justificationAlt": "Speakin' of bringin' treasures home and makin' 'em shipshape, I once wrote about how I'd lightened me own ballast and found me bearings in a storm."
+    }
+  ],
   "building-things": [
     {
       "id": "clean-and-rebuild",
@@ -341,19 +375,19 @@
   ],
   "bye-bye-flickr": [
     {
-      "id": "14-head-above-water",
-      "justification": "After musing on the evolution of my photography and the hunt for new creative outlets, I later shared a fresh self-portrait and the start of a brand new podcast project 🎧.",
-      "justificationAlt": "Aye, ye've seen me cast off the chains of old photo platforms, but if ye'd like to witness how I later found myself bobbin' with me camera in new creative currents, and even launched a whole new speaking trumpet for my tales, then lend an ear, scallywag!"
+      "id": "bringing-my-photos-home",
+      "justification": "Following my reflections on saying goodbye to Flickr, I later found a way to not just carve out space, but build a proper home for all my photography right here on my site.",
+      "justificationAlt": "Yargh, after hearing me thoughts on where a true scallywag's photos should lie once that old Flickr platform sank, ye'll be wanting to know how I, years hence, truly brought me precious visual bounty back to my own shores, safe from the kraken's grasp 🏴‍☠️."
     },
     {
-      "id": "fresh-paint",
-      "justification": "You know how I mentioned wanting a simple spot on this site for my images and projects? Well, I had actually already given this blog a 'fresh coat of paint' with exactly those goals in mind, aiming for a greener and more curated online space.",
-      "justificationAlt": "Seeing as I've been yammerin' about settin' up a new digital treasure chest, ye might fancy a read of the older tale where I first hammered together these very planks, striving for a ship that was both sturdy and kind to the ocean, long before I ever thought to abandon me old photo harbour 🏴‍☠️."
+      "id": "weeknote-london-calling",
+      "justification": "You've just read about my journey with photo-sharing and creating my own space; this weeknote delves into how I'm building out my digital home for new creative experiments and reflections on life.",
+      "justificationAlt": "Ye just heard me lament the loss of me old photo-chest, but if ye fancy a look at how I, years later, set sail building me own digital longboat for all me creative loot, then cast yer spyglass upon this here parchment ⚓."
     },
     {
-      "id": "one-year-lighter",
-      "justification": "If my reflections on archiving a digital life through images sparked your interest, I later looked at how tracking a very different set of personal data helped me navigate a year of transition and feel quite a bit lighter.",
-      "justificationAlt": "After me yarn about tossin' the digital ballast from me old photo-ship, ye'd be wise to spy me later logbook where I shed even heftier cargo and sailed into much lighter waters, both in body and mind 🏴‍☠️."
+      "id": "changing-plans",
+      "justification": "Just as I decided to move on from old creative platforms, I also found myself adapting a personal challenge a few years later to better fit what truly brings me joy.",
+      "justificationAlt": "Given ye've just seen me toss me old photo-sharing logbook overboard, ye'll find it grand sport to discover how, in the years since, I've learned to chart me own course for fun and creativity, even if it means changing me plans on the fly for a bit of photographic mischief 🏴‍☠️."
     }
   ],
   "changing-plans": [
