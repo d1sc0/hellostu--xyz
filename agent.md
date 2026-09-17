@@ -34,6 +34,11 @@
   - Categories: `Self`, `People`, `Animals`, `Places`, `Other`.
   - Build-time EXIF extraction: `exifr` automatically parses `date` (Month Year) and `camera` gear at build time when fields are left blank in `photos.yaml` / Sveltia CMS.
   - Image accessibility `alt` automatically falls back to `title`.
+- **Recommendation Engine (`src/scripts/recommendations.mjs`)**:
+  - Computes semantic embeddings via `gemini-embedding-2` (cached by SHA-256 hash in `src/data/embeddings-cache.json`).
+  - Balances relevance and diversity using Maximal Marginal Relevance (MMR).
+  - Generates conversational first-person justifications and pirate easter egg justifications using `gemini-3.5-flash`.
+  - Saves output to `src/data/recommendations.json`. By default reuses cached justifications; run with `--force` to regenerate all from scratch.
 - `npm run build` runs Astro build only and copies all public/ assets to `dist/` for deployment.
 
 ## Best Practices
@@ -51,11 +56,14 @@
 
 ## Useful Scripts
 
-- `npm run dev` — runs prebuild, then Astro dev server
+- `npm run dev` — runs prebuild, generates recommendations for any new posts, then starts Astro dev server
 - `npm run build` — runs Astro build only
 - `npm run prebuild` — run all pre-deployment/preview automation
 - `npm run prebuild:clean` — clear generated image directories, then run prebuild automation
 - `npm run generate:og` / `npm run generate:preview` — manual image generation
+- `npm run generate:recommendations` — generate recommendations for new or uncached posts
+- `npm run generate:recommendations:force` — bypass cache and regenerate all recommendations from scratch
+- `npm run generate:recommendations:test` — dry-run test on 5 random posts with console preview
 
 ## Troubleshooting
 
@@ -86,6 +94,7 @@
 
 ## Documentation Quick Links
 
+- [Recommendations Guide](docs/recommendations-guide.md)
 - [Astro Markdown Guide](docs/astro-markdown-guide.md)
 - [CSS Naming Conventions](docs/css-naming-conventions.md)
 - [Sveltia CMS Guide](docs/sveltia-cms.md)

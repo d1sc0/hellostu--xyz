@@ -16,6 +16,7 @@ A modern Astro v6 static site with Sveltia CMS, automated image generation, and 
 - Astro v6 with Content Layer API for Markdown/MDX
 - Sveltia CMS for content editing
 - Native Photo Portfolio (`/photos`) with responsive masonry layout, dynamic build-time EXIF metadata extraction (`exifr`), and accessible lightbox modal
+- AI-driven semantic recommendation engine (Gemini embeddings + 3.5 Flash reasoning + MMR diversity + pirate easter egg mode)
 - Automated OG and preview image generation (Node + Puppeteer)
 - Modular, mobile-first CSS with a single desktop breakpoint
 - Strict 5-variable color palette
@@ -29,6 +30,7 @@ A modern Astro v6 static site with Sveltia CMS, automated image generation, and 
 See the [docs/](docs/) folder for full guides and details:
 
 - [Project setup](docs/project-setup-guide.md)
+- [Recommendations guide](docs/recommendations-guide.md)
 - [Sveltia CMS guide](docs/sveltia-cms.md)
 - [OG image generation](docs/og-image-generation-guide.md)
 - [Preview image generation](docs/preview-image-generation-guide.md)
@@ -55,6 +57,7 @@ Summary:
 
 ## Automation & Workflow
 
+- See [Recommendations guide](docs/recommendations-guide.md) for semantic recommendations and voice prompt tuning.
 - See [OG image generation guide](docs/og-image-generation-guide.md) and [Preview image generation guide](docs/preview-image-generation-guide.md) for automation details.
 - See [Sveltia CMS guide](docs/sveltia-cms.md) for content workflow and prebuild automation.
 - See [Analytics setup](docs/analytics.md) for the Umami Cloud script and where it is loaded.

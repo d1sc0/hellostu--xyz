@@ -151,10 +151,19 @@ To restrict writes to increments/decrements of exactly 1 and prevent spamming:
 ```
 
 ### Required Environment Variables:
-Add the following parameters to your `.env` file (prefixed with `PUBLIC_` to expose them to client-side bundles):
+Add the following parameters to your `.env` file:
+
+**Firebase (Client-side):**
+Prefixed with `PUBLIC_` to expose them to client-side bundles:
 - `PUBLIC_FIREBASE_PROJECT_ID=hellostu--xyz`
 - `PUBLIC_FIREBASE_API_KEY=your-api-key`
 - `PUBLIC_FIREBASE_DATABASE_URL=your-database-url`
 
 Make sure these same variables are configured in your GitHub Secrets (`PUBLIC_FIREBASE_API_KEY`, `PUBLIC_FIREBASE_DATABASE_URL`) to allow the CI pipeline to compile them into production assets!
+
+**Google Gemini API (Build-time):**
+Used by the semantic recommendation engine (`src/scripts/recommendations.mjs`):
+- `GEMINI_API_KEY=your-gemini-api-key`
+
+See [recommendations-guide.md](recommendations-guide.md) for details on recommendation generation, tuning models, and prompts.
 
