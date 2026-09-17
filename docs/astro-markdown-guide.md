@@ -118,6 +118,7 @@ You can also use query parameters: `?align=left`, `?align=right`, `?align=full`,
 - Use tables for structured data.
 - Use task lists for checklists in docs.
 - Use frontmatter for metadata (title, date, tags, etc.).
+- Use lowercase kebab-case for tags (e.g. `learning-design`, `systems-thinking`); avoid camelCase (e.g. `learningDesign`) to prevent fragmented tag routes.
 - Use relative paths for images and assets.
 
 ---

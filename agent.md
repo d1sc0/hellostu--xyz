@@ -4,6 +4,7 @@
 
 - Always preserve both opening and closing --- lines in markdown frontmatter. Never remove or alter them when editing content files.
 - When adding fields to frontmatter, insert them in the correct YAML position (e.g., after slug) and maintain indentation and structure.
+- **Tag Conventions**: Always use lowercase kebab-case for tags (e.g., `learning-design`, `systems-thinking`). Avoid camelCase (e.g., `learningDesign`) or irregular casing, as Astro generates separate tag route URLs based on the exact tag strings.
 
 ## Project Overview
 

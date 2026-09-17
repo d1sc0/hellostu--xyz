@@ -9,9 +9,9 @@ description: Introducing audio notes and reflections from a walk along the Juras
 tags:
   - podcast
   - audio
-  - reflections
+  - reflection
   - challenge
-  - walk
+  - walking
   - personal
 ---
 

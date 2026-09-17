@@ -9,7 +9,7 @@ description: 'I give advice on what makes a great retrospective: dedicating time
 tags:
   - agile
   - delivery
-  - teams
+  - team
   - change
   - retrospective
   - process

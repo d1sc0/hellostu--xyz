@@ -7,11 +7,11 @@ category: Work
 featureImage: /src/assets/images/ned.jpg
 description: Learning, puppies, and the pitfalls of the carrot and the stick. A short reflection following a lecture on behaviourism. The cortisol hit of Slack notifications and why we often mistake compliance for commitment in design.
 tags:
-  - learningDesign
-  - systemsThinking
+  - learning-design
+  - systems-thinking
   - behaviourism
   - motivation
-  - publicService
+  - public-service
   - ned
   - study
 ---

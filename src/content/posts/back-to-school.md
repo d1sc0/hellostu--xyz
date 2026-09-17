@@ -10,7 +10,7 @@ tags:
   - learning-design
   - consulting
   - work
-  - education
+  - study
   - reflection
 ---
 

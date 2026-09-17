@@ -10,7 +10,7 @@ tags:
   - photography
   - webdev
   - creative-platforms
-  - reflections
+  - reflection
 ---
 
 ![Updated Photography Gallery](../../assets/images/updated-photo-section.jpg#full)

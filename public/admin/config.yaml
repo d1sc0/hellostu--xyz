@@ -37,7 +37,7 @@ collections:
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Meta Preview', name: 'description', widget: 'text' }
-      - { label: 'Tags', name: 'tags', widget: 'list' }
+      - { label: 'Tags', name: 'tags', widget: 'list', hint: 'Use lowercase kebab-case (e.g. learning-design) and avoid camelCase' }
 
   - name: 'mdx_posts'
     label: 'MDX Posts'
@@ -70,7 +70,7 @@ collections:
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Meta Preview', name: 'description', widget: 'text' }
-      - { label: 'Tags', name: 'tags', widget: 'list' }
+      - { label: 'Tags', name: 'tags', widget: 'list', hint: 'Use lowercase kebab-case (e.g. learning-design) and avoid camelCase' }
 
   - name: 'mdx_pages'
     label: 'Pages'

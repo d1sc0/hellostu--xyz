@@ -12,7 +12,7 @@ tags:
   - life
   - product
   - scaling
-  - events
+  - event
   - reflection
 ---
 

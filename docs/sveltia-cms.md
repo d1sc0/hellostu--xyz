@@ -26,6 +26,7 @@ Notes:
 - There is no manual `lastUpdated` frontmatter field for posts.
 - Last-updated timestamps are derived automatically from Git history (with filesystem modified-time fallback).
 - RSS feed output is generated from `src/pages/rss.xml.js` and includes a `Post last updated:` line per item.
+- Tags should always use lowercase kebab-case (e.g. `learning-design`, `systems-thinking`) and avoid camelCase (`learningDesign`) to prevent duplicate tag routes.
 
 To access the CMS, open `/admin/` in your deployed site.
 
