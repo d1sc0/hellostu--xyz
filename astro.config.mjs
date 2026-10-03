@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import { unified } from '@astrojs/markdown-remark';
 import mdx from '@astrojs/mdx';
 import icon from 'astro-icon';
 import sitemap from '@astrojs/sitemap';
@@ -14,7 +15,9 @@ export default defineConfig({
     },
   },
   markdown: {
-    remarkPlugins: [remarkImageAlign],
+    processor: unified({
+      remarkPlugins: [remarkImageAlign],
+    }),
     shikiConfig: {
       theme: 'houston',
     },
