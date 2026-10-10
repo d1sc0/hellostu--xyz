@@ -6,65 +6,59 @@ This directory is used as a private playground and scratchpad to draft new posts
 
 # Blog Post Ideas & Inspiration
 
-_Last updated: 21st August 2026_
+_Last updated: 10th October 2026_
 
 ## 💼 Work
 
-_Focuses on weeknotes, public sector transformation, learning design, and consulting._
+_Focuses on public sector transformation, learning design, consulting craft, and systems thinking._
 
-### 1. Communication & Persuasion: What I Took Away
-- **Angle**: Reflecting on attending a training course on communication and persuasion.
-- **Key Themes**: Framing, storytelling, and shifting the concept of "persuasion" from selling an idea to building genuine empathy, shared understanding, and alignment in public sector projects.
-- **Format**: Reflective essay / learning log.
+### 1. The Default Setting: When the Consultant Eclipses the Designer
+- **Category**: Work / Study
+- **Angle**: Reflecting on the latest PGDip presentation for the fictional "Westbridge University" scenario. You nailed the pragmatic framework, the operational feasibility, and tailored it slickly for senior leadership—only to realise your consulting muscle memory took over, squeezing out the heart, vulnerability, and emotive storytelling that transformative learning design needs.
+- **Key Themes**: 
+  - The comfort zone of executive-ready decks, pragmatic roadmaps, and de-risking proposals.
+  - The difference between getting "buy-in" and sparking genuine emotional resonance.
+  - The challenge of unlearning corporate defense mechanisms when stepping into creative learning design.
+  - "Muscle memory is a useful shield, but sometimes you need to leave the armor at the door."
+- **Format**: Candid reflective essay / study log.
 
-### 2. Weeknotes: Cognitive Load, Process Iteration, and Trust
-- **Angle**: A candid weeknote capturing a busy stretch of client and team work.
-- **Key Themes**: Supporting colleagues with cognitive overload; iterating team processes on the fly; practical ways to build trust in high-pressure consulting environments.
-- **Format**: Traditional weeknote structure.
-
-### 3. Crossing the Finish Line: Completing My PGCert
-- **Angle**: Celebrating the end of your postgraduate certificate in learning design and the strange suspense of waiting for results.
-- **Key Themes**: Looking back on balancing university study with full-time consulting; key mindset shifts in learning design; taking a breath after a long academic sprint.
-- **Format**: Milestone reflection / study retrospective.
-
----
-
-## 🛋️ Rest
-
-_Focuses on life transitions, mindfulness, fitness recovery, relationships, and self-care._
-
-### 4. Weathering the Storm: Anxiety, Friendships, and Giving Yourself Grace
-- **Angle**: A candid, personal piece reflecting on a tough month with anxiety and the strain it can put on social connections and self-worth.
-- **Key Themes**: Overthinking and social fatigue; the vulnerability of feeling like you're stressing friendships; practical ways to self-soothe and give yourself permission to recharge.
-- **Format**: Personal essay / digital garden reflection.
-
-### 5. The Blank Calendar: Navigating Unplanned Leave
-- **Angle**: Approaching upcoming annual leave without a rigid itinerary.
-- **Key Themes**: Resisting the pressure to have a "productive holiday"; the tension between wanting to pack in activities vs. truly resting; learning to sit comfortably with open, unstructured time.
-- **Format**: Short reflective piece / personal garden note.
-
-### 6. Stepping Back Out: Butterflies and New Beginnings
-- **Angle**: Lighthearted and honest thoughts on dating, vulnerability, and putting yourself out there after major life transitions.
-- **Key Themes**: Managing expectations; staying grounded in who you are; embracing the excitement and nerves of fresh starts.
-- **Format**: Short personal reflection.
+### 2. Agile Without the Dogma: What Does It Actually Replace?
+- **Category**: Work
+- **Angle**: Making agility work in traditionally non-agile, risk-averse environments (like the public sector) by ditching ceremony-heavy dogma and focusing on real mindset shifts. 
+- **Key Themes**:
+  - The anti-pattern of the "agile tax": bolting sprints, standups, and Jira onto existing waterfall stage-gates and boards.
+  - Agile governance as a *subtraction* exercise—figuring out what existing controls and sign-offs agile ceremonies render obsolete.
+  - "Show the thing": making messy work visible rather than hiding behind 80-page status reports.
+  - Focusing on thin vertical slices of genuine user value and early delivery over performative ceremonies.
+- **Format**: Practical consulting essay / playbook thoughts.
 
 ---
 
 ## 🎸 Play
 
-_Focuses on creative hobbies, water sports, drumming, and creative coding._
+_Focuses on music, creative hobbies, photography, and personal passions._
 
-### 7. Finding My Balance: Learning to Paddleboard
-- **Angle**: Buying a paddleboard and embracing the humbling experience of learning a brand new outdoor skill on the water.
-- **Key Themes**: Beginner's mindset as an adult; balance, falling in, and laughing at yourself; the quiet calm and mindfulness of being on the water around Dorset.
-- **Format**: Hobby journal / photo reflection.
+### 3. Crate Digging in an Algorithmic Age: Falling Back in Love with New Music
+- **Category**: Play
+- **Angle**: Escaping the comfortable, sleepy loops of algorithmic streaming playlists and rediscovering the thrill of human curation through platforms like Owen Cutts’ Chop Shop Radio on Patreon.
+- **Key Themes**:
+  - The difference between algorithm-fed background noise and deliberate human music selection.
+  - The community and connection of passing tracks back and forth with friends ("have you heard this?!").
+  - How bringing fresh sounds into your day injects renewed creative energy and changes your mood.
+  - Potential to weave in a Spotify/Apple playlist embed or track shout-outs using the site's widget.
+- **Format**: Casual cultural appreciation post / music essay.
 
-### 8. Drumming: The Steady Rhythm of "Going OK"
-- **Angle**: A quick, honest progress report from behind the kit.
-- **Key Themes**: Celebrating steady, unglamorous progress; sticking patterns, hand-foot coordination; the joy of rhythm as a moving meditation.
-- **Format**: Short hobby check-in.
+---
 
-### 9. The Itch to Build: What to Do When Inspiration Hasn't Arrived Yet
-- **Angle**: Exploring that distinct feeling of wanting to code, make, or tinker with a project, but being temporarily short on a specific idea.
-- **Key Themes**: Creative dry spells; building small throwaway tools vs. waiting for a "big idea"; the joy of tinkering for its own sake.
-- **Format**: Tech / creative musing.
+## 🛋️ Rest & Reflection
+
+_Focuses on headspace, boundaries, personal habits, and daily balance._
+
+### 4. The Subtraction Habit: Doing Less to Notice More
+- **Category**: Rest
+- **Angle**: Connecting the dots between simplifying work processes, clearing out mental noise, and making room for things that actually bring joy (like listening to fresh music or going for long runs).
+- **Key Themes**:
+  - The modern instinct to add more (more tools, more rituals, more commitments) when things feel cluttered.
+  - Giving yourself permission to prune away what isn't serving you.
+  - Protecting unstructured headspace as the seasons shift into autumn and winter.
+- **Format**: Short reflective garden note.
