@@ -6,7 +6,7 @@
     "node": "24.x"
   },
   "scripts": {
-    "dev": "npm run prebuild && npm run generate:recommendations && astro dev",
+    "dev": "npm run prebuild && npm run sync:raindrop && npm run generate:recommendations && astro dev",
     "start": "astro dev",
     "prebuild": "node src/scripts/pre-build-sveltia-cms-catches.js && ts-node src/scripts/image-generation/generate-og-images.ts",
     "prebuild:clean": "node src/scripts/pre-build-sveltia-cms-catches.js --clean && ts-node src/scripts/image-generation/generate-og-images.ts",
@@ -17,7 +17,10 @@
     "generate:preview": "ts-node src/scripts/image-generation/generate-preview-images.ts",
     "generate:recommendations": "node src/scripts/recommendations.mjs",
     "generate:recommendations:force": "node src/scripts/recommendations.mjs --force",
-    "generate:recommendations:test": "node src/scripts/recommendations.mjs --test"
+    "generate:recommendations:test": "node src/scripts/recommendations.mjs --test",
+    "sync:raindrop": "node src/scripts/raindrop.mjs",
+    "raindrop:list": "node src/scripts/raindrop.mjs --list",
+    "raindrop:collections": "node src/scripts/raindrop.mjs --collections"
   },
   "dependencies": {
     "@astrojs/mdx": "^6.0.3",

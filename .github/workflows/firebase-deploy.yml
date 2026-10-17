@@ -45,6 +45,11 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
+      - name: Sync Raindrop Bookmarks
+        run: npm run sync:raindrop
+        env:
+          RAINDROP_TOKEN: ${{ secrets.RAINDROP_TOKEN }}
+
       - name: Build Astro site
         run: npm run build
         env:

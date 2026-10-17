@@ -39,6 +39,10 @@
   - Balances relevance and diversity using Maximal Marginal Relevance (MMR).
   - Generates conversational first-person justifications and pirate easter egg justifications using `gemini-3.5-flash`.
   - Saves output to `src/data/recommendations.json`. By default reuses cached justifications; run with `--force` to regenerate all from scratch.
+- **Raindrop.io Bookmarks Integration (`src/scripts/raindrop.mjs` & `src/components/for_posts/RaindropBookmarks/RaindropBookmarks.astro`)**:
+  - Whitelist-based collection sync configured in `src/scripts/raindrop.config.mjs`.
+  - Pulls bookmarks, personal Markdown notes, lowercase kebab-case tags, and text highlights at build time into `src/data/raindrop.json` using `RAINDROP_TOKEN`.
+  - Gracefully falls back to cached `src/data/raindrop.json` when `RAINDROP_TOKEN` is absent.
 - `npm run build` runs Astro build only and copies all public/ assets to `dist/` for deployment.
 
 ## Best Practices
@@ -56,7 +60,7 @@
 
 ## Useful Scripts
 
-- `npm run dev` — runs prebuild, generates recommendations for any new posts, then starts Astro dev server
+- `npm run dev` — runs prebuild, syncs Raindrop bookmarks, generates recommendations for any new posts, then starts Astro dev server
 - `npm run build` — runs Astro build only
 - `npm run prebuild` — run all pre-deployment/preview automation
 - `npm run prebuild:clean` — clear generated image directories, then run prebuild automation
@@ -64,6 +68,9 @@
 - `npm run generate:recommendations` — generate recommendations for new or uncached posts
 - `npm run generate:recommendations:force` — bypass cache and regenerate all recommendations from scratch
 - `npm run generate:recommendations:test` — dry-run test on 5 random posts with console preview
+- `npm run sync:raindrop` — sync whitelisted Raindrop.io collections to `src/data/raindrop.json`
+- `npm run raindrop:collections` — list all Raindrop.io collections/folders with their IDs and sync status
+- `npm run raindrop:list` — list or search synced bookmarks in `src/data/raindrop.json` (e.g. `npm run raindrop:list -- agile`)
 
 ## Troubleshooting
 
@@ -95,6 +102,7 @@
 ## Documentation Quick Links
 
 - [Recommendations Guide](docs/recommendations-guide.md)
+- [Raindrop.io Guide](docs/raindrop-guide.md)
 - [Astro Markdown Guide](docs/astro-markdown-guide.md)
 - [CSS Naming Conventions](docs/css-naming-conventions.md)
 - [Sveltia CMS Guide](docs/sveltia-cms.md)

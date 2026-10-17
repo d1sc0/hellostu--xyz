@@ -1,0 +1,84 @@
+{
+  "lastSynced": "2026-10-17T13:58:35.731Z",
+  "isSeedData": false,
+  "collections": [
+    {
+      "id": 76177594,
+      "title": "_hellostu shared",
+      "slug": "hellostu-shared",
+      "path": "_hellostu shared",
+      "count": 3
+    }
+  ],
+  "bookmarks": [
+    {
+      "id": 1892657295,
+      "title": "Slow Horses",
+      "link": "https://tv.apple.com/gb/show/slow-horses/umc.cmc.2szz3fdt71tl1ulnbp8utgq5o",
+      "domain": "tv.apple.com",
+      "excerpt": "Watching",
+      "note": "The new season of Slow Horses is proving to be just as good as of those that came before",
+      "type": "link",
+      "cover": "https://is1-ssl.mzstatic.com/image/thumb/x5JjmiSD75wN12-HmmZRcg/1200x675.jpg",
+      "tags": [
+        "watching"
+      ],
+      "important": false,
+      "created": "2026-10-17T13:36:23.440Z",
+      "lastUpdate": "2026-10-17T13:54:13.813Z",
+      "collection": {
+        "id": 76177594,
+        "title": "_hellostu shared",
+        "slug": "hellostu-shared",
+        "path": "_hellostu shared"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1892657076,
+      "title": "Saturday Vibes",
+      "link": "https://open.spotify.com/playlist/4jC6fiv6CLrd7WWqRXK2Oq?si=HES0FI_hSMqQAwoxbLOpFQ&utm_source=copy-link&pi=zDTT1o0sTsSS9",
+      "domain": "open.spotify.com",
+      "excerpt": "Listening",
+      "note": "A Spotify playlist I flung together to keep me motivated and smiling on a sunny autumnal day. Contains some cheese 🧀",
+      "type": "audio",
+      "cover": "https://link-previews.spotifycdn.com/e-_LXzJKkUQHal",
+      "tags": [
+        "listening"
+      ],
+      "important": false,
+      "created": "2026-10-17T13:35:30.172Z",
+      "lastUpdate": "2026-10-17T13:50:46.736Z",
+      "collection": {
+        "id": 76177594,
+        "title": "_hellostu shared",
+        "slug": "hellostu-shared",
+        "path": "_hellostu shared"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1892656874,
+      "title": "Trade World",
+      "link": "https://www.audible.co.uk/pd/B0GKGDSNPW?source_code=ASSORAP0511160006&share_location=library_overflow",
+      "domain": "audible.co.uk",
+      "excerpt": "",
+      "note": "My current audiobook Trade World. So fascinating and in many ways alarming! Written by Ed Conway who wrote Material World which I’d also highly recommend",
+      "type": "link",
+      "cover": "https://m.media-amazon.com/images/G/01/Audible/en_US/images/Facebook_Placement_v1_OG_Tag.jpg",
+      "tags": [
+        "reading"
+      ],
+      "important": false,
+      "created": "2026-10-17T13:34:43.562Z",
+      "lastUpdate": "2026-10-17T13:50:21.399Z",
+      "collection": {
+        "id": 76177594,
+        "title": "_hellostu shared",
+        "slug": "hellostu-shared",
+        "path": "_hellostu shared"
+      },
+      "highlights": []
+    }
+  ]
+}

@@ -1,0 +1,419 @@
+---
+// Usage in MDX posts or pages:
+// import RaindropBookmarks from '../../components/for_posts/RaindropBookmarks/RaindropBookmarks.astro';
+//
+// <!-- 1. Filter by collection name, path, or ID -->
+// <RaindropBookmarks collection="Agile & Systems" title="Further Reading & Sources" />
+//
+// <!-- 2. Filter by tag(s) -->
+// <RaindropBookmarks tag="learning-design" limit={5} />
+//
+// <!-- 3. Pick specific bookmarks by URL (or numeric Raindrop ID) -->
+// <RaindropBookmarks
+//   urls={[
+//     "https://www.gov.uk/service-manual/agile-delivery",
+//     "https://wenger-trayner.com/introduction-to-communities-of-practice/"
+//   ]}
+//   showHighlights="expanded"
+// />
+
+import MarkdownIt from 'markdown-it';
+import sanitizeHtml from 'sanitize-html';
+import raindropData from '../../../data/raindrop.json';
+import '../../../styles/raindrop-bookmarks.css';
+
+interface Highlight {
+  id?: string | null;
+  text: string;
+  note?: string;
+  color?: string;
+  created?: string | null;
+}
+
+interface Bookmark {
+  id: number;
+  title: string;
+  link: string;
+  domain: string;
+  excerpt?: string;
+  note?: string;
+  type?: string;
+  cover?: string;
+  tags?: string[];
+  important?: boolean;
+  created: string;
+  lastUpdate?: string;
+  collection?: {
+    id: number;
+    title: string;
+    slug: string;
+    path: string;
+  };
+  highlights?: Highlight[];
+}
+
+interface Props {
+  collection?: string | number | Array<string | number>;
+  tag?: string | string[];
+  tags?: string | string[];
+  matchAllTags?: boolean;
+  url?: string;
+  urls?: string[];
+  id?: number | string;
+  ids?: Array<number | string>;
+  search?: string;
+  favoritesOnly?: boolean;
+  before?: string | Date;
+  after?: string | Date;
+  limit?: number;
+  sort?: 'newest' | 'oldest' | 'title';
+  title?: string;
+  subtitle?: string;
+  showNotes?: boolean;
+  showExcerpt?: boolean | 'fallback';
+  showHighlights?: 'collapsed' | 'expanded' | 'none' | boolean;
+  showTags?: boolean;
+  showCollection?: boolean;
+  showCover?: boolean;
+  variant?: 'cards' | 'compact';
+}
+
+const {
+  collection,
+  tag,
+  tags,
+  matchAllTags = false,
+  url,
+  urls,
+  id,
+  ids,
+  search,
+  favoritesOnly = false,
+  before,
+  after,
+  limit,
+  sort,
+  title,
+  subtitle,
+  showNotes = true,
+  showExcerpt = 'fallback',
+  showHighlights = 'collapsed',
+  showTags = true,
+  showCollection = false,
+  showCover = false,
+  variant = 'cards',
+} = Astro.props;
+
+const md = new MarkdownIt({ breaks: true, linkify: true });
+
+function toKebabCase(str: string) {
+  return String(str || '')
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+function normalizeUrl(rawUrl: string) {
+  return String(rawUrl || '')
+    .trim()
+    .toLowerCase()
+    .replace(/^https?:\/\/(www\.)?/, '')
+    .replace(/\/+$/, '');
+}
+
+const allBookmarks: Bookmark[] = Array.isArray(raindropData?.bookmarks)
+  ? (raindropData.bookmarks as Bookmark[])
+  : [];
+
+// 1. Resolve ID filters
+const targetIds: string[] = [
+  ...(id !== undefined ? [String(id)] : []),
+  ...(Array.isArray(ids) ? ids.map(String) : []),
+];
+
+// 2. Resolve URL filters
+const targetUrls: string[] = [
+  ...(url ? [normalizeUrl(url)] : []),
+  ...(Array.isArray(urls) ? urls.map(normalizeUrl) : []),
+];
+
+// 3. Resolve Collection filters
+const targetCollections = (
+  Array.isArray(collection)
+    ? collection
+    : collection !== undefined
+      ? [collection]
+      : []
+).map(c => String(c).trim().toLowerCase());
+
+// 4. Resolve Tag filters
+const rawTagInput = tag ?? tags;
+const targetTags = (
+  Array.isArray(rawTagInput)
+    ? rawTagInput
+    : rawTagInput
+      ? [rawTagInput]
+      : []
+)
+  .map(t => toKebabCase(String(t).replace(/^#/, '')))
+  .filter(Boolean);
+
+const normalizedSearch = search?.trim().toLowerCase() || '';
+
+function parseDateBound(input: string | Date | undefined, isUpperBound: boolean): number | null {
+  if (!input) return null;
+  if (input instanceof Date) {
+    const time = input.getTime();
+    return Number.isNaN(time) ? null : time;
+  }
+  const str = String(input).trim();
+  if (!str) return null;
+  // Treat YYYY-MM-DD as inclusive of the full day
+  if (/^\d{4}-\d{2}-\d{2}$/.test(str)) {
+    const time = new Date(
+      `${str}T${isUpperBound ? '23:59:59.999Z' : '00:00:00.000Z'}`
+    ).getTime();
+    return Number.isNaN(time) ? null : time;
+  }
+  const time = new Date(str).getTime();
+  return Number.isNaN(time) ? null : time;
+}
+
+const beforeTimestamp = parseDateBound(before, true);
+const afterTimestamp = parseDateBound(after, false);
+
+let filtered = allBookmarks.filter(item => {
+  if (targetIds.length > 0 && !targetIds.includes(String(item.id))) {
+    return false;
+  }
+
+  if (targetUrls.length > 0 && !targetUrls.includes(normalizeUrl(item.link))) {
+    return false;
+  }
+
+  if (targetCollections.length > 0) {
+    const col = item.collection;
+    const colMatches =
+      col &&
+      targetCollections.some(
+        target =>
+          String(col.id) === target ||
+          col.title.toLowerCase() === target ||
+          col.slug.toLowerCase() === toKebabCase(target) ||
+          col.path.toLowerCase() === target ||
+          col.path.toLowerCase().startsWith(`${target} / `)
+      );
+    if (!colMatches) return false;
+  }
+
+  if (targetTags.length > 0) {
+    const itemTags = (item.tags || []).map(toKebabCase);
+    const hasTags = matchAllTags
+      ? targetTags.every(t => itemTags.includes(t))
+      : targetTags.some(t => itemTags.includes(t));
+    if (!hasTags) return false;
+  }
+
+  if (favoritesOnly && !item.important) {
+    return false;
+  }
+
+  if (beforeTimestamp !== null || afterTimestamp !== null) {
+    const itemTime = new Date(item.created).getTime();
+    if (Number.isNaN(itemTime)) return false;
+    if (beforeTimestamp !== null && itemTime > beforeTimestamp) return false;
+    if (afterTimestamp !== null && itemTime < afterTimestamp) return false;
+  }
+
+  if (normalizedSearch) {
+    const haystack = [
+      item.title,
+      item.domain,
+      item.note,
+      item.excerpt,
+      ...(item.tags || []),
+      ...(item.highlights || []).map(h => `${h.text} ${h.note || ''}`),
+    ]
+      .filter(Boolean)
+      .join(' ')
+      .toLowerCase();
+    if (!haystack.includes(normalizedSearch)) {
+      return false;
+    }
+  }
+
+  return true;
+});
+
+// Preserve explicit array order when `ids` or `urls` is provided without an explicit sort prop
+if (!sort && targetIds.length > 1) {
+  filtered.sort(
+    (a, b) => targetIds.indexOf(String(a.id)) - targetIds.indexOf(String(b.id))
+  );
+} else if (!sort && targetUrls.length > 1) {
+  filtered.sort(
+    (a, b) =>
+      targetUrls.indexOf(normalizeUrl(a.link)) -
+      targetUrls.indexOf(normalizeUrl(b.link))
+  );
+} else {
+  const effectiveSort = sort || 'newest';
+  filtered.sort((a, b) => {
+    if (effectiveSort === 'oldest') {
+      return new Date(a.created).getTime() - new Date(b.created).getTime();
+    }
+    if (effectiveSort === 'title') {
+      return a.title.localeCompare(b.title);
+    }
+    return new Date(b.created).getTime() - new Date(a.created).getTime();
+  });
+}
+
+if (typeof limit === 'number' && limit > 0) {
+  filtered = filtered.slice(0, limit);
+}
+
+const highlightsMode =
+  showHighlights === true
+    ? 'collapsed'
+    : showHighlights === false
+      ? 'none'
+      : showHighlights;
+
+function renderNoteHtml(noteText?: string) {
+  if (!noteText) return '';
+  return sanitizeHtml(md.render(noteText), {
+    allowedTags: ['p', 'em', 'strong', 'a', 'code', 'ul', 'ol', 'li', 'br'],
+    allowedAttributes: {
+      a: ['href', 'target', 'rel'],
+    },
+  });
+}
+---
+
+{filtered.length > 0 && (
+  <aside
+    class={`raindrop-bookmarks ${variant === 'compact' ? 'raindrop-bookmarks--compact' : ''}`}
+    aria-label={title || 'Curated bookmarks'}
+  >
+    {(title || subtitle) && (
+      <div class="raindrop-bookmarks__header">
+        {title && <h4 class="raindrop-bookmarks__title">{title}</h4>}
+        {subtitle && <p class="raindrop-bookmarks__subtitle">{subtitle}</p>}
+      </div>
+    )}
+
+    <ul class="raindrop-bookmarks__list">
+      {filtered.map(item => {
+        const hasNote = Boolean(showNotes && item.note);
+        const shouldShowExcerpt =
+          showExcerpt === true || (showExcerpt === 'fallback' && !hasNote);
+        const hasExcerpt = Boolean(shouldShowExcerpt && item.excerpt);
+        const itemHighlights = item.highlights || [];
+        const hasHighlights =
+          highlightsMode !== 'none' && itemHighlights.length > 0;
+        const hasCover = Boolean(showCover && item.cover);
+
+        return (
+          <li class="raindrop-bookmarks__card">
+            <div
+              class={`raindrop-bookmarks__card-top ${hasCover ? 'raindrop-bookmarks__card-top--with-cover' : ''}`}
+            >
+              <div class="raindrop-bookmarks__card-main">
+                <div class="raindrop-bookmarks__meta">
+                  {item.domain && (
+                    <>
+                      <img
+                        class="raindrop-bookmarks__favicon"
+                        src={`https://www.google.com/s2/favicons?domain=${encodeURIComponent(item.domain)}&sz=32`}
+                        alt=""
+                        width="14"
+                        height="14"
+                        loading="lazy"
+                      />
+                      <span class="raindrop-bookmarks__domain">{item.domain}</span>
+                    </>
+                  )}
+                  {showCollection && item.collection?.title && (
+                    <span class="raindrop-bookmarks__collection">
+                      {item.collection.title}
+                    </span>
+                  )}
+                </div>
+
+                <a
+                  href={item.link}
+                  class="raindrop-bookmarks__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.title}
+                </a>
+              </div>
+
+              {hasCover && (
+                <div class="raindrop-bookmarks__cover-wrap">
+                  <img
+                    src={item.cover}
+                    alt={item.title}
+                    class="raindrop-bookmarks__cover"
+                    loading="lazy"
+                  />
+                </div>
+              )}
+            </div>
+
+            {hasNote && (
+              <div
+                class="raindrop-bookmarks__note"
+                set:html={renderNoteHtml(item.note)}
+              />
+            )}
+
+            {hasExcerpt && (
+              <p class="raindrop-bookmarks__excerpt">{item.excerpt}</p>
+            )}
+
+            {hasHighlights && (
+              <details
+                class="raindrop-bookmarks__highlights"
+                open={highlightsMode === 'expanded'}
+              >
+                <summary class="raindrop-bookmarks__highlights-summary">
+                  {itemHighlights.length === 1
+                    ? '1 saved highlight'
+                    : `${itemHighlights.length} saved highlights`}
+                </summary>
+                <ul class="raindrop-bookmarks__highlights-list">
+                  {itemHighlights.map(hl => (
+                    <li class="raindrop-bookmarks__highlight-item">
+                      <blockquote class="raindrop-bookmarks__highlight-quote">
+                        “{hl.text}”
+                      </blockquote>
+                      {hl.note && (
+                        <p class="raindrop-bookmarks__highlight-note">
+                          ↳ {hl.note}
+                        </p>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            )}
+
+            {showTags && item.tags && item.tags.length > 0 && (
+              <ul class="raindrop-bookmarks__tags" aria-label="Bookmark tags">
+                {item.tags.map(tagSlug => (
+                  <li>
+                    <span class="raindrop-bookmarks__tag">#{tagSlug}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        );
+      })}
+    </ul>
+  </aside>
+)}

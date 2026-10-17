@@ -2,4 +2,48 @@
   border: 2px dashed var(--color-link);
   border-radius: 1rem;
   margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
+
+.now-archive-entry {
+  background: var(--color-line);
+  border-radius: 0.75rem;
+  padding: 0.85rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.now-archive-entry summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--color-link);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  user-select: none;
+}
+
+.now-archive-entry summary::-webkit-details-marker {
+  display: none;
+}
+
+.now-archive-entry summary::before {
+  content: '▸';
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.now-archive-entry[open] > summary {
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px dashed var(--color-link);
+}
+
+.now-archive-entry[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.now-archive-entry summary:hover {
+  color: var(--color-accent);
+}
+
