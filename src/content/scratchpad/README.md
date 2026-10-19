@@ -30,14 +30,5 @@ _Focuses on public sector transformation, learning design, consulting craft, and
 
 _Focuses on music, creative hobbies, photography, and personal passions._
 
-### 2. Curation for the Curious
-- **Category**: Play
-- **Angle**: Taking back control of our content diets by bringing the human back into the loop. Merging the joy of personal music discovery (via Owen Cutts’ Chop Shop Radio on Patreon) with intentional web reading and bookmarking tools (Unread for RSS and Raindrop.io).
-- **Key Themes**:
-  - **Human passion vs. algorithmic autopilot**: Escaping the frictionless, soulless loops of streaming and social recommendations.
-  - **The story behind the sound**: The power of having someone tell you *why* they love a track, and the communal warmth of sharing tunes with friends.
-  - **The quiet power of RSS**: Why chronological feeds still beat algorithmic rage-bait. "Do the kids even know about RSS? They bloody well should."
-  - **Software that respects your attention**: Savoring the typography and calm craft of Unread, and taming browser tab-hoarding with Raindrop.io.
-  - **Tending the inputs**: How curating what you consume directly enriches what you think, make, and write in your digital garden.
-- **Format**: Personal essay / cultural & digital garden reflection.
-- **Status**: Moved to `src/content/posts/curation-for-the-curious.md` (drafting complete).
+_(Currently clear - ready for the next idea!)_
+

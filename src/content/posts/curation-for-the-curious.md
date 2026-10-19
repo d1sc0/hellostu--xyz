@@ -3,7 +3,7 @@ title: 'Curation for the curious'
 slug: curation-for-the-curious
 draft: false
 pubDate: 2026-10-19T20:30:00
-category: Play
+category: Rest
 description: 'Stepping off the algorithmic treadmill to curate what I feed my brain, from underground soul mixtapes to quiet RSS feeds and Raindrop.'
 tags:
   - curation
