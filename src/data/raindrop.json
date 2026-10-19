@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-10-17T13:58:35.731Z",
+  "lastSynced": "2026-10-19T19:41:14.289Z",
   "isSeedData": false,
   "collections": [
     {
@@ -8,6 +8,13 @@
       "slug": "hellostu-shared",
       "path": "_hellostu shared",
       "count": 3
+    },
+    {
+      "id": 76178239,
+      "title": "archive",
+      "slug": "archive",
+      "path": "_hellostu shared / archive",
+      "count": 0
     }
   ],
   "bookmarks": [

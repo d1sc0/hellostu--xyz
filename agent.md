@@ -89,7 +89,19 @@
 
 ## Content & Writing Tone Guidelines
 
-- **Writing Style and Tone of Voice**: Before writing or drafting new blog posts, the agent must read existing posts in `src/content/posts/` and pages in `src/content/pages/` (both `.md` and `.mdx` formats) to understand and match the author's unique voice (conversational, personal, reflective, candid, with public sector design context and creative/active hobbies).
+- **Writing Style and Tone of Voice**: Before writing or drafting new blog posts, the agent must read existing posts in `src/content/posts/` and pages in `src/content/pages/` (both `.md` and `.mdx` formats) to understand and match the author's unique voice:
+  - **Conversational, grounded, and British**: Use natural British phrasing and vernacular (*"bloke"*, *"chuffed"*, *"a fair few"*, *"rut"*, *"tends to"*, *"bloody hell"*, *"proper"*, *"sack off"*, *"faff"*, *"wicked"*, *"bin off"*, *"mates"*).
+  - **First-person and personal**: Ground reflections in personal experience, work, and hobbies rather than preaching or lecturing the reader about what "society" or "we" should do.
+  - **Self-aware and quietly humorous**: Self-deprecating without self-pity (*"I'm a nerd but a lazy one"*, *"I've never been much of a writer but I'd like to get better"*).
+  - **Nuanced rather than absolutist**: Acknowledge complexity (*"Don't get me wrong, they often don't do a bad job..."*); focus on friction, cognitive load, and finding signal over noise.
+
+- **Anti-AI Writing Rules (Eliminate on sight)**:
+  - **Never use em dashes (`—`)**: Always use spaced hyphens (` - `), commas, colons, or parentheses instead.
+  - **No faux-profound LinkedIn/TED aphorisms**: Avoid balanced antithetical soundbites (e.g. *"X is just data; Y is an invitation"*, *"It's not about the destination, it's about the journey"*).
+  - **No false rhetorical binaries**: Never use the *"It's not about [strawman], it's about [buzzword]"* formula.
+  - **No inflated tech-reviewer hyperbole**: Ban phrases like *"masterclass in calm software design"*, *"sacred quiet ritual"*, *"frictionless tapestry"*, *"delve into"*, *"testament to"*, *"game changer"*. Describe software simply and accurately (*"It's just really well made"*, *"It gets the basics right"*).
+  - **Keep metaphors earthy and relatable**: Avoid over-dramatic or cartoonish metaphors; stick to real-world observations (*"high fructose, low in fibre diet"*, *"an old-school record shop"*).
+  - **Natural, spoken sentence cadence**: Vary sentence lengths naturally; mix short punchy lines (*"Simple."*, *"That's it."*) with loose, conversational clauses.
 - **Post Ideas & Inspiration**: Refine and build upon the active brainstormed post ideas list stored in the scratchpad's README:
   - Path: [src/content/scratchpad/README.md](file:///Users/d1sc0/Projects/hellostu--xyz/src/content/scratchpad/README.md)
   - Purpose: Tracks content ideas across *Work*, *Rest*, and *Play* based on the author's priorities.

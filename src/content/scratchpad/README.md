@@ -29,23 +29,14 @@ _Focuses on public sector transformation, learning design, consulting craft, and
 
 _Focuses on music, creative hobbies, photography, and personal passions._
 
-### 2. The Joy of Uncovering New Music and Sharing
+### 2. Curation for the Curious
 - **Category**: Play
-- **Angle**: Escaping the comfortable, sleepy rut of algorithmic streaming playlists and rediscovering the thrill of human curation through platforms like Owen Cutts’ Chop Shop Radio on Patreon, alongside the communal joy of sharing tunes with people.
+- **Angle**: Taking back control of our content diets by bringing the human back into the loop. Merging the joy of personal music discovery (via Owen Cutts’ Chop Shop Radio on Patreon) with intentional web reading and bookmarking tools (Unread for RSS and Raindrop.io).
 - **Key Themes**:
-  - **Algorithms vs. human passion**: The gulf between algorithmic background noise and deliberate human music selection.
-  - **The story behind the sound**: The power of not just receiving an automated recommendation or cold link, but having someone tell you *why* they love a piece of music and what it makes them feel.
-  - **Music sharing as connection**: The lost art and genuine warmth of passing tracks back and forth with friends ("you've got to listen to this").
-  - **Fresh energy**: How active listening and bringing new sounds into your daily routine acts as a mental palate cleanser and sparks creative energy.
-  - **Playlists & shout-outs**: Potential to feature a curated selection using the site's `PlaylistWidget` or spotlighting recent Chop Shop discoveries.
-- **Format**: Casual cultural appreciation post / music essay.
-
-### 3. Curation for the Curious
-- **Category**: Play
-- **Angle**: Playing with tools that reclaim intentional reading and curation on the open web. A love letter to the quiet resilience of RSS via the Unread app, paired with Raindrop.io for taming the chaos of bookmarks into tidy, thoughtful collections.
-- **Key Themes**:
-  - **The quiet power of RSS**: Why chronological, un-manipulated feeds still beat algorithmic social timelines every day of the week. "Do the kids even know about RSS? They bloody well should."
-  - **Software that gets out of the way**: The craft of the Unread app—beautiful typography, calm pacing, and zero clutter or engagement traps.
-  - **From tab-hoarding to deliberate curation**: Using Raindrop.io to build a searchable personal library and collections rather than letting good ideas drown in forgotten open tabs.
-  - **Tending the digital garden**: How curating your inputs directly feeds into what you think, make, and write.
-- **Format**: Digital garden tooling / indie web reflection.
+  - **Human passion vs. algorithmic autopilot**: Escaping the frictionless, soulless loops of streaming and social recommendations.
+  - **The story behind the sound**: The power of having someone tell you *why* they love a track, and the communal warmth of sharing tunes with friends.
+  - **The quiet power of RSS**: Why chronological feeds still beat algorithmic rage-bait. "Do the kids even know about RSS? They bloody well should."
+  - **Software that respects your attention**: Savoring the typography and calm craft of Unread, and taming browser tab-hoarding with Raindrop.io.
+  - **Tending the inputs**: How curating what you consume directly enriches what you think, make, and write in your digital garden.
+- **Format**: Personal essay / cultural & digital garden reflection.
+- **Status**: Moved to `src/content/posts/curation-for-the-curious.md`.

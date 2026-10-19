@@ -119,6 +119,7 @@ You can also use query parameters: `?align=left`, `?align=right`, `?align=full`,
 - Use task lists for checklists in docs.
 - Use frontmatter for metadata (title, date, tags, etc.).
 - Use lowercase kebab-case for tags (e.g. `learning-design`, `systems-thinking`); avoid camelCase (e.g. `learningDesign`) to prevent fragmented tag routes.
+- Avoid em dashes (`—`): Use spaced hyphens (` - `), commas, colons, or parentheses instead to maintain a natural, conversational tone.
 - Use relative paths for images and assets.
 
 ---
