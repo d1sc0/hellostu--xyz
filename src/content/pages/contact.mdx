@@ -7,7 +7,18 @@ slug: contact
 ---
 
 import SocialLinks from '../../components/SocialLinks.astro';
+import ObfuscatedEmail from '../../components/ObfuscatedEmail.astro';
 
-A short contact form or obfusticated email address will be added here shortly but until then the best way to get hold me is connecting and reaching out on one of the platforms below.
+If you have any questions, feedback on something I've written, or just fancy saying hello, feel free to get in touch. I'm always happy to hear from readers and I don't bite (often!).
 
-<SocialLinks iconSize="2rem" wrapped="true" spacing="1rem" />
+The best way to reach me directly is via email:
+
+<div class="contact-email-wrapper">
+  <ObfuscatedEmail user="mail" domain="hellostu.xyz" subject="Hello Stu" />
+</div>
+
+You can also find and connect with me across the web:
+
+<div class="contact-social-wrapper">
+  <SocialLinks iconSize="2rem" wrapped="true" spacing="1rem" />
+</div>

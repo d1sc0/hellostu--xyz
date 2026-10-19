@@ -1,0 +1,144 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  user?: string;
+  domain?: string;
+  subject?: string;
+  showIcon?: boolean;
+  label?: string;
+  class?: string;
+}
+
+const {
+  user = 'mail',
+  domain = 'hellostu.xyz',
+  subject = 'Hello Stu',
+  showIcon = true,
+  label,
+  class: className = '',
+} = Astro.props;
+
+// Base64 encode email pieces at build-time so no raw email address exists in the static HTML source
+const encodedUser = Buffer.from(user).toString('base64');
+const encodedDomain = Buffer.from(domain).toString('base64');
+const encodedSubject = subject ? Buffer.from(subject).toString('base64') : '';
+const encodedLabel = label ? Buffer.from(label).toString('base64') : '';
+const fallbackText = `${user} [at] ${domain.replace('.', ' [dot] ')}`;
+---
+
+<a
+  href="#"
+  class={`obfuscated-email ${className}`.trim()}
+  data-u={encodedUser}
+  data-d={encodedDomain}
+  data-s={encodedSubject}
+  data-l={encodedLabel}
+  aria-label={`Send an email to ${user} at ${domain.replace('.', ' dot ')}`}
+>
+  {showIcon && <Icon name="envelope" class="obfuscated-email__icon" aria-hidden="true" />}
+  <span class="obfuscated-email__text">{fallbackText}</span>
+</a>
+
+<style>
+  .obfuscated-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color-link);
+    text-decoration: none;
+    padding: 0.65rem 1.15rem;
+    border: 1.5px solid var(--color-link);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.08);
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      border-color 0.2s ease,
+      transform 0.15s ease;
+  }
+
+  .obfuscated-email:hover,
+  .obfuscated-email:focus-visible {
+    background-color: var(--color-link);
+    color: var(--color-page);
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+
+  .obfuscated-email:hover .obfuscated-email__icon,
+  .obfuscated-email:focus-visible .obfuscated-email__icon {
+    color: var(--color-page);
+  }
+
+  .obfuscated-email__icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+    color: var(--color-link);
+    transition: color 0.2s ease;
+  }
+
+  .obfuscated-email__text {
+    line-height: 1.2;
+  }
+</style>
+
+<script is:inline>
+  (() => {
+    function decodeEmailElement(el) {
+      if (!el || !el.hasAttribute('data-u')) return;
+      try {
+        const u = atob(el.getAttribute('data-u') || '');
+        const d = atob(el.getAttribute('data-d') || '');
+        const sRaw = el.getAttribute('data-s');
+        const s = sRaw ? atob(sRaw) : '';
+        const lRaw = el.getAttribute('data-l');
+        const l = lRaw ? atob(lRaw) : '';
+
+        if (u && d) {
+          const email = `${u}@${d}`;
+          const mailto = s
+            ? `mailto:${email}?subject=${encodeURIComponent(s)}`
+            : `mailto:${email}`;
+
+          el.setAttribute('href', mailto);
+          const textSpan = el.querySelector('.obfuscated-email__text');
+          if (textSpan) {
+            textSpan.textContent = l || email;
+          }
+          el.removeAttribute('data-u');
+          el.removeAttribute('data-d');
+          el.removeAttribute('data-s');
+          el.removeAttribute('data-l');
+        }
+      } catch (err) {
+        // Leave the fallback text in place if decoding fails
+      }
+    }
+
+    function decodeAllEmails() {
+      document.querySelectorAll('.obfuscated-email[data-u]').forEach(decodeEmailElement);
+    }
+
+    // Decode on initial load and view transition page swaps
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', decodeAllEmails);
+    } else {
+      decodeAllEmails();
+    }
+    document.addEventListener('astro:page-load', decodeAllEmails);
+
+    // Also decode immediately on hover or touch/focus if not already decoded
+    document.addEventListener(
+      'pointerenter',
+      (e) => {
+        const target = e.target && e.target.closest && e.target.closest('.obfuscated-email[data-u]');
+        if (target) decodeEmailElement(target);
+      },
+      true,
+    );
+  })();
+</script>

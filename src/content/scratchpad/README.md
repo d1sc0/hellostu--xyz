@@ -14,14 +14,15 @@ _Focuses on public sector transformation, learning design, consulting craft, and
 
 ### 1. Adopting Agile Anywhere
 - **Category**: Work
-- **Angle**: Making agility work in traditionally non-agile, risk-averse environments (like the public sector and higher education). Drawing on recent reflections from the PGDip learning framework task, exploring how agile mindsets can be leveraged to embed new ways of working and cultural change as part of a learning framework—rather than treating agile merely as a software delivery mechanism.
+- **Angle**: Making agility work in traditionally non-agile, risk-averse environments (like the public sector and higher education). Drawing on recent reflections from the PGDip learning framework task, exploring how agile mindsets can be leveraged to embed new ways of working and cultural change as part of a learning framework - rather than treating agile merely as a software delivery mechanism.
 - **Key Themes**: 
   - **The anti-pattern of the "agile tax"**: Bolting sprints, standups, and Jira onto existing waterfall stage-gates, committees, and sign-offs.
   - **Agile governance as subtraction**: Figuring out what existing controls, reports, and governance agile practices should render obsolete rather than adding another layer of admin.
-  - **Teams as the unit of delivery**: Fostering genuine cross-functional collaboration where groups of people—not isolated individuals or silos—are empowered as the core unit of delivery.
+  - **Teams as the unit of delivery**: Fostering genuine cross-functional collaboration where groups of people - not isolated individuals or silos - are empowered as the core unit of delivery.
   - **Iterative vs. incremental**: The critical difference between just breaking a fixed plan into chunks (incremental) versus embracing a true "test, learn, adapt" mentality that actively reshapes direction based on feedback (iterative).
   - **"Show the thing"**: Making messy work visible early and often, delivering thin vertical slices of real value rather than hiding behind speculative 80-page status reports.
 - **Format**: Practical consulting / learning design essay.
+- **Status**: Idea / queued up next.
 
 ---
 
@@ -39,4 +40,4 @@ _Focuses on music, creative hobbies, photography, and personal passions._
   - **Software that respects your attention**: Savoring the typography and calm craft of Unread, and taming browser tab-hoarding with Raindrop.io.
   - **Tending the inputs**: How curating what you consume directly enriches what you think, make, and write in your digital garden.
 - **Format**: Personal essay / cultural & digital garden reflection.
-- **Status**: Moved to `src/content/posts/curation-for-the-curious.md`.
+- **Status**: Moved to `src/content/posts/curation-for-the-curious.md` (drafting complete).
