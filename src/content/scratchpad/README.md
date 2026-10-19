@@ -6,7 +6,7 @@ This directory is used as a private playground and scratchpad to draft new posts
 
 # Blog Post Ideas & Inspiration
 
-_Last updated: 10th October 2026_
+_Last updated: 19th October 2026_
 
 ## 💼 Work
 
@@ -39,3 +39,13 @@ _Focuses on music, creative hobbies, photography, and personal passions._
   - **Fresh energy**: How active listening and bringing new sounds into your daily routine acts as a mental palate cleanser and sparks creative energy.
   - **Playlists & shout-outs**: Potential to feature a curated selection using the site's `PlaylistWidget` or spotlighting recent Chop Shop discoveries.
 - **Format**: Casual cultural appreciation post / music essay.
+
+### 3. Curation for the Curious
+- **Category**: Play
+- **Angle**: Playing with tools that reclaim intentional reading and curation on the open web. A love letter to the quiet resilience of RSS via the Unread app, paired with Raindrop.io for taming the chaos of bookmarks into tidy, thoughtful collections.
+- **Key Themes**:
+  - **The quiet power of RSS**: Why chronological, un-manipulated feeds still beat algorithmic social timelines every day of the week. "Do the kids even know about RSS? They bloody well should."
+  - **Software that gets out of the way**: The craft of the Unread app—beautiful typography, calm pacing, and zero clutter or engagement traps.
+  - **From tab-hoarding to deliberate curation**: Using Raindrop.io to build a searchable personal library and collections rather than letting good ideas drown in forgotten open tabs.
+  - **Tending the digital garden**: How curating your inputs directly feeds into what you think, make, and write.
+- **Format**: Digital garden tooling / indie web reflection.
