@@ -8,6 +8,9 @@ import { remarkImageAlign } from './src/plugins/remark-image-align.mjs';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://hellostu.xyz',
+  build: {
+    inlineStylesheets: 'always',
+  },
   vite: {
     css: {
       devSourcemap: true,
