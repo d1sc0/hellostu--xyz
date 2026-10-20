@@ -126,6 +126,8 @@ nav ul li:has(a > .nav-icon) {
 .burger-button {
   background-color: transparent;
   border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 .line {
