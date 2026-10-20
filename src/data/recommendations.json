@@ -11,9 +11,9 @@
       "justificationAlt": "Strap on yer boots and size up how this old sea dog handles scaling the fleet, baking fresh rations, and running from those devilish matchmaking sirens ⚓"
     },
     {
-      "id": "holiday-time",
-      "justification": "I’m trying to navigate the strange reality of a solo staycation in Dorset, attempting to balance tedious life admin with a self-prescribed checklist of ice cream, chilly sea swims, and deliberate un-productivity 🍦.",
-      "justificationAlt": "Set yer spyglass on my cheeky shore leave plans, where this weary captain trades ledger duties for chilly ocean plunges, sweet frozen treasures, and a spot of rum-fueled dancing 🏴‍☠️"
+      "id": "curation-for-the-curious",
+      "justification": "I've been thinking a lot about what actually fuels creative headspace lately, swapping out algorithmic junk food for hand-picked mixtapes, quiet RSS readers, and a far more intentional media diet 🎧.",
+      "justificationAlt": "Dump that algorithmic bilge overboard and sail alongside me to reclaim me mind's bounty with hearty soul tunes, quiet RSS maps, and proper digital plunder 🏴‍☠️"
     }
   ],
   "10-they-come-for-me": [
@@ -45,9 +45,9 @@
       "justificationAlt": "Why play the cuddly bear when ye can witness a captain gripped by the shivering ague, wrapped in bog-paper bandages like some cyberpunk desert phantom 🏴‍☠️?"
     },
     {
-      "id": "holiday-time",
-      "justification": "Trying to switch off is rarely simple for me. Here's how I navigated a solo week off in Dorset, attempting to trade life admin and university work for sea swims and ice cream 🍦",
-      "justificationAlt": "Even a fierce captain needs to escape the brig. Throw yer duties overboard and join me for a grand shore leave of chilly swims and spiked grog 🏴‍☠️."
+      "id": "curation-for-the-curious",
+      "justification": "To help clean out the mental brain fog, I've been wrestling control back from the algorithms with quiet RSS feeds, proper music recommendations, and a much healthier media diet ☕.",
+      "justificationAlt": "Enough larking about in cozy bear disguises, ye scallywag! Take the helm back from algorithmic sirens and learn how I curate a prize-worthy chest of quiet feeds and pristine tunes 🏴‍☠️."
     }
   ],
   "12-these-hands": [
@@ -312,14 +312,14 @@
       "justificationAlt": "Leave those scurvy puppies behind and cast off for a treacherous voyage to London, where broken iron-carriages and office plunder tested this old captain’s resolve ⚓."
     },
     {
+      "id": "curation-for-the-curious",
+      "justification": "I got fed up with algorithmic noise, so I've been swapping out the junk food media for underground radio, quiet RSS feeds, and a properly curated digital diet 🎧.",
+      "justificationAlt": "Tired of jumping like a trained hound to every ringing bell? Kick those mechanical siren-algorithms overboard and steer your own vessel toward hand-picked treasures for the soul ⚓."
+    },
+    {
       "id": "15-geometry",
       "justification": "I’ve been pondering our obsession with shuffling organisational 'boxes and wires' instead of nurturing actual human culture, while also trying to justify a shiny new camera upgrade 📷.",
       "justificationAlt": "Charting a course through treacherous bureaucratic waters requires more than carrots, matey; cast your spyglass this way to see how we navigate the rigid, boxy structures of modern fleets 🏴‍☠️."
-    },
-    {
-      "id": "weeknote-swipe-right",
-      "justification": "Speaking of slick, addictive behaviour modification, I recently braved the terrifying world of dating apps during a brief escape to Cornwall, with rather humbling and hilarious results 🤦‍♂️.",
-      "justificationAlt": "Follow me into the digital abyss of matchmaking sirens and shore-leave shenanigans, where a dented carriage and cursed swiping apps nearly wrecked this old sea dog’s spirit ⚓."
     }
   ],
   "blogging-about-not-blogging": [
@@ -334,9 +334,9 @@
       "justificationAlt": "A clean hull cuts faster through the foam! Climb aboard me newly refitted vessel to see how I slashed me monthly gold-coin dues while keeping the seven seas pristine 🏴‍☠️"
     },
     {
-      "id": "one-year-lighter",
-      "justification": "Here is what happened when I actually sat down to map out my fitness tracker data. It's a look at how daily habits—and a suspicious amount of drumming steps—quietly helped me navigate a pretty heavy year.",
-      "justificationAlt": "Having danced away me doubts, I chucked excess ballast overboard! Inspect me charts to see how daily marchin' made this old sea dog a lighter, swifter beast 🏴‍☠️."
+      "id": "curation-for-the-curious",
+      "justification": "My recent attempts to clean up my mental media diet, swapping noisy algorithmic feeds for quiet RSS readers, underground soul mixtapes, and a bit of proper human curation ☕.",
+      "justificationAlt": "Tired of swallowing stale algorithmic sea-biscuits? Set sail for sweeter waters where we plunder hand-picked soul music and treasure-laden RSS feeds to nourish a thirsty pirate mind ⚓."
     }
   ],
   "bringing-my-photos-home": [
@@ -351,9 +351,9 @@
       "justificationAlt": "Grab a brush, matey! See how I saved a mountain of doubloons and rigged this fine galleon to run on nothing but clean, green winds ⚓"
     },
     {
-      "id": "one-year-lighter",
-      "justification": "I sat down with my fitness data after a pretty turbulent year of transition, realising how much those daily walks and runs actually did to keep me sane 🏃.",
-      "justificationAlt": "Now the galley is sorted, a captain must trim his own sails! Cast the heavy ballast overboard and see how I made this old vessel run swifter through rough seas ⚓"
+      "id": "curation-for-the-curious",
+      "justification": "How I took back control from the algorithms to rebuild a healthier web diet, swapping endless feeds for quiet RSS subscriptions, underground soul mixtapes, and intentional reads 📻.",
+      "justificationAlt": "Toss those algorithmic sirens straight into the deep blue sea! Come set sail to see how I dodge the feed's foul chum and hand-pick proper treasures for my mind ⚓."
     }
   ],
   "building-things": [
@@ -385,9 +385,9 @@
       "justificationAlt": "Shake the salt from yer boots and board me vessel for a grueling twelve-hour voyage aboard some truly cursed, slow-moving iron beasts to reach the grand capital ⚓"
     },
     {
-      "id": "changing-plans",
-      "justification": "I ended up trading a brutal, blister-inducing solo hike for a far more sensible birthday weekend of parkrun, coastal wandering, and getting slightly squiffy with friends. Turns out, I'd rather just have some fun 🍻",
-      "justificationAlt": "Mutiny has spared us a grueling overland march, ye scallywags! Set sail to see where we’re trading blisters for a grand birthday plunder of coastal strolls and flowing grog 🏴‍☠️."
+      "id": "curation-for-the-curious",
+      "justification": "Ditching social photo feeds got me thinking about my broader media intake. I've been quietly swapping algorithmic recommendations for underground soul mixtapes, RSS feeds, and a much healthier digital diet.",
+      "justificationAlt": "Toss those slop-filled corporate rations overboard, ye sea-dog! Come aboard and see how I reclaim the helm to hand-pick me own fine musical plunder and quiet digital feeds ⚓."
     }
   ],
   "changing-plans": [
@@ -436,9 +436,26 @@
       "justificationAlt": "Throw those costly, coal-guzzling engines overboard, ye scallywags! Peer through me spyglass to see how I rigged a greener, cheaper vessel to keep our pristine seas blue ⚓"
     },
     {
-      "id": "weeknote-swipe-right",
-      "justification": "An honest, warts-and-all look at a quiet escape to Cornwall, hitting my forty-fifth birthday, and dipping my toes into the slightly terrifying, paddleboard-heavy abyss of modern online dating 😬.",
-      "justificationAlt": "Drop yer tools and come watch me brave the most terrifying waters on the map—the lawless, paddleboard-choked abyss of modern digital courtship ⚓"
+      "id": "curation-for-the-curious",
+      "justification": "A few reflections on reclaiming my brain from algorithmic slop, where I swapped endless social feeds for quiet RSS readers, proper music recommendations, and a much healthier digital diet 🎧.",
+      "justificationAlt": "Now that the deck is spotless, stop drinking the algorithm's foul bilge water! Set yer sights on me private haul of soul-stirring tunes and fine human treasure 🏴‍☠️"
+    }
+  ],
+  "curation-for-the-curious": [
+    {
+      "id": "weeknote-london-calling",
+      "justification": "A candid look at a chaotic week where I braved twelve hours on broken trains for a short London trip, binged audiobooks, and faced down a few personal ghosts along the way 🚆.",
+      "justificationAlt": "Unfurl the sails and join me chartin' a chaotic voyage through foggy London town, where cursed iron leviathans failed to scuttle a fine reunion with me old hearties 🏴‍☠️"
+    },
+    {
+      "id": "the-mathematician-and-the-storyteller",
+      "justification": "My geeky peek behind the curtain at building an AI recommendation engine using vector maths and Gemini. I tried balancing mathematical logic with discovery, complete with a delightfully silly hidden pirate mode 🏴‍☠️.",
+      "justificationAlt": "Now set yer eyes upon me wild experiment, where we forced dark mathematical sorcery and a lying AI storyteller to chart fresh, unpredictable courses across me digital map ⚓."
+    },
+    {
+      "id": "one-year-lighter",
+      "justification": "I recently unpacked a year of my health data to see how daily walks, running, and questionable drumming step-counts accidentally helped me process a big life shift and shed three stone 🏃.",
+      "justificationAlt": "Cast off the heavy ballast and inspect me tally of a million logged paces, where shedding three stone o' weight left this cap'n fleet-footed enough to dance upon the waves ⚓."
     }
   ],
   "fresh-paint": [
@@ -453,9 +470,9 @@
       "justificationAlt": "Sneak a squint at me personal captain’s log, matey! See how this old sea dog survived a hectic week ashore, escaped the smoky fog, and dodged those blood-sucking Admiralty lawyers 🏴‍☠️."
     },
     {
-      "id": "one-year-lighter",
-      "justification": "Channeling my inner data nerd again, but this time tracking my own physical and mental recovery over a pretty turbulent year. It turns out constant walking, running, and noisy drumming can do wonders for the soul 🥁.",
-      "justificationAlt": "Clean timber is grand, but a fast ship needs less ballast! Shake a leg and spy how I tossed me heavy cargo, marched a thousand leagues, and became a much nimbler captain 🏴‍☠️."
+      "id": "curation-for-the-curious",
+      "justification": "I’ve been trying to wrestle my brain back from our algorithmic overlords lately. Here’s a look at how I’m using quiet RSS feeds, indie radio, and better bookmarking to build a healthier media diet 📻.",
+      "justificationAlt": "Toss that algorithmic bilge right over the gunwale, matey! Set yer sights on me hand-curated stash of soulful tunes, quiet parchment feeds, and prime plunder for ye hungry brain ⚓."
     }
   ],
   "harry-styles": [
@@ -538,9 +555,9 @@
       "justificationAlt": "Lay yer eyes on these strange navigation charts, matey, where I’ve plotted the frenzied foot-races of Dorset's finest landlubbers sprinting across the fields as if dodging the navy ⚓."
     },
     {
-      "id": "weeknote-swipe-right",
-      "justification": "Step away from the day job for a moment to join me in navigating a coastal Cornwall getaway, turning forty-five, and my slightly terrifying first steps into the bizarre world of online dating apps 📱.",
-      "justificationAlt": "Set sail from those dry council ports and plunge headfirst into the terrifying abyss of digital courtship, where a lonely captain must brave a sea of paddleboarding sirens ⚓."
+      "id": "curation-for-the-curious",
+      "justification": "Lately I’ve been trying to rescue my brain from algorithmic slop. Here's a look at how I’m taking back control of my media diet using quiet RSS feeds, proper mixtapes, and digital bookmarking 🧠.",
+      "justificationAlt": "Escape the hypnotic siren calls of algorithmic sea-slop, ye rogue! Learn how I sort pure RSS gold from worthless barnacles to keep me captain’s mind sharp as a cutlass ⚓."
     }
   ],
   "making-them-count-creating-alignment-within-communities-of-practice": [
@@ -555,9 +572,9 @@
       "justificationAlt": "Plotting courses requires more than just a willing crew, matey! Grab some rum and ponder how we steer through rigid armada structures without constantly shuffling the cannons on deck 🏴‍☠️"
     },
     {
-      "id": "weeknote-swipe-right",
-      "justification": "To clear my head of learning theory, I escaped to Cornwall for some proper coastal air, only to end up squinting in bewilderment at the terrifying, paddleboard-heavy abyss of modern online dating 🤦‍♂️.",
-      "justificationAlt": "Pour a stiff tot of rum and join this old sea dog on Cornwall's shores, where I've been braving the terrifying, monster-filled abyss of digital matchmaking apps, dodging an endless fleet of paddleboarders 🏴‍☠️."
+      "id": "curation-for-the-curious",
+      "justification": "Outside of uni work, I’ve been trying to apply that same intentionality to my brain's daily diet. Here’s how I’m ditching algorithmic noise for proper RSS feeds, underground radio, and tidy bookmarks 🎧.",
+      "justificationAlt": "Tired of eating algorithmic barnacles off the web’s hull? Come raid my private chest of quiet RSS feeds and hand-picked soul mixtapes before the sirens lure ye off course 🏴‍☠️"
     }
   ],
   "one-year-lighter": [
@@ -652,14 +669,14 @@
       "justificationAlt": "Even the finest galleons need a turn in the dry dock, so chart a course to see how I scraped the barnacles and rebuilt this vessel from the keel up 🏴‍☠️"
     },
     {
+      "id": "curation-for-the-curious",
+      "justification": "Here's my attempt at escaping the algorithmic noise machine by taking back control of what feeds my brain—swapping auto-generated feeds for quiet RSS readers, personal mixtapes, and decent bookmarks 🎧.",
+      "justificationAlt": "Hurl those mathematical contraptions into the deep! Sail with me to escape algorithmic slop and scavenge a richer diet of human tunes, quiet RSS feeds, and fine digital plunder 🏴‍☠️."
+    },
+    {
       "id": "weeknote-london-calling",
       "justification": "Sharing a rather vulnerable week of facing my office anxiety, enduring absolute train chaos, and finding comfort in fixing up a few broken maps on this newly rebuilt blog.",
       "justificationAlt": "Leave the comfort of these numerical shores behind! Set sail with me into the chaotic fog of London town, where the iron-horse railways proved far more treacherous than any kraken I've ever faced 🏴‍☠️."
-    },
-    {
-      "id": "harry-styles",
-      "justification": "I took a break from wrestling with AI models to bask in some pure, unadulterated pop joy in Amsterdam, whilst testing out a completely different, much simpler music playlist widget I’d built 🕺.",
-      "justificationAlt": "Forget the cold logic of the compass and surrender to the most infectious siren song this side of Amsterdam! Grab a tankard and stomp yer boots to these unexpectedly glorious modern shanties 🏴‍☠️."
     }
   ],
   "tinkering-monday": [
@@ -878,9 +895,9 @@
       "justificationAlt": "Peer through me spyglass at how this captain captures his own rugged mug each week, seeking calm waters and creative sparks to soothe a weary, wind-beaten soul ⚓."
     },
     {
-      "id": "homesick",
-      "justification": "An honest, slightly vulnerable look at the emotional toll of my weekly commute between Dorset and London, and my frustrating inability to get my own brain to adapt to the constant change 🚂.",
-      "justificationAlt": "Pour a hearty grog and listen to me confession about the strange, unsettled tide that pulls this old sea dog’s heart right back to me quiet home shores ⚓."
+      "id": "curation-for-the-curious",
+      "justification": "Switching gears from work to personal downtime, I’ve been trying to detox from algorithmic noise by reclaiming my media diet with quiet RSS feeds, decent filing systems, and actual human music recommendations 📻.",
+      "justificationAlt": "Steer clear of the slop-dripping siren songs of algorithmic tides to see how I plunder rich tunes, quiet feeds, and fine treasure for me own weary brainbox 🏴‍☠️."
     }
   ],
   "wk1-be-more-like-robbie": [
