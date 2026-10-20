@@ -20,7 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
   let hasLiked = localStorage.getItem(localStorageKey) === 'true';
 
   const updateLikeButtonUI = (count) => {
-    likeCountEl.textContent = `${count} like${count === 1 ? '' : 's'}`;
+    const labelText = `${count} like${count === 1 ? '' : 's'}`;
+    likeCountEl.textContent = labelText;
+    likeBtn.setAttribute('aria-label', `Like this post (${labelText})`);
     likeBtn.disabled = false;
     if (hasLiked) {
       likeBtn.classList.add('is-liked');

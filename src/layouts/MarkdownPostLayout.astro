@@ -87,7 +87,7 @@ const showUpdatedDate =
           <a
             class="post-navigation__link"
             href={`/posts/${prevpost.id}/`}
-            aria-label="Previous post"
+            aria-label={`Previous post: << ${prevpost.data.title}`}
           >
             &lt;&lt; {prevpost.data.title}
           </a>
@@ -104,7 +104,7 @@ const showUpdatedDate =
           <a
             class="post-navigation__link"
             href={`/posts/${nextpost.id}/`}
-            aria-label="Next post"
+            aria-label={`Next post: ${nextpost.data.title} >>`}
           >
             {nextpost.data.title} &gt;&gt;
           </a>
