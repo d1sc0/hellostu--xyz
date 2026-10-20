@@ -11,6 +11,7 @@ This document gives a quick reference for all components in `src/components/` an
 - `src/components/LatestPosts.astro`
 - `src/components/LikeAndShare.astro`
 - `src/components/Navigation.astro`
+- `src/components/PhotoGallery.astro`
 - `src/components/PostImageScroller.astro`
 - `src/components/PostsLists.astro`
 - `src/components/Recommendations.astro`
@@ -21,6 +22,7 @@ This document gives a quick reference for all components in `src/components/` an
 - `src/components/for_posts/InstagramEmbed/InstagramEmbed.astro`
 - `src/components/for_posts/MdxImageGallery/MdxImageGallery.astro`
 - `src/components/for_posts/PlaylistWidget/PlaylistWidget.astro`
+- `src/components/for_posts/RaindropBookmarks/RaindropBookmarks.astro`
 - `src/components/for_posts/StravaEmbed/StravaEmbed.astro`
 - `src/components/for_posts/VisitorMap/VisitorMap.astro`
 
@@ -667,6 +669,42 @@ import StravaEmbed from '../../components/for_posts/StravaEmbed/StravaEmbed.astr
 
 - Path: `src/components/for_posts/StravaEmbed/StravaEmbed.astro`
 - Last verified: 2026-06-08
+
+---
+
+## `for_posts/RaindropBookmarks/RaindropBookmarks.astro`
+
+### Purpose
+
+Renders curated bookmarks, personal notes, tags, cover images, and saved text highlights synced at build time from Raindrop.io into `src/data/raindrop.json`. Supports standard card lists, compact feeds (e.g., `/now`), and responsive poster masonry grids with optional decade filtering (e.g., `/movies`).
+
+### Props
+
+- `collection?` (`string | number | Array<string | number>`) — Filter by Raindrop collection name, path, slug, or ID.
+- `tag?` / `tags?` (`string | string[]`) — Filter by tag(s).
+- `matchAllTags?` (`boolean`, default `false`) — Require all specified tags instead of any.
+- `url?` / `urls?` (`string | string[]`) — Filter by specific bookmark URL(s).
+- `id?` / `ids?` (`number | string | Array<number | string>`) — Filter by Raindrop numeric ID(s).
+- `search?` (`string`) — Substring search across title, note, excerpt, and highlights.
+- `favoritesOnly?` (`boolean`, default `false`) — Only include bookmarks marked favorite in Raindrop.
+- `before?` / `after?` (`string | Date`) — Date range filter on bookmark `created` timestamp.
+- `limit?` (`number`) — Maximum number of items to render.
+- `sort?` (`'newest' | 'oldest' | 'title'`, default `'newest'`) — Sort order.
+- `title?` / `subtitle?` (`string`) — Optional widget header title and subtitle.
+- `showNotes?` (`boolean`, default `true`) — Render personal Raindrop notes as sanitized Markdown.
+- `showExcerpt?` (`boolean | 'fallback'`, default `'fallback'`, or `false` for `'masonry'`) — Render page excerpt.
+- `showHighlights?` (`'collapsed' | 'expanded' | 'none' | boolean`, default `'collapsed'`) — Display saved text highlights.
+- `showTags?` (`boolean`, default `true`, or `false` for `'masonry'`) — Display tag pills.
+- `showDomain?` (`boolean`, default `true`, or `false` for `'masonry'`) — Display source domain and favicon.
+- `showCollection?` (`boolean`, default `false`) — Display collection badge.
+- `showCover?` (`boolean`, default `false`, or `true` for `'masonry'`) — Display bookmark cover image.
+- `filterByDecade?` (`boolean`, default `false`) — Render interactive decade filter pills parsed from `(YYYY)` in item titles.
+- `variant?` (`'cards' | 'compact' | 'masonry'`, default `'cards'`) — Layout variant.
+
+### Verified from source
+
+- Path: `src/components/for_posts/RaindropBookmarks/RaindropBookmarks.astro`
+- Last verified: 2026-10-20
 
 ---
 

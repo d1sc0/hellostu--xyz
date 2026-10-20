@@ -30,9 +30,10 @@ let ogImage = `${siteURL}generated_social_images/${urlId}.png`;
 let ogImageWidth = 1200;
 let ogImageHeight = 630;
 let ogImageType = 'image/png';
-let twitterImage = `${siteURL}default_social_square.png`;
-let twitterImageWidth = 600;
-let twitterImageHeight = 600;
+let twitterCard: 'summary' | 'summary_large_image' = 'summary_large_image';
+let twitterImage = ogImage;
+let twitterImageWidth = 1200;
+let twitterImageHeight = 630;
 let twitterImageType = 'image/png';
 let thumbnailImage = `${siteURL}default_social_square.png`;
 
@@ -41,6 +42,7 @@ if (isAboutPage) {
   ogImageWidth = 750;
   ogImageHeight = 1000;
   ogImageType = 'image/jpeg';
+  twitterCard = 'summary';
   twitterImage = `${siteURL}stuart-mackenzie.jpg`;
   twitterImageWidth = 750;
   twitterImageHeight = 1000;
@@ -51,12 +53,14 @@ if (isAboutPage) {
   if (!fs.existsSync(ogImagePath)) {
     ogImage = `${siteURL}default_social.png`;
   }
+  twitterImage = ogImage;
   thumbnailImage = ogImage;
 } else {
   const ogImagePath = `public/generated_social_images/${urlId}.png`;
   if (!fs.existsSync(ogImagePath)) {
     ogImage = `${siteURL}default_social.png`;
   }
+  twitterImage = ogImage;
   thumbnailImage = isHomePage ? `${siteURL}stuart-mackenzie.jpg` : ogImage;
 }
 
@@ -211,7 +215,7 @@ if (isPost) {
     }}
     twitter={{
       creator: '@_disco',
-      card: 'summary',
+      card: twitterCard,
       title: title,
       image: twitterImage,
       description: description,

@@ -16,6 +16,7 @@ A modern Astro v6 static site with Sveltia CMS, automated image generation, and 
 - Astro v6 with Content Layer API for Markdown/MDX
 - Sveltia CMS for content editing
 - Native Photo Portfolio (`/photos`) with responsive masonry layout, dynamic build-time EXIF metadata extraction (`exifr`), and accessible lightbox modal
+- Build-time Raindrop.io bookmark, highlight, and collection integration (`<RaindropBookmarks />`) powering `/now` and the `/movies` masonry grid with decade filtering
 - AI-driven semantic recommendation engine (Gemini embeddings + 3.5 Flash reasoning + MMR diversity + pirate easter egg mode)
 - Automated OG and preview image generation (Node + Puppeteer)
 - Modular, mobile-first CSS with a single desktop breakpoint
@@ -31,6 +32,7 @@ See the [docs/](docs/) folder for full guides and details:
 
 - [Project setup](docs/project-setup-guide.md)
 - [Recommendations guide](docs/recommendations-guide.md)
+- [Raindrop.io integration guide](docs/raindrop-guide.md)
 - [Sveltia CMS guide](docs/sveltia-cms.md)
 - [OG image generation](docs/og-image-generation-guide.md)
 - [Preview image generation](docs/preview-image-generation-guide.md)
@@ -44,7 +46,7 @@ See the [docs/](docs/) folder for full guides and details:
 
 ## RSS and Last Updated
 
-- RSS endpoint implementation: `src/pages/rss.xml.js`
+- RSS endpoint implementation: `src/pages/rss-feed.xml.js`
 - Post page last-updated implementation: `src/pages/posts/[slug].astro`
 - Last-updated display logic: `src/layouts/MarkdownPostLayout.astro`
 
@@ -58,6 +60,7 @@ Summary:
 ## Automation & Workflow
 
 - See [Recommendations guide](docs/recommendations-guide.md) for semantic recommendations and voice prompt tuning.
+- See [Raindrop.io integration guide](docs/raindrop-guide.md) for syncing whitelisted Raindrop collections and embedding bookmarks/grids in MDX.
 - See [OG image generation guide](docs/og-image-generation-guide.md) and [Preview image generation guide](docs/preview-image-generation-guide.md) for automation details.
 - See [Sveltia CMS guide](docs/sveltia-cms.md) for content workflow and prebuild automation.
 - See [Analytics setup](docs/analytics.md) for the Umami Cloud script and where it is loaded.

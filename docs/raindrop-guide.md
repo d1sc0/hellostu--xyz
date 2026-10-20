@@ -104,9 +104,11 @@ You don't need to look up numeric IDs—you can pass the article URL(s) directly
 | `title` | `string` | — | Optional heading displayed at the top of the widget. |
 | `subtitle` | `string` | — | Optional subtitle displayed beside/below the heading. |
 | `showNotes` | `boolean` | `true` | Render your personal Raindrop notes (supports Markdown). |
-| `showExcerpt` | `'fallback' \| boolean` | `'fallback'` | Shows page excerpt when no personal note exists (`'fallback'`), always (`true`), or never (`false`). |
+| `showExcerpt` | `'fallback' \| boolean` | `'fallback'` (`false` for `'masonry'`) | Shows page excerpt when no personal note exists (`'fallback'`), always (`true`), or never (`false`). |
 | `showHighlights` | `'collapsed' \| 'expanded' \| 'none' \| boolean` | `'collapsed'` | Controls how saved text highlights are shown (`'collapsed'` renders a collapsible `<details>` toggle, `'expanded'` opens them by default). |
-| `showTags` | `boolean` | `true` | Show lowercase kebab-case tag pills on each card. |
+| `showTags` | `boolean` | `true` (`false` for `'masonry'`) | Show lowercase kebab-case tag pills on each card. |
+| `showDomain` | `boolean` | `true` (`false` for `'masonry'`) | Show the source domain name and favicon on each card. |
 | `showCollection` | `boolean` | `false` | Show the folder badge next to the domain name. |
 | `showCover` | `boolean` | `false` (`true` for `'masonry'`) | Show the bookmark's cover/thumbnail image when available. |
+| `filterByDecade` | `boolean` | `false` | Parses `(YYYY)` years from item titles and renders interactive decade filter pills (`All`, `1980s`, `1990s`, etc.). |
 | `variant` | `'cards' \| 'compact' \| 'masonry'` | `'cards'` | Layout style (`'compact'` for tight link lists, `'masonry'` for multi-column poster/visual grids like `/movies`). |
