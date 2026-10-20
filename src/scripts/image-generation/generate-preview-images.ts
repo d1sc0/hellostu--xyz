@@ -139,9 +139,6 @@ async function generatePreviewImages() {
 
   const browser = await puppeteer.launch(launchOptions);
   try {
-    const page = await browser.newPage();
-    await page.setViewport({ width: 600, height: 600 });
-
     for (const post of missingPosts) {
       const outFile = `${post.id}.png`;
       const outPath = path.join(OUTPUT_DIR, outFile);
@@ -180,6 +177,8 @@ async function generatePreviewImages() {
         bgPath: '', // Not used anymore
       });
 
+      const page = await browser.newPage();
+      await page.setViewport({ width: 600, height: 600 });
       await page.setContent(html, { waitUntil: 'networkidle2' });
       // Wait for all relevant fonts to be loaded
       await page.waitForFunction(
@@ -194,10 +193,9 @@ async function generatePreviewImages() {
         type: 'png',
         clip: { x: 0, y: 0, width: 600, height: 600 },
       });
+      await page.close();
       console.log(`preview-images: ${outFile} - created`);
     }
-
-    await page.close();
   } finally {
     await browser.close();
   }

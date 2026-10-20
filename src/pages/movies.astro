@@ -1,0 +1,19 @@
+---
+import MarkdownPageLayout from '../layouts/MarkdownPageLayout.astro';
+import { getEntry, render } from 'astro:content';
+
+const movies = await getEntry('pages', 'movies');
+const { Content } = movies ? await render(movies) : { Content: null };
+const pageMeta = {
+  title: movies?.data.title || 'Movies',
+  description:
+    movies?.data.description ||
+    'A curated collection of favourite films by Stuart Mackenzie.',
+};
+---
+
+<MarkdownPageLayout frontmatter={movies?.data} pageMeta={pageMeta}>
+  <div class="movies-page-content">
+    {Content && <Content />}
+  </div>
+</MarkdownPageLayout>

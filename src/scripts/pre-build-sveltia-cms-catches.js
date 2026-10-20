@@ -35,12 +35,23 @@ function renameFileToSlug(filePath) {
   if (data.slug) {
     const dir = path.dirname(filePath);
     const ext = path.extname(filePath);
+    const currentName = path.basename(filePath);
     const newName = `${data.slug}${ext}`;
     const newPath = path.join(dir, newName);
-    if (path.basename(filePath) !== newName && !fs.existsSync(newPath)) {
-      fs.renameSync(filePath, newPath);
-      console.log(`path-fixes: ${newName} - updated`);
-      return newPath;
+    if (currentName !== newName) {
+      const isCaseOnlyRename =
+        currentName.toLowerCase() === newName.toLowerCase();
+      if (isCaseOnlyRename) {
+        const tempPath = path.join(dir, `${data.slug}.__tmp__${ext}`);
+        fs.renameSync(filePath, tempPath);
+        fs.renameSync(tempPath, newPath);
+        console.log(`path-fixes: ${newName} - updated`);
+        return newPath;
+      } else if (!fs.existsSync(newPath)) {
+        fs.renameSync(filePath, newPath);
+        console.log(`path-fixes: ${newName} - updated`);
+        return newPath;
+      }
     }
   }
   return filePath;
@@ -67,16 +78,17 @@ function walkDir(dir, { renameToSlug = false } = {}) {
   });
 }
 
+const previewDir = path.join(
+  __dirname,
+  '../../public/generated_preview_images',
+);
+const socialDir = path.join(
+  __dirname,
+  '../../public/generated_social_images',
+);
+
 // Optionally clean generated image folders if --clean flag is present
 if (process.argv.includes('--clean')) {
-  const previewDir = path.join(
-    __dirname,
-    '../../public/generated_preview_images',
-  );
-  const socialDir = path.join(
-    __dirname,
-    '../../public/generated_social_images',
-  );
   function cleanDir(dir) {
     if (fs.existsSync(dir)) {
       fs.readdirSync(dir).forEach(file => {
@@ -89,6 +101,19 @@ if (process.argv.includes('--clean')) {
   }
   cleanDir(previewDir);
   cleanDir(socialDir);
+} else if (fs.existsSync(socialDir)) {
+  // Ensure existing social image filenames are lowercase (for Linux CI compatibility)
+  fs.readdirSync(socialDir).forEach(file => {
+    const lowerName = file.toLowerCase();
+    if (file !== lowerName) {
+      const oldPath = path.join(socialDir, file);
+      const tempPath = path.join(socialDir, `${lowerName}.__tmp__`);
+      const newPath = path.join(socialDir, lowerName);
+      fs.renameSync(oldPath, tempPath);
+      fs.renameSync(tempPath, newPath);
+      console.log(`path-fixes: ${lowerName} - lowercased`);
+    }
+  });
 }
 walkDir(POSTS_DIR, { renameToSlug: true });
 walkDir(PAGES_DIR, { renameToSlug: false });

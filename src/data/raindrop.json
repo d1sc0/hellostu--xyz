@@ -1,5 +1,5 @@
 {
-  "lastSynced": "2026-10-20T19:58:21.433Z",
+  "lastSynced": "2026-10-20T20:29:45.065Z",
   "isSeedData": false,
   "collections": [
     {
@@ -15,9 +15,1600 @@
       "slug": "archive",
       "path": "_hellostu shared / archive",
       "count": 0
+    },
+    {
+      "id": 76151988,
+      "title": "movies",
+      "slug": "movies",
+      "path": "movies",
+      "count": 69
     }
   ],
   "bookmarks": [
+    {
+      "id": 1896105808,
+      "title": "WarGames (1983)",
+      "link": "https://www.imdb.com/title/tt0086567/?ref_=nv_sr_srsg_1_tt_7_nm_1_in_0_q_warga",
+      "domain": "imdb.com",
+      "excerpt": "",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMmM5MDlmZWUtYTE1Mi00M2JiLTk1NzYtMTg0NTdlMzM2N2RkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "hacker"
+      ],
+      "important": false,
+      "created": "2026-10-20T19:11:01.120Z",
+      "lastUpdate": "2026-10-20T20:18:36.041Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896105637,
+      "title": "The Big Short (2015)",
+      "link": "https://www.imdb.com/title/tt1596363/?ref_=nv_sr_srsg_3_tt_3_nm_5_in_0_q_the%20big%20",
+      "domain": "imdb.com",
+      "excerpt": "",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BZDZkNDQ3YjktYjBlZC00YTY1LTgxOGYtY2RhMWFhZmNkZGY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "finance"
+      ],
+      "important": false,
+      "created": "2026-10-20T19:10:44.291Z",
+      "lastUpdate": "2026-10-20T20:18:36.104Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896105119,
+      "title": "Short Circuit (1986)",
+      "link": "https://www.imdb.com/title/tt0091949/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_short%20ci",
+      "domain": "imdb.com",
+      "excerpt": "",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNDFiYmMyNmEtM2Q1Ni00OTE1LWI4OTItMmU3NWMzNWYyZTg0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "sciencefiction"
+      ],
+      "important": false,
+      "created": "2026-10-20T19:10:10.947Z",
+      "lastUpdate": "2026-10-20T20:18:36.207Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896104426,
+      "title": "Innerspace (1987)",
+      "link": "https://www.imdb.com/title/tt0093260/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_innersp",
+      "domain": "imdb.com",
+      "excerpt": "",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMDgxNzhkNjYtZTdkMy00NWYxLThkNWMtYjhlYTkwYWZjN2NlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "sciencefiction"
+      ],
+      "important": false,
+      "created": "2026-10-20T19:09:30.781Z",
+      "lastUpdate": "2026-10-20T20:18:36.321Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896103986,
+      "title": "Notting Hill (1999)",
+      "link": "https://www.imdb.com/title/tt0125439/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_notting",
+      "domain": "imdb.com",
+      "excerpt": "",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BZjY3YWI5OTMtYTdlNy00ZTZiLWEwYjItN2M1MGVkMDM4ZDExXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "romance",
+        "movie"
+      ],
+      "important": false,
+      "created": "2026-10-20T19:09:03.316Z",
+      "lastUpdate": "2026-10-20T20:18:36.496Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896103633,
+      "title": "Four Weddings and a Funeral (1994)",
+      "link": "https://www.imdb.com/title/tt0109831/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_four%20wedd",
+      "domain": "imdb.com",
+      "excerpt": "",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMTMyNzg2NzgxNV5BMl5BanBnXkFtZTcwMTcxNzczNA@@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "romance"
+      ],
+      "important": false,
+      "created": "2026-10-20T19:08:49.417Z",
+      "lastUpdate": "2026-10-20T20:18:36.600Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896103175,
+      "title": "Love Actually (2003)",
+      "link": "https://www.imdb.com/title/tt0314331/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_love%20acct",
+      "domain": "imdb.com",
+      "excerpt": "2h 15m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BYWRlZjcwYTgtYWJkOS00MGYwLTk3Y2ItNmU4NTg5Nzg2YTQ2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "romance"
+      ],
+      "important": false,
+      "created": "2026-10-20T19:08:29.049Z",
+      "lastUpdate": "2026-10-20T20:24:05.761Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896102805,
+      "title": "The Terminal (2004)",
+      "link": "https://www.imdb.com/title/tt0362227/?ref_=nv_sr_srsg_3_tt_8_nm_0_in_0_q_the%20terminal",
+      "domain": "imdb.com",
+      "excerpt": "2h 8m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMTM1MTIwNTMxOF5BMl5BanBnXkFtZTcwNjIxMjQyMw@@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "comedy"
+      ],
+      "important": false,
+      "created": "2026-10-20T19:08:05.695Z",
+      "lastUpdate": "2026-10-20T20:24:05.956Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896102527,
+      "title": "The Goonies (1985)",
+      "link": "https://www.imdb.com/title/tt0089218/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_the%20goonies",
+      "domain": "imdb.com",
+      "excerpt": "1h 54m | PG",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMjE1OWU4ODEtZmEzMC00NTcwLWFlMWUtYjhlNzExOTIxYzVlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "teen"
+      ],
+      "important": false,
+      "created": "2026-10-20T19:07:18.190Z",
+      "lastUpdate": "2026-10-20T20:24:06.207Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896102426,
+      "title": "Good Morning, Vietnam (1987)",
+      "link": "https://www.imdb.com/title/tt0093105/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_good%20mor",
+      "domain": "imdb.com",
+      "excerpt": "2h 1m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BYThiZTU4N2UtYWU2Mi00ZGUyLWI2ZmEtM2U1ZmJmOGY1ZTc3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "war"
+      ],
+      "important": false,
+      "created": "2026-10-20T19:07:00.531Z",
+      "lastUpdate": "2026-10-20T20:24:06.490Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896102156,
+      "title": "Dogma (1999)",
+      "link": "https://www.imdb.com/title/tt0120655/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_dogma",
+      "domain": "imdb.com",
+      "excerpt": "2h 10m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNDE1Yjc3N2UtZmYwNi00YTA3LTllNGEtZTIwODg2MmMwNjBjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "comedy"
+      ],
+      "important": false,
+      "created": "2026-10-20T19:06:23.927Z",
+      "lastUpdate": "2026-10-20T20:24:06.780Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896101905,
+      "title": "The Blues Brothers (1980)",
+      "link": "https://www.imdb.com/title/tt0080455/?ref_=nv_sr_srsg_6_tt_5_nm_3_in_0_q_the%20blues%20br",
+      "domain": "imdb.com",
+      "excerpt": "2h 13m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNzI2ZDAyNjYtNzgwOS00MTRlLWE3MjUtMTI3M2VmYzQ1ZWJmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "music"
+      ],
+      "important": false,
+      "created": "2026-10-20T19:05:45.847Z",
+      "lastUpdate": "2026-10-20T20:24:06.896Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896100720,
+      "title": "Fantastic Mr. Fox (2009)",
+      "link": "https://www.imdb.com/title/tt0432283/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_fantastic%20mr%20fox",
+      "domain": "imdb.com",
+      "excerpt": "1h 27m | PG",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BYTA1ZTIxZDUtNGFjYS00YTc5LTgzNDMtZWNjYjBlMzI2OTk3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "animation"
+      ],
+      "important": false,
+      "created": "2026-10-20T19:02:49.682Z",
+      "lastUpdate": "2026-10-20T20:24:06.957Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896100115,
+      "title": "Tenet (2020)",
+      "link": "https://www.imdb.com/title/tt6723592/?ref_=ls_t_11",
+      "domain": "imdb.com",
+      "excerpt": "2h 30m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNTIzNDIxMzktMzlkMi00MmUyLWFmMjQtZDgwMjBmOGJmNTI3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "sciencefiction"
+      ],
+      "important": false,
+      "created": "2026-10-20T19:01:29.506Z",
+      "lastUpdate": "2026-10-20T20:24:07.020Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896099487,
+      "title": "Unbroken (2014)",
+      "link": "https://www.imdb.com/title/tt1809398/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_unbrok",
+      "domain": "imdb.com",
+      "excerpt": "2h 17m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMTY3ODg2OTgyOF5BMl5BanBnXkFtZTgwODk1OTAwMzE@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "war"
+      ],
+      "important": false,
+      "created": "2026-10-20T19:00:17.036Z",
+      "lastUpdate": "2026-10-20T20:24:07.084Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896099273,
+      "title": "Captain Phillips (2013)",
+      "link": "https://www.imdb.com/title/tt1535109/?ref_=ls_t_70",
+      "domain": "imdb.com",
+      "excerpt": "2h 14m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMWYyNjI3ZjEtNGE5ZS00MDgxLWIzNGEtZTgzNDVlZjZjYWU5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "action"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:59:54.998Z",
+      "lastUpdate": "2026-10-20T20:24:07.145Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896098689,
+      "title": "The King's Speech (2010)",
+      "link": "https://www.imdb.com/title/tt1504320/?ref_=ls_t_37",
+      "domain": "imdb.com",
+      "excerpt": "1h 58m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMzU5MjEwMTg2Nl5BMl5BanBnXkFtZTcwNzM3MTYxNA@@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "biography"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:59:17.256Z",
+      "lastUpdate": "2026-10-20T20:24:07.208Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896098440,
+      "title": "Skyfall (2012)",
+      "link": "https://www.imdb.com/title/tt1074638/?ref_=ls_t_33",
+      "domain": "imdb.com",
+      "excerpt": "2h 23m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNjAzMWNkODUtM2FlMi00NzgyLWJhMGUtMWEyNDYyZGFiN2RlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "spy",
+        "movie"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:58:51.582Z",
+      "lastUpdate": "2026-10-20T20:24:07.267Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896098181,
+      "title": "The Social Network (2010)",
+      "link": "https://www.imdb.com/title/tt1285016/?ref_=ls_t_28",
+      "domain": "imdb.com",
+      "excerpt": "2h | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMjlkNTE5ZTUtNGEwNy00MGVhLThmZjMtZjU1NDE5Zjk1NDZkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "technology"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:58:25.771Z",
+      "lastUpdate": "2026-10-20T20:24:07.326Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896097836,
+      "title": "Arrival (2016)",
+      "link": "https://www.imdb.com/title/tt2543164/?ref_=ls_t_14",
+      "domain": "imdb.com",
+      "excerpt": "1h 56m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMTExMzU0ODcxNDheQTJeQWpwZ15BbWU4MDE1OTI4MzAy._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "sciencefiction"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:57:55.690Z",
+      "lastUpdate": "2026-10-20T20:24:07.387Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896097702,
+      "title": "Inception (2010)",
+      "link": "https://www.imdb.com/title/tt1375666/?ref_=ls_t_3",
+      "domain": "imdb.com",
+      "excerpt": "2h 28m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "sciencefiction"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:57:28.884Z",
+      "lastUpdate": "2026-10-20T20:24:07.448Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896094782,
+      "title": "Jurassic Park (1993)",
+      "link": "https://www.imdb.com/title/tt0107290/?ref_=ls_t_100",
+      "domain": "imdb.com",
+      "excerpt": "2h 7m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "dinosaurs"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:53:48.527Z",
+      "lastUpdate": "2026-10-20T20:24:07.509Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896094622,
+      "title": "12 Monkeys (1995)",
+      "link": "https://www.imdb.com/title/tt0114746/?ref_=ls_t_82",
+      "domain": "imdb.com",
+      "excerpt": "2h 9m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMDQwNDY0M2MtOGFmNy00ZjI5LTkzN2ItMzg5M2IwZTZjY2MyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "sciencefiction"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:53:17.486Z",
+      "lastUpdate": "2026-10-20T20:24:07.570Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896094506,
+      "title": "Apollo 13 (1995)",
+      "link": "https://www.imdb.com/title/tt0112384/?ref_=ls_t_74",
+      "domain": "imdb.com",
+      "excerpt": "2h 20m | PG",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMGZmNGY1OTAtNjFkYS00MjcyLWFlZjUtYzEyMDllZGZhMzM3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "space"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:52:55.997Z",
+      "lastUpdate": "2026-10-20T20:24:07.630Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896094407,
+      "title": "Groundhog Day (1993)",
+      "link": "https://www.imdb.com/title/tt0107048/?ref_=ls_t_65",
+      "domain": "imdb.com",
+      "excerpt": "1h 41m | PG",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BOWE3MjQ3ZDAtNDQ2MC00YjBjLTk0ZWYtNjQ0YzQ4YWE3YTEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "comedy"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:52:36.738Z",
+      "lastUpdate": "2026-10-20T20:24:07.693Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896094266,
+      "title": "The Fugitive (1993)",
+      "link": "https://www.imdb.com/title/tt0106977/?ref_=ls_t_48",
+      "domain": "imdb.com",
+      "excerpt": "2h 10m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BM2RjMjEwODUtYTE4OC00MzhkLThjMjItZjYyZjk3YzA4YWUxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "action"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:52:10.496Z",
+      "lastUpdate": "2026-10-20T20:24:07.756Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896093872,
+      "title": "As Good as It Gets (1997)",
+      "link": "https://www.imdb.com/title/tt0119822/?ref_=ls_t_39",
+      "domain": "imdb.com",
+      "excerpt": "2h 19m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMzBiMWJhYmQtOWYzNS00NjgxLWE5NDItNzZlZDQwODBmODNjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "comedy"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:51:39.968Z",
+      "lastUpdate": "2026-10-20T20:24:07.819Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896093261,
+      "title": "Ferris Bueller's Day Off (1986)",
+      "link": "https://www.imdb.com/title/tt0091042/?ref_=ls_t_93",
+      "domain": "imdb.com",
+      "excerpt": "1h 43m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BZWYwMjUxNjMtMzE0MC00NDM3LWIxMmQtYmEyNWVjNjdlZGZjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "teen"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:50:35.660Z",
+      "lastUpdate": "2026-10-20T20:24:07.878Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896092158,
+      "title": "Field of Dreams (1989)",
+      "link": "https://www.imdb.com/title/tt0097351/?ref_=ls_t_76",
+      "domain": "imdb.com",
+      "excerpt": "1h 47m | PG",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BZTEwMGYzNDktOWEyMi00NTJjLWE5MGQtNmNlNDkxOTYyZDA5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "baseball"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:50:08.379Z",
+      "lastUpdate": "2026-10-20T20:24:07.938Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896089492,
+      "title": "A Fish Called Wanda (1988)",
+      "link": "https://www.imdb.com/title/tt0095159/?ref_=ls_t_64",
+      "domain": "imdb.com",
+      "excerpt": "1h 48m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNjFhZDg1ZmEtYmI0Ny00MjM3LWIxNzItMzU1MzczZTljMTkxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "crime",
+        "movie"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:49:39.699Z",
+      "lastUpdate": "2026-10-20T20:24:07.996Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896088682,
+      "title": "Jerry Maguire (1996)",
+      "link": "https://www.imdb.com/title/tt0116695/",
+      "domain": "imdb.com",
+      "excerpt": "2h 19m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BM2E1ZjU1MjctZjU2Yi00MGE1LWI1MDEtYzBlMWJlNDc1NTQxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "change"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:49:04.161Z",
+      "lastUpdate": "2026-10-20T20:24:08.057Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896088458,
+      "title": "Rain Man (1988)",
+      "link": "https://www.imdb.com/title/tt0095953/?ref_=ls_t_37",
+      "domain": "imdb.com",
+      "excerpt": "2h 13m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BZDUzODNkNGUtNzJjNi00ODFlLTkzMzktMGNkOTIwYWM2YTQzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "psychology"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:48:43.391Z",
+      "lastUpdate": "2026-10-20T20:24:08.118Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896088282,
+      "title": "Raising Arizona (1987)",
+      "link": "https://www.imdb.com/title/tt0093822/?ref_=ls_t_25",
+      "domain": "imdb.com",
+      "excerpt": "1h 34m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNWIzMTdmZDgtZTc2NS00MDA1LWFiMmMtYzc5YzY0YTEyZjE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "comedy"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:48:13.527Z",
+      "lastUpdate": "2026-10-20T20:24:08.182Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896087142,
+      "title": "Airplane! (1980)",
+      "link": "https://www.imdb.com/title/tt0080339/?ref_=ls_t_17",
+      "domain": "imdb.com",
+      "excerpt": "1h 28m | PG",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNGMxMDRhMjItMDNlZi00MDIzLWE5MDQtODljMDQ3MWM1Y2E4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "comedy"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:47:51.593Z",
+      "lastUpdate": "2026-10-20T20:24:08.244Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896086913,
+      "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+      "link": "https://www.imdb.com/title/tt0080684/?ref_=ls_t_12",
+      "domain": "imdb.com",
+      "excerpt": "2h 4m | PG",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMTkxNGFlNDktZmJkNC00MDdhLTg0MTEtZjZiYWI3MGE5NWIwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "sciencefiction"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:47:33.735Z",
+      "lastUpdate": "2026-10-20T20:24:08.309Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896086436,
+      "title": "Young Sherlock Holmes (1985)",
+      "link": "https://www.imdb.com/title/tt0090357/?ref_=fn_t_1",
+      "domain": "imdb.com",
+      "excerpt": "1h 49m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMWFjYjdkZjMtMjA5NS00ZDIzLWExMjAtYjA3MGYwM2QyYmU0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "detective"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:46:56.647Z",
+      "lastUpdate": "2026-10-20T20:24:08.375Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896085422,
+      "title": "Catch Me If You Can (2002)",
+      "link": "https://www.imdb.com/title/tt0264464/?ref_=chttp_t_172",
+      "domain": "imdb.com",
+      "excerpt": "2h 21m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMTY5MzYzNjc5NV5BMl5BanBnXkFtZTYwNTUyNTc2._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "crime"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:45:34.538Z",
+      "lastUpdate": "2026-10-20T20:24:08.438Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896085205,
+      "title": "Lock, Stock and Two Smoking Barrels (1998)",
+      "link": "https://www.imdb.com/title/tt0120735/?ref_=chttp_t_171",
+      "domain": "imdb.com",
+      "excerpt": "1h 47m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMmY1M2M5ZmMtYzllZC00YzAxLTk4MjktZDJkNjA1MTUwMGQ4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "crime"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:45:21.528Z",
+      "lastUpdate": "2026-10-20T20:24:08.508Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896084131,
+      "title": "Monty Python and the Holy Grail (1975)",
+      "link": "https://www.imdb.com/title/tt0071853/?ref_=chttp_t_167",
+      "domain": "imdb.com",
+      "excerpt": "1h 31m | PG",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BYWY4YmUzZmUtMzQ0ZS00N2Y2LWJlODQtN2IwMDc1MWQwMmU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "comedy"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:45:06.138Z",
+      "lastUpdate": "2026-10-20T20:24:08.566Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896083922,
+      "title": "Project Hail Mary (2026)",
+      "link": "https://www.imdb.com/title/tt12042730/?ref_=chttp_t_162",
+      "domain": "imdb.com",
+      "excerpt": "2h 36m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNTkwNzJiYTctNzI3NC00NjE1LTlhYjktY2Q5MTdmMWFmNzcxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "sciencefiction"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:44:46.464Z",
+      "lastUpdate": "2026-10-20T20:24:08.623Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896082640,
+      "title": "A Beautiful Mind (2001)",
+      "link": "https://www.imdb.com/title/tt0268978/?ref_=chttp_t_157",
+      "domain": "imdb.com",
+      "excerpt": "2h 15m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BYjgzNjFkMmItOGJhNi00NWM3LWJlYTUtNDExMGQ3ZTI3NjJkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "psychology"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:44:12.912Z",
+      "lastUpdate": "2026-10-20T20:24:08.684Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896081780,
+      "title": "Little Miss Sunshine (2006)",
+      "link": "https://www.imdb.com/title/tt0449059/",
+      "domain": "imdb.com",
+      "excerpt": "1h 41m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMTgzNTgzODU0NV5BMl5BanBnXkFtZTcwMjEyMjMzMQ@@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "comedy"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:43:30.227Z",
+      "lastUpdate": "2026-10-20T20:24:08.744Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896081617,
+      "title": "The Wolf of Wall Street (2013)",
+      "link": "https://www.imdb.com/title/tt0993846/?ref_=chttp_t_125",
+      "domain": "imdb.com",
+      "excerpt": "3h | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "finance"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:42:56.581Z",
+      "lastUpdate": "2026-10-20T20:24:08.804Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896081483,
+      "title": "The Truman Show (1998)",
+      "link": "https://www.imdb.com/title/tt0120382/?ref_=chttp_t_124",
+      "domain": "imdb.com",
+      "excerpt": "1h 43m | PG",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNzA3ZjZlNzYtMTdjMy00NjMzLTk5ZGYtMTkyYzNiOGM1YmM3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "comedy"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:42:38.082Z",
+      "lastUpdate": "2026-10-20T20:24:08.864Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896081353,
+      "title": "Indiana Jones and the Last Crusade (1989)",
+      "link": "https://www.imdb.com/title/tt0097576/?ref_=chttp_t_117",
+      "domain": "imdb.com",
+      "excerpt": "2h 7m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNGIxNzQ0YzYtMjNmYi00YjBlLWFjNzEtNGE3ZGFmYTczM2MwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "action"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:42:16.879Z",
+      "lastUpdate": "2026-10-20T20:24:08.925Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896080584,
+      "title": "Moneyball (2011)",
+      "link": "https://www.imdb.com/title/tt1210166/",
+      "domain": "imdb.com",
+      "excerpt": "2h 13m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMjAxOTU3Mzc1M15BMl5BanBnXkFtZTcwMzk1ODUzNg@@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "baseball"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:41:20.294Z",
+      "lastUpdate": "2026-10-20T20:24:08.990Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896079285,
+      "title": "Inglourious Basterds (2009)",
+      "link": "https://www.imdb.com/title/tt0361748/?ref_=chttp_t_68",
+      "domain": "imdb.com",
+      "excerpt": "2h 33m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BODZhMWJlNjYtNDExNC00MTIzLTllM2ItOGQ2NGVjNDQ3MzkzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "war"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:40:42.819Z",
+      "lastUpdate": "2026-10-20T20:24:09.055Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896078883,
+      "title": "Léon: The Professional (1994)",
+      "link": "https://www.imdb.com/title/tt0110413/?ref_=chttp_t_46",
+      "domain": "imdb.com",
+      "excerpt": "1h 50m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNGRkYTNhOWQtYmI0Ni00MjZhLWJmMzAtMTA2Mjg4NGNiNDU0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "hitman"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:40:07.982Z",
+      "lastUpdate": "2026-10-20T20:24:09.116Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896077332,
+      "title": "Terminator 2: Judgment Day (1991)",
+      "link": "https://www.imdb.com/title/tt0103064/?ref_=chttp_t_28",
+      "domain": "imdb.com",
+      "excerpt": "2h 17m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNGMyMGNkMDUtMjc2Ni00NWFlLTgyODEtZTY2MzBiZTg0OWZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "sciencefiction"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:39:18.888Z",
+      "lastUpdate": "2026-10-20T20:24:09.178Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896077089,
+      "title": "Saving Private Ryan (1998)",
+      "link": "https://www.imdb.com/title/tt0120815/?ref_=chttp_t_23",
+      "domain": "imdb.com",
+      "excerpt": "2h 49m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BZGZhZGQ1ZWUtZTZjYS00MDJhLWFkYjctN2ZlYjE5NWYwZDM2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "war"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:38:54.379Z",
+      "lastUpdate": "2026-10-20T20:24:09.237Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896076976,
+      "title": "The Matrix (1999)",
+      "link": "https://www.imdb.com/title/tt0133093/?ref_=chttp_t_16",
+      "domain": "imdb.com",
+      "excerpt": "2h 16m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BN2NmN2VhMTQtMDNiOS00NDlhLTliMjgtODE2ZTY0ODQyNDRhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "sciencefiction"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:38:34.586Z",
+      "lastUpdate": "2026-10-20T20:24:09.300Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896075836,
+      "title": "Fight Club (1999)",
+      "link": "https://www.imdb.com/title/tt0137523/?ref_=chttp_t_14",
+      "domain": "imdb.com",
+      "excerpt": "2h 19m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "crime"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:38:13.086Z",
+      "lastUpdate": "2026-10-20T20:24:09.362Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896075717,
+      "title": "Forrest Gump (1994)",
+      "link": "https://www.imdb.com/title/tt0109830/?ref_=chttp_t_12",
+      "domain": "imdb.com",
+      "excerpt": "2h 22m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNDYwNzVjMTItZmU5YS00YjQ5LTljYjgtMjY2NDVmYWMyNWFmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "friendship"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:37:50.899Z",
+      "lastUpdate": "2026-10-20T20:24:09.424Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896073849,
+      "title": "Contact (1997)",
+      "link": "https://www.imdb.com/title/tt0118884/?ref_=nm_flmg_job_1_accord_2_cdt_c_21",
+      "domain": "imdb.com",
+      "excerpt": "2h 30m | PG",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BM2JiYmE1Y2UtNDQ3YS00YTZhLTk5MzAtYzEzMzIyNTM4OTRlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "sciencefiction"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:35:54.161Z",
+      "lastUpdate": "2026-10-20T20:24:09.489Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896073077,
+      "title": "The Fifth Element (1997)",
+      "link": "https://www.imdb.com/title/tt0119116/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_the%20fifth%20element",
+      "domain": "imdb.com",
+      "excerpt": "2h 6m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BODU4ZTE5MWYtNmY2MC00NDkyLTk0NDgtNTk5YjgzMzc4NmQwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "sciencefiction"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:35:05.498Z",
+      "lastUpdate": "2026-10-20T20:24:09.552Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896072679,
+      "title": "Grosse Pointe Blank (1997)",
+      "link": "https://www.imdb.com/title/tt0119229/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_gross%20point%20",
+      "domain": "imdb.com",
+      "excerpt": "1h 47m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BZDJkMWJkMTgtZjljZS00ZDNlLWE2MjEtNjQ2NzI5NDk4MTRkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "action"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:34:48.614Z",
+      "lastUpdate": "2026-10-20T20:24:09.618Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896072040,
+      "title": "Being John Malkovich (1999)",
+      "link": "https://www.imdb.com/title/tt0120601/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_being%20john",
+      "domain": "imdb.com",
+      "excerpt": "1h 53m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNDExODk1MTktNzRiYS00MWEyLTgyOWItYTI1OWY4NzI1NDM2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "surreal"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:34:28.487Z",
+      "lastUpdate": "2026-10-20T20:24:09.676Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896070130,
+      "title": "The Shawshank Redemption (1994)",
+      "link": "https://www.imdb.com/title/tt0111161/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_shawshank",
+      "domain": "imdb.com",
+      "excerpt": "2h 22m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMDAyY2FhYjctNDc5OS00MDNlLThiMGUtY2UxYWVkNGY2ZjljXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "prison"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:33:46.113Z",
+      "lastUpdate": "2026-10-20T20:24:09.734Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896069436,
+      "title": "Now You See Me: Now You Don't (2025)",
+      "link": "https://www.imdb.com/title/tt4712810/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_now%20you%20see%20me",
+      "domain": "imdb.com",
+      "excerpt": "1h 53m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BYmZmZDc1Y2EtMmU2MS00NmMzLTllZmYtNjlkODFkNjZlOGE0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "crime",
+        "movie"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:33:28.459Z",
+      "lastUpdate": "2026-10-20T20:24:09.794Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896069347,
+      "title": "Ocean's Eleven (2001)",
+      "link": "https://www.imdb.com/title/tt0240772/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_oceans%2011",
+      "domain": "imdb.com",
+      "excerpt": "1h 56m | PG-13",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMmNhZDkxYTgtMDM3ZC00NTQ3LWFjZTUtNzc1Y2QyNWZjNDRmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "heist"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:33:10.397Z",
+      "lastUpdate": "2026-10-20T20:24:09.853Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896068554,
+      "title": "Reservoir Dogs (1992)",
+      "link": "https://www.imdb.com/title/tt0105236/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_resevoir%20dogs",
+      "domain": "imdb.com",
+      "excerpt": "1h 39m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMmMzYjg4NDctYWY0Mi00OGViLWIzMTMtYWNlZGY5ZDJmYjk3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "heist"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:32:35.512Z",
+      "lastUpdate": "2026-10-20T20:24:09.914Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896068447,
+      "title": "Pulp Fiction (1994)",
+      "link": "https://www.imdb.com/title/tt0110912/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_pulup",
+      "domain": "imdb.com",
+      "excerpt": "2h 34m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BYTViYTE3ZGQtNDBlMC00ZTAyLTkyODMtZGRiZDg0MjA2YThkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "cult"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:32:15.401Z",
+      "lastUpdate": "2026-10-20T20:24:09.995Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896067838,
+      "title": "The Usual Suspects (1995)",
+      "link": "https://www.imdb.com/title/tt0114814/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_the%20usual%20sus",
+      "domain": "imdb.com",
+      "excerpt": "1h 46m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BOTE5MDUxZDUtZWZmZC00NDVmLWFhOGQtNWI2YTc4NzY3MGQ0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "crime"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:31:55.994Z",
+      "lastUpdate": "2026-10-20T20:24:10.057Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896067136,
+      "title": "The Breakfast Club (1985)",
+      "link": "https://www.imdb.com/title/tt0088847/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_the%20breakfast%20club",
+      "domain": "imdb.com",
+      "excerpt": "1h 37m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BZTZiMGU1MWMtNjk0Yi00ZjNjLTljMDEtMDhkNGE2OWY3YzZiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "friendship"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:31:21.201Z",
+      "lastUpdate": "2026-10-20T20:24:10.117Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896067042,
+      "title": "Point Break (1991)",
+      "link": "https://www.imdb.com/title/tt0102685/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_point%20break",
+      "domain": "imdb.com",
+      "excerpt": "2h 2m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNTI3YzY3N2MtODI1OC00NmU0LThlMDYtNmFjMGFkNzhhNTRlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "action"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:31:02.162Z",
+      "lastUpdate": "2026-10-20T20:24:10.175Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1896066379,
+      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964)",
+      "link": "https://www.imdb.com/title/tt0057012/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_dr%20strangelove",
+      "domain": "imdb.com",
+      "excerpt": "1h 35m | PG",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMjFjYzBlOTktMTI2OS00ZWVhLTgxMDUtNzAwODY2NmI3YTAzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "comedy"
+      ],
+      "important": false,
+      "created": "2026-10-20T18:30:30.194Z",
+      "lastUpdate": "2026-10-20T20:24:10.232Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
     {
       "id": 1892657295,
       "title": "Slow Horses",
@@ -84,6 +1675,78 @@
         "title": "_hellostu shared",
         "slug": "hellostu-shared",
         "path": "_hellostu shared"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1892106415,
+      "title": "Local Hero (1983)",
+      "link": "https://www.imdb.com/title/tt0085859/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_local",
+      "domain": "imdb.com",
+      "excerpt": "1h 51m | PG",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNWE3ZTNlNDYtNWNlNy00MTU4LTg4NGEtY2VlOTVhMTE2ZmNiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "top10"
+      ],
+      "important": false,
+      "created": "2026-10-16T22:44:34.076Z",
+      "lastUpdate": "2026-10-20T20:24:10.297Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1892106233,
+      "title": "Chef (2014)",
+      "link": "https://www.imdb.com/title/tt2883512/",
+      "domain": "imdb.com",
+      "excerpt": "1h 54m | R",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BODkyNTI4YjUtNjEyNC00NWQ5LTk4M2YtM2Q3NjBiYmJmMGUyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "movie",
+        "top10"
+      ],
+      "important": false,
+      "created": "2026-10-16T22:43:52.315Z",
+      "lastUpdate": "2026-10-20T20:24:10.359Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
+      },
+      "highlights": []
+    },
+    {
+      "id": 1892105925,
+      "title": "The Secret Life of Walter Mitty (2013)",
+      "link": "https://www.imdb.com/title/tt0359950/",
+      "domain": "imdb.com",
+      "excerpt": "1h 54m | PG",
+      "note": "",
+      "type": "video",
+      "cover": "https://m.media-amazon.com/images/M/MV5BODYwNDYxNDk1Nl5BMl5BanBnXkFtZTgwOTAwMTk2MDE@._V1_FMjpg_UX1000_.jpg",
+      "tags": [
+        "top10",
+        "movie"
+      ],
+      "important": false,
+      "created": "2026-10-16T22:42:54.133Z",
+      "lastUpdate": "2026-10-20T20:24:10.419Z",
+      "collection": {
+        "id": 76151988,
+        "title": "movies",
+        "slug": "movies",
+        "path": "movies"
       },
       "highlights": []
     }

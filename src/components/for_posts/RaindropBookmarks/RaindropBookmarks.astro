@@ -75,7 +75,8 @@ interface Props {
   showTags?: boolean;
   showCollection?: boolean;
   showCover?: boolean;
-  variant?: 'cards' | 'compact';
+  filterByDecade?: boolean;
+  variant?: 'cards' | 'compact' | 'masonry';
 }
 
 const {
@@ -96,13 +97,18 @@ const {
   title,
   subtitle,
   showNotes = true,
-  showExcerpt = 'fallback',
+  showExcerpt,
   showHighlights = 'collapsed',
-  showTags = true,
+  showTags,
   showCollection = false,
-  showCover = false,
+  showCover,
+  filterByDecade = false,
   variant = 'cards',
 } = Astro.props;
+
+const effectiveShowCover = showCover ?? (variant === 'masonry');
+const effectiveShowExcerpt = showExcerpt ?? (variant === 'masonry' ? false : 'fallback');
+const effectiveShowTags = showTags ?? (variant !== 'masonry');
 
 const md = new MarkdownIt({ breaks: true, linkify: true });
 
@@ -281,6 +287,24 @@ const highlightsMode =
       ? 'none'
       : showHighlights;
 
+function extractDecade(titleStr?: string): string | null {
+  if (!titleStr) return null;
+  const match = titleStr.match(/\((19\d{2}|20\d{2})\)/);
+  if (!match) return null;
+  const year = Number(match[1]);
+  return `${Math.floor(year / 10) * 10}s`;
+}
+
+const availableDecades = filterByDecade
+  ? Array.from(
+      new Set(
+        filtered
+          .map(item => extractDecade(item.title))
+          .filter((d): d is string => Boolean(d))
+      )
+    ).sort()
+  : [];
+
 function renderNoteHtml(noteText?: string) {
   if (!noteText) return '';
   return sanitizeHtml(md.render(noteText), {
@@ -294,7 +318,7 @@ function renderNoteHtml(noteText?: string) {
 
 {filtered.length > 0 && (
   <aside
-    class={`raindrop-bookmarks ${variant === 'compact' ? 'raindrop-bookmarks--compact' : ''}`}
+    class={`raindrop-bookmarks ${variant === 'compact' ? 'raindrop-bookmarks--compact' : ''} ${variant === 'masonry' ? 'raindrop-bookmarks--masonry' : ''}`}
     aria-label={title || 'Curated bookmarks'}
   >
     {(title || subtitle) && (
@@ -304,21 +328,69 @@ function renderNoteHtml(noteText?: string) {
       </div>
     )}
 
+    {availableDecades.length > 1 && (
+      <div
+        class="raindrop-bookmarks__filters"
+        role="group"
+        aria-label="Filter by decade"
+      >
+        <button
+          type="button"
+          class="raindrop-bookmarks__filter-btn is-active"
+          data-decade-filter="*"
+          aria-pressed="true"
+        >
+          All
+        </button>
+        {availableDecades.map(decade => (
+          <button
+            type="button"
+            class="raindrop-bookmarks__filter-btn"
+            data-decade-filter={decade}
+            aria-pressed="false"
+          >
+            {decade}
+          </button>
+        ))}
+      </div>
+    )}
+
     <ul class="raindrop-bookmarks__list">
       {filtered.map(item => {
         const hasNote = Boolean(showNotes && item.note);
         const shouldShowExcerpt =
-          showExcerpt === true || (showExcerpt === 'fallback' && !hasNote);
+          effectiveShowExcerpt === true ||
+          (effectiveShowExcerpt === 'fallback' && !hasNote);
         const hasExcerpt = Boolean(shouldShowExcerpt && item.excerpt);
         const itemHighlights = item.highlights || [];
         const hasHighlights =
           highlightsMode !== 'none' && itemHighlights.length > 0;
-        const hasCover = Boolean(showCover && item.cover);
+        const hasCover = Boolean(effectiveShowCover && item.cover);
+        const itemDecade = extractDecade(item.title);
 
         return (
-          <li class="raindrop-bookmarks__card">
+          <li
+            class="raindrop-bookmarks__card"
+            data-decade={itemDecade || undefined}
+          >
+            {hasCover && variant === 'masonry' && (
+              <a
+                href={item.link}
+                class="raindrop-bookmarks__cover-wrap raindrop-bookmarks__cover-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={item.cover}
+                  alt={item.title}
+                  class="raindrop-bookmarks__cover"
+                  loading="lazy"
+                />
+              </a>
+            )}
+
             <div
-              class={`raindrop-bookmarks__card-top ${hasCover ? 'raindrop-bookmarks__card-top--with-cover' : ''}`}
+              class={`raindrop-bookmarks__card-top ${hasCover && variant !== 'masonry' ? 'raindrop-bookmarks__card-top--with-cover' : ''}`}
             >
               <div class="raindrop-bookmarks__card-main">
                 <div class="raindrop-bookmarks__meta">
@@ -352,7 +424,7 @@ function renderNoteHtml(noteText?: string) {
                 </a>
               </div>
 
-              {hasCover && (
+              {hasCover && variant !== 'masonry' && (
                 <div class="raindrop-bookmarks__cover-wrap">
                   <img
                     src={item.cover}
@@ -402,7 +474,7 @@ function renderNoteHtml(noteText?: string) {
               </details>
             )}
 
-            {showTags && item.tags && item.tags.length > 0 && (
+            {effectiveShowTags && item.tags && item.tags.length > 0 && (
               <ul class="raindrop-bookmarks__tags" aria-label="Bookmark tags">
                 {item.tags.map(tagSlug => (
                   <li>
@@ -417,3 +489,37 @@ function renderNoteHtml(noteText?: string) {
     </ul>
   </aside>
 )}
+
+<script>
+  document.querySelectorAll('.raindrop-bookmarks').forEach(container => {
+    const filterButtons = container.querySelectorAll<HTMLButtonElement>(
+      '.raindrop-bookmarks__filter-btn'
+    );
+    if (!filterButtons.length) return;
+
+    const cards = container.querySelectorAll<HTMLElement>(
+      '.raindrop-bookmarks__card'
+    );
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const selectedDecade = btn.getAttribute('data-decade-filter') || '*';
+
+        filterButtons.forEach(b => {
+          const isActive = b === btn;
+          b.classList.toggle('is-active', isActive);
+          b.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+        });
+
+        cards.forEach(card => {
+          const cardDecade = card.getAttribute('data-decade');
+          if (selectedDecade === '*' || cardDecade === selectedDecade) {
+            card.hidden = false;
+          } else {
+            card.hidden = true;
+          }
+        });
+      });
+    });
+  });
+</script>

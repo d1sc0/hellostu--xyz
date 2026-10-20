@@ -8,6 +8,7 @@ export default {
   // Run `npm run raindrop:collections` to view all collections & IDs in your account.
   collections: [
     '_hellostu shared',
+    'movies',
     /*  'Reading List',
     'Learning Design',
     'Agile & Systems', */

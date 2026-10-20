@@ -162,9 +162,6 @@ async function generateOGImages() {
 
   const browser = await puppeteer.launch(launchOptions);
   try {
-    const page = await browser.newPage();
-    await page.setViewport({ width: 1200, height: 630 });
-
     for (const post of missingPosts) {
       // Always use lowercased slug for filename
       const outFile = `${post.id.toLowerCase()}.png`;
@@ -210,6 +207,8 @@ async function generateOGImages() {
         bgPath: '', // Not used anymore
       });
 
+      const page = await browser.newPage();
+      await page.setViewport({ width: 1200, height: 630 });
       await page.setContent(html, { waitUntil: 'networkidle2' });
       // Wait for all relevant fonts to be loaded
       await page.waitForFunction(
@@ -224,10 +223,9 @@ async function generateOGImages() {
         type: 'png',
         clip: { x: 0, y: 0, width: 1200, height: 630 },
       });
+      await page.close();
       console.log(`social-image: ${outFile} - created`);
     }
-
-    await page.close();
   } finally {
     await browser.close();
   }

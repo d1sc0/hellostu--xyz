@@ -108,5 +108,5 @@ You don't need to look up numeric IDs—you can pass the article URL(s) directly
 | `showHighlights` | `'collapsed' \| 'expanded' \| 'none' \| boolean` | `'collapsed'` | Controls how saved text highlights are shown (`'collapsed'` renders a collapsible `<details>` toggle, `'expanded'` opens them by default). |
 | `showTags` | `boolean` | `true` | Show lowercase kebab-case tag pills on each card. |
 | `showCollection` | `boolean` | `false` | Show the folder badge next to the domain name. |
-| `showCover` | `boolean` | `false` | Show the bookmark's cover/thumbnail image when available. |
-| `variant` | `'cards' \| 'compact'` | `'cards'` | Visual density (`'compact'` is great for quick link lists or `/now`). |
+| `showCover` | `boolean` | `false` (`true` for `'masonry'`) | Show the bookmark's cover/thumbnail image when available. |
+| `variant` | `'cards' \| 'compact' \| 'masonry'` | `'cards'` | Layout style (`'compact'` for tight link lists, `'masonry'` for multi-column poster/visual grids like `/movies`). |
