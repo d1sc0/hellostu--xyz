@@ -266,10 +266,11 @@ const categories = ['All', ...orderedCategories, ...otherActive];
         <Image
           src={photo.metadata}
           alt={photo.alt}
-          widths={[400, 750, 1100, 1600]}
-          sizes="(min-width: 768px) 50vw, 100vw"
+          widths={[400, 600, 750, 1100, 1600]}
+          sizes="(min-width: 768px) and (orientation: landscape) 410px, calc(100vw - 3.2rem)"
           class="photo-item__img"
-          loading={photo.index < 4 ? 'eager' : 'lazy'}
+          loading={photo.index < 2 ? 'eager' : 'lazy'}
+          fetchpriority={photo.index === 0 ? 'high' : undefined}
         />
       </button>
     ))}
