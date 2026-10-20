@@ -74,17 +74,19 @@ const categories = [
             <Image
               src={idx === 0 ? plant1 : idx === 1 ? plant2 : plant3}
               alt={`${category.label} category image`}
+              widths={[120, 240, 480]}
+              sizes="(min-width: 768px) and (orientation: landscape) 240px, 108px"
               class="category-cards__plant-img"
             />
           </a>
 
           <div class="category-cards__card-body">
-            <h4 class="category-cards__card-title">{category.label}</h4>
+            <h3 class="category-cards__card-title">{category.label}</h3>
             <p class="category-cards__card-description">
               {category.description}
             </p>
             <a class="category-cards__card-link" href={category.href}>
-              Read more
+              Explore {category.label}
             </a>
           </div>
         </article>

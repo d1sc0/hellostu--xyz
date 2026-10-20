@@ -32,7 +32,7 @@
   width: 20%;
   flex: 0 0 20%;
   white-space: nowrap;
-  opacity: 0.5;
+  opacity: 0.65;
   text-transform: uppercase;
 }
 
@@ -59,7 +59,7 @@
 .latest-posts__more-link {
   font-size: 0.82rem;
   color: var(--color-text);
-  opacity: 0.55;
+  opacity: 0.65;
   text-decoration: none;
   transition: opacity 0.2s ease, color 0.2s ease;
 }
