@@ -218,17 +218,6 @@
   border-color: var(--color-accent);
 }
 
-@media (min-width: 768px) and (orientation: landscape) {
-  .mdx-image-gallery__lightbox .mdx-image-gallery__lightbox-img {
-    max-width: 80vw;
-    max-height: 84vh;
-  }
-  .mdx-image-gallery__lightbox .mdx-image-gallery__lightbox-caption {
-    font-size: 1.15rem;
-    max-width: 60vw;
-  }
-}
-
 .mdx-image-gallery__message {
   margin: 0;
   padding: 0.75rem;
@@ -237,6 +226,16 @@
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
+  .mdx-image-gallery__lightbox .mdx-image-gallery__lightbox-img {
+    max-width: 80vw;
+    max-height: 84vh;
+  }
+
+  .mdx-image-gallery__lightbox .mdx-image-gallery__lightbox-caption {
+    font-size: 1.15rem;
+    max-width: 60vw;
+  }
+
   .mdx-image-gallery__viewport-shell::before,
   .mdx-image-gallery__viewport-shell::after {
     width: 2rem;

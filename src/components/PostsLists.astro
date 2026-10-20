@@ -43,7 +43,7 @@ const sortedYears = Object.keys(postsByYear)
       sortedYears.map((year, idx) => {
         const isLast = idx === sortedYears.length - 1;
         return (
-          <div class="posts__table-wrap" key={year}>
+          <div class="posts__table-wrap">
             <h4 class="posts__year">{year}</h4>
             <div class="posts__list">
               {postsByYear[year]
@@ -51,7 +51,7 @@ const sortedYears = Object.keys(postsByYear)
                   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
                 )
                 .map(post => (
-                  <div class="posts__row" key={post.id}>
+                  <div class="posts__row">
                     <div class="posts__col posts__col--date">
                       {post.data.pubDate.toLocaleDateString('en-GB', {
                         day: '2-digit',
@@ -66,7 +66,6 @@ const sortedYears = Object.keys(postsByYear)
                           {post.data.tags.map(tag => (
                             <a
                               class="posts__tag"
-                              key={tag}
                               href={`/tags/${encodeURIComponent(tag.toLowerCase())}/`}
                             >
                               #{tag}
