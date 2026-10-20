@@ -2,8 +2,8 @@
 import { SEO } from 'astro-seo';
 import fs from 'node:fs';
 import crypto from 'node:crypto';
+import lexendLatinWoff2 from '@fontsource-variable/lexend/files/lexend-latin-wght-normal.woff2?url';
 const { frontmatter, pageMeta } = Astro.props;
-import { AstroFont } from 'astro-font';
 const siteURL = Astro.site?.toString() || '';
 
 const apexLoaderHash = crypto
@@ -180,32 +180,12 @@ if (isPost) {
   />
   <meta name="viewport" content="width=device-width" />
   <meta name="generator" content={Astro.generator} />
-  <AstroFont
-    config={[
-      {
-        src: [],
-        name: 'Lexend',
-        // Google Fonts URL
-        googleFontsURL:
-          'https://fonts.googleapis.com/css2?family=Lexend:wght@100..900',
-        preload: true,
-        display: 'swap',
-        fallback: 'sans-serif',
-      },
-    ]}
-  />
-  <AstroFont
-    config={[
-      {
-        src: [],
-        name: 'Gochi Hand',
-        // Google Fonts URL
-        googleFontsURL: 'https://fonts.googleapis.com/css2?family=Gochi+Hand',
-        preload: true,
-        display: 'swap',
-        fallback: 'sans-serif',
-      },
-    ]}
+  <link
+    rel="preload"
+    href={lexendLatinWoff2}
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
   />
   <SEO
     title={title}

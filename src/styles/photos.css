@@ -33,7 +33,7 @@
   color: var(--color-text);
   padding: 0.35rem 0.9rem;
   border-radius: 9999px;
-  font-family: 'Lexend', sans-serif;
+  font-family: 'Lexend Variable', 'Lexend', sans-serif;
   font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.2s ease;

@@ -42,7 +42,7 @@ body.dark-mode .category-image {
 body {
   position: relative;
   background-color: var(--color-page);
-  font-family: 'Lexend', sans-serif;
+  font-family: 'Lexend Variable', 'Lexend', sans-serif;
   font-optical-sizing: auto;
   font-weight: 350;
   font-style: normal;
