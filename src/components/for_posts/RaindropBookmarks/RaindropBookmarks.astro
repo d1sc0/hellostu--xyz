@@ -73,6 +73,7 @@ interface Props {
   showExcerpt?: boolean | 'fallback';
   showHighlights?: 'collapsed' | 'expanded' | 'none' | boolean;
   showTags?: boolean;
+  showDomain?: boolean;
   showCollection?: boolean;
   showCover?: boolean;
   filterByDecade?: boolean;
@@ -100,6 +101,7 @@ const {
   showExcerpt,
   showHighlights = 'collapsed',
   showTags,
+  showDomain,
   showCollection = false,
   showCover,
   filterByDecade = false,
@@ -109,6 +111,7 @@ const {
 const effectiveShowCover = showCover ?? (variant === 'masonry');
 const effectiveShowExcerpt = showExcerpt ?? (variant === 'masonry' ? false : 'fallback');
 const effectiveShowTags = showTags ?? (variant !== 'masonry');
+const effectiveShowDomain = showDomain ?? (variant !== 'masonry');
 
 const md = new MarkdownIt({ breaks: true, linkify: true });
 
@@ -393,26 +396,29 @@ function renderNoteHtml(noteText?: string) {
               class={`raindrop-bookmarks__card-top ${hasCover && variant !== 'masonry' ? 'raindrop-bookmarks__card-top--with-cover' : ''}`}
             >
               <div class="raindrop-bookmarks__card-main">
-                <div class="raindrop-bookmarks__meta">
-                  {item.domain && (
-                    <>
-                      <img
-                        class="raindrop-bookmarks__favicon"
-                        src={`https://www.google.com/s2/favicons?domain=${encodeURIComponent(item.domain)}&sz=32`}
-                        alt=""
-                        width="14"
-                        height="14"
-                        loading="lazy"
-                      />
-                      <span class="raindrop-bookmarks__domain">{item.domain}</span>
-                    </>
-                  )}
-                  {showCollection && item.collection?.title && (
-                    <span class="raindrop-bookmarks__collection">
-                      {item.collection.title}
-                    </span>
-                  )}
-                </div>
+                {((effectiveShowDomain && item.domain) ||
+                  (showCollection && item.collection?.title)) && (
+                  <div class="raindrop-bookmarks__meta">
+                    {effectiveShowDomain && item.domain && (
+                      <>
+                        <img
+                          class="raindrop-bookmarks__favicon"
+                          src={`https://www.google.com/s2/favicons?domain=${encodeURIComponent(item.domain)}&sz=32`}
+                          alt=""
+                          width="14"
+                          height="14"
+                          loading="lazy"
+                        />
+                        <span class="raindrop-bookmarks__domain">{item.domain}</span>
+                      </>
+                    )}
+                    {showCollection && item.collection?.title && (
+                      <span class="raindrop-bookmarks__collection">
+                        {item.collection.title}
+                      </span>
+                    )}
+                  </div>
+                )}
 
                 <a
                   href={item.link}
