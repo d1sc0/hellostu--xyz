@@ -10,6 +10,11 @@ const { frontmatter, pageMeta, prevpost, nextpost } = Astro.props;
 <html lang="en">
   <Head frontmatter={frontmatter} pageMeta={pageMeta} />
   <body>
+    <script is:inline>
+      if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+      }
+    </script>
     <div class="container">
       <Navigation />
       <main>

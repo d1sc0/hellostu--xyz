@@ -11,7 +11,16 @@ const posts = defineCollection({
     description: z.string(),
     featureImage: z.string().optional(),
     draft: z.boolean().optional(),
-    tags: z.array(z.string()).optional(),
+    tags: z
+      .array(
+        z
+          .string()
+          .regex(
+            /^[a-z0-9]+(-[a-z0-9]+)*$/,
+            'Tags must be lowercase kebab-case (e.g. "learning-design")',
+          ),
+      )
+      .optional(),
     category: z.enum(['Work', 'Rest', 'Play']),
   }),
 });

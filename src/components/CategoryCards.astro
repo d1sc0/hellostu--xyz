@@ -14,7 +14,9 @@ import plant1 from '../assets/page_images/houseplant1.png';
 import plant2 from '../assets/page_images/houseplant2.png';
 import plant3 from '../assets/page_images/houseplant3.png';
 // Count posts per category
-const posts = await getCollection('posts');
+const posts = await getCollection('posts', ({ data }) => {
+  return import.meta.env.PROD ? data.draft !== true : true;
+});
 const categoryCounts = { Work: 0, Rest: 0, Play: 0 };
 for (const post of posts) {
   if (post.data.category && categoryCounts[post.data.category] !== undefined) {

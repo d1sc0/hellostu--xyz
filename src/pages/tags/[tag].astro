@@ -4,7 +4,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import '../../styles/tag-page.css';
 
 const { tag } = Astro.params as { tag: string };
-const posts = (await getCollection('posts')) as CollectionEntry<'posts'>[];
+const posts = (await getCollection('posts', ({ data }) => {
+  return import.meta.env.PROD ? data.draft !== true : true;
+})) as CollectionEntry<'posts'>[];
 const tagLower = tag.toLowerCase();
 const filteredPosts = posts
   .filter(
@@ -19,7 +21,9 @@ const filteredPosts = posts
   });
 
 export async function getStaticPaths() {
-  const posts = await getCollection('posts');
+  const posts = await getCollection('posts', ({ data }) => {
+    return import.meta.env.PROD ? data.draft !== true : true;
+  });
   const tagSet = new Set();
   posts.forEach((post: CollectionEntry<'posts'>) => {
     if (Array.isArray(post.data.tags)) {
@@ -50,7 +54,7 @@ const pageMeta = {
               <span>
                 {' '}
                 -
-                {new Date(post.data.pubDate).toLocaleDateString('en-UK', {
+                {new Date(post.data.pubDate).toLocaleDateString('en-GB', {
                   year: 'numeric',
                   month: 'short',
                   day: 'numeric',

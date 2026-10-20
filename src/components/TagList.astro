@@ -3,7 +3,9 @@ import { type CollectionEntry, getCollection } from 'astro:content';
 import '../styles/tags-list.css';
 
 type TagCount = { tag: string; count: number; latestDate: number };
-const posts = (await getCollection('posts')) as CollectionEntry<'posts'>[];
+const posts = (await getCollection('posts', ({ data }) => {
+  return import.meta.env.PROD ? data.draft !== true : true;
+})) as CollectionEntry<'posts'>[];
 posts.sort((a: CollectionEntry<'posts'>, b: CollectionEntry<'posts'>) => {
   const dateA = new Date(a.data.pubDate).getTime();
   const dateB = new Date(b.data.pubDate).getTime();

@@ -3,7 +3,7 @@ import { existsSync } from 'fs';
 import path from 'path';
 import crypto from 'crypto';
 import matter from 'gray-matter';
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import { GoogleGenAI } from '@google/genai';
 import config from './recommendations.config.mjs';
 
 // Load environment variables from .env file (Native Node.js feature)
@@ -24,13 +24,7 @@ if (!apiKey) {
   process.exit(1);
 }
 
-const genAI = new GoogleGenerativeAI(apiKey);
-const embeddingModel = genAI.getGenerativeModel({
-  model: config.models.embedding,
-});
-const reasoningModel = genAI.getGenerativeModel({
-  model: config.models.reasoning,
-});
+const ai = new GoogleGenAI({ apiKey });
 
 const isTestMode = process.argv.includes('--test');
 const isForceMode = process.argv.includes('--force') || process.argv.includes('--clean');
@@ -290,8 +284,13 @@ async function generateRecommendations() {
         let retries = 0;
         while (!success && retries < 3) {
           try {
-            const result = await embeddingModel.embedContent(chunk);
-            chunkEmbeddings.push(result.embedding.values);
+            const result = await ai.models.embedContent({
+              model: config.models.embedding,
+              contents: chunk,
+            });
+            const values =
+              result.embeddings?.[0]?.values || result.embedding?.values;
+            chunkEmbeddings.push(values);
             success = true;
             await delay(300); // Increased buffer to respect burst API limits
           } catch (e) {
@@ -488,8 +487,19 @@ async function generateRecommendations() {
             }
 
             try {
-              const response = await reasoningModel.generateContent(prompt);
-              justification = response.response.text().trim();
+              if (ai.interactions?.create) {
+                const interaction = await ai.interactions.create({
+                  model: config.models.reasoning,
+                  input: prompt,
+                });
+                justification = (interaction.output_text || '').trim();
+              } else {
+                const response = await ai.models.generateContent({
+                  model: config.models.reasoning,
+                  contents: prompt,
+                });
+                justification = (response.text || '').trim();
+              }
             } catch (err) {
               console.error(
                 `\nFailed to reason match ${postA.id} -> ${match.id} - ${err.message}`,
@@ -521,9 +531,19 @@ async function generateRecommendations() {
             }
 
             try {
-              const responseAlt =
-                await reasoningModel.generateContent(promptAltText);
-              justificationAlt = responseAlt.response.text().trim();
+              if (ai.interactions?.create) {
+                const interactionAlt = await ai.interactions.create({
+                  model: config.models.reasoning,
+                  input: promptAltText,
+                });
+                justificationAlt = (interactionAlt.output_text || '').trim();
+              } else {
+                const responseAlt = await ai.models.generateContent({
+                  model: config.models.reasoning,
+                  contents: promptAltText,
+                });
+                justificationAlt = (responseAlt.text || '').trim();
+              }
             } catch (err) {
               console.error(
                 `\nFailed to reason ALT match ${postA.id} -> ${match.id} - ${err.message}`,

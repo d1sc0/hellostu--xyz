@@ -106,6 +106,25 @@ async function generatePreviewImages() {
     fs.mkdirSync(OUTPUT_DIR, { recursive: true });
   }
   const posts = await getPosts();
+  const missingPosts = posts.filter(post => {
+    const outFile = `${post.id}.png`;
+    return !fs.existsSync(path.join(OUTPUT_DIR, outFile));
+  });
+
+  if (missingPosts.length === 0) {
+    console.log('preview-images: all preview images are up to date.');
+    return;
+  }
+
+  const templateHtml = fs.readFileSync(TEMPLATE_PATH, 'utf-8');
+  const bgBuffer = fs.readFileSync(BG_PATH);
+  const bgExt = path.extname(BG_PATH).toLowerCase().replace('.', '');
+  const bgMimeType =
+    bgExt === 'svg'
+      ? 'image/svg+xml'
+      : `image/${bgExt === 'jpg' ? 'jpeg' : bgExt}`;
+  const defaultBgBase64 = `data:${bgMimeType};base64,${bgBuffer.toString('base64')}`;
+
   const launchOptions: any = {
     args: [
       '--no-sandbox',
@@ -119,73 +138,69 @@ async function generatePreviewImages() {
   }
 
   const browser = await puppeteer.launch(launchOptions);
-  for (const post of posts) {
-    const outFile = `${post.id}.png`;
-    const outPath = path.join(OUTPUT_DIR, outFile);
-    if (fs.existsSync(outPath)) {
-      continue;
-    }
-    // No episode number logic
-    let html = fs.readFileSync(TEMPLATE_PATH, 'utf-8');
-    // Determine which image to use as background
-    let bgBase64 = null;
-    if (post.imagePath) {
-      const resolvedPath = resolveContentImagePath(post.imagePath, post.dir);
-      if (resolvedPath && fs.existsSync(resolvedPath)) {
-        const ext = path.extname(resolvedPath).toLowerCase().replace('.', '');
-        const mimeType =
-          ext === 'svg'
-            ? 'image/svg+xml'
-            : `image/${ext === 'jpg' ? 'jpeg' : ext}`;
-        bgBase64 = `data:${mimeType};base64,${fs.readFileSync(resolvedPath).toString('base64')}`;
-      }
-    }
-    if (!bgBase64) {
-      // Fallback to default background
-      const bgBuffer = fs.readFileSync(BG_PATH);
-      const ext = path.extname(BG_PATH).toLowerCase().replace('.', '');
-      const mimeType =
-        ext === 'svg'
-          ? 'image/svg+xml'
-          : `image/${ext === 'jpg' ? 'jpeg' : ext}`;
-      bgBase64 = `data:${mimeType};base64,${bgBuffer.toString('base64')}`;
-    }
-    // Replace the background url in the template with an <img> tag for reliability and styling
-    html = html
-      .replace("background: url('%%PREVIEW_BG%%') no-repeat center center;", '')
-      .replace(
-        '<div class="container">',
-        `<div class="container"><img src="${bgBase64}" class="preview-bg" style="position:absolute;width:100%;height:100%;object-fit:cover;z-index:0;${BG_STYLE}" />` +
-          (ogLogoBase64
-            ? `<img src="${ogLogoBase64}" class="preview-logo" style="position:absolute;top:32px;left:32px;width:120px;height:auto;z-index:2;" />`
-            : ''),
-      );
-    html = fillTemplate(html, {
-      siteTitle: SITE_TITLE,
-      title: post.title,
-      siteUrl,
-      bgPath: '', // Not used anymore
-    });
+  try {
     const page = await browser.newPage();
     await page.setViewport({ width: 600, height: 600 });
-    await page.setContent(html, { waitUntil: 'networkidle2' });
-    // Wait for all relevant fonts to be loaded
-    await page.waitForFunction(
-      () => document.fonts.check('1em "Inter"') && document.fonts.ready,
-      { timeout: 15000 },
-    );
-    // Force layout reflow and wait for rendering stability
-    await page.evaluate(() => document.body.offsetHeight);
-    await new Promise(r => setTimeout(r, 500));
-    await page.screenshot({
-      path: outPath,
-      type: 'png',
-      clip: { x: 0, y: 0, width: 600, height: 600 },
-    });
+
+    for (const post of missingPosts) {
+      const outFile = `${post.id}.png`;
+      const outPath = path.join(OUTPUT_DIR, outFile);
+
+      // Determine which image to use as background
+      let bgBase64 = null;
+      if (post.imagePath) {
+        const resolvedPath = resolveContentImagePath(post.imagePath, post.dir);
+        if (resolvedPath && fs.existsSync(resolvedPath)) {
+          const ext = path.extname(resolvedPath).toLowerCase().replace('.', '');
+          const mimeType =
+            ext === 'svg'
+              ? 'image/svg+xml'
+              : `image/${ext === 'jpg' ? 'jpeg' : ext}`;
+          bgBase64 = `data:${mimeType};base64,${fs.readFileSync(resolvedPath).toString('base64')}`;
+        }
+      }
+      if (!bgBase64) {
+        bgBase64 = defaultBgBase64;
+      }
+
+      // Replace the background url in the template with an <img> tag for reliability and styling
+      let html = templateHtml
+        .replace("background: url('%%PREVIEW_BG%%') no-repeat center center;", '')
+        .replace(
+          '<div class="container">',
+          `<div class="container"><img src="${bgBase64}" class="preview-bg" style="position:absolute;width:100%;height:100%;object-fit:cover;z-index:0;${BG_STYLE}" />` +
+            (ogLogoBase64
+              ? `<img src="${ogLogoBase64}" class="preview-logo" style="position:absolute;top:32px;left:32px;width:120px;height:auto;z-index:2;" />`
+              : ''),
+        );
+      html = fillTemplate(html, {
+        siteTitle: SITE_TITLE,
+        title: post.title,
+        siteUrl,
+        bgPath: '', // Not used anymore
+      });
+
+      await page.setContent(html, { waitUntil: 'networkidle2' });
+      // Wait for all relevant fonts to be loaded
+      await page.waitForFunction(
+        () => document.fonts.check('1em "Inter"') && document.fonts.ready,
+        { timeout: 15000 },
+      );
+      // Force layout reflow and wait for rendering stability
+      await page.evaluate(() => document.body.offsetHeight);
+      await new Promise(r => setTimeout(r, 500));
+      await page.screenshot({
+        path: outPath,
+        type: 'png',
+        clip: { x: 0, y: 0, width: 600, height: 600 },
+      });
+      console.log(`preview-images: ${outFile} - created`);
+    }
+
     await page.close();
-    console.log(`preview-images: ${outFile} - created`);
+  } finally {
+    await browser.close();
   }
-  await browser.close();
 }
 
 generatePreviewImages();

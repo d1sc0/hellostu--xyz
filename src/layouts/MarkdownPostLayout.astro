@@ -11,7 +11,7 @@ const dateOptions = {
   day: 'numeric' as const,
 };
 const formattedPublishDate = new Date(frontmatter.pubDate).toLocaleDateString(
-  'en-UK',
+  'en-GB',
   dateOptions,
 );
 const formattedUpdatedDate = lastUpdated
@@ -39,7 +39,7 @@ const showUpdatedDate =
             {' '}
             in{' '}
             <a
-              href={`/categories/${encodeURIComponent(frontmatter.category.toLowerCase())}/`}
+              href={`/${encodeURIComponent(frontmatter.category.toLowerCase())}/`}
               class="post-layout__meta-category"
             >
               {frontmatter.category}

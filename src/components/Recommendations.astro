@@ -8,7 +8,9 @@ const { currentSlug } = Astro.props;
 const relatedIds = recommendationsData[currentSlug] || [];
 
 // Fetch the full post details for the recommended IDs
-const allPosts = await getCollection('posts');
+const allPosts = await getCollection('posts', ({ data }) => {
+  return import.meta.env.PROD ? data.draft !== true : true;
+});
 const relatedPosts = relatedIds
   .map(rec => {
     const post = allPosts.find(p => p.id === rec.id);
