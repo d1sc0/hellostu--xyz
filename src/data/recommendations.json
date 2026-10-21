@@ -339,6 +339,23 @@
       "justificationAlt": "Tired of swallowing stale algorithmic sea-biscuits? Set sail for sweeter waters where we plunder hand-picked soul music and treasure-laden RSS feeds to nourish a thirsty pirate mind ⚓."
     }
   ],
+  "blooms-the-broken-staircase": [
+    {
+      "id": "back-to-school",
+      "justification": "A candid look at diving straight into the PGDip alongside work, life, and client delivery. It’s a slightly surreal reflection on coursework scenarios that mirrored my actual consulting day job a little too closely 😂",
+      "justificationAlt": "Shiver me inkwell! Set yer sights on me treacherous logbook of surviving postgraduate academia, where navigating cash-strapped university politics feels dangerously like me daily naval battles 🏴‍☠️."
+    },
+    {
+      "id": "the-mathematician-and-the-storyteller",
+      "justification": "I decided to test out these AI mechanics on my own blog by pairing vector maths with Gemini to generate post recommendations. Expect amateur coding struggles, storyteller prompts, and a hidden pirate mode 🏴‍☠️",
+      "justificationAlt": "Set yer spyglass on how I tamed black code magic and vector charts to forge an automated, tale-spinning mechanical parrot for navigating me digital garden 🏴‍☠️."
+    },
+    {
+      "id": "curation-for-the-curious",
+      "justification": "Away from learning theories, I’ve been wrestling with that same algorithmic noise in my personal life—swapping machine-driven feeds for quiet RSS readers, underground mixtapes, and a bit of deliberate human curation 🎧",
+      "justificationAlt": "Tired of feeding yer skull with algorithmic chum? Come plunder me private stash of hand-picked tunes and quiet web feeds to nourish yer brainy treasure chest ⚓."
+    }
+  ],
   "bringing-my-photos-home": [
     {
       "id": "clean-and-rebuild",

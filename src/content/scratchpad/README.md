@@ -6,7 +6,7 @@ This directory is used as a private playground and scratchpad to draft new posts
 
 # Blog Post Ideas & Inspiration
 
-_Last updated: 19th October 2026_
+_Last updated: 21st October 2026_
 
 ## 💼 Work
 
@@ -23,6 +23,18 @@ _Focuses on public sector transformation, learning design, consulting craft, and
   - **"Show the thing"**: Making messy work visible early and often, delivering thin vertical slices of real value rather than hiding behind speculative 80-page status reports.
 - **Format**: Practical consulting / learning design essay.
 - **Status**: Idea / queued up next.
+
+### 2. Bloom's: The Broken Staircase
+- **Category**: Work
+- **Angle**: How Generative AI disrupts the traditional hierarchy of Bloom's Taxonomy. When LLMs can instantly generate code, essays, and strategies, "Create" is no longer the peak of cognitive effort. Exploring the shift to inverted learning, the risk of cognitive atrophy, and why learning design must move from grading static products to assessing human-AI orchestration.
+- **Key Themes**:
+  - **The collapse of the pyramid**: Why placing "Create" at the absolute top doesn't work when synthesis takes 5 seconds of compute.
+  - **The automation paradox & cognitive atrophy**: Why skipping the "boring" foundations (Remember & Understand) leaves learners incapable of spotting plausible-sounding AI nonsense.
+  - **Dual-mode cognition**: Balancing unassisted human thinking (solo mode) with machine-augmented co-processing.
+  - **The death of static verbs**: Moving learning outcomes away from "write / describe / summarise" towards "audit / calibrate / interrogate / orchestrate".
+  - **Process over product**: Grading the iteration trail and human judgment rather than the polished final output.
+- **Format**: Learning design essay / PGDip reflection.
+- **Status**: Published in [`src/content/posts/blooms-the-broken-staircase.md`](file:///Users/d1sc0/Projects/hellostu--xyz/src/content/posts/blooms-the-broken-staircase.md).
 
 ---
 
