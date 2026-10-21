@@ -27,13 +27,14 @@ If a machine can instantly handle the "making", what does learning actually look
 
 #### The Broken Staircase
 
-In [Anderson and Krathwohl's 2001 revision of Bloom's Taxonomy](https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/), the hierarchy feels intuitive and safe:
+In [Anderson and Krathwohl's 2001 revision of Bloom's Taxonomy](https://en.wikipedia.org/wiki/Bloom%27s_taxonomy), the hierarchy feels intuitive and safe:
 
 ```text
-Traditional Bloom's (Anderson & Krathwohl, 2001)
+TRADITIONAL BLOOM'S (2001)
 
 ┌──────────────┐
-│    CREATE    │  (The hard-won peak)
+│    CREATE    │
+│  (The peak)  │
 ├──────────────┤
 │   EVALUATE   │
 ├──────────────┤
@@ -43,7 +44,8 @@ Traditional Bloom's (Anderson & Krathwohl, 2001)
 ├──────────────┤
 │  UNDERSTAND  │
 ├──────────────┤
-│   REMEMBER   │  (The foundational base)
+│   REMEMBER   │
+│  (The base)  │
 └──────────────┘
 ```
 
@@ -79,9 +81,9 @@ If the analyst has outsourced all the underlying thinking to the machine, they'r
 
 #### The Hidden Curriculum: Reading the Room
 
-There's an even bigger catch here that formal syllabuses and training specs rarely capture: **the hidden curriculum**.
+There's an even bigger catch here that formal syllabuses and training specs rarely capture: [**the hidden curriculum**](https://en.wikipedia.org/wiki/Hidden_curriculum).
 
-First coined by Philip Jackson back in 1968, and later explored in depth by researchers like Eric Margolis in [_The Hidden Curriculum in Higher Education_](https://www.routledge.com/The-Hidden-Curriculum-in-Higher-Education/Margolis/p/book/9780415927659), the hidden curriculum describes all the unwritten social norms, professional instincts, and tacit values that people absorb outside the formal timetable.
+First coined by Philip Jackson back in 1968, and later explored in depth by researchers like Eric Margolis in *The Hidden Curriculum in Higher Education*, the hidden curriculum describes all the unwritten social norms, professional instincts, and tacit values that people absorb outside the formal timetable.
 
 In traditional educational settings, the formal curriculum lists the explicit competencies: statistical modelling, SQL syntax, data cleaning, and chart building. But in consulting - and in real professional life - technical skills are only part of what people need to perform. The real difference between a junior spreadsheet-driver and a trusted advisor lives in the unspoken, human craft:
 
@@ -153,17 +155,16 @@ To address this tension, educational researchers exploring human-AI co-cognition
 ```text
 THE DUAL-MODE MODEL
 
-         ┌───────────────────────┐
-         │ LEVEL 7: ORCHESTRATION│
-         │(Steering & synthesis) │
-         └───────────┬───────────┘
-                     │
-       ┌─────────────┴────────────┐
-       ▼                          ▼
-┌──────────────┐          ┌──────────────┐
-│  SOLO HUMAN  │          │ HYBRID MODE  │
-│ (Unassisted) │          │ (Augmented)  │
-└──────────────┘          └──────────────┘
+┌────────────────────────┐
+│ LEVEL 7: ORCHESTRATION │
+│ (Steering & synthesis) │
+└───────────┬────────────┘
+            │
+            ├─► SOLO HUMAN
+            │   (Unassisted)
+            │
+            └─► HYBRID MODE
+                (Augmented)
 ```
 
 - **Solo Human Mode (Unassisted Foundations):** Building internal mental models, spotting errors from memory, and practising "unplugged" diagnostic skills without cognitive crutches.

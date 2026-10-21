@@ -49,9 +49,14 @@
   width: 100%;
   min-height: 2.2em;
 }
-/* Styles for markdown blog post layout */
 .post-layout {
   margin-bottom: 1rem;
+}
+
+.post-layout__content pre {
+  white-space: pre;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .post-layout__content a {
