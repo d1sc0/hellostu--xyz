@@ -139,9 +139,10 @@ Builds SEO/meta head output, JSON-LD, canonical URL, social tags, fonts, and OG 
 - Checks whether a generated OG image exists in `public/generated_social_images`.
 - Falls back to `default_social.png` when no generated image exists.
 - Injects schema JSON-LD and SEO metadata.
-- Loads Lexend + Gochi Hand via `astro-font`.
+- Preloads Lexend and Gochi Hand WOFF2 fonts.
+- Injects Webmention and Pingback endpoint link tags (`webmention.io/hellostu.xyz`).
 - Loads the Umami Cloud analytics script globally.
-- Loads `/scripts/apexchart-loader.js` globally.
+- Loads `/scripts/apexchart-loader.js` globally with content hash cache busting.
 
 ### Props
 
@@ -157,7 +158,7 @@ Builds SEO/meta head output, JSON-LD, canonical URL, social tags, fonts, and OG 
 ### Verified from source
 
 - Path: `src/components/Head.astro`
-- Last verified: 2026-04-20
+- Last verified: 2026-10-23
 
 ---
 
