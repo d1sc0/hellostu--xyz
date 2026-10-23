@@ -14,6 +14,7 @@ tags:
   - public-service
   - ned
   - study
+linkedinUrl: https://lnkd.in/p/edi5HX-7
 ---
 
 I was digging into Behaviourism as part of my studies earlier today. It’s the school of thought that treats learning as a change in observable behaviour, triggered by external stimuli. Think of it as the "physics" of learning—action and reaction. These are common concepts, but it was interesting to rip them apart in the classroom. It also gave me a great excuse to share some picture of my mate’s new puppy, Ned (I love him).

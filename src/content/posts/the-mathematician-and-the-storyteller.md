@@ -12,6 +12,7 @@ tags:
   - gemini
   - experiment
   - ai
+blueskyUrl: https://bsky.app/profile/hellostu.xyz/post/3mkfeesneqk24
 ---
 
 > A ramble through one of my experiments in code and AI. Apologies in advance to more technical readers - I'm sure this is not how a proper engineer would approach such a task! 😬

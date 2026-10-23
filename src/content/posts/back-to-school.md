@@ -12,6 +12,7 @@ tags:
   - work
   - study
   - reflection
+linkeinUrl: https://lnkd.in/p/e4wdtaaP
 ---
 
 So summer is over?!
