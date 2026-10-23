@@ -193,7 +193,10 @@ async function generateRecommendations() {
   try {
     const files = await fs.readdir(CONTENT_DIR);
     for (const file of files) {
-      if (file.endsWith('.md') || file.endsWith('.mdx')) {
+      if (
+        (file.endsWith('.md') || file.endsWith('.mdx')) &&
+        file !== 'README.md'
+      ) {
         const content = await fs.readFile(
           path.join(CONTENT_DIR, file),
           'utf-8',

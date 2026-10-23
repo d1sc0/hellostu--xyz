@@ -64,7 +64,9 @@ const BG_STYLE = previewConfig.bgStyle;
 async function getPosts() {
   const postFiles = fs
     .readdirSync(POSTS_DIR)
-    .filter(f => f.endsWith('.md') || f.endsWith('.mdx'));
+    .filter(
+      f => (f.endsWith('.md') || f.endsWith('.mdx')) && f !== 'README.md',
+    );
   const pageFiles = fs.existsSync(PAGES_DIR)
     ? fs
         .readdirSync(PAGES_DIR)

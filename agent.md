@@ -103,12 +103,12 @@
   - **No inflated tech-reviewer hyperbole**: Ban phrases like *"masterclass in calm software design"*, *"sacred quiet ritual"*, *"frictionless tapestry"*, *"delve into"*, *"testament to"*, *"game changer"*. Describe software simply and accurately (*"It's just really well made"*, *"It gets the basics right"*).
   - **Keep metaphors earthy and relatable**: Avoid over-dramatic or cartoonish metaphors; stick to real-world observations (*"high fructose, low in fibre diet"*, *"an old-school record shop"*).
   - **Natural, spoken sentence cadence**: Vary sentence lengths naturally; mix short punchy lines (*"Simple."*, *"That's it."*) with loose, conversational clauses.
-- **Post Ideas & Inspiration**: Refine and build upon the active brainstormed post ideas list stored in the scratchpad's README:
-  - Path: [src/content/scratchpad/README.md](file:///Users/d1sc0/Projects/hellostu--xyz/src/content/scratchpad/README.md)
+- **Post Ideas & Inspiration**: Refine and build upon the active brainstormed post ideas list stored in `src/content/posts/README.md`:
+  - Path: [src/content/posts/README.md](file:///Users/d1sc0/Projects/hellostu--xyz/src/content/posts/README.md)
   - Purpose: Tracks content ideas across *Work*, *Rest*, and *Play* based on the author's priorities.
-  - Updates: Always update the `*Last updated:*` date in the "Blog Post Ideas & Inspiration" section of the README when modifying this list.
-  - **Important Reference Rule for Agents**: Always refer to this backlog file explicitly as `src/content/scratchpad/README.md` or `scratchpad/README.md` (never say "the README" or `README.md`, which is reserved for the root project README to avoid confusing the author).
-- **Scratchpad Directory**: A private playground is located at [src/content/scratchpad/](file:///Users/d1sc0/Projects/hellostu--xyz/src/content/scratchpad/) for drafting posts and brainstorming ideas locally with the user. Astro ignores this folder. When a draft is ready to be published, move it to `src/content/posts/` and run `npm run prebuild`.
+  - Updates: Always update the `_Last updated:_` date in the "Blog Post Ideas & Inspiration" section of the README when modifying this list.
+  - **Important Reference Rule for Agents**: Always refer to this backlog file explicitly as `src/content/posts/README.md` or `posts/README.md` (never say "the README" or `README.md`, which is reserved for the root project README to avoid confusing the author).
+- **Drafting New Posts**: When coming up with or drafting new posts with the user, create them directly in `src/content/posts/` with `draft: true` frontmatter (e.g. `src/content/posts/my-new-post.md`). This enables live local preview with the draft indicator in `npm run dev` while preventing the post from rendering in production builds until `draft: false` is set.
 
 ---
 
@@ -121,5 +121,4 @@
 - [Sveltia CMS Guide](docs/sveltia-cms.md)
 - [OG Image Generation Guide](docs/og-image-generation-guide.md)
 - [Preview Image Generation Guide](docs/preview-image-generation-guide.md)
-- [Project Plan](docs/project-plan.md)
-- [Post Ideas List](file:///Users/d1sc0/Projects/hellostu--xyz/src/content/scratchpad/README.md)
+- [Post Ideas List](file:///Users/d1sc0/Projects/hellostu--xyz/src/content/posts/README.md)

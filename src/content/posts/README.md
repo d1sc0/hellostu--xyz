@@ -1,12 +1,10 @@
-# Scratchpad & Post Ideas
-
-This directory is used as a private playground and scratchpad to draft new posts ideas. When they are a bit more formed they can get published or moved to posts using the `draft: true` frontmatter option so they can be previewed and refined.
-
----
-
 # Blog Post Ideas & Inspiration
 
-_Last updated: 21st October 2026_
+This file tracks content ideas and brainstorms across *Work*, *Rest*, and *Play*. 
+
+When drafting new posts, create them directly in `src/content/posts/` with `draft: true` frontmatter (e.g. `src/content/posts/my-post-slug.md`). This allows you to preview the post locally with the draft indicator in `npm run dev`, while Astro automatically excludes it from production builds until you set `draft: false`.
+
+_Last updated: 23rd October 2026_
 
 ## 💼 Work
 

@@ -53,6 +53,33 @@
   margin-bottom: 1rem;
 }
 
+.post-layout__draft-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.6rem 0.9rem;
+  margin-bottom: 1.5rem;
+  background: var(--color-line);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+.post-layout__draft-badge {
+  display: inline-block;
+  background: var(--color-accent);
+  color: var(--color-page);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
 .post-layout__content pre {
   white-space: pre;
   overflow-x: auto;

@@ -71,6 +71,20 @@
   text-decoration: underline;
 }
 
+.latest-posts__draft-pill {
+  display: inline-block;
+  font-size: 0.68em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  background: var(--color-accent);
+  color: var(--color-page);
+  padding: 0.1em 0.45em;
+  border-radius: 3px;
+  margin-left: 0.45rem;
+  vertical-align: middle;
+  line-height: 1.2;
+}
+
 @media (min-width: 768px) and (orientation: landscape) {
   .latest-posts {
     margin-top: 2.5rem;

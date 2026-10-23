@@ -60,6 +60,9 @@ const sortedYears = Object.keys(postsByYear)
                     </div>
                     <div class="posts__col posts__col--title">
                       <a href={`/posts/${post.id}/`}>{post.data.title}</a>
+                      {post.data.draft && (
+                        <span class="posts__draft-pill">DRAFT</span>
+                      )}
                       {Array.isArray(post.data.tags) &&
                       post.data.tags.length > 0 ? (
                         <p class="posts__tags-row">

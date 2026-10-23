@@ -64,6 +64,7 @@ function walkDir(dir, { renameToSlug = false } = {}) {
       walkDir(fullPath, { renameToSlug });
     } else if (
       entry.isFile() &&
+      entry.name !== 'README.md' &&
       (fullPath.endsWith('.md') || fullPath.endsWith('.mdx'))
     ) {
       fixImagePathsInFile(fullPath);

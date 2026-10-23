@@ -40,6 +40,9 @@ const latestPosts = posts
               </div>
               <div class="latest-posts__col latest-posts__col--title">
                 <a href={`/posts/${post.id}/`}>{post.data.title}</a>
+                {post.data.draft && (
+                  <span class="latest-posts__draft-pill">DRAFT</span>
+                )}
               </div>
             </div>
           ))}

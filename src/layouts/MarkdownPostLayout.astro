@@ -30,6 +30,16 @@ const showUpdatedDate =
 
 <BaseLayout frontmatter={frontmatter} prevpost={prevpost} nextpost={nextpost}>
   <section class="post-layout content-padding">
+    {
+      frontmatter.draft ? (
+        <aside class="post-layout__draft-banner" role="status">
+          <span class="post-layout__draft-badge">Draft Preview</span>
+          <span>
+            This post is unpublished and only visible in local preview.
+          </span>
+        </aside>
+      ) : null
+    }
     <h2 class="post-layout__title">{frontmatter.title}</h2>
     <div class="post-layout__meta">
       Published

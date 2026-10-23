@@ -171,7 +171,7 @@ Shows a table of the most recent posts.
 ### Core logic
 
 - Gets posts collection.
-- Excludes drafts in production.
+- Excludes drafts in production; shows a `DRAFT` badge next to draft titles in local preview.
 - Sorts by `pubDate` descending.
 - Slices to `count`.
 
@@ -310,11 +310,11 @@ Renders posts grouped by year, optionally filtered by category.
 
 ### Core logic
 
-- Fetches posts, excludes drafts in production.
+- Fetches posts, excludes drafts in production; shows a `DRAFT` badge next to draft titles in local preview.
 - Optional `category` filtering.
 - Groups posts by year and sorts years descending.
 - Within each year, sorts posts newest first.
-- Renders date, title, and tags.
+- Renders date, title, draft badge (if draft), and tags.
 
 ### Props
 
