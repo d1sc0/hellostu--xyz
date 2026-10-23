@@ -22,6 +22,8 @@ const posts = defineCollection({
       )
       .optional(),
     category: z.enum(['Work', 'Rest', 'Play']),
+    blueskyUrl: z.string().url().optional(),
+    linkedinUrl: z.string().url().optional(),
   }),
 });
 

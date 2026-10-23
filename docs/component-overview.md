@@ -195,10 +195,12 @@ Shows a table of the most recent posts.
 
 ### Purpose
 
-Displays dynamic Like (heart) and Share buttons at the bottom of blog posts.
+Displays dynamic Like (heart) and Share buttons at the bottom of blog posts, along with an optional conversational discussion prompt linking to Bluesky or LinkedIn posts.
 
 ### Core logic
 
+- Displays an optional conversational prompt above the buttons: `"Have thoughts on this? Reply on Bluesky or join the conversation on LinkedIn"` when `blueskyUrl` or `linkedinUrl` is provided in post frontmatter.
+- Intelligently formats link grammar (using lowercase `"or join..."` when both links are present, or capitalized `"Join..."` when only LinkedIn is present).
 - Displays an SVG heart icon with a count of current likes, and a Share icon.
 - Renders container elements with `data-slug`, `data-title`, and `data-desc`.
 - Loads a script tag referencing `src/scripts/like-share.js` to execute client-side logic.
@@ -206,19 +208,27 @@ Displays dynamic Like (heart) and Share buttons at the bottom of blog posts.
 ### Props
 
 - `currentSlug` (string, required)
-- `title?` (string)
+- `title` (string, required)
 - `description?` (string)
+- `blueskyUrl?` (string)
+- `linkedinUrl?` (string)
 
 ### Example
 
 ```astro
-<LikeAndShare currentSlug={frontmatter.slug} title={frontmatter.title} description={frontmatter.description} />
+<LikeAndShare
+  currentSlug={frontmatter.slug}
+  title={frontmatter.title}
+  description={frontmatter.description}
+  blueskyUrl={frontmatter.blueskyUrl}
+  linkedinUrl={frontmatter.linkedinUrl}
+/>
 ```
 
 ### Verified from source
 
 - Path: `src/components/LikeAndShare.astro`
-- Last verified: 2026-06-08
+- Last verified: 2026-10-23
 
 ---
 

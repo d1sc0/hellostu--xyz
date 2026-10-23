@@ -12,6 +12,7 @@ tags:
   - indie-web
   - tools
   - reflection
+linkedinUrl: https://lnkd.in/p/eByHuYsv
 ---
 
 I don’t know whether it’s my increasing age, the rise of AI slop, or the increasing power of our algorithmic overseers, but recently I’ve been feeling a little bit overwhelmed by "content".

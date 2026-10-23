@@ -11,6 +11,8 @@ tags:
   - reflection
   - higher-education
   - practice
+blueskyUrl: https://bsky.app/profile/hellostu.xyz/post/3mygdeki4xs2y
+linkedinUrl: https://lnkd.in/p/e5JUjjup
 ---
 
 Even if you’ve never heard of Bloom’s Taxonomy, you’ll recognise the idea behind it. It's usually pictured as a neat, reassuring pastel pyramid: a visual shorthand that educators, trainers, and curriculum designers have used for decades to describe how we learn. At the wide base sits _Remember_ - memorising the basics - and right at the summit sits _Create_ - building something original.
@@ -83,7 +85,7 @@ If the analyst has outsourced all the underlying thinking to the machine, they'r
 
 There's an even bigger catch here that formal syllabuses and training specs rarely capture: [**the hidden curriculum**](https://en.wikipedia.org/wiki/Hidden_curriculum).
 
-First coined by Philip Jackson back in 1968, and later explored in depth by researchers like Eric Margolis in *The Hidden Curriculum in Higher Education*, the hidden curriculum describes all the unwritten social norms, professional instincts, and tacit values that people absorb outside the formal timetable.
+First coined by Philip Jackson back in 1968, and later explored in depth by researchers like Eric Margolis in _The Hidden Curriculum in Higher Education_, the hidden curriculum describes all the unwritten social norms, professional instincts, and tacit values that people absorb outside the formal timetable.
 
 In traditional educational settings, the formal curriculum lists the explicit competencies: statistical modelling, SQL syntax, data cleaning, and chart building. But in consulting - and in real professional life - technical skills are only part of what people need to perform. The real difference between a junior spreadsheet-driver and a trusted advisor lives in the unspoken, human craft:
 

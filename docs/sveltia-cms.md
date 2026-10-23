@@ -17,7 +17,7 @@ This project uses Sveltia CMS (Netlify CMS compatible) for content editing.
     - `src/content/footer-nav.json`
     - `src/content/social-links.json`
     - `src/content/galleries.yaml`
-- Post fields: title, slug, draft, pubDate, category, featureImage, body, description, tags
+- Post fields: title, slug, draft, pubDate, category, featureImage, body, description, tags, blueskyUrl, linkedinUrl
 - Sortable by: title, pubDate
 - Default sort: pubDate descending
 
@@ -27,6 +27,7 @@ Notes:
 - Last-updated timestamps are derived automatically from Git history (with filesystem modified-time fallback).
 - RSS feed output is generated from `src/pages/rss.xml.js` and includes a `Post last updated:` line per item.
 - Tags should always use lowercase kebab-case (e.g. `learning-design`, `systems-thinking`) and avoid camelCase (`learningDesign`) to prevent duplicate tag routes.
+- Optional discussion URLs (`blueskyUrl` and `linkedinUrl`) link directly to external discussion threads on Bluesky or LinkedIn and render a conversational prompt above the Like & Share buttons on the post.
 
 To access the CMS, open `/admin/` in your deployed site.
 
